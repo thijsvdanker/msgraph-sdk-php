@@ -19,7 +19,6 @@ class GraphTestBase
     public function __construct()
     {
         $this->clientId     = CLIENT_ID;
-        $this->clientSecret = CLIENT_SECRET;
         $this->username     = USERNAME;
         $this->password     = PASSWORD;
 
@@ -40,7 +39,6 @@ class GraphTestBase
         $body = "grant_type=".$this->grantType
                 ."&resource=".$this->resource
                 ."&client_id=".$this->clientId
-                ."&client_secret=".$this->clientSecret
                 ."&username=".$this->username
                 ."&password=".$this->password;
         $ch = curl_init();
