@@ -28,6 +28,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
 {
     /**
     * Gets the profileTarget
+    * Profile target type.
     *
     * @return Windows10VpnProfileTarget The profileTarget
     */
@@ -46,6 +47,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the profileTarget
+    * Profile target type.
     *
     * @param Windows10VpnProfileTarget $val The profileTarget
     *
@@ -59,6 +61,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the connectionType
+    * Connection type.
     *
     * @return Windows10VpnConnectionType The connectionType
     */
@@ -77,6 +80,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the connectionType
+    * Connection type.
     *
     * @param Windows10VpnConnectionType $val The connectionType
     *
@@ -90,6 +94,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the enableSplitTunneling
+    * Enable split tunneling.
     *
     * @return bool The enableSplitTunneling
     */
@@ -104,6 +109,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the enableSplitTunneling
+    * Enable split tunneling.
     *
     * @param bool $val The enableSplitTunneling
     *
@@ -117,6 +123,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the enableAlwaysOn
+    * Enable Always On mode.
     *
     * @return bool The enableAlwaysOn
     */
@@ -131,6 +138,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the enableAlwaysOn
+    * Enable Always On mode.
     *
     * @param bool $val The enableAlwaysOn
     *
@@ -144,6 +152,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the enableDeviceTunnel
+    * Enable device tunnel.
     *
     * @return bool The enableDeviceTunnel
     */
@@ -158,6 +167,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the enableDeviceTunnel
+    * Enable device tunnel.
     *
     * @param bool $val The enableDeviceTunnel
     *
@@ -171,6 +181,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the enableDnsRegistration
+    * Enable IP address registration with internal DNS.
     *
     * @return bool The enableDnsRegistration
     */
@@ -185,6 +196,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the enableDnsRegistration
+    * Enable IP address registration with internal DNS.
     *
     * @param bool $val The enableDnsRegistration
     *
@@ -198,6 +210,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the dnsSuffixes
+    * Specify DNS suffixes to add to the DNS search list to properly route short names.
     *
     * @return string The dnsSuffixes
     */
@@ -212,6 +225,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the dnsSuffixes
+    * Specify DNS suffixes to add to the DNS search list to properly route short names.
     *
     * @param string $val The dnsSuffixes
     *
@@ -225,6 +239,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the authenticationMethod
+    * Authentication method.
     *
     * @return Windows10VpnAuthenticationMethod The authenticationMethod
     */
@@ -243,6 +258,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the authenticationMethod
+    * Authentication method.
     *
     * @param Windows10VpnAuthenticationMethod $val The authenticationMethod
     *
@@ -256,6 +272,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the rememberUserCredentials
+    * Remember user credentials.
     *
     * @return bool The rememberUserCredentials
     */
@@ -270,6 +287,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the rememberUserCredentials
+    * Remember user credentials.
     *
     * @param bool $val The rememberUserCredentials
     *
@@ -283,6 +301,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the enableConditionalAccess
+    * Enable conditional access.
     *
     * @return bool The enableConditionalAccess
     */
@@ -297,6 +316,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the enableConditionalAccess
+    * Enable conditional access.
     *
     * @param bool $val The enableConditionalAccess
     *
@@ -310,6 +330,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the enableSingleSignOnWithAlternateCertificate
+    * Enable single sign-on (SSO) with alternate certificate.
     *
     * @return bool The enableSingleSignOnWithAlternateCertificate
     */
@@ -324,6 +345,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the enableSingleSignOnWithAlternateCertificate
+    * Enable single sign-on (SSO) with alternate certificate.
     *
     * @param bool $val The enableSingleSignOnWithAlternateCertificate
     *
@@ -337,6 +359,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the singleSignOnEku
+    * Single sign-on Extended Key Usage (EKU).
     *
     * @return ExtendedKeyUsage The singleSignOnEku
     */
@@ -355,6 +378,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the singleSignOnEku
+    * Single sign-on Extended Key Usage (EKU).
     *
     * @param ExtendedKeyUsage $val The singleSignOnEku
     *
@@ -368,6 +392,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the singleSignOnIssuerHash
+    * Single sign-on issuer hash.
     *
     * @return string The singleSignOnIssuerHash
     */
@@ -382,6 +407,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the singleSignOnIssuerHash
+    * Single sign-on issuer hash.
     *
     * @param string $val The singleSignOnIssuerHash
     *
@@ -395,6 +421,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the eapXml
+    * Extensible Authentication Protocol (EAP) XML. (UTF8 encoded byte array)
     *
     * @return \GuzzleHttp\Psr7\Stream The eapXml
     */
@@ -413,6 +440,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the eapXml
+    * Extensible Authentication Protocol (EAP) XML. (UTF8 encoded byte array)
     *
     * @param \GuzzleHttp\Psr7\Stream $val The eapXml
     *
@@ -426,6 +454,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the proxyServer
+    * Proxy Server.
     *
     * @return Windows10VpnProxyServer The proxyServer
     */
@@ -444,6 +473,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the proxyServer
+    * Proxy Server.
     *
     * @param Windows10VpnProxyServer $val The proxyServer
     *
@@ -458,6 +488,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
 
      /** 
      * Gets the associatedApps
+    * Associated Apps. This collection can contain a maximum of 10000 elements.
      *
      * @return array The associatedApps
      */
@@ -472,6 +503,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /** 
     * Sets the associatedApps
+    * Associated Apps. This collection can contain a maximum of 10000 elements.
     *
     * @param Windows10AssociatedApps $val The associatedApps
     *
@@ -485,6 +517,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the onlyAssociatedAppsCanUseConnection
+    * Only associated Apps can use connection (per-app VPN).
     *
     * @return bool The onlyAssociatedAppsCanUseConnection
     */
@@ -499,6 +532,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the onlyAssociatedAppsCanUseConnection
+    * Only associated Apps can use connection (per-app VPN).
     *
     * @param bool $val The onlyAssociatedAppsCanUseConnection
     *
@@ -512,6 +546,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Gets the windowsInformationProtectionDomain
+    * Windows Information Protection (WIP) domain to associate with this connection.
     *
     * @return string The windowsInformationProtectionDomain
     */
@@ -526,6 +561,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the windowsInformationProtectionDomain
+    * Windows Information Protection (WIP) domain to associate with this connection.
     *
     * @param string $val The windowsInformationProtectionDomain
     *
@@ -540,6 +576,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
 
      /** 
      * Gets the trafficRules
+    * Traffic rules. This collection can contain a maximum of 1000 elements.
      *
      * @return array The trafficRules
      */
@@ -554,6 +591,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /** 
     * Sets the trafficRules
+    * Traffic rules. This collection can contain a maximum of 1000 elements.
     *
     * @param VpnTrafficRule $val The trafficRules
     *
@@ -568,6 +606,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
 
      /** 
      * Gets the routes
+    * Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.
      *
      * @return array The routes
      */
@@ -582,6 +621,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /** 
     * Sets the routes
+    * Routes (optional for third-party providers). This collection can contain a maximum of 1000 elements.
     *
     * @param VpnRoute $val The routes
     *
@@ -596,6 +636,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
 
      /** 
      * Gets the dnsRules
+    * DNS rules. This collection can contain a maximum of 1000 elements.
      *
      * @return array The dnsRules
      */
@@ -610,6 +651,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /** 
     * Sets the dnsRules
+    * DNS rules. This collection can contain a maximum of 1000 elements.
     *
     * @param VpnDnsRule $val The dnsRules
     *
@@ -622,7 +664,37 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     }
     
     /**
+    * Gets the trustedNetworkDomains
+    * Trusted Network Domains
+    *
+    * @return string The trustedNetworkDomains
+    */
+    public function getTrustedNetworkDomains()
+    {
+        if (array_key_exists("trustedNetworkDomains", $this->_propDict)) {
+            return $this->_propDict["trustedNetworkDomains"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the trustedNetworkDomains
+    * Trusted Network Domains
+    *
+    * @param string $val The trustedNetworkDomains
+    *
+    * @return Windows10VpnConfiguration
+    */
+    public function setTrustedNetworkDomains($val)
+    {
+        $this->_propDict["trustedNetworkDomains"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the identityCertificate
+    * Identity certificate for client authentication when authentication method is certificate.
     *
     * @return WindowsCertificateProfileBase The identityCertificate
     */
@@ -641,6 +713,7 @@ class Windows10VpnConfiguration extends WindowsVpnConfiguration
     
     /**
     * Sets the identityCertificate
+    * Identity certificate for client authentication when authentication method is certificate.
     *
     * @param WindowsCertificateProfileBase $val The identityCertificate
     *

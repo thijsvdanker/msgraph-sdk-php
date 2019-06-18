@@ -29,6 +29,7 @@ class Windows81CertificateProfileBase extends WindowsCertificateProfileBase
 
      /** 
      * Gets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The extendedKeyUsages
      */
@@ -43,6 +44,7 @@ class Windows81CertificateProfileBase extends WindowsCertificateProfileBase
     
     /** 
     * Sets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
     *
     * @param ExtendedKeyUsage $val The extendedKeyUsages
     *
@@ -57,6 +59,7 @@ class Windows81CertificateProfileBase extends WindowsCertificateProfileBase
 
      /** 
      * Gets the customSubjectAlternativeNames
+    * Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The customSubjectAlternativeNames
      */
@@ -71,6 +74,7 @@ class Windows81CertificateProfileBase extends WindowsCertificateProfileBase
     
     /** 
     * Sets the customSubjectAlternativeNames
+    * Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.
     *
     * @param CustomSubjectAlternativeName $val The customSubjectAlternativeNames
     *

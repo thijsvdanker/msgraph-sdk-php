@@ -28,6 +28,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
 {
     /**
     * Gets the screenCaptureBlocked
+    * Indicates whether a managed user can take screen captures of managed apps
     *
     * @return bool The screenCaptureBlocked
     */
@@ -42,6 +43,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the screenCaptureBlocked
+    * Indicates whether a managed user can take screen captures of managed apps
     *
     * @param bool $val The screenCaptureBlocked
     *
@@ -55,6 +57,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the disableAppEncryptionIfDeviceEncryptionIsEnabled
+    * When this setting is enabled, app level encryption is disabled if device level encryption is enabled
     *
     * @return bool The disableAppEncryptionIfDeviceEncryptionIsEnabled
     */
@@ -69,6 +72,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the disableAppEncryptionIfDeviceEncryptionIsEnabled
+    * When this setting is enabled, app level encryption is disabled if device level encryption is enabled
     *
     * @param bool $val The disableAppEncryptionIfDeviceEncryptionIsEnabled
     *
@@ -82,6 +86,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the encryptAppData
+    * Indicates whether application data for managed apps should be encrypted
     *
     * @return bool The encryptAppData
     */
@@ -96,6 +101,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the encryptAppData
+    * Indicates whether application data for managed apps should be encrypted
     *
     * @param bool $val The encryptAppData
     *
@@ -109,6 +115,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the deployedAppCount
+    * Count of apps to which the current policy is deployed.
     *
     * @return int The deployedAppCount
     */
@@ -123,6 +130,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the deployedAppCount
+    * Count of apps to which the current policy is deployed.
     *
     * @param int $val The deployedAppCount
     *
@@ -136,6 +144,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the minimumRequiredPatchVersion
+    * Define the oldest required Android security patch level a user can have to gain secure access to the app.
     *
     * @return string The minimumRequiredPatchVersion
     */
@@ -150,6 +159,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the minimumRequiredPatchVersion
+    * Define the oldest required Android security patch level a user can have to gain secure access to the app.
     *
     * @param string $val The minimumRequiredPatchVersion
     *
@@ -163,6 +173,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the minimumWarningPatchVersion
+    * Define the oldest recommended Android security patch level a user can have for secure access to the app.
     *
     * @return string The minimumWarningPatchVersion
     */
@@ -177,6 +188,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the minimumWarningPatchVersion
+    * Define the oldest recommended Android security patch level a user can have for secure access to the app.
     *
     * @param string $val The minimumWarningPatchVersion
     *
@@ -191,6 +203,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
 
      /** 
      * Gets the exemptedAppPackages
+    * App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
      *
      * @return array The exemptedAppPackages
      */
@@ -205,6 +218,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /** 
     * Sets the exemptedAppPackages
+    * App packages in this list will be exempt from the policy and will be able to receive data from managed apps.
     *
     * @param KeyValuePair $val The exemptedAppPackages
     *
@@ -218,6 +232,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the minimumWipePatchVersion
+    * Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data.
     *
     * @return string The minimumWipePatchVersion
     */
@@ -232,6 +247,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the minimumWipePatchVersion
+    * Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data.
     *
     * @param string $val The minimumWipePatchVersion
     *
@@ -245,6 +261,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the allowedAndroidDeviceManufacturers
+    * Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
     *
     * @return string The allowedAndroidDeviceManufacturers
     */
@@ -259,6 +276,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the allowedAndroidDeviceManufacturers
+    * Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
     *
     * @param string $val The allowedAndroidDeviceManufacturers
     *
@@ -272,6 +290,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the appActionIfAndroidDeviceManufacturerNotAllowed
+    * Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed.
     *
     * @return ManagedAppRemediationAction The appActionIfAndroidDeviceManufacturerNotAllowed
     */
@@ -290,6 +309,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the appActionIfAndroidDeviceManufacturerNotAllowed
+    * Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed.
     *
     * @param ManagedAppRemediationAction $val The appActionIfAndroidDeviceManufacturerNotAllowed
     *
@@ -301,9 +321,200 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
         return $this;
     }
     
+    /**
+    * Gets the requiredAndroidSafetyNetDeviceAttestationType
+    * Defines the Android SafetyNet Device Attestation requirement for a managed app to work.
+    *
+    * @return AndroidManagedAppSafetyNetDeviceAttestationType The requiredAndroidSafetyNetDeviceAttestationType
+    */
+    public function getRequiredAndroidSafetyNetDeviceAttestationType()
+    {
+        if (array_key_exists("requiredAndroidSafetyNetDeviceAttestationType", $this->_propDict)) {
+            if (is_a($this->_propDict["requiredAndroidSafetyNetDeviceAttestationType"], "Microsoft\Graph\Beta\Model\AndroidManagedAppSafetyNetDeviceAttestationType")) {
+                return $this->_propDict["requiredAndroidSafetyNetDeviceAttestationType"];
+            } else {
+                $this->_propDict["requiredAndroidSafetyNetDeviceAttestationType"] = new AndroidManagedAppSafetyNetDeviceAttestationType($this->_propDict["requiredAndroidSafetyNetDeviceAttestationType"]);
+                return $this->_propDict["requiredAndroidSafetyNetDeviceAttestationType"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the requiredAndroidSafetyNetDeviceAttestationType
+    * Defines the Android SafetyNet Device Attestation requirement for a managed app to work.
+    *
+    * @param AndroidManagedAppSafetyNetDeviceAttestationType $val The requiredAndroidSafetyNetDeviceAttestationType
+    *
+    * @return AndroidManagedAppProtection
+    */
+    public function setRequiredAndroidSafetyNetDeviceAttestationType($val)
+    {
+        $this->_propDict["requiredAndroidSafetyNetDeviceAttestationType"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the appActionIfAndroidSafetyNetDeviceAttestationFailed
+    * Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails.
+    *
+    * @return ManagedAppRemediationAction The appActionIfAndroidSafetyNetDeviceAttestationFailed
+    */
+    public function getAppActionIfAndroidSafetyNetDeviceAttestationFailed()
+    {
+        if (array_key_exists("appActionIfAndroidSafetyNetDeviceAttestationFailed", $this->_propDict)) {
+            if (is_a($this->_propDict["appActionIfAndroidSafetyNetDeviceAttestationFailed"], "Microsoft\Graph\Beta\Model\ManagedAppRemediationAction")) {
+                return $this->_propDict["appActionIfAndroidSafetyNetDeviceAttestationFailed"];
+            } else {
+                $this->_propDict["appActionIfAndroidSafetyNetDeviceAttestationFailed"] = new ManagedAppRemediationAction($this->_propDict["appActionIfAndroidSafetyNetDeviceAttestationFailed"]);
+                return $this->_propDict["appActionIfAndroidSafetyNetDeviceAttestationFailed"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the appActionIfAndroidSafetyNetDeviceAttestationFailed
+    * Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails.
+    *
+    * @param ManagedAppRemediationAction $val The appActionIfAndroidSafetyNetDeviceAttestationFailed
+    *
+    * @return AndroidManagedAppProtection
+    */
+    public function setAppActionIfAndroidSafetyNetDeviceAttestationFailed($val)
+    {
+        $this->_propDict["appActionIfAndroidSafetyNetDeviceAttestationFailed"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the requiredAndroidSafetyNetAppsVerificationType
+    * Defines the Android SafetyNet Apps Verification requirement for a managed app to work.
+    *
+    * @return AndroidManagedAppSafetyNetAppsVerificationType The requiredAndroidSafetyNetAppsVerificationType
+    */
+    public function getRequiredAndroidSafetyNetAppsVerificationType()
+    {
+        if (array_key_exists("requiredAndroidSafetyNetAppsVerificationType", $this->_propDict)) {
+            if (is_a($this->_propDict["requiredAndroidSafetyNetAppsVerificationType"], "Microsoft\Graph\Beta\Model\AndroidManagedAppSafetyNetAppsVerificationType")) {
+                return $this->_propDict["requiredAndroidSafetyNetAppsVerificationType"];
+            } else {
+                $this->_propDict["requiredAndroidSafetyNetAppsVerificationType"] = new AndroidManagedAppSafetyNetAppsVerificationType($this->_propDict["requiredAndroidSafetyNetAppsVerificationType"]);
+                return $this->_propDict["requiredAndroidSafetyNetAppsVerificationType"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the requiredAndroidSafetyNetAppsVerificationType
+    * Defines the Android SafetyNet Apps Verification requirement for a managed app to work.
+    *
+    * @param AndroidManagedAppSafetyNetAppsVerificationType $val The requiredAndroidSafetyNetAppsVerificationType
+    *
+    * @return AndroidManagedAppProtection
+    */
+    public function setRequiredAndroidSafetyNetAppsVerificationType($val)
+    {
+        $this->_propDict["requiredAndroidSafetyNetAppsVerificationType"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the appActionIfAndroidSafetyNetAppsVerificationFailed
+    * Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails.
+    *
+    * @return ManagedAppRemediationAction The appActionIfAndroidSafetyNetAppsVerificationFailed
+    */
+    public function getAppActionIfAndroidSafetyNetAppsVerificationFailed()
+    {
+        if (array_key_exists("appActionIfAndroidSafetyNetAppsVerificationFailed", $this->_propDict)) {
+            if (is_a($this->_propDict["appActionIfAndroidSafetyNetAppsVerificationFailed"], "Microsoft\Graph\Beta\Model\ManagedAppRemediationAction")) {
+                return $this->_propDict["appActionIfAndroidSafetyNetAppsVerificationFailed"];
+            } else {
+                $this->_propDict["appActionIfAndroidSafetyNetAppsVerificationFailed"] = new ManagedAppRemediationAction($this->_propDict["appActionIfAndroidSafetyNetAppsVerificationFailed"]);
+                return $this->_propDict["appActionIfAndroidSafetyNetAppsVerificationFailed"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the appActionIfAndroidSafetyNetAppsVerificationFailed
+    * Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails.
+    *
+    * @param ManagedAppRemediationAction $val The appActionIfAndroidSafetyNetAppsVerificationFailed
+    *
+    * @return AndroidManagedAppProtection
+    */
+    public function setAppActionIfAndroidSafetyNetAppsVerificationFailed($val)
+    {
+        $this->_propDict["appActionIfAndroidSafetyNetAppsVerificationFailed"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the customBrowserPackageId
+    * Unique identifier of a custom browser to open weblink on Android.
+    *
+    * @return string The customBrowserPackageId
+    */
+    public function getCustomBrowserPackageId()
+    {
+        if (array_key_exists("customBrowserPackageId", $this->_propDict)) {
+            return $this->_propDict["customBrowserPackageId"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the customBrowserPackageId
+    * Unique identifier of a custom browser to open weblink on Android.
+    *
+    * @param string $val The customBrowserPackageId
+    *
+    * @return AndroidManagedAppProtection
+    */
+    public function setCustomBrowserPackageId($val)
+    {
+        $this->_propDict["customBrowserPackageId"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the customBrowserDisplayName
+    * Friendly name of the preferred custom browser to open weblink on Android.
+    *
+    * @return string The customBrowserDisplayName
+    */
+    public function getCustomBrowserDisplayName()
+    {
+        if (array_key_exists("customBrowserDisplayName", $this->_propDict)) {
+            return $this->_propDict["customBrowserDisplayName"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the customBrowserDisplayName
+    * Friendly name of the preferred custom browser to open weblink on Android.
+    *
+    * @param string $val The customBrowserDisplayName
+    *
+    * @return AndroidManagedAppProtection
+    */
+    public function setCustomBrowserDisplayName($val)
+    {
+        $this->_propDict["customBrowserDisplayName"] = $val;
+        return $this;
+    }
+    
 
      /** 
      * Gets the apps
+    * List of apps to which the policy is deployed.
      *
      * @return array The apps
      */
@@ -318,6 +529,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /** 
     * Sets the apps
+    * List of apps to which the policy is deployed.
     *
     * @param ManagedMobileApp $val The apps
     *
@@ -331,6 +543,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Gets the deploymentSummary
+    * Navigation property to deployment summary of the configuration.
     *
     * @return ManagedAppPolicyDeploymentSummary The deploymentSummary
     */
@@ -349,6 +562,7 @@ class AndroidManagedAppProtection extends TargetedManagedAppProtection
     
     /**
     * Sets the deploymentSummary
+    * Navigation property to deployment summary of the configuration.
     *
     * @param ManagedAppPolicyDeploymentSummary $val The deploymentSummary
     *

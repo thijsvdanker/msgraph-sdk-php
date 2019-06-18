@@ -28,6 +28,7 @@ class DeviceManagementExchangeAccessRule extends Entity
 
     /**
     * Gets the deviceClass
+    * Device Class which will be impacted by this rule.
     *
     * @return DeviceManagementExchangeDeviceClass The deviceClass
     */
@@ -46,6 +47,7 @@ class DeviceManagementExchangeAccessRule extends Entity
 
     /**
     * Sets the deviceClass
+    * Device Class which will be impacted by this rule.
     *
     * @param DeviceManagementExchangeDeviceClass $val The value to assign to the deviceClass
     *
@@ -59,6 +61,7 @@ class DeviceManagementExchangeAccessRule extends Entity
 
     /**
     * Gets the accessLevel
+    * Access Level for Exchange granted by this rule.
     *
     * @return DeviceManagementExchangeAccessLevel The accessLevel
     */
@@ -77,6 +80,7 @@ class DeviceManagementExchangeAccessRule extends Entity
 
     /**
     * Sets the accessLevel
+    * Access Level for Exchange granted by this rule.
     *
     * @param DeviceManagementExchangeAccessLevel $val The value to assign to the accessLevel
     *

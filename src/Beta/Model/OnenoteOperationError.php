@@ -27,6 +27,7 @@ class OnenoteOperationError extends Entity
 {
     /**
     * Gets the code
+    * The error code.
     *
     * @return string The code
     */
@@ -41,6 +42,7 @@ class OnenoteOperationError extends Entity
 
     /**
     * Sets the code
+    * The error code.
     *
     * @param string $val The value of the code
     *
@@ -53,6 +55,7 @@ class OnenoteOperationError extends Entity
     }
     /**
     * Gets the message
+    * The error message.
     *
     * @return string The message
     */
@@ -67,6 +70,7 @@ class OnenoteOperationError extends Entity
 
     /**
     * Sets the message
+    * The error message.
     *
     * @param string $val The value of the message
     *

@@ -28,6 +28,7 @@ class MacOSVpnConfiguration extends AppleVpnConfiguration
 {
     /**
     * Gets the identityCertificate
+    * Identity certificate for client authentication when authentication method is certificate.
     *
     * @return MacOSCertificateProfileBase The identityCertificate
     */
@@ -46,6 +47,7 @@ class MacOSVpnConfiguration extends AppleVpnConfiguration
     
     /**
     * Sets the identityCertificate
+    * Identity certificate for client authentication when authentication method is certificate.
     *
     * @param MacOSCertificateProfileBase $val The identityCertificate
     *

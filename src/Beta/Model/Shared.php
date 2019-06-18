@@ -28,6 +28,7 @@ class Shared extends Entity
 
     /**
     * Gets the owner
+    * The identity of the owner of the shared item. Read-only.
     *
     * @return IdentitySet The owner
     */
@@ -46,6 +47,7 @@ class Shared extends Entity
 
     /**
     * Sets the owner
+    * The identity of the owner of the shared item. Read-only.
     *
     * @param IdentitySet $val The value to assign to the owner
     *
@@ -58,6 +60,7 @@ class Shared extends Entity
     }
     /**
     * Gets the scope
+    * Indicates the scope of how the item is shared: anonymous, organization, or users. Read-only.
     *
     * @return string The scope
     */
@@ -72,6 +75,7 @@ class Shared extends Entity
 
     /**
     * Sets the scope
+    * Indicates the scope of how the item is shared: anonymous, organization, or users. Read-only.
     *
     * @param string $val The value of the scope
     *
@@ -85,6 +89,7 @@ class Shared extends Entity
 
     /**
     * Gets the sharedBy
+    * The identity of the user who shared the item. Read-only.
     *
     * @return IdentitySet The sharedBy
     */
@@ -103,6 +108,7 @@ class Shared extends Entity
 
     /**
     * Sets the sharedBy
+    * The identity of the user who shared the item. Read-only.
     *
     * @param IdentitySet $val The value to assign to the sharedBy
     *
@@ -116,6 +122,7 @@ class Shared extends Entity
 
     /**
     * Gets the sharedDateTime
+    * The UTC date and time when the item was shared. Read-only.
     *
     * @return \DateTime The sharedDateTime
     */
@@ -134,6 +141,7 @@ class Shared extends Entity
 
     /**
     * Sets the sharedDateTime
+    * The UTC date and time when the item was shared. Read-only.
     *
     * @param \DateTime $val The value to assign to the sharedDateTime
     *

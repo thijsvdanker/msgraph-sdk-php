@@ -28,6 +28,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
 {
     /**
     * Gets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @return string The scepServerUrls
     */
@@ -42,6 +43,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @param string $val The scepServerUrls
     *
@@ -55,6 +57,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @return string The subjectNameFormatString
     */
@@ -69,6 +72,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @param string $val The subjectNameFormatString
     *
@@ -82,6 +86,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the keyUsage
+    * SCEP Key Usage.
     *
     * @return KeyUsages The keyUsage
     */
@@ -100,6 +105,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the keyUsage
+    * SCEP Key Usage.
     *
     * @param KeyUsages $val The keyUsage
     *
@@ -113,6 +119,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the keySize
+    * SCEP Key Size.
     *
     * @return KeySize The keySize
     */
@@ -131,6 +138,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the keySize
+    * SCEP Key Size.
     *
     * @param KeySize $val The keySize
     *
@@ -144,6 +152,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the hashAlgorithm
+    * SCEP Hash Algorithm.
     *
     * @return HashAlgorithms The hashAlgorithm
     */
@@ -162,6 +171,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the hashAlgorithm
+    * SCEP Hash Algorithm.
     *
     * @param HashAlgorithms $val The hashAlgorithm
     *
@@ -175,6 +185,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @return string The subjectAlternativeNameFormatString
     */
@@ -189,6 +200,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @param string $val The subjectAlternativeNameFormatString
     *
@@ -202,6 +214,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the certificateStore
+    * Target store certificate
     *
     * @return CertificateStore The certificateStore
     */
@@ -220,6 +233,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the certificateStore
+    * Target store certificate
     *
     * @param CertificateStore $val The certificateStore
     *
@@ -233,6 +247,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Gets the rootCertificate
+    * Trusted Root Certificate
     *
     * @return Windows81TrustedRootCertificate The rootCertificate
     */
@@ -251,6 +266,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /**
     * Sets the rootCertificate
+    * Trusted Root Certificate
     *
     * @param Windows81TrustedRootCertificate $val The rootCertificate
     *
@@ -265,6 +281,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
 
      /** 
      * Gets the managedDeviceCertificateStates
+    * Certificate state for devices
      *
      * @return array The managedDeviceCertificateStates
      */
@@ -279,6 +296,7 @@ class Windows81SCEPCertificateProfile extends Windows81CertificateProfileBase
     
     /** 
     * Sets the managedDeviceCertificateStates
+    * Certificate state for devices
     *
     * @param ManagedDeviceCertificateState $val The managedDeviceCertificateStates
     *

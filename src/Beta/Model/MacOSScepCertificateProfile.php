@@ -28,6 +28,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
 {
     /**
     * Gets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @return string The scepServerUrls
     */
@@ -42,6 +43,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @param string $val The scepServerUrls
     *
@@ -55,6 +57,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Gets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @return string The subjectNameFormatString
     */
@@ -69,6 +72,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @param string $val The subjectNameFormatString
     *
@@ -82,6 +86,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Gets the keyUsage
+    * SCEP Key Usage.
     *
     * @return KeyUsages The keyUsage
     */
@@ -100,6 +105,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the keyUsage
+    * SCEP Key Usage.
     *
     * @param KeyUsages $val The keyUsage
     *
@@ -113,6 +119,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Gets the keySize
+    * SCEP Key Size.
     *
     * @return KeySize The keySize
     */
@@ -131,6 +138,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the keySize
+    * SCEP Key Size.
     *
     * @param KeySize $val The keySize
     *
@@ -144,6 +152,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Gets the hashAlgorithm
+    * SCEP Hash Algorithm.
     *
     * @return HashAlgorithms The hashAlgorithm
     */
@@ -162,6 +171,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the hashAlgorithm
+    * SCEP Hash Algorithm.
     *
     * @param HashAlgorithms $val The hashAlgorithm
     *
@@ -176,6 +186,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
 
      /** 
      * Gets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The extendedKeyUsages
      */
@@ -190,6 +201,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /** 
     * Sets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
     *
     * @param ExtendedKeyUsage $val The extendedKeyUsages
     *
@@ -203,6 +215,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Gets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @return string The subjectAlternativeNameFormatString
     */
@@ -217,6 +230,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @param string $val The subjectAlternativeNameFormatString
     *
@@ -229,7 +243,71 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     }
     
     /**
+    * Gets the certificateStore
+    * Target store certificate
+    *
+    * @return CertificateStore The certificateStore
+    */
+    public function getCertificateStore()
+    {
+        if (array_key_exists("certificateStore", $this->_propDict)) {
+            if (is_a($this->_propDict["certificateStore"], "Microsoft\Graph\Beta\Model\CertificateStore")) {
+                return $this->_propDict["certificateStore"];
+            } else {
+                $this->_propDict["certificateStore"] = new CertificateStore($this->_propDict["certificateStore"]);
+                return $this->_propDict["certificateStore"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the certificateStore
+    * Target store certificate
+    *
+    * @param CertificateStore $val The certificateStore
+    *
+    * @return MacOSScepCertificateProfile
+    */
+    public function setCertificateStore($val)
+    {
+        $this->_propDict["certificateStore"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the customSubjectAlternativeNames
+    * Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.
+     *
+     * @return array The customSubjectAlternativeNames
+     */
+    public function getCustomSubjectAlternativeNames()
+    {
+        if (array_key_exists("customSubjectAlternativeNames", $this->_propDict)) {
+           return $this->_propDict["customSubjectAlternativeNames"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the customSubjectAlternativeNames
+    * Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.
+    *
+    * @param CustomSubjectAlternativeName $val The customSubjectAlternativeNames
+    *
+    * @return MacOSScepCertificateProfile
+    */
+    public function setCustomSubjectAlternativeNames($val)
+    {
+		$this->_propDict["customSubjectAlternativeNames"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @return MacOSTrustedRootCertificate The rootCertificate
     */
@@ -248,6 +326,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /**
     * Sets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @param MacOSTrustedRootCertificate $val The rootCertificate
     *
@@ -262,6 +341,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
 
      /** 
      * Gets the managedDeviceCertificateStates
+    * Certificate state for devices
      *
      * @return array The managedDeviceCertificateStates
      */
@@ -276,6 +356,7 @@ class MacOSScepCertificateProfile extends MacOSCertificateProfileBase
     
     /** 
     * Sets the managedDeviceCertificateStates
+    * Certificate state for devices
     *
     * @param ManagedDeviceCertificateState $val The managedDeviceCertificateStates
     *

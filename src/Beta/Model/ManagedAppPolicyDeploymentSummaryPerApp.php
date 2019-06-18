@@ -28,6 +28,7 @@ class ManagedAppPolicyDeploymentSummaryPerApp extends Entity
 
     /**
     * Gets the mobileAppIdentifier
+    * Deployment of an app.
     *
     * @return MobileAppIdentifier The mobileAppIdentifier
     */
@@ -46,6 +47,7 @@ class ManagedAppPolicyDeploymentSummaryPerApp extends Entity
 
     /**
     * Sets the mobileAppIdentifier
+    * Deployment of an app.
     *
     * @param MobileAppIdentifier $val The value to assign to the mobileAppIdentifier
     *
@@ -58,6 +60,7 @@ class ManagedAppPolicyDeploymentSummaryPerApp extends Entity
     }
     /**
     * Gets the configurationAppliedUserCount
+    * Number of users the policy is applied.
     *
     * @return int The configurationAppliedUserCount
     */
@@ -72,6 +75,7 @@ class ManagedAppPolicyDeploymentSummaryPerApp extends Entity
 
     /**
     * Sets the configurationAppliedUserCount
+    * Number of users the policy is applied.
     *
     * @param int $val The value of the configurationAppliedUserCount
     *

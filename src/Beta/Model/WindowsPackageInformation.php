@@ -28,6 +28,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Gets the applicableArchitecture
+    * The Windows architecture for which this app can run on.
     *
     * @return WindowsArchitecture The applicableArchitecture
     */
@@ -46,6 +47,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the applicableArchitecture
+    * The Windows architecture for which this app can run on.
     *
     * @param WindowsArchitecture $val The value to assign to the applicableArchitecture
     *
@@ -58,6 +60,7 @@ class WindowsPackageInformation extends Entity
     }
     /**
     * Gets the displayName
+    * The Display Name.
     *
     * @return string The displayName
     */
@@ -72,6 +75,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the displayName
+    * The Display Name.
     *
     * @param string $val The value of the displayName
     *
@@ -84,6 +88,7 @@ class WindowsPackageInformation extends Entity
     }
     /**
     * Gets the identityName
+    * The Identity Name.
     *
     * @return string The identityName
     */
@@ -98,6 +103,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the identityName
+    * The Identity Name.
     *
     * @param string $val The value of the identityName
     *
@@ -110,6 +116,7 @@ class WindowsPackageInformation extends Entity
     }
     /**
     * Gets the identityPublisher
+    * The Identity Publisher.
     *
     * @return string The identityPublisher
     */
@@ -124,6 +131,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the identityPublisher
+    * The Identity Publisher.
     *
     * @param string $val The value of the identityPublisher
     *
@@ -136,6 +144,7 @@ class WindowsPackageInformation extends Entity
     }
     /**
     * Gets the identityResourceIdentifier
+    * The Identity Resource Identifier.
     *
     * @return string The identityResourceIdentifier
     */
@@ -150,6 +159,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the identityResourceIdentifier
+    * The Identity Resource Identifier.
     *
     * @param string $val The value of the identityResourceIdentifier
     *
@@ -162,6 +172,7 @@ class WindowsPackageInformation extends Entity
     }
     /**
     * Gets the identityVersion
+    * The Identity Version.
     *
     * @return string The identityVersion
     */
@@ -176,6 +187,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the identityVersion
+    * The Identity Version.
     *
     * @param string $val The value of the identityVersion
     *
@@ -189,6 +201,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Gets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @return WindowsMinimumOperatingSystem The minimumSupportedOperatingSystem
     */
@@ -207,6 +220,7 @@ class WindowsPackageInformation extends Entity
 
     /**
     * Sets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @param WindowsMinimumOperatingSystem $val The value to assign to the minimumSupportedOperatingSystem
     *

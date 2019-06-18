@@ -31,6 +31,7 @@ class SharedPCAllowedAccountType extends Enum
     /**
     * The Enum SharedPCAllowedAccountType
     */
+    const NOT_CONFIGURED = "notConfigured";
     const GUEST = "guest";
     const DOMAIN = "domain";
 }

@@ -28,6 +28,7 @@ class RgbColor extends Entity
 
     /**
     * Gets the r
+    * Red value
     *
     * @return Byte The r
     */
@@ -46,6 +47,7 @@ class RgbColor extends Entity
 
     /**
     * Sets the r
+    * Red value
     *
     * @param Byte $val The value to assign to the r
     *
@@ -59,6 +61,7 @@ class RgbColor extends Entity
 
     /**
     * Gets the g
+    * Green value
     *
     * @return Byte The g
     */
@@ -77,6 +80,7 @@ class RgbColor extends Entity
 
     /**
     * Sets the g
+    * Green value
     *
     * @param Byte $val The value to assign to the g
     *
@@ -90,6 +94,7 @@ class RgbColor extends Entity
 
     /**
     * Gets the b
+    * Blue value
     *
     * @return Byte The b
     */
@@ -108,6 +113,7 @@ class RgbColor extends Entity
 
     /**
     * Sets the b
+    * Blue value
     *
     * @param Byte $val The value to assign to the b
     *

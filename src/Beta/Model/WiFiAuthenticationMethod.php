@@ -33,4 +33,5 @@ class WiFiAuthenticationMethod extends Enum
     */
     const CERTIFICATE = "certificate";
     const USERNAME_AND_PASSWORD = "usernameAndPassword";
+    const DERIVED_CREDENTIAL = "derivedCredential";
 }

@@ -28,6 +28,7 @@ class ConfigurationManagerClientHealthState extends Entity
 
     /**
     * Gets the state
+    * Current configuration manager client state.
     *
     * @return ConfigurationManagerClientState The state
     */
@@ -46,6 +47,7 @@ class ConfigurationManagerClientHealthState extends Entity
 
     /**
     * Sets the state
+    * Current configuration manager client state.
     *
     * @param ConfigurationManagerClientState $val The value to assign to the state
     *
@@ -58,6 +60,7 @@ class ConfigurationManagerClientHealthState extends Entity
     }
     /**
     * Gets the errorCode
+    * Error code for failed state.
     *
     * @return int The errorCode
     */
@@ -72,6 +75,7 @@ class ConfigurationManagerClientHealthState extends Entity
 
     /**
     * Sets the errorCode
+    * Error code for failed state.
     *
     * @param int $val The value of the errorCode
     *
@@ -85,6 +89,7 @@ class ConfigurationManagerClientHealthState extends Entity
 
     /**
     * Gets the lastSyncDateTime
+    * Datetime fo last sync with configuration manager management point.
     *
     * @return \DateTime The lastSyncDateTime
     */
@@ -103,6 +108,7 @@ class ConfigurationManagerClientHealthState extends Entity
 
     /**
     * Sets the lastSyncDateTime
+    * Datetime fo last sync with configuration manager management point.
     *
     * @param \DateTime $val The value to assign to the lastSyncDateTime
     *

@@ -59,6 +59,7 @@ class Permission extends Entity
     
     /**
     * Gets the grantedTo
+    * For user type permissions, the details of the users &amp; applications for this permission. Read-only.
     *
     * @return IdentitySet The grantedTo
     */
@@ -77,6 +78,7 @@ class Permission extends Entity
     
     /**
     * Sets the grantedTo
+    * For user type permissions, the details of the users &amp; applications for this permission. Read-only.
     *
     * @param IdentitySet $val The grantedTo
     *
@@ -117,7 +119,35 @@ class Permission extends Entity
     }
     
     /**
+    * Gets the hasPassword
+    *
+    * @return bool The hasPassword
+    */
+    public function getHasPassword()
+    {
+        if (array_key_exists("hasPassword", $this->_propDict)) {
+            return $this->_propDict["hasPassword"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the hasPassword
+    *
+    * @param bool $val The hasPassword
+    *
+    * @return Permission
+    */
+    public function setHasPassword($val)
+    {
+        $this->_propDict["hasPassword"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the inheritedFrom
+    * Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
     *
     * @return ItemReference The inheritedFrom
     */
@@ -136,6 +166,7 @@ class Permission extends Entity
     
     /**
     * Sets the inheritedFrom
+    * Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
     *
     * @param ItemReference $val The inheritedFrom
     *
@@ -149,6 +180,7 @@ class Permission extends Entity
     
     /**
     * Gets the invitation
+    * Details of any associated sharing invitation for this permission. Read-only.
     *
     * @return SharingInvitation The invitation
     */
@@ -167,6 +199,7 @@ class Permission extends Entity
     
     /**
     * Sets the invitation
+    * Details of any associated sharing invitation for this permission. Read-only.
     *
     * @param SharingInvitation $val The invitation
     *
@@ -180,6 +213,7 @@ class Permission extends Entity
     
     /**
     * Gets the link
+    * Provides the link details of the current permission, if it is a link type permissions. Read-only.
     *
     * @return SharingLink The link
     */
@@ -198,6 +232,7 @@ class Permission extends Entity
     
     /**
     * Sets the link
+    * Provides the link details of the current permission, if it is a link type permissions. Read-only.
     *
     * @param SharingLink $val The link
     *
@@ -211,6 +246,7 @@ class Permission extends Entity
     
     /**
     * Gets the roles
+    * The type of permission, e.g. read. See below for the full list of roles. Read-only.
     *
     * @return string The roles
     */
@@ -225,6 +261,7 @@ class Permission extends Entity
     
     /**
     * Sets the roles
+    * The type of permission, e.g. read. See below for the full list of roles. Read-only.
     *
     * @param string $val The roles
     *
@@ -238,6 +275,7 @@ class Permission extends Entity
     
     /**
     * Gets the shareId
+    * A unique token that can be used to access this shared item via the **shares** API. Read-only.
     *
     * @return string The shareId
     */
@@ -252,6 +290,7 @@ class Permission extends Entity
     
     /**
     * Sets the shareId
+    * A unique token that can be used to access this shared item via the **shares** API. Read-only.
     *
     * @param string $val The shareId
     *

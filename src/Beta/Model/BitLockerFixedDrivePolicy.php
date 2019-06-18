@@ -28,6 +28,7 @@ class BitLockerFixedDrivePolicy extends Entity
 
     /**
     * Gets the encryptionMethod
+    * Select the encryption method for fixed drives.
     *
     * @return BitLockerEncryptionMethod The encryptionMethod
     */
@@ -46,6 +47,7 @@ class BitLockerFixedDrivePolicy extends Entity
 
     /**
     * Sets the encryptionMethod
+    * Select the encryption method for fixed drives.
     *
     * @param BitLockerEncryptionMethod $val The value to assign to the encryptionMethod
     *
@@ -58,6 +60,7 @@ class BitLockerFixedDrivePolicy extends Entity
     }
     /**
     * Gets the requireEncryptionForWriteAccess
+    * This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.
     *
     * @return bool The requireEncryptionForWriteAccess
     */
@@ -72,6 +75,7 @@ class BitLockerFixedDrivePolicy extends Entity
 
     /**
     * Sets the requireEncryptionForWriteAccess
+    * This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.
     *
     * @param bool $val The value of the requireEncryptionForWriteAccess
     *
@@ -85,6 +89,7 @@ class BitLockerFixedDrivePolicy extends Entity
 
     /**
     * Gets the recoveryOptions
+    * This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.
     *
     * @return BitLockerRecoveryOptions The recoveryOptions
     */
@@ -103,6 +108,7 @@ class BitLockerFixedDrivePolicy extends Entity
 
     /**
     * Sets the recoveryOptions
+    * This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker.
     *
     * @param BitLockerRecoveryOptions $val The value to assign to the recoveryOptions
     *

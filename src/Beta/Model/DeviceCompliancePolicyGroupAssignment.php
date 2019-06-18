@@ -28,6 +28,7 @@ class DeviceCompliancePolicyGroupAssignment extends Entity
 {
     /**
     * Gets the targetGroupId
+    * The Id of the AAD group we are targeting the device compliance policy to.
     *
     * @return string The targetGroupId
     */
@@ -42,6 +43,7 @@ class DeviceCompliancePolicyGroupAssignment extends Entity
     
     /**
     * Sets the targetGroupId
+    * The Id of the AAD group we are targeting the device compliance policy to.
     *
     * @param string $val The targetGroupId
     *
@@ -55,6 +57,7 @@ class DeviceCompliancePolicyGroupAssignment extends Entity
     
     /**
     * Gets the excludeGroup
+    * Indicates if this group is should be excluded. Defaults that the group should be included
     *
     * @return bool The excludeGroup
     */
@@ -69,6 +72,7 @@ class DeviceCompliancePolicyGroupAssignment extends Entity
     
     /**
     * Sets the excludeGroup
+    * Indicates if this group is should be excluded. Defaults that the group should be included
     *
     * @param bool $val The excludeGroup
     *
@@ -82,6 +86,7 @@ class DeviceCompliancePolicyGroupAssignment extends Entity
     
     /**
     * Gets the deviceCompliancePolicy
+    * The navigation link to the  device compliance polic targeted.
     *
     * @return DeviceCompliancePolicy The deviceCompliancePolicy
     */
@@ -100,6 +105,7 @@ class DeviceCompliancePolicyGroupAssignment extends Entity
     
     /**
     * Sets the deviceCompliancePolicy
+    * The navigation link to the  device compliance polic targeted.
     *
     * @param DeviceCompliancePolicy $val The deviceCompliancePolicy
     *

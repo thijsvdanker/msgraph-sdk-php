@@ -28,6 +28,7 @@ class WindowsPhoneXAP extends MobileLobApp
 {
     /**
     * Gets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @return WindowsMinimumOperatingSystem The minimumSupportedOperatingSystem
     */
@@ -46,6 +47,7 @@ class WindowsPhoneXAP extends MobileLobApp
     
     /**
     * Sets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @param WindowsMinimumOperatingSystem $val The minimumSupportedOperatingSystem
     *
@@ -59,6 +61,7 @@ class WindowsPhoneXAP extends MobileLobApp
     
     /**
     * Gets the productIdentifier
+    * The Product Identifier.
     *
     * @return string The productIdentifier
     */
@@ -73,6 +76,7 @@ class WindowsPhoneXAP extends MobileLobApp
     
     /**
     * Sets the productIdentifier
+    * The Product Identifier.
     *
     * @param string $val The productIdentifier
     *
@@ -86,6 +90,7 @@ class WindowsPhoneXAP extends MobileLobApp
     
     /**
     * Gets the identityVersion
+    * The identity version.
     *
     * @return string The identityVersion
     */
@@ -100,6 +105,7 @@ class WindowsPhoneXAP extends MobileLobApp
     
     /**
     * Sets the identityVersion
+    * The identity version.
     *
     * @param string $val The identityVersion
     *

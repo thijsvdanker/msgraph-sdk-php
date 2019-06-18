@@ -28,6 +28,7 @@ class DeviceManagementScriptAssignment extends Entity
 {
     /**
     * Gets the target
+    * The Id of the Azure Active Directory group we are targeting the script to.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class DeviceManagementScriptAssignment extends Entity
     
     /**
     * Sets the target
+    * The Id of the Azure Active Directory group we are targeting the script to.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

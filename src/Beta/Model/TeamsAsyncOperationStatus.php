@@ -36,4 +36,5 @@ class TeamsAsyncOperationStatus extends Enum
     const IN_PROGRESS = "inProgress";
     const SUCCEEDED = "succeeded";
     const FAILED = "failed";
+    const UNKNOWN_FUTURE_VALUE = "unknownFutureValue";
 }

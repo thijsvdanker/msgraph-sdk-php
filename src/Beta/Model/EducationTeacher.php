@@ -27,6 +27,7 @@ class EducationTeacher extends Entity
 {
     /**
     * Gets the teacherNumber
+    * Teacher number.
     *
     * @return string The teacherNumber
     */
@@ -41,6 +42,7 @@ class EducationTeacher extends Entity
 
     /**
     * Sets the teacherNumber
+    * Teacher number.
     *
     * @param string $val The value of the teacherNumber
     *
@@ -53,6 +55,7 @@ class EducationTeacher extends Entity
     }
     /**
     * Gets the externalId
+    * ID of the teacher in the source system.
     *
     * @return string The externalId
     */
@@ -67,6 +70,7 @@ class EducationTeacher extends Entity
 
     /**
     * Sets the externalId
+    * ID of the teacher in the source system.
     *
     * @param string $val The value of the externalId
     *

@@ -28,6 +28,7 @@ class MicrosoftStoreForBusinessContainedApp extends MobileContainedApp
 {
     /**
     * Gets the appUserModelId
+    * The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.
     *
     * @return string The appUserModelId
     */
@@ -42,6 +43,7 @@ class MicrosoftStoreForBusinessContainedApp extends MobileContainedApp
     
     /**
     * Sets the appUserModelId
+    * The app user model ID of the contained app of a MicrosoftStoreForBusinessApp.
     *
     * @param string $val The appUserModelId
     *

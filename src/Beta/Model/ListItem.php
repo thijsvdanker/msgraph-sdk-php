@@ -28,6 +28,7 @@ class ListItem extends BaseItem
 {
     /**
     * Gets the contentType
+    * The content type of this list item
     *
     * @return ContentTypeInfo The contentType
     */
@@ -46,6 +47,7 @@ class ListItem extends BaseItem
     
     /**
     * Sets the contentType
+    * The content type of this list item
     *
     * @param ContentTypeInfo $val The contentType
     *
@@ -59,6 +61,7 @@ class ListItem extends BaseItem
     
     /**
     * Gets the sharepointIds
+    * Returns identifiers useful for SharePoint REST compatibility. Read-only.
     *
     * @return SharepointIds The sharepointIds
     */
@@ -77,6 +80,7 @@ class ListItem extends BaseItem
     
     /**
     * Sets the sharepointIds
+    * Returns identifiers useful for SharePoint REST compatibility. Read-only.
     *
     * @param SharepointIds $val The sharepointIds
     *
@@ -91,6 +95,7 @@ class ListItem extends BaseItem
 
      /** 
      * Gets the activities
+    * The list of recent activities that took place on this item.
      *
      * @return array The activities
      */
@@ -105,8 +110,9 @@ class ListItem extends BaseItem
     
     /** 
     * Sets the activities
+    * The list of recent activities that took place on this item.
     *
-    * @param ItemActivity $val The activities
+    * @param ItemActivityOLD $val The activities
     *
     * @return ListItem
     */
@@ -117,7 +123,41 @@ class ListItem extends BaseItem
     }
     
     /**
+    * Gets the analytics
+    * Analytics about the view activities that took place on this item.
+    *
+    * @return ItemAnalytics The analytics
+    */
+    public function getAnalytics()
+    {
+        if (array_key_exists("analytics", $this->_propDict)) {
+            if (is_a($this->_propDict["analytics"], "Microsoft\Graph\Beta\Model\ItemAnalytics")) {
+                return $this->_propDict["analytics"];
+            } else {
+                $this->_propDict["analytics"] = new ItemAnalytics($this->_propDict["analytics"]);
+                return $this->_propDict["analytics"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the analytics
+    * Analytics about the view activities that took place on this item.
+    *
+    * @param ItemAnalytics $val The analytics
+    *
+    * @return ListItem
+    */
+    public function setAnalytics($val)
+    {
+        $this->_propDict["analytics"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the driveItem
+    * For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
     *
     * @return DriveItem The driveItem
     */
@@ -136,6 +176,7 @@ class ListItem extends BaseItem
     
     /**
     * Sets the driveItem
+    * For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
     *
     * @param DriveItem $val The driveItem
     *
@@ -149,6 +190,7 @@ class ListItem extends BaseItem
     
     /**
     * Gets the fields
+    * The values of the columns set on this list item.
     *
     * @return FieldValueSet The fields
     */
@@ -167,6 +209,7 @@ class ListItem extends BaseItem
     
     /**
     * Sets the fields
+    * The values of the columns set on this list item.
     *
     * @param FieldValueSet $val The fields
     *
@@ -181,6 +224,7 @@ class ListItem extends BaseItem
 
      /** 
      * Gets the versions
+    * The list of previous versions of the list item.
      *
      * @return array The versions
      */
@@ -195,6 +239,7 @@ class ListItem extends BaseItem
     
     /** 
     * Sets the versions
+    * The list of previous versions of the list item.
     *
     * @param ListItemVersion $val The versions
     *

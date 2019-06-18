@@ -28,6 +28,7 @@ class DeviceManagementScript extends Entity
 {
     /**
     * Gets the displayName
+    * Name of the device management script.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the displayName
+    * Name of the device management script.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the description
+    * Optional description for the device management script.
     *
     * @return string The description
     */
@@ -69,6 +72,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the description
+    * Optional description for the device management script.
     *
     * @param string $val The description
     *
@@ -82,6 +86,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the runSchedule
+    * The interval for script to run. If not defined the script will run once
     *
     * @return RunSchedule The runSchedule
     */
@@ -100,6 +105,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the runSchedule
+    * The interval for script to run. If not defined the script will run once
     *
     * @param RunSchedule $val The runSchedule
     *
@@ -113,6 +119,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the scriptContent
+    * The script content.
     *
     * @return \GuzzleHttp\Psr7\Stream The scriptContent
     */
@@ -131,6 +138,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the scriptContent
+    * The script content.
     *
     * @param \GuzzleHttp\Psr7\Stream $val The scriptContent
     *
@@ -144,6 +152,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the createdDateTime
+    * The date and time the device management script was created.
     *
     * @return \DateTime The createdDateTime
     */
@@ -162,6 +171,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the createdDateTime
+    * The date and time the device management script was created.
     *
     * @param \DateTime $val The createdDateTime
     *
@@ -175,6 +185,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the lastModifiedDateTime
+    * The date and time the device management script was last modified.
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -193,6 +204,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the lastModifiedDateTime
+    * The date and time the device management script was last modified.
     *
     * @param \DateTime $val The lastModifiedDateTime
     *
@@ -206,6 +218,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the runAsAccount
+    * Indicates the type of execution context.
     *
     * @return RunAsAccountType The runAsAccount
     */
@@ -224,6 +237,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the runAsAccount
+    * Indicates the type of execution context.
     *
     * @param RunAsAccountType $val The runAsAccount
     *
@@ -237,6 +251,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the enforceSignatureCheck
+    * Indicate whether the script signature needs be checked.
     *
     * @return bool The enforceSignatureCheck
     */
@@ -251,6 +266,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the enforceSignatureCheck
+    * Indicate whether the script signature needs be checked.
     *
     * @param bool $val The enforceSignatureCheck
     *
@@ -264,6 +280,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the fileName
+    * Script file name.
     *
     * @return string The fileName
     */
@@ -278,6 +295,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the fileName
+    * Script file name.
     *
     * @param string $val The fileName
     *
@@ -289,9 +307,68 @@ class DeviceManagementScript extends Entity
         return $this;
     }
     
+    /**
+    * Gets the roleScopeTagIds
+    * List of Scope Tag IDs for this PowerShellScript instance.
+    *
+    * @return string The roleScopeTagIds
+    */
+    public function getRoleScopeTagIds()
+    {
+        if (array_key_exists("roleScopeTagIds", $this->_propDict)) {
+            return $this->_propDict["roleScopeTagIds"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the roleScopeTagIds
+    * List of Scope Tag IDs for this PowerShellScript instance.
+    *
+    * @param string $val The roleScopeTagIds
+    *
+    * @return DeviceManagementScript
+    */
+    public function setRoleScopeTagIds($val)
+    {
+        $this->_propDict["roleScopeTagIds"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the runAs32Bit
+    * A value indicating whether the PowerShell script should run as 32-bit
+    *
+    * @return bool The runAs32Bit
+    */
+    public function getRunAs32Bit()
+    {
+        if (array_key_exists("runAs32Bit", $this->_propDict)) {
+            return $this->_propDict["runAs32Bit"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the runAs32Bit
+    * A value indicating whether the PowerShell script should run as 32-bit
+    *
+    * @param bool $val The runAs32Bit
+    *
+    * @return DeviceManagementScript
+    */
+    public function setRunAs32Bit($val)
+    {
+        $this->_propDict["runAs32Bit"] = boolval($val);
+        return $this;
+    }
+    
 
      /** 
      * Gets the groupAssignments
+    * The list of group assignments for the device management script.
      *
      * @return array The groupAssignments
      */
@@ -306,6 +383,7 @@ class DeviceManagementScript extends Entity
     
     /** 
     * Sets the groupAssignments
+    * The list of group assignments for the device management script.
     *
     * @param DeviceManagementScriptGroupAssignment $val The groupAssignments
     *
@@ -320,6 +398,7 @@ class DeviceManagementScript extends Entity
 
      /** 
      * Gets the assignments
+    * The list of group assignments for the device management script.
      *
      * @return array The assignments
      */
@@ -334,6 +413,7 @@ class DeviceManagementScript extends Entity
     
     /** 
     * Sets the assignments
+    * The list of group assignments for the device management script.
     *
     * @param DeviceManagementScriptAssignment $val The assignments
     *
@@ -347,6 +427,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Gets the runSummary
+    * Run summary for device management script.
     *
     * @return DeviceManagementScriptRunSummary The runSummary
     */
@@ -365,6 +446,7 @@ class DeviceManagementScript extends Entity
     
     /**
     * Sets the runSummary
+    * Run summary for device management script.
     *
     * @param DeviceManagementScriptRunSummary $val The runSummary
     *
@@ -379,6 +461,7 @@ class DeviceManagementScript extends Entity
 
      /** 
      * Gets the deviceRunStates
+    * List of run states for this script across all devices.
      *
      * @return array The deviceRunStates
      */
@@ -393,6 +476,7 @@ class DeviceManagementScript extends Entity
     
     /** 
     * Sets the deviceRunStates
+    * List of run states for this script across all devices.
     *
     * @param DeviceManagementScriptDeviceState $val The deviceRunStates
     *
@@ -407,6 +491,7 @@ class DeviceManagementScript extends Entity
 
      /** 
      * Gets the userRunStates
+    * List of run states for this script across all users.
      *
      * @return array The userRunStates
      */
@@ -421,6 +506,7 @@ class DeviceManagementScript extends Entity
     
     /** 
     * Sets the userRunStates
+    * List of run states for this script across all users.
     *
     * @param DeviceManagementScriptUserState $val The userRunStates
     *

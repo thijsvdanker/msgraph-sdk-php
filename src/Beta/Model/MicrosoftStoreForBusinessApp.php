@@ -28,6 +28,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
 {
     /**
     * Gets the usedLicenseCount
+    * The number of Microsoft Store for Business licenses in use.
     *
     * @return int The usedLicenseCount
     */
@@ -42,6 +43,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Sets the usedLicenseCount
+    * The number of Microsoft Store for Business licenses in use.
     *
     * @param int $val The usedLicenseCount
     *
@@ -55,6 +57,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Gets the totalLicenseCount
+    * The total number of Microsoft Store for Business licenses.
     *
     * @return int The totalLicenseCount
     */
@@ -69,6 +72,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Sets the totalLicenseCount
+    * The total number of Microsoft Store for Business licenses.
     *
     * @param int $val The totalLicenseCount
     *
@@ -82,6 +86,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Gets the productKey
+    * The app product key
     *
     * @return string The productKey
     */
@@ -96,6 +101,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Sets the productKey
+    * The app product key
     *
     * @param string $val The productKey
     *
@@ -109,6 +115,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Gets the licenseType
+    * The app license type. Possible values are: offline, online.
     *
     * @return MicrosoftStoreForBusinessLicenseType The licenseType
     */
@@ -127,6 +134,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Sets the licenseType
+    * The app license type. Possible values are: offline, online.
     *
     * @param MicrosoftStoreForBusinessLicenseType $val The licenseType
     *
@@ -140,6 +148,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Gets the packageIdentityName
+    * The app package identifier
     *
     * @return string The packageIdentityName
     */
@@ -154,6 +163,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /**
     * Sets the packageIdentityName
+    * The app package identifier
     *
     * @param string $val The packageIdentityName
     *
@@ -165,9 +175,43 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         return $this;
     }
     
+    /**
+    * Gets the licensingType
+    * The supported License Type.
+    *
+    * @return VppLicensingType The licensingType
+    */
+    public function getLicensingType()
+    {
+        if (array_key_exists("licensingType", $this->_propDict)) {
+            if (is_a($this->_propDict["licensingType"], "Microsoft\Graph\Beta\Model\VppLicensingType")) {
+                return $this->_propDict["licensingType"];
+            } else {
+                $this->_propDict["licensingType"] = new VppLicensingType($this->_propDict["licensingType"]);
+                return $this->_propDict["licensingType"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the licensingType
+    * The supported License Type.
+    *
+    * @param VppLicensingType $val The licensingType
+    *
+    * @return MicrosoftStoreForBusinessApp
+    */
+    public function setLicensingType($val)
+    {
+        $this->_propDict["licensingType"] = $val;
+        return $this;
+    }
+    
 
      /** 
      * Gets the containedApps
+    * The collection of contained apps in a mobileApp acting as a package.
      *
      * @return array The containedApps
      */
@@ -182,6 +226,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
     
     /** 
     * Sets the containedApps
+    * The collection of contained apps in a mobileApp acting as a package.
     *
     * @param MobileContainedApp $val The containedApps
     *

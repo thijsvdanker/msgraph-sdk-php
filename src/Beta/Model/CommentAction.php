@@ -27,6 +27,7 @@ class CommentAction extends Entity
 {
     /**
     * Gets the isReply
+    * If true, this activity was a reply to an existing comment thread.
     *
     * @return bool The isReply
     */
@@ -41,6 +42,7 @@ class CommentAction extends Entity
 
     /**
     * Sets the isReply
+    * If true, this activity was a reply to an existing comment thread.
     *
     * @param bool $val The value of the isReply
     *
@@ -54,6 +56,7 @@ class CommentAction extends Entity
 
     /**
     * Gets the parentAuthor
+    * The identity of the user who started the comment thread.
     *
     * @return IdentitySet The parentAuthor
     */
@@ -72,6 +75,7 @@ class CommentAction extends Entity
 
     /**
     * Sets the parentAuthor
+    * The identity of the user who started the comment thread.
     *
     * @param IdentitySet $val The value to assign to the parentAuthor
     *
@@ -85,6 +89,7 @@ class CommentAction extends Entity
 
     /**
     * Gets the participants
+    * The identities of the users participating in this comment thread.
     *
     * @return IdentitySet The participants
     */
@@ -103,6 +108,7 @@ class CommentAction extends Entity
 
     /**
     * Sets the participants
+    * The identities of the users participating in this comment thread.
     *
     * @param IdentitySet $val The value to assign to the participants
     *

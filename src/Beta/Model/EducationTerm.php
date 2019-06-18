@@ -27,6 +27,7 @@ class EducationTerm extends Entity
 {
     /**
     * Gets the externalId
+    * ID of term in the syncing system.
     *
     * @return string The externalId
     */
@@ -41,6 +42,7 @@ class EducationTerm extends Entity
 
     /**
     * Sets the externalId
+    * ID of term in the syncing system.
     *
     * @param string $val The value of the externalId
     *
@@ -54,6 +56,7 @@ class EducationTerm extends Entity
 
     /**
     * Gets the startDate
+    * Start of the term.
     *
     * @return \DateTime The startDate
     */
@@ -72,6 +75,7 @@ class EducationTerm extends Entity
 
     /**
     * Sets the startDate
+    * Start of the term.
     *
     * @param \DateTime $val The value to assign to the startDate
     *
@@ -85,6 +89,7 @@ class EducationTerm extends Entity
 
     /**
     * Gets the endDate
+    * End of the term.
     *
     * @return \DateTime The endDate
     */
@@ -103,6 +108,7 @@ class EducationTerm extends Entity
 
     /**
     * Sets the endDate
+    * End of the term.
     *
     * @param \DateTime $val The value to assign to the endDate
     *
@@ -115,6 +121,7 @@ class EducationTerm extends Entity
     }
     /**
     * Gets the displayName
+    * Display name of the term.
     *
     * @return string The displayName
     */
@@ -129,6 +136,7 @@ class EducationTerm extends Entity
 
     /**
     * Sets the displayName
+    * Display name of the term.
     *
     * @param string $val The value of the displayName
     *

@@ -28,6 +28,7 @@ class MediaContentRatingIreland extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove12, agesAbove15, agesAbove16, adults.
     *
     * @return RatingIrelandMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingIreland extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove12, agesAbove15, agesAbove16, adults.
     *
     * @param RatingIrelandMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingIreland extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, children, youngAdults, parentalSupervision, mature.
     *
     * @return RatingIrelandTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingIreland extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for Ireland. Possible values are: allAllowed, allBlocked, general, children, youngAdults, parentalSupervision, mature.
     *
     * @param RatingIrelandTelevisionType $val The value to assign to the tvRating
     *

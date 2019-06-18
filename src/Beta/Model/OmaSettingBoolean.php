@@ -26,7 +26,17 @@ namespace Microsoft\Graph\Beta\Model;
 class OmaSettingBoolean extends OmaSetting
 {
     /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.omaSettingBoolean");
+    }
+
+    /**
     * Gets the value
+    * Value.
     *
     * @return bool The value
     */
@@ -41,6 +51,7 @@ class OmaSettingBoolean extends OmaSetting
 
     /**
     * Sets the value
+    * Value.
     *
     * @param bool $val The value of the value
     *

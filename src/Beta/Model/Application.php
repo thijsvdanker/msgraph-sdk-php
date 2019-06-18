@@ -225,6 +225,33 @@ class Application extends DirectoryObject
     }
     
     /**
+    * Gets the groupMembershipClaims
+    *
+    * @return string The groupMembershipClaims
+    */
+    public function getGroupMembershipClaims()
+    {
+        if (array_key_exists("groupMembershipClaims", $this->_propDict)) {
+            return $this->_propDict["groupMembershipClaims"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the groupMembershipClaims
+    *
+    * @param string $val The groupMembershipClaims
+    *
+    * @return Application
+    */
+    public function setGroupMembershipClaims($val)
+    {
+        $this->_propDict["groupMembershipClaims"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the info
     *
     * @return InformationalUrl The info
@@ -252,6 +279,33 @@ class Application extends DirectoryObject
     public function setInfo($val)
     {
         $this->_propDict["info"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the isDeviceOnlyAuthSupported
+    *
+    * @return bool The isDeviceOnlyAuthSupported
+    */
+    public function getIsDeviceOnlyAuthSupported()
+    {
+        if (array_key_exists("isDeviceOnlyAuthSupported", $this->_propDict)) {
+            return $this->_propDict["isDeviceOnlyAuthSupported"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the isDeviceOnlyAuthSupported
+    *
+    * @param bool $val The isDeviceOnlyAuthSupported
+    *
+    * @return Application
+    */
+    public function setIsDeviceOnlyAuthSupported($val)
+    {
+        $this->_propDict["isDeviceOnlyAuthSupported"] = boolval($val);
         return $this;
     }
     

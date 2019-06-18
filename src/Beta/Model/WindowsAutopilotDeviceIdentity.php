@@ -28,6 +28,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
 {
     /**
     * Gets the deploymentProfileAssignmentStatus
+    * Profile assignment status of the Windows autopilot device.
     *
     * @return WindowsAutopilotProfileAssignmentStatus The deploymentProfileAssignmentStatus
     */
@@ -46,6 +47,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the deploymentProfileAssignmentStatus
+    * Profile assignment status of the Windows autopilot device.
     *
     * @param WindowsAutopilotProfileAssignmentStatus $val The deploymentProfileAssignmentStatus
     *
@@ -58,7 +60,41 @@ class WindowsAutopilotDeviceIdentity extends Entity
     }
     
     /**
+    * Gets the deploymentProfileAssignmentDetailedStatus
+    * Profile assignment detailed status of the Windows autopilot device.
+    *
+    * @return WindowsAutopilotProfileAssignmentDetailedStatus The deploymentProfileAssignmentDetailedStatus
+    */
+    public function getDeploymentProfileAssignmentDetailedStatus()
+    {
+        if (array_key_exists("deploymentProfileAssignmentDetailedStatus", $this->_propDict)) {
+            if (is_a($this->_propDict["deploymentProfileAssignmentDetailedStatus"], "Microsoft\Graph\Beta\Model\WindowsAutopilotProfileAssignmentDetailedStatus")) {
+                return $this->_propDict["deploymentProfileAssignmentDetailedStatus"];
+            } else {
+                $this->_propDict["deploymentProfileAssignmentDetailedStatus"] = new WindowsAutopilotProfileAssignmentDetailedStatus($this->_propDict["deploymentProfileAssignmentDetailedStatus"]);
+                return $this->_propDict["deploymentProfileAssignmentDetailedStatus"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the deploymentProfileAssignmentDetailedStatus
+    * Profile assignment detailed status of the Windows autopilot device.
+    *
+    * @param WindowsAutopilotProfileAssignmentDetailedStatus $val The deploymentProfileAssignmentDetailedStatus
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setDeploymentProfileAssignmentDetailedStatus($val)
+    {
+        $this->_propDict["deploymentProfileAssignmentDetailedStatus"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the deploymentProfileAssignedDateTime
+    * Profile set time of the Windows autopilot device.
     *
     * @return \DateTime The deploymentProfileAssignedDateTime
     */
@@ -77,6 +113,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the deploymentProfileAssignedDateTime
+    * Profile set time of the Windows autopilot device.
     *
     * @param \DateTime $val The deploymentProfileAssignedDateTime
     *
@@ -90,6 +127,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the orderIdentifier
+    * Order Identifier of the Windows autopilot device - Deprecated
     *
     * @return string The orderIdentifier
     */
@@ -104,6 +142,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the orderIdentifier
+    * Order Identifier of the Windows autopilot device - Deprecated
     *
     * @param string $val The orderIdentifier
     *
@@ -116,7 +155,37 @@ class WindowsAutopilotDeviceIdentity extends Entity
     }
     
     /**
+    * Gets the groupTag
+    * Group Tag of the Windows autopilot device.
+    *
+    * @return string The groupTag
+    */
+    public function getGroupTag()
+    {
+        if (array_key_exists("groupTag", $this->_propDict)) {
+            return $this->_propDict["groupTag"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the groupTag
+    * Group Tag of the Windows autopilot device.
+    *
+    * @param string $val The groupTag
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setGroupTag($val)
+    {
+        $this->_propDict["groupTag"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the purchaseOrderIdentifier
+    * Purchase Order Identifier of the Windows autopilot device.
     *
     * @return string The purchaseOrderIdentifier
     */
@@ -131,6 +200,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the purchaseOrderIdentifier
+    * Purchase Order Identifier of the Windows autopilot device.
     *
     * @param string $val The purchaseOrderIdentifier
     *
@@ -144,6 +214,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the serialNumber
+    * Serial number of the Windows autopilot device.
     *
     * @return string The serialNumber
     */
@@ -158,6 +229,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the serialNumber
+    * Serial number of the Windows autopilot device.
     *
     * @param string $val The serialNumber
     *
@@ -171,6 +243,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the productKey
+    * Product Key of the Windows autopilot device.
     *
     * @return string The productKey
     */
@@ -185,6 +258,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the productKey
+    * Product Key of the Windows autopilot device.
     *
     * @param string $val The productKey
     *
@@ -198,6 +272,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the manufacturer
+    * Oem manufacturer of the Windows autopilot device.
     *
     * @return string The manufacturer
     */
@@ -212,6 +287,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the manufacturer
+    * Oem manufacturer of the Windows autopilot device.
     *
     * @param string $val The manufacturer
     *
@@ -225,6 +301,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the model
+    * Model name of the Windows autopilot device.
     *
     * @return string The model
     */
@@ -239,6 +316,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the model
+    * Model name of the Windows autopilot device.
     *
     * @param string $val The model
     *
@@ -252,6 +330,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the enrollmentState
+    * Intune enrollment state of the Windows autopilot device.
     *
     * @return EnrollmentState The enrollmentState
     */
@@ -270,6 +349,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the enrollmentState
+    * Intune enrollment state of the Windows autopilot device.
     *
     * @param EnrollmentState $val The enrollmentState
     *
@@ -283,6 +363,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the lastContactedDateTime
+    * Intune Last Contacted Date Time of the Windows autopilot device.
     *
     * @return \DateTime The lastContactedDateTime
     */
@@ -301,6 +382,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the lastContactedDateTime
+    * Intune Last Contacted Date Time of the Windows autopilot device.
     *
     * @param \DateTime $val The lastContactedDateTime
     *
@@ -314,6 +396,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the addressableUserName
+    * Addressable user name.
     *
     * @return string The addressableUserName
     */
@@ -328,6 +411,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the addressableUserName
+    * Addressable user name.
     *
     * @param string $val The addressableUserName
     *
@@ -341,6 +425,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the userPrincipalName
+    * User Principal Name.
     *
     * @return string The userPrincipalName
     */
@@ -355,6 +440,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the userPrincipalName
+    * User Principal Name.
     *
     * @param string $val The userPrincipalName
     *
@@ -367,7 +453,153 @@ class WindowsAutopilotDeviceIdentity extends Entity
     }
     
     /**
+    * Gets the resourceName
+    * Resource Name.
+    *
+    * @return string The resourceName
+    */
+    public function getResourceName()
+    {
+        if (array_key_exists("resourceName", $this->_propDict)) {
+            return $this->_propDict["resourceName"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the resourceName
+    * Resource Name.
+    *
+    * @param string $val The resourceName
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setResourceName($val)
+    {
+        $this->_propDict["resourceName"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the skuNumber
+    * SKU Number
+    *
+    * @return string The skuNumber
+    */
+    public function getSkuNumber()
+    {
+        if (array_key_exists("skuNumber", $this->_propDict)) {
+            return $this->_propDict["skuNumber"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the skuNumber
+    * SKU Number
+    *
+    * @param string $val The skuNumber
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setSkuNumber($val)
+    {
+        $this->_propDict["skuNumber"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the systemFamily
+    * System Family
+    *
+    * @return string The systemFamily
+    */
+    public function getSystemFamily()
+    {
+        if (array_key_exists("systemFamily", $this->_propDict)) {
+            return $this->_propDict["systemFamily"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the systemFamily
+    * System Family
+    *
+    * @param string $val The systemFamily
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setSystemFamily($val)
+    {
+        $this->_propDict["systemFamily"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the azureActiveDirectoryDeviceId
+    * AAD Device ID
+    *
+    * @return string The azureActiveDirectoryDeviceId
+    */
+    public function getAzureActiveDirectoryDeviceId()
+    {
+        if (array_key_exists("azureActiveDirectoryDeviceId", $this->_propDict)) {
+            return $this->_propDict["azureActiveDirectoryDeviceId"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the azureActiveDirectoryDeviceId
+    * AAD Device ID
+    *
+    * @param string $val The azureActiveDirectoryDeviceId
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setAzureActiveDirectoryDeviceId($val)
+    {
+        $this->_propDict["azureActiveDirectoryDeviceId"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the managedDeviceId
+    * Managed Device ID
+    *
+    * @return string The managedDeviceId
+    */
+    public function getManagedDeviceId()
+    {
+        if (array_key_exists("managedDeviceId", $this->_propDict)) {
+            return $this->_propDict["managedDeviceId"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the managedDeviceId
+    * Managed Device ID
+    *
+    * @param string $val The managedDeviceId
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setManagedDeviceId($val)
+    {
+        $this->_propDict["managedDeviceId"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the deploymentProfile
+    * Deployment profile currently assigned to the Windows autopilot device.
     *
     * @return WindowsAutopilotDeploymentProfile The deploymentProfile
     */
@@ -386,6 +618,7 @@ class WindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the deploymentProfile
+    * Deployment profile currently assigned to the Windows autopilot device.
     *
     * @param WindowsAutopilotDeploymentProfile $val The deploymentProfile
     *
@@ -394,6 +627,39 @@ class WindowsAutopilotDeviceIdentity extends Entity
     public function setDeploymentProfile($val)
     {
         $this->_propDict["deploymentProfile"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the intendedDeploymentProfile
+    * Deployment profile intended to be assigned to the Windows autopilot device.
+    *
+    * @return WindowsAutopilotDeploymentProfile The intendedDeploymentProfile
+    */
+    public function getIntendedDeploymentProfile()
+    {
+        if (array_key_exists("intendedDeploymentProfile", $this->_propDict)) {
+            if (is_a($this->_propDict["intendedDeploymentProfile"], "Microsoft\Graph\Beta\Model\WindowsAutopilotDeploymentProfile")) {
+                return $this->_propDict["intendedDeploymentProfile"];
+            } else {
+                $this->_propDict["intendedDeploymentProfile"] = new WindowsAutopilotDeploymentProfile($this->_propDict["intendedDeploymentProfile"]);
+                return $this->_propDict["intendedDeploymentProfile"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the intendedDeploymentProfile
+    * Deployment profile intended to be assigned to the Windows autopilot device.
+    *
+    * @param WindowsAutopilotDeploymentProfile $val The intendedDeploymentProfile
+    *
+    * @return WindowsAutopilotDeviceIdentity
+    */
+    public function setIntendedDeploymentProfile($val)
+    {
+        $this->_propDict["intendedDeploymentProfile"] = $val;
         return $this;
     }
     

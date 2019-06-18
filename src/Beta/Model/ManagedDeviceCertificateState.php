@@ -28,6 +28,7 @@ class ManagedDeviceCertificateState extends Entity
 {
     /**
     * Gets the devicePlatform
+    * Device platform
     *
     * @return DevicePlatformType The devicePlatform
     */
@@ -46,6 +47,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the devicePlatform
+    * Device platform
     *
     * @param DevicePlatformType $val The devicePlatform
     *
@@ -59,6 +61,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateKeyUsage
+    * Key usage
     *
     * @return KeyUsages The certificateKeyUsage
     */
@@ -77,6 +80,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateKeyUsage
+    * Key usage
     *
     * @param KeyUsages $val The certificateKeyUsage
     *
@@ -90,6 +94,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateValidityPeriodUnits
+    * Validity period units
     *
     * @return CertificateValidityPeriodScale The certificateValidityPeriodUnits
     */
@@ -108,6 +113,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateValidityPeriodUnits
+    * Validity period units
     *
     * @param CertificateValidityPeriodScale $val The certificateValidityPeriodUnits
     *
@@ -121,6 +127,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateIssuanceState
+    * Issuance State
     *
     * @return CertificateIssuanceStates The certificateIssuanceState
     */
@@ -139,6 +146,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateIssuanceState
+    * Issuance State
     *
     * @param CertificateIssuanceStates $val The certificateIssuanceState
     *
@@ -152,6 +160,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateKeyStorageProvider
+    * Key Storage Provider
     *
     * @return KeyStorageProviderOption The certificateKeyStorageProvider
     */
@@ -170,6 +179,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateKeyStorageProvider
+    * Key Storage Provider
     *
     * @param KeyStorageProviderOption $val The certificateKeyStorageProvider
     *
@@ -183,6 +193,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateSubjectNameFormat
+    * Subject name format
     *
     * @return SubjectNameFormat The certificateSubjectNameFormat
     */
@@ -201,6 +212,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateSubjectNameFormat
+    * Subject name format
     *
     * @param SubjectNameFormat $val The certificateSubjectNameFormat
     *
@@ -214,6 +226,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateSubjectAlternativeNameFormat
+    * Subject alternative name format
     *
     * @return SubjectAlternativeNameType The certificateSubjectAlternativeNameFormat
     */
@@ -232,6 +245,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateSubjectAlternativeNameFormat
+    * Subject alternative name format
     *
     * @param SubjectAlternativeNameType $val The certificateSubjectAlternativeNameFormat
     *
@@ -245,6 +259,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateRevokeStatus
+    * Revoke status
     *
     * @return CertificateRevocationStatus The certificateRevokeStatus
     */
@@ -263,6 +278,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateRevokeStatus
+    * Revoke status
     *
     * @param CertificateRevocationStatus $val The certificateRevokeStatus
     *
@@ -276,6 +292,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateProfileDisplayName
+    * Certificate profile display name
     *
     * @return string The certificateProfileDisplayName
     */
@@ -290,6 +307,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateProfileDisplayName
+    * Certificate profile display name
     *
     * @param string $val The certificateProfileDisplayName
     *
@@ -303,6 +321,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the deviceDisplayName
+    * Device display name
     *
     * @return string The deviceDisplayName
     */
@@ -317,6 +336,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the deviceDisplayName
+    * Device display name
     *
     * @param string $val The deviceDisplayName
     *
@@ -330,6 +350,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the userDisplayName
+    * User display name
     *
     * @return string The userDisplayName
     */
@@ -344,6 +365,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the userDisplayName
+    * User display name
     *
     * @param string $val The userDisplayName
     *
@@ -357,6 +379,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateExpirationDateTime
+    * Certificate expiry date
     *
     * @return \DateTime The certificateExpirationDateTime
     */
@@ -375,6 +398,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateExpirationDateTime
+    * Certificate expiry date
     *
     * @param \DateTime $val The certificateExpirationDateTime
     *
@@ -388,6 +412,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateLastIssuanceStateChangedDateTime
+    * Last certificate issuance state change
     *
     * @return \DateTime The certificateLastIssuanceStateChangedDateTime
     */
@@ -406,6 +431,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateLastIssuanceStateChangedDateTime
+    * Last certificate issuance state change
     *
     * @param \DateTime $val The certificateLastIssuanceStateChangedDateTime
     *
@@ -419,6 +445,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the lastCertificateStateChangeDateTime
+    * Last certificate issuance state change
     *
     * @return \DateTime The lastCertificateStateChangeDateTime
     */
@@ -437,6 +464,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the lastCertificateStateChangeDateTime
+    * Last certificate issuance state change
     *
     * @param \DateTime $val The lastCertificateStateChangeDateTime
     *
@@ -450,6 +478,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateIssuer
+    * Issuer
     *
     * @return string The certificateIssuer
     */
@@ -464,6 +493,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateIssuer
+    * Issuer
     *
     * @param string $val The certificateIssuer
     *
@@ -477,6 +507,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateThumbprint
+    * Thumbprint
     *
     * @return string The certificateThumbprint
     */
@@ -491,6 +522,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateThumbprint
+    * Thumbprint
     *
     * @param string $val The certificateThumbprint
     *
@@ -504,6 +536,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateSerialNumber
+    * Serial number
     *
     * @return string The certificateSerialNumber
     */
@@ -518,6 +551,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateSerialNumber
+    * Serial number
     *
     * @param string $val The certificateSerialNumber
     *
@@ -531,6 +565,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateKeyLength
+    * Key length
     *
     * @return int The certificateKeyLength
     */
@@ -545,6 +580,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateKeyLength
+    * Key length
     *
     * @param int $val The certificateKeyLength
     *
@@ -558,6 +594,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateEnhancedKeyUsage
+    * Extended key usage
     *
     * @return string The certificateEnhancedKeyUsage
     */
@@ -572,6 +609,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateEnhancedKeyUsage
+    * Extended key usage
     *
     * @param string $val The certificateEnhancedKeyUsage
     *
@@ -585,6 +623,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateValidityPeriod
+    * Validity period
     *
     * @return int The certificateValidityPeriod
     */
@@ -599,6 +638,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateValidityPeriod
+    * Validity period
     *
     * @param int $val The certificateValidityPeriod
     *
@@ -612,6 +652,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateSubjectNameFormatString
+    * Subject name format string for custom subject name formats
     *
     * @return string The certificateSubjectNameFormatString
     */
@@ -626,6 +667,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateSubjectNameFormatString
+    * Subject name format string for custom subject name formats
     *
     * @param string $val The certificateSubjectNameFormatString
     *
@@ -639,6 +681,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateSubjectAlternativeNameFormatString
+    * Subject alternative name format string for custom formats
     *
     * @return string The certificateSubjectAlternativeNameFormatString
     */
@@ -653,6 +696,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateSubjectAlternativeNameFormatString
+    * Subject alternative name format string for custom formats
     *
     * @param string $val The certificateSubjectAlternativeNameFormatString
     *
@@ -666,6 +710,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateIssuanceDateTime
+    * Issuance date
     *
     * @return \DateTime The certificateIssuanceDateTime
     */
@@ -684,6 +729,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateIssuanceDateTime
+    * Issuance date
     *
     * @param \DateTime $val The certificateIssuanceDateTime
     *
@@ -697,6 +743,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Gets the certificateErrorCode
+    * Error code
     *
     * @return int The certificateErrorCode
     */
@@ -711,6 +758,7 @@ class ManagedDeviceCertificateState extends Entity
     
     /**
     * Sets the certificateErrorCode
+    * Error code
     *
     * @param int $val The certificateErrorCode
     *

@@ -25,9 +25,19 @@ namespace Microsoft\Graph\Beta\Model;
 */
 class IosWebContentFilterSpecificWebsitesAccess extends IosWebContentFilterBase
 {
+    /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.iosWebContentFilterSpecificWebsitesAccess");
+    }
+
 
     /**
     * Gets the specificWebsitesOnly
+    * URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.
     *
     * @return IosBookmark The specificWebsitesOnly
     */
@@ -46,6 +56,7 @@ class IosWebContentFilterSpecificWebsitesAccess extends IosWebContentFilterBase
 
     /**
     * Sets the specificWebsitesOnly
+    * URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.
     *
     * @param IosBookmark $val The value to assign to the specificWebsitesOnly
     *
@@ -59,6 +70,7 @@ class IosWebContentFilterSpecificWebsitesAccess extends IosWebContentFilterBase
 
     /**
     * Gets the websiteList
+    * URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.
     *
     * @return IosBookmark The websiteList
     */
@@ -77,6 +89,7 @@ class IosWebContentFilterSpecificWebsitesAccess extends IosWebContentFilterBase
 
     /**
     * Sets the websiteList
+    * URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks. This collection can contain a maximum of 500 elements.
     *
     * @param IosBookmark $val The value to assign to the websiteList
     *

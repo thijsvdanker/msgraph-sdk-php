@@ -28,6 +28,7 @@ class MobileAppCategory extends Entity
 {
     /**
     * Gets the displayName
+    * The name of the app category.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class MobileAppCategory extends Entity
     
     /**
     * Sets the displayName
+    * The name of the app category.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class MobileAppCategory extends Entity
     
     /**
     * Gets the lastModifiedDateTime
+    * The date and time the mobileAppCategory was last modified.
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -73,6 +76,7 @@ class MobileAppCategory extends Entity
     
     /**
     * Sets the lastModifiedDateTime
+    * The date and time the mobileAppCategory was last modified.
     *
     * @param \DateTime $val The lastModifiedDateTime
     *

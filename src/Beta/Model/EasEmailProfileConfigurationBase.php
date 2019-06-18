@@ -28,6 +28,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
 {
     /**
     * Gets the usernameSource
+    * Username attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return UserEmailSource The usernameSource
     */
@@ -46,6 +47,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Sets the usernameSource
+    * Username attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param UserEmailSource $val The usernameSource
     *
@@ -59,6 +61,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Gets the usernameAADSource
+    * Name of the AAD field, that will be used to retrieve UserName for email profile.
     *
     * @return UsernameSource The usernameAADSource
     */
@@ -77,6 +80,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Sets the usernameAADSource
+    * Name of the AAD field, that will be used to retrieve UserName for email profile.
     *
     * @param UsernameSource $val The usernameAADSource
     *
@@ -90,6 +94,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Gets the userDomainNameSource
+    * UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return DomainNameSource The userDomainNameSource
     */
@@ -108,6 +113,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Sets the userDomainNameSource
+    * UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param DomainNameSource $val The userDomainNameSource
     *
@@ -121,6 +127,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Gets the customDomainName
+    * Custom domain name value used while generating an email profile before installing on the device.
     *
     * @return string The customDomainName
     */
@@ -135,6 +142,7 @@ class EasEmailProfileConfigurationBase extends DeviceConfiguration
     
     /**
     * Sets the customDomainName
+    * Custom domain name value used while generating an email profile before installing on the device.
     *
     * @param string $val The customDomainName
     *

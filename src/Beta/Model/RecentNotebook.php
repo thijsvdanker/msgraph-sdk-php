@@ -27,6 +27,7 @@ class RecentNotebook extends Entity
 {
     /**
     * Gets the displayName
+    * The name of the notebook.
     *
     * @return string The displayName
     */
@@ -41,6 +42,7 @@ class RecentNotebook extends Entity
 
     /**
     * Sets the displayName
+    * The name of the notebook.
     *
     * @param string $val The value of the displayName
     *
@@ -54,6 +56,7 @@ class RecentNotebook extends Entity
 
     /**
     * Gets the lastAccessedTime
+    * The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     *
     * @return \DateTime The lastAccessedTime
     */
@@ -72,6 +75,7 @@ class RecentNotebook extends Entity
 
     /**
     * Sets the lastAccessedTime
+    * The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     *
     * @param \DateTime $val The value to assign to the lastAccessedTime
     *
@@ -85,6 +89,7 @@ class RecentNotebook extends Entity
 
     /**
     * Gets the links
+    * Links for opening the notebook. The oneNoteClientURL link opens the notebook in the OneNote client, if it's installed. The oneNoteWebURL link opens the notebook in OneNote Online.
     *
     * @return RecentNotebookLinks The links
     */
@@ -103,6 +108,7 @@ class RecentNotebook extends Entity
 
     /**
     * Sets the links
+    * Links for opening the notebook. The oneNoteClientURL link opens the notebook in the OneNote client, if it's installed. The oneNoteWebURL link opens the notebook in OneNote Online.
     *
     * @param RecentNotebookLinks $val The value to assign to the links
     *
@@ -116,6 +122,7 @@ class RecentNotebook extends Entity
 
     /**
     * Gets the sourceService
+    * The backend store where the Notebook resides, either OneDriveForBusiness or OneDrive.
     *
     * @return OnenoteSourceService The sourceService
     */
@@ -134,6 +141,7 @@ class RecentNotebook extends Entity
 
     /**
     * Sets the sourceService
+    * The backend store where the Notebook resides, either OneDriveForBusiness or OneDrive.
     *
     * @param OnenoteSourceService $val The value to assign to the sourceService
     *

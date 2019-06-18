@@ -27,6 +27,7 @@ class WindowsKioskProfile extends Entity
 {
     /**
     * Gets the profileId
+    * Key of the entity.
     *
     * @return string The profileId
     */
@@ -41,6 +42,7 @@ class WindowsKioskProfile extends Entity
 
     /**
     * Sets the profileId
+    * Key of the entity.
     *
     * @param string $val The value of the profileId
     *
@@ -53,6 +55,7 @@ class WindowsKioskProfile extends Entity
     }
     /**
     * Gets the profileName
+    * This is a friendly nameÂ used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
     *
     * @return string The profileName
     */
@@ -67,6 +70,7 @@ class WindowsKioskProfile extends Entity
 
     /**
     * Sets the profileName
+    * This is a friendly nameÂ used to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned.
     *
     * @param string $val The value of the profileName
     *
@@ -80,6 +84,7 @@ class WindowsKioskProfile extends Entity
 
     /**
     * Gets the appConfiguration
+    * The App configuration that will be used for this kiosk configuration.
     *
     * @return WindowsKioskAppConfiguration The appConfiguration
     */
@@ -98,6 +103,7 @@ class WindowsKioskProfile extends Entity
 
     /**
     * Sets the appConfiguration
+    * The App configuration that will be used for this kiosk configuration.
     *
     * @param WindowsKioskAppConfiguration $val The value to assign to the appConfiguration
     *
@@ -111,6 +117,7 @@ class WindowsKioskProfile extends Entity
 
     /**
     * Gets the userAccountsConfiguration
+    * The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 100 elements.
     *
     * @return WindowsKioskUser The userAccountsConfiguration
     */
@@ -129,6 +136,7 @@ class WindowsKioskProfile extends Entity
 
     /**
     * Sets the userAccountsConfiguration
+    * The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 100 elements.
     *
     * @param WindowsKioskUser $val The value to assign to the userAccountsConfiguration
     *

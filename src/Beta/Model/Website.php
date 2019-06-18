@@ -28,6 +28,7 @@ class Website extends Entity
 
     /**
     * Gets the type
+    * The possible values are: other, home, work, blog, profile.
     *
     * @return WebsiteType The type
     */
@@ -46,6 +47,7 @@ class Website extends Entity
 
     /**
     * Sets the type
+    * The possible values are: other, home, work, blog, profile.
     *
     * @param WebsiteType $val The value to assign to the type
     *
@@ -58,6 +60,7 @@ class Website extends Entity
     }
     /**
     * Gets the address
+    * The URL of the website.
     *
     * @return string The address
     */
@@ -72,6 +75,7 @@ class Website extends Entity
 
     /**
     * Sets the address
+    * The URL of the website.
     *
     * @param string $val The value of the address
     *
@@ -84,6 +88,7 @@ class Website extends Entity
     }
     /**
     * Gets the displayName
+    * The display name of the web site.
     *
     * @return string The displayName
     */
@@ -98,6 +103,7 @@ class Website extends Entity
 
     /**
     * Sets the displayName
+    * The display name of the web site.
     *
     * @param string $val The value of the displayName
     *

@@ -27,6 +27,7 @@ class CertificateConnectorSetting extends Entity
 {
     /**
     * Gets the status
+    * Certificate connector status
     *
     * @return int The status
     */
@@ -41,6 +42,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Sets the status
+    * Certificate connector status
     *
     * @param int $val The value of the status
     *
@@ -54,6 +56,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Gets the certExpiryTime
+    * Certificate expire time
     *
     * @return \DateTime The certExpiryTime
     */
@@ -72,6 +75,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Sets the certExpiryTime
+    * Certificate expire time
     *
     * @param \DateTime $val The value to assign to the certExpiryTime
     *
@@ -84,6 +88,7 @@ class CertificateConnectorSetting extends Entity
     }
     /**
     * Gets the enrollmentError
+    * Certificate connector enrollment error
     *
     * @return string The enrollmentError
     */
@@ -98,6 +103,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Sets the enrollmentError
+    * Certificate connector enrollment error
     *
     * @param string $val The value of the enrollmentError
     *
@@ -111,6 +117,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Gets the lastConnectorConnectionTime
+    * Last time certificate connector connected
     *
     * @return \DateTime The lastConnectorConnectionTime
     */
@@ -129,6 +136,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Sets the lastConnectorConnectionTime
+    * Last time certificate connector connected
     *
     * @param \DateTime $val The value to assign to the lastConnectorConnectionTime
     *
@@ -141,6 +149,7 @@ class CertificateConnectorSetting extends Entity
     }
     /**
     * Gets the connectorVersion
+    * Version of certificate connector
     *
     * @return string The connectorVersion
     */
@@ -155,6 +164,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Sets the connectorVersion
+    * Version of certificate connector
     *
     * @param string $val The value of the connectorVersion
     *
@@ -167,6 +177,7 @@ class CertificateConnectorSetting extends Entity
     }
     /**
     * Gets the lastUploadVersion
+    * Version of last uploaded certificate connector
     *
     * @return int The lastUploadVersion
     */
@@ -181,6 +192,7 @@ class CertificateConnectorSetting extends Entity
 
     /**
     * Sets the lastUploadVersion
+    * Version of last uploaded certificate connector
     *
     * @param int $val The value of the lastUploadVersion
     *

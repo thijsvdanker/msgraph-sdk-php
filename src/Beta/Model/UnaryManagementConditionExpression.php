@@ -28,6 +28,7 @@ class UnaryManagementConditionExpression extends ManagementConditionExpressionMo
 
     /**
     * Gets the operator
+    * The operator used in the evaluation of the unary operation.
     *
     * @return UnaryManagementConditionExpressionOperatorType The operator
     */
@@ -46,6 +47,7 @@ class UnaryManagementConditionExpression extends ManagementConditionExpressionMo
 
     /**
     * Sets the operator
+    * The operator used in the evaluation of the unary operation.
     *
     * @param UnaryManagementConditionExpressionOperatorType $val The value to assign to the operator
     *
@@ -59,6 +61,7 @@ class UnaryManagementConditionExpression extends ManagementConditionExpressionMo
 
     /**
     * Gets the operand
+    * The operand of the unary operation.
     *
     * @return ManagementConditionExpressionModel The operand
     */
@@ -77,6 +80,7 @@ class UnaryManagementConditionExpression extends ManagementConditionExpressionMo
 
     /**
     * Sets the operand
+    * The operand of the unary operation.
     *
     * @param ManagementConditionExpressionModel $val The value to assign to the operand
     *

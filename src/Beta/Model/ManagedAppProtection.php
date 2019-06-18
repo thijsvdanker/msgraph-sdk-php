@@ -28,6 +28,7 @@ class ManagedAppProtection extends ManagedAppPolicy
 {
     /**
     * Gets the periodOfflineBeforeAccessCheck
+    * The period after which access is checked when the device is not connected to the internet.
     *
     * @return Duration The periodOfflineBeforeAccessCheck
     */
@@ -46,6 +47,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the periodOfflineBeforeAccessCheck
+    * The period after which access is checked when the device is not connected to the internet.
     *
     * @param Duration $val The periodOfflineBeforeAccessCheck
     *
@@ -59,6 +61,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the periodOnlineBeforeAccessCheck
+    * The period after which access is checked when the device is connected to the internet.
     *
     * @return Duration The periodOnlineBeforeAccessCheck
     */
@@ -77,6 +80,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the periodOnlineBeforeAccessCheck
+    * The period after which access is checked when the device is connected to the internet.
     *
     * @param Duration $val The periodOnlineBeforeAccessCheck
     *
@@ -90,6 +94,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the allowedInboundDataTransferSources
+    * Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
     *
     * @return ManagedAppDataTransferLevel The allowedInboundDataTransferSources
     */
@@ -108,6 +113,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the allowedInboundDataTransferSources
+    * Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
     *
     * @param ManagedAppDataTransferLevel $val The allowedInboundDataTransferSources
     *
@@ -121,6 +127,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the allowedOutboundDataTransferDestinations
+    * Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
     *
     * @return ManagedAppDataTransferLevel The allowedOutboundDataTransferDestinations
     */
@@ -139,6 +146,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the allowedOutboundDataTransferDestinations
+    * Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
     *
     * @param ManagedAppDataTransferLevel $val The allowedOutboundDataTransferDestinations
     *
@@ -152,6 +160,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the organizationalCredentialsRequired
+    * Indicates whether organizational credentials are required for app use.
     *
     * @return bool The organizationalCredentialsRequired
     */
@@ -166,6 +175,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the organizationalCredentialsRequired
+    * Indicates whether organizational credentials are required for app use.
     *
     * @param bool $val The organizationalCredentialsRequired
     *
@@ -179,6 +189,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the allowedOutboundClipboardSharingLevel
+    * The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked.
     *
     * @return ManagedAppClipboardSharingLevel The allowedOutboundClipboardSharingLevel
     */
@@ -197,6 +208,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the allowedOutboundClipboardSharingLevel
+    * The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked.
     *
     * @param ManagedAppClipboardSharingLevel $val The allowedOutboundClipboardSharingLevel
     *
@@ -210,6 +222,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the dataBackupBlocked
+    * Indicates whether the backup of a managed app's data is blocked.
     *
     * @return bool The dataBackupBlocked
     */
@@ -224,6 +237,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the dataBackupBlocked
+    * Indicates whether the backup of a managed app's data is blocked.
     *
     * @param bool $val The dataBackupBlocked
     *
@@ -237,6 +251,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the deviceComplianceRequired
+    * Indicates whether device compliance is required.
     *
     * @return bool The deviceComplianceRequired
     */
@@ -251,6 +266,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the deviceComplianceRequired
+    * Indicates whether device compliance is required.
     *
     * @param bool $val The deviceComplianceRequired
     *
@@ -264,6 +280,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the managedBrowserToOpenLinksRequired
+    * Indicates whether internet links should be opened in the managed browser app.
     *
     * @return bool The managedBrowserToOpenLinksRequired
     */
@@ -278,6 +295,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the managedBrowserToOpenLinksRequired
+    * Indicates whether internet links should be opened in the managed browser app.
     *
     * @param bool $val The managedBrowserToOpenLinksRequired
     *
@@ -291,6 +309,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the saveAsBlocked
+    * Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     *
     * @return bool The saveAsBlocked
     */
@@ -305,6 +324,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the saveAsBlocked
+    * Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
     *
     * @param bool $val The saveAsBlocked
     *
@@ -318,6 +338,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the periodOfflineBeforeWipeIsEnforced
+    * The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
     *
     * @return Duration The periodOfflineBeforeWipeIsEnforced
     */
@@ -336,6 +357,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the periodOfflineBeforeWipeIsEnforced
+    * The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
     *
     * @param Duration $val The periodOfflineBeforeWipeIsEnforced
     *
@@ -349,6 +371,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the pinRequired
+    * Indicates whether an app-level pin is required.
     *
     * @return bool The pinRequired
     */
@@ -363,6 +386,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the pinRequired
+    * Indicates whether an app-level pin is required.
     *
     * @param bool $val The pinRequired
     *
@@ -376,6 +400,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the maximumPinRetries
+    * Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
     *
     * @return int The maximumPinRetries
     */
@@ -390,6 +415,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the maximumPinRetries
+    * Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
     *
     * @param int $val The maximumPinRetries
     *
@@ -403,6 +429,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the simplePinBlocked
+    * Indicates whether simplePin is blocked.
     *
     * @return bool The simplePinBlocked
     */
@@ -417,6 +444,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the simplePinBlocked
+    * Indicates whether simplePin is blocked.
     *
     * @param bool $val The simplePinBlocked
     *
@@ -430,6 +458,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumPinLength
+    * Minimum pin length required for an app-level pin if PinRequired is set to True
     *
     * @return int The minimumPinLength
     */
@@ -444,6 +473,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumPinLength
+    * Minimum pin length required for an app-level pin if PinRequired is set to True
     *
     * @param int $val The minimumPinLength
     *
@@ -457,6 +487,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the pinCharacterSet
+    * Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric, alphanumericAndSymbol.
     *
     * @return ManagedAppPinCharacterSet The pinCharacterSet
     */
@@ -475,6 +506,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the pinCharacterSet
+    * Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric, alphanumericAndSymbol.
     *
     * @param ManagedAppPinCharacterSet $val The pinCharacterSet
     *
@@ -488,6 +520,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the periodBeforePinReset
+    * TimePeriod before the all-level pin must be reset if PinRequired is set to True.
     *
     * @return Duration The periodBeforePinReset
     */
@@ -506,6 +539,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the periodBeforePinReset
+    * TimePeriod before the all-level pin must be reset if PinRequired is set to True.
     *
     * @param Duration $val The periodBeforePinReset
     *
@@ -520,6 +554,7 @@ class ManagedAppProtection extends ManagedAppPolicy
 
      /** 
      * Gets the allowedDataStorageLocations
+    * Data storage locations where a user may store managed data.
      *
      * @return array The allowedDataStorageLocations
      */
@@ -534,6 +569,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /** 
     * Sets the allowedDataStorageLocations
+    * Data storage locations where a user may store managed data.
     *
     * @param ManagedAppDataStorageLocation $val The allowedDataStorageLocations
     *
@@ -547,6 +583,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the contactSyncBlocked
+    * Indicates whether contacts can be synced to the user's device.
     *
     * @return bool The contactSyncBlocked
     */
@@ -561,6 +598,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the contactSyncBlocked
+    * Indicates whether contacts can be synced to the user's device.
     *
     * @param bool $val The contactSyncBlocked
     *
@@ -574,6 +612,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the printBlocked
+    * Indicates whether printing is allowed from managed apps.
     *
     * @return bool The printBlocked
     */
@@ -588,6 +627,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the printBlocked
+    * Indicates whether printing is allowed from managed apps.
     *
     * @param bool $val The printBlocked
     *
@@ -601,6 +641,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the fingerprintBlocked
+    * Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
     *
     * @return bool The fingerprintBlocked
     */
@@ -615,6 +656,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the fingerprintBlocked
+    * Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
     *
     * @param bool $val The fingerprintBlocked
     *
@@ -628,6 +670,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the disableAppPinIfDevicePinIsSet
+    * Indicates whether use of the app pin is required if the device pin is set.
     *
     * @return bool The disableAppPinIfDevicePinIsSet
     */
@@ -642,6 +685,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the disableAppPinIfDevicePinIsSet
+    * Indicates whether use of the app pin is required if the device pin is set.
     *
     * @param bool $val The disableAppPinIfDevicePinIsSet
     *
@@ -655,6 +699,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumRequiredOsVersion
+    * Versions less than the specified version will block the managed app from accessing company data.
     *
     * @return string The minimumRequiredOsVersion
     */
@@ -669,6 +714,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumRequiredOsVersion
+    * Versions less than the specified version will block the managed app from accessing company data.
     *
     * @param string $val The minimumRequiredOsVersion
     *
@@ -682,6 +728,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumWarningOsVersion
+    * Versions less than the specified version will result in warning message on the managed app from accessing company data.
     *
     * @return string The minimumWarningOsVersion
     */
@@ -696,6 +743,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumWarningOsVersion
+    * Versions less than the specified version will result in warning message on the managed app from accessing company data.
     *
     * @param string $val The minimumWarningOsVersion
     *
@@ -709,6 +757,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumRequiredAppVersion
+    * Versions less than the specified version will block the managed app from accessing company data.
     *
     * @return string The minimumRequiredAppVersion
     */
@@ -723,6 +772,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumRequiredAppVersion
+    * Versions less than the specified version will block the managed app from accessing company data.
     *
     * @param string $val The minimumRequiredAppVersion
     *
@@ -736,6 +786,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumWarningAppVersion
+    * Versions less than the specified version will result in warning message on the managed app.
     *
     * @return string The minimumWarningAppVersion
     */
@@ -750,6 +801,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumWarningAppVersion
+    * Versions less than the specified version will result in warning message on the managed app.
     *
     * @param string $val The minimumWarningAppVersion
     *
@@ -763,6 +815,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumWipeOsVersion
+    * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
     *
     * @return string The minimumWipeOsVersion
     */
@@ -777,6 +830,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumWipeOsVersion
+    * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
     *
     * @param string $val The minimumWipeOsVersion
     *
@@ -790,6 +844,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the minimumWipeAppVersion
+    * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
     *
     * @return string The minimumWipeAppVersion
     */
@@ -804,6 +859,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the minimumWipeAppVersion
+    * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
     *
     * @param string $val The minimumWipeAppVersion
     *
@@ -817,6 +873,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the appActionIfDeviceComplianceRequired
+    * Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true.
     *
     * @return ManagedAppRemediationAction The appActionIfDeviceComplianceRequired
     */
@@ -835,6 +892,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the appActionIfDeviceComplianceRequired
+    * Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true.
     *
     * @param ManagedAppRemediationAction $val The appActionIfDeviceComplianceRequired
     *
@@ -848,6 +906,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Gets the appActionIfMaximumPinRetriesExceeded
+    * Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts.
     *
     * @return ManagedAppRemediationAction The appActionIfMaximumPinRetriesExceeded
     */
@@ -866,6 +925,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the appActionIfMaximumPinRetriesExceeded
+    * Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts.
     *
     * @param ManagedAppRemediationAction $val The appActionIfMaximumPinRetriesExceeded
     *
@@ -878,34 +938,8 @@ class ManagedAppProtection extends ManagedAppPolicy
     }
     
     /**
-    * Gets the pinRequiredOnLaunchInsteadOfBiometric
-    *
-    * @return bool The pinRequiredOnLaunchInsteadOfBiometric
-    */
-    public function getPinRequiredOnLaunchInsteadOfBiometric()
-    {
-        if (array_key_exists("pinRequiredOnLaunchInsteadOfBiometric", $this->_propDict)) {
-            return $this->_propDict["pinRequiredOnLaunchInsteadOfBiometric"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the pinRequiredOnLaunchInsteadOfBiometric
-    *
-    * @param bool $val The pinRequiredOnLaunchInsteadOfBiometric
-    *
-    * @return ManagedAppProtection
-    */
-    public function setPinRequiredOnLaunchInsteadOfBiometric($val)
-    {
-        $this->_propDict["pinRequiredOnLaunchInsteadOfBiometric"] = boolval($val);
-        return $this;
-    }
-    
-    /**
     * Gets the pinRequiredInsteadOfBiometricTimeout
+    * Timeout in minutes for an app pin instead of non biometrics passcode
     *
     * @return Duration The pinRequiredInsteadOfBiometricTimeout
     */
@@ -924,6 +958,7 @@ class ManagedAppProtection extends ManagedAppPolicy
     
     /**
     * Sets the pinRequiredInsteadOfBiometricTimeout
+    * Timeout in minutes for an app pin instead of non biometrics passcode
     *
     * @param Duration $val The pinRequiredInsteadOfBiometricTimeout
     *
@@ -932,6 +967,35 @@ class ManagedAppProtection extends ManagedAppPolicy
     public function setPinRequiredInsteadOfBiometricTimeout($val)
     {
         $this->_propDict["pinRequiredInsteadOfBiometricTimeout"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the allowedOutboundClipboardSharingExceptionLength
+    * Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.
+    *
+    * @return int The allowedOutboundClipboardSharingExceptionLength
+    */
+    public function getAllowedOutboundClipboardSharingExceptionLength()
+    {
+        if (array_key_exists("allowedOutboundClipboardSharingExceptionLength", $this->_propDict)) {
+            return $this->_propDict["allowedOutboundClipboardSharingExceptionLength"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the allowedOutboundClipboardSharingExceptionLength
+    * Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.
+    *
+    * @param int $val The allowedOutboundClipboardSharingExceptionLength
+    *
+    * @return ManagedAppProtection
+    */
+    public function setAllowedOutboundClipboardSharingExceptionLength($val)
+    {
+        $this->_propDict["allowedOutboundClipboardSharingExceptionLength"] = intval($val);
         return $this;
     }
     

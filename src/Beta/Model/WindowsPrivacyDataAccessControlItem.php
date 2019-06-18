@@ -28,6 +28,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
 {
     /**
     * Gets the accessLevel
+    * This indicates an access level for the privacy data category to which the specified application will be given to.
     *
     * @return WindowsPrivacyDataAccessLevel The accessLevel
     */
@@ -46,6 +47,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Sets the accessLevel
+    * This indicates an access level for the privacy data category to which the specified application will be given to.
     *
     * @param WindowsPrivacyDataAccessLevel $val The accessLevel
     *
@@ -59,6 +61,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Gets the dataCategory
+    * This indicates a privacy data category to which the specific access control will apply.
     *
     * @return WindowsPrivacyDataCategory The dataCategory
     */
@@ -77,6 +80,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Sets the dataCategory
+    * This indicates a privacy data category to which the specific access control will apply.
     *
     * @param WindowsPrivacyDataCategory $val The dataCategory
     *
@@ -90,6 +94,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Gets the appPackageFamilyName
+    * The Package Family Name of a Windows app. When set, the access level applies to the specified application.
     *
     * @return string The appPackageFamilyName
     */
@@ -104,6 +109,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Sets the appPackageFamilyName
+    * The Package Family Name of a Windows app. When set, the access level applies to the specified application.
     *
     * @param string $val The appPackageFamilyName
     *
@@ -117,6 +123,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Gets the appDisplayName
+    * The Package Family Name of a Windows app. When set, the access level applies to the specified application.
     *
     * @return string The appDisplayName
     */
@@ -131,6 +138,7 @@ class WindowsPrivacyDataAccessControlItem extends Entity
     
     /**
     * Sets the appDisplayName
+    * The Package Family Name of a Windows app. When set, the access level applies to the specified application.
     *
     * @param string $val The appDisplayName
     *

@@ -38,7 +38,5 @@ class FileHashType extends Enum
     const AUTHENTICODE_HASH256 = "authenticodeHash256";
     const LS_HASH = "lsHash";
     const CTPH = "ctph";
-    const PE_SHA1 = "peSha1";
-    const PE_SHA256 = "peSha256";
     const UNKNOWN_FUTURE_VALUE = "unknownFutureValue";
 }

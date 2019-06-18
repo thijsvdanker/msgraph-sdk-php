@@ -28,6 +28,7 @@ class MobileAppSupportedDeviceType extends Entity
 
     /**
     * Gets the type
+    * Device type
     *
     * @return DeviceType The type
     */
@@ -46,6 +47,7 @@ class MobileAppSupportedDeviceType extends Entity
 
     /**
     * Sets the type
+    * Device type
     *
     * @param DeviceType $val The value to assign to the type
     *
@@ -58,6 +60,7 @@ class MobileAppSupportedDeviceType extends Entity
     }
     /**
     * Gets the minimumOperatingSystemVersion
+    * Minimum OS version
     *
     * @return string The minimumOperatingSystemVersion
     */
@@ -72,6 +75,7 @@ class MobileAppSupportedDeviceType extends Entity
 
     /**
     * Sets the minimumOperatingSystemVersion
+    * Minimum OS version
     *
     * @param string $val The value of the minimumOperatingSystemVersion
     *
@@ -84,6 +88,7 @@ class MobileAppSupportedDeviceType extends Entity
     }
     /**
     * Gets the maximumOperatingSystemVersion
+    * Maximum OS version
     *
     * @return string The maximumOperatingSystemVersion
     */
@@ -98,6 +103,7 @@ class MobileAppSupportedDeviceType extends Entity
 
     /**
     * Sets the maximumOperatingSystemVersion
+    * Maximum OS version
     *
     * @param string $val The value of the maximumOperatingSystemVersion
     *

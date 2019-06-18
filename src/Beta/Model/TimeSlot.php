@@ -28,6 +28,7 @@ class TimeSlot extends Entity
 
     /**
     * Gets the start
+    * The date, time, and time zone that a period ends.
     *
     * @return DateTimeTimeZone The start
     */
@@ -46,6 +47,7 @@ class TimeSlot extends Entity
 
     /**
     * Sets the start
+    * The date, time, and time zone that a period ends.
     *
     * @param DateTimeTimeZone $val The value to assign to the start
     *
@@ -59,6 +61,7 @@ class TimeSlot extends Entity
 
     /**
     * Gets the end
+    * The date, time, and time zone that a period begins.
     *
     * @return DateTimeTimeZone The end
     */
@@ -77,6 +80,7 @@ class TimeSlot extends Entity
 
     /**
     * Sets the end
+    * The date, time, and time zone that a period begins.
     *
     * @param DateTimeTimeZone $val The value to assign to the end
     *

@@ -27,6 +27,7 @@ class MimeContent extends Entity
 {
     /**
     * Gets the type
+    * Indicates the content mime type.
     *
     * @return string The type
     */
@@ -41,6 +42,7 @@ class MimeContent extends Entity
 
     /**
     * Sets the type
+    * Indicates the content mime type.
     *
     * @param string $val The value of the type
     *
@@ -54,6 +56,7 @@ class MimeContent extends Entity
 
     /**
     * Gets the value
+    * The byte array that contains the actual content.
     *
     * @return \GuzzleHttp\Psr7\Stream The value
     */
@@ -72,6 +75,7 @@ class MimeContent extends Entity
 
     /**
     * Sets the value
+    * The byte array that contains the actual content.
     *
     * @param \GuzzleHttp\Psr7\Stream $val The value to assign to the value
     *

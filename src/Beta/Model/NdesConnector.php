@@ -28,6 +28,7 @@ class NdesConnector extends Entity
 {
     /**
     * Gets the lastConnectionDateTime
+    * Last connection time for the Ndes Connector
     *
     * @return \DateTime The lastConnectionDateTime
     */
@@ -46,6 +47,7 @@ class NdesConnector extends Entity
     
     /**
     * Sets the lastConnectionDateTime
+    * Last connection time for the Ndes Connector
     *
     * @param \DateTime $val The lastConnectionDateTime
     *
@@ -59,6 +61,7 @@ class NdesConnector extends Entity
     
     /**
     * Gets the state
+    * Ndes Connector Status
     *
     * @return NdesConnectorState The state
     */
@@ -77,6 +80,7 @@ class NdesConnector extends Entity
     
     /**
     * Sets the state
+    * Ndes Connector Status
     *
     * @param NdesConnectorState $val The state
     *
@@ -90,6 +94,7 @@ class NdesConnector extends Entity
     
     /**
     * Gets the displayName
+    * The friendly name of the Ndes Connector.
     *
     * @return string The displayName
     */
@@ -104,6 +109,7 @@ class NdesConnector extends Entity
     
     /**
     * Sets the displayName
+    * The friendly name of the Ndes Connector.
     *
     * @param string $val The displayName
     *

@@ -59,6 +59,7 @@ class ItemActivityTimeSet extends Entity
 
     /**
     * Gets the observedDateTime
+    * When the activity was observed to take place.
     *
     * @return \DateTime The observedDateTime
     */
@@ -77,6 +78,7 @@ class ItemActivityTimeSet extends Entity
 
     /**
     * Sets the observedDateTime
+    * When the activity was observed to take place.
     *
     * @param \DateTime $val The value to assign to the observedDateTime
     *
@@ -90,6 +92,7 @@ class ItemActivityTimeSet extends Entity
 
     /**
     * Gets the recordedDateTime
+    * When the observation was recorded on the service.
     *
     * @return \DateTime The recordedDateTime
     */
@@ -108,6 +111,7 @@ class ItemActivityTimeSet extends Entity
 
     /**
     * Sets the recordedDateTime
+    * When the observation was recorded on the service.
     *
     * @param \DateTime $val The value to assign to the recordedDateTime
     *

@@ -27,6 +27,7 @@ class IPv6Range extends IpRange
 {
     /**
     * Gets the lowerAddress
+    * Lower address
     *
     * @return string The lowerAddress
     */
@@ -41,6 +42,7 @@ class IPv6Range extends IpRange
 
     /**
     * Sets the lowerAddress
+    * Lower address
     *
     * @param string $val The value of the lowerAddress
     *
@@ -53,6 +55,7 @@ class IPv6Range extends IpRange
     }
     /**
     * Gets the upperAddress
+    * Upper address
     *
     * @return string The upperAddress
     */
@@ -67,6 +70,7 @@ class IPv6Range extends IpRange
 
     /**
     * Sets the upperAddress
+    * Upper address
     *
     * @param string $val The value of the upperAddress
     *

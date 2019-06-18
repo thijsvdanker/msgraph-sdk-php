@@ -44,7 +44,7 @@ class AppCatalogs extends Entity
     /** 
     * Sets the teamsApps
     *
-    * @param TeamsCatalogApp $val The teamsApps
+    * @param TeamsApp $val The teamsApps
     *
     * @return AppCatalogs
     */

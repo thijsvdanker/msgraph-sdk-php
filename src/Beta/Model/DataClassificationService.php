@@ -138,4 +138,32 @@ class DataClassificationService extends Entity
         return $this;
     }
     
+
+     /** 
+     * Gets the sensitivityLabels
+     *
+     * @return array The sensitivityLabels
+     */
+    public function getSensitivityLabels()
+    {
+        if (array_key_exists("sensitivityLabels", $this->_propDict)) {
+           return $this->_propDict["sensitivityLabels"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the sensitivityLabels
+    *
+    * @param SensitivityLabel $val The sensitivityLabels
+    *
+    * @return DataClassificationService
+    */
+    public function setSensitivityLabels($val)
+    {
+		$this->_propDict["sensitivityLabels"] = $val;
+        return $this;
+    }
+    
 }

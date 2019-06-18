@@ -28,6 +28,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
 {
     /**
     * Gets the eapType
+    * Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router).
     *
     * @return EapType The eapType
     */
@@ -46,6 +47,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the eapType
+    * Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router).
     *
     * @param EapType $val The eapType
     *
@@ -59,6 +61,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Gets the eapFastConfiguration
+    * EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type.
     *
     * @return EapFastConfiguration The eapFastConfiguration
     */
@@ -77,6 +80,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the eapFastConfiguration
+    * EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type.
     *
     * @param EapFastConfiguration $val The eapFastConfiguration
     *
@@ -90,6 +94,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Gets the trustedServerCertificateNames
+    * Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users' devices when they connect to this Wi-Fi network.
     *
     * @return string The trustedServerCertificateNames
     */
@@ -104,6 +109,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the trustedServerCertificateNames
+    * Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users' devices when they connect to this Wi-Fi network.
     *
     * @param string $val The trustedServerCertificateNames
     *
@@ -117,6 +123,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Gets the authenticationMethod
+    * Authentication Method when EAP Type is configured to PEAP or EAP-TTLS.
     *
     * @return WiFiAuthenticationMethod The authenticationMethod
     */
@@ -135,6 +142,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the authenticationMethod
+    * Authentication Method when EAP Type is configured to PEAP or EAP-TTLS.
     *
     * @param WiFiAuthenticationMethod $val The authenticationMethod
     *
@@ -148,6 +156,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Gets the innerAuthenticationProtocolForEapTtls
+    * Non-EAP Method for Authentication when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password.
     *
     * @return NonEapAuthenticationMethodForEapTtlsType The innerAuthenticationProtocolForEapTtls
     */
@@ -166,6 +175,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the innerAuthenticationProtocolForEapTtls
+    * Non-EAP Method for Authentication when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password.
     *
     * @param NonEapAuthenticationMethodForEapTtlsType $val The innerAuthenticationProtocolForEapTtls
     *
@@ -179,6 +189,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Gets the outerIdentityPrivacyTemporaryValue
+    * Enable identity privacy (Outer Identity) when EAP Type is configured to EAP - TTLS, EAP - FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.
     *
     * @return string The outerIdentityPrivacyTemporaryValue
     */
@@ -193,6 +204,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the outerIdentityPrivacyTemporaryValue
+    * Enable identity privacy (Outer Identity) when EAP Type is configured to EAP - TTLS, EAP - FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.
     *
     * @param string $val The outerIdentityPrivacyTemporaryValue
     *
@@ -204,9 +216,68 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
         return $this;
     }
     
+    /**
+    * Gets the usernameFormatString
+    * Username format string used to build the username to connect to wifi
+    *
+    * @return string The usernameFormatString
+    */
+    public function getUsernameFormatString()
+    {
+        if (array_key_exists("usernameFormatString", $this->_propDict)) {
+            return $this->_propDict["usernameFormatString"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the usernameFormatString
+    * Username format string used to build the username to connect to wifi
+    *
+    * @param string $val The usernameFormatString
+    *
+    * @return IosEnterpriseWiFiConfiguration
+    */
+    public function setUsernameFormatString($val)
+    {
+        $this->_propDict["usernameFormatString"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordFormatString
+    * Password format string used to build the password to connect to wifi
+    *
+    * @return string The passwordFormatString
+    */
+    public function getPasswordFormatString()
+    {
+        if (array_key_exists("passwordFormatString", $this->_propDict)) {
+            return $this->_propDict["passwordFormatString"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordFormatString
+    * Password format string used to build the password to connect to wifi
+    *
+    * @param string $val The passwordFormatString
+    *
+    * @return IosEnterpriseWiFiConfiguration
+    */
+    public function setPasswordFormatString($val)
+    {
+        $this->_propDict["passwordFormatString"] = $val;
+        return $this;
+    }
+    
 
      /** 
      * Gets the rootCertificatesForServerValidation
+    * Trusted Root Certificates for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. If you provide this value you do not need to provide trustedServerCertificateNames, and vice versa.
      *
      * @return array The rootCertificatesForServerValidation
      */
@@ -221,6 +292,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /** 
     * Sets the rootCertificatesForServerValidation
+    * Trusted Root Certificates for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. If you provide this value you do not need to provide trustedServerCertificateNames, and vice versa.
     *
     * @param IosTrustedRootCertificate $val The rootCertificatesForServerValidation
     *
@@ -234,6 +306,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Gets the identityCertificateForClientAuthentication
+    * Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).
     *
     * @return IosCertificateProfileBase The identityCertificateForClientAuthentication
     */
@@ -252,6 +325,7 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     
     /**
     * Sets the identityCertificateForClientAuthentication
+    * Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).
     *
     * @param IosCertificateProfileBase $val The identityCertificateForClientAuthentication
     *
@@ -260,6 +334,39 @@ class IosEnterpriseWiFiConfiguration extends IosWiFiConfiguration
     public function setIdentityCertificateForClientAuthentication($val)
     {
         $this->_propDict["identityCertificateForClientAuthentication"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the derivedCredentialSettings
+    * Tenant level settings for the Derived Credentials to be used for authentication.
+    *
+    * @return DeviceManagementDerivedCredentialSettings The derivedCredentialSettings
+    */
+    public function getDerivedCredentialSettings()
+    {
+        if (array_key_exists("derivedCredentialSettings", $this->_propDict)) {
+            if (is_a($this->_propDict["derivedCredentialSettings"], "Microsoft\Graph\Beta\Model\DeviceManagementDerivedCredentialSettings")) {
+                return $this->_propDict["derivedCredentialSettings"];
+            } else {
+                $this->_propDict["derivedCredentialSettings"] = new DeviceManagementDerivedCredentialSettings($this->_propDict["derivedCredentialSettings"]);
+                return $this->_propDict["derivedCredentialSettings"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the derivedCredentialSettings
+    * Tenant level settings for the Derived Credentials to be used for authentication.
+    *
+    * @param DeviceManagementDerivedCredentialSettings $val The derivedCredentialSettings
+    *
+    * @return IosEnterpriseWiFiConfiguration
+    */
+    public function setDerivedCredentialSettings($val)
+    {
+        $this->_propDict["derivedCredentialSettings"] = $val;
         return $this;
     }
     

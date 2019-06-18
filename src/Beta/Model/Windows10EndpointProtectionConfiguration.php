@@ -27,7 +27,71 @@ namespace Microsoft\Graph\Beta\Model;
 class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
 {
     /**
+    * Gets the dmaGuardDeviceEnumerationPolicy
+    * This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.
+    *
+    * @return DmaGuardDeviceEnumerationPolicyType The dmaGuardDeviceEnumerationPolicy
+    */
+    public function getDmaGuardDeviceEnumerationPolicy()
+    {
+        if (array_key_exists("dmaGuardDeviceEnumerationPolicy", $this->_propDict)) {
+            if (is_a($this->_propDict["dmaGuardDeviceEnumerationPolicy"], "Microsoft\Graph\Beta\Model\DmaGuardDeviceEnumerationPolicyType")) {
+                return $this->_propDict["dmaGuardDeviceEnumerationPolicy"];
+            } else {
+                $this->_propDict["dmaGuardDeviceEnumerationPolicy"] = new DmaGuardDeviceEnumerationPolicyType($this->_propDict["dmaGuardDeviceEnumerationPolicy"]);
+                return $this->_propDict["dmaGuardDeviceEnumerationPolicy"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the dmaGuardDeviceEnumerationPolicy
+    * This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.
+    *
+    * @param DmaGuardDeviceEnumerationPolicyType $val The dmaGuardDeviceEnumerationPolicy
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDmaGuardDeviceEnumerationPolicy($val)
+    {
+        $this->_propDict["dmaGuardDeviceEnumerationPolicy"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the firewallRules
+    * Configures the firewall rule settings. This collection can contain a maximum of 150 elements.
+     *
+     * @return array The firewallRules
+     */
+    public function getFirewallRules()
+    {
+        if (array_key_exists("firewallRules", $this->_propDict)) {
+           return $this->_propDict["firewallRules"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the firewallRules
+    * Configures the firewall rule settings. This collection can contain a maximum of 150 elements.
+    *
+    * @param WindowsFirewallRule $val The firewallRules
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setFirewallRules($val)
+    {
+		$this->_propDict["firewallRules"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the userRightsAccessCredentialManagerAsTrustedCaller
+    * This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsAccessCredentialManagerAsTrustedCaller
     */
@@ -46,6 +110,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsAccessCredentialManagerAsTrustedCaller
+    * This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsAccessCredentialManagerAsTrustedCaller
     *
@@ -59,6 +124,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsAllowAccessFromNetwork
+    * This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsAllowAccessFromNetwork
     */
@@ -77,6 +143,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsAllowAccessFromNetwork
+    * This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsAllowAccessFromNetwork
     *
@@ -90,6 +157,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsBlockAccessFromNetwork
+    * This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsBlockAccessFromNetwork
     */
@@ -108,6 +176,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsBlockAccessFromNetwork
+    * This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsBlockAccessFromNetwork
     *
@@ -121,6 +190,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsActAsPartOfTheOperatingSystem
+    * This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsActAsPartOfTheOperatingSystem
     */
@@ -139,6 +209,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsActAsPartOfTheOperatingSystem
+    * This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsActAsPartOfTheOperatingSystem
     *
@@ -152,6 +223,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsLocalLogOn
+    * This user right determines which users can log on to the computer. States NotConfigured, Allowed and Blocked are all supported 
     *
     * @return DeviceManagementUserRightsSetting The userRightsLocalLogOn
     */
@@ -170,6 +242,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsLocalLogOn
+    * This user right determines which users can log on to the computer. States NotConfigured, Allowed and Blocked are all supported 
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsLocalLogOn
     *
@@ -183,6 +256,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsBackupData
+    * This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsBackupData
     */
@@ -201,6 +275,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsBackupData
+    * This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsBackupData
     *
@@ -214,6 +289,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsChangeSystemTime
+    * This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsChangeSystemTime
     */
@@ -232,6 +308,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsChangeSystemTime
+    * This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsChangeSystemTime
     *
@@ -245,6 +322,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsCreateGlobalObjects
+    * This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsCreateGlobalObjects
     */
@@ -263,6 +341,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsCreateGlobalObjects
+    * This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsCreateGlobalObjects
     *
@@ -276,6 +355,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsCreatePageFile
+    * This user right determines which users and groups can call an internal API to create and change the size of a page file. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsCreatePageFile
     */
@@ -294,6 +374,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsCreatePageFile
+    * This user right determines which users and groups can call an internal API to create and change the size of a page file. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsCreatePageFile
     *
@@ -307,6 +388,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsCreatePermanentSharedObjects
+    * This user right determines which accounts can be used by processes to create a directory object using the object manager. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsCreatePermanentSharedObjects
     */
@@ -325,6 +407,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsCreatePermanentSharedObjects
+    * This user right determines which accounts can be used by processes to create a directory object using the object manager. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsCreatePermanentSharedObjects
     *
@@ -338,6 +421,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsCreateSymbolicLinks
+    * This user right determines if the user can create a symbolic link from the computer to which they are logged on. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsCreateSymbolicLinks
     */
@@ -356,6 +440,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsCreateSymbolicLinks
+    * This user right determines if the user can create a symbolic link from the computer to which they are logged on. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsCreateSymbolicLinks
     *
@@ -369,6 +454,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsCreateToken
+    * This user right determines which users/groups can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal API to create an access token. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsCreateToken
     */
@@ -387,6 +473,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsCreateToken
+    * This user right determines which users/groups can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal API to create an access token. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsCreateToken
     *
@@ -400,6 +487,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsDebugPrograms
+    * This user right determines which users can attach a debugger to any process or to the kernel. Only states NotConfigured and Allowed are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsDebugPrograms
     */
@@ -418,6 +506,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsDebugPrograms
+    * This user right determines which users can attach a debugger to any process or to the kernel. Only states NotConfigured and Allowed are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsDebugPrograms
     *
@@ -431,6 +520,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsRemoteDesktopServicesLogOn
+    * This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client. Only states NotConfigured and Blocked are supported
     *
     * @return DeviceManagementUserRightsSetting The userRightsRemoteDesktopServicesLogOn
     */
@@ -449,6 +539,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsRemoteDesktopServicesLogOn
+    * This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client. Only states NotConfigured and Blocked are supported
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsRemoteDesktopServicesLogOn
     *
@@ -462,6 +553,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsDelegation
+    * This user right determines which users can set the Trusted for Delegation setting on a user or computer object. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsDelegation
     */
@@ -480,6 +572,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsDelegation
+    * This user right determines which users can set the Trusted for Delegation setting on a user or computer object. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsDelegation
     *
@@ -493,6 +586,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsGenerateSecurityAudits
+    * This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access.  Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsGenerateSecurityAudits
     */
@@ -511,6 +605,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsGenerateSecurityAudits
+    * This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access.  Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsGenerateSecurityAudits
     *
@@ -524,6 +619,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsImpersonateClient
+    * Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsImpersonateClient
     */
@@ -542,6 +638,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsImpersonateClient
+    * Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsImpersonateClient
     *
@@ -555,6 +652,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsIncreaseSchedulingPriority
+    * This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsIncreaseSchedulingPriority
     */
@@ -573,6 +671,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsIncreaseSchedulingPriority
+    * This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsIncreaseSchedulingPriority
     *
@@ -586,6 +685,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsLoadUnloadDrivers
+    * This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsLoadUnloadDrivers
     */
@@ -604,6 +704,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsLoadUnloadDrivers
+    * This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsLoadUnloadDrivers
     *
@@ -617,6 +718,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsLockMemory
+    * This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsLockMemory
     */
@@ -635,6 +737,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsLockMemory
+    * This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsLockMemory
     *
@@ -648,6 +751,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsManageAuditingAndSecurityLogs
+    * This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsManageAuditingAndSecurityLogs
     */
@@ -666,6 +770,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsManageAuditingAndSecurityLogs
+    * This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsManageAuditingAndSecurityLogs
     *
@@ -679,6 +784,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsManageVolumes
+    * This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsManageVolumes
     */
@@ -697,6 +803,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsManageVolumes
+    * This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsManageVolumes
     *
@@ -710,6 +817,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsModifyFirmwareEnvironment
+    * This user right determines who can modify firmware environment values. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsModifyFirmwareEnvironment
     */
@@ -728,6 +836,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsModifyFirmwareEnvironment
+    * This user right determines who can modify firmware environment values. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsModifyFirmwareEnvironment
     *
@@ -741,6 +850,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsModifyObjectLabels
+    * This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsModifyObjectLabels
     */
@@ -759,6 +869,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsModifyObjectLabels
+    * This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsModifyObjectLabels
     *
@@ -772,6 +883,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsProfileSingleProcess
+    * This user right determines which users can use performance monitoring tools to monitor the performance of system processes. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsProfileSingleProcess
     */
@@ -790,6 +902,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsProfileSingleProcess
+    * This user right determines which users can use performance monitoring tools to monitor the performance of system processes. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsProfileSingleProcess
     *
@@ -803,6 +916,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsRemoteShutdown
+    * This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsRemoteShutdown
     */
@@ -821,6 +935,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsRemoteShutdown
+    * This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsRemoteShutdown
     *
@@ -834,6 +949,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsRestoreData
+    * This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsRestoreData
     */
@@ -852,6 +968,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsRestoreData
+    * This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsRestoreData
     *
@@ -865,6 +982,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsTakeOwnership
+    * This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsTakeOwnership
     */
@@ -883,6 +1001,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsTakeOwnership
+    * This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsTakeOwnership
     *
@@ -896,6 +1015,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userRightsRegisterProcessAsService
+    * This security setting determines which service accounts are prevented from registering a process as a service. Note: This security setting does not apply to the System, Local Service, or Network Service accounts. Only state Blocked is supported.
     *
     * @return DeviceManagementUserRightsSetting The userRightsRegisterProcessAsService
     */
@@ -914,6 +1034,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userRightsRegisterProcessAsService
+    * This security setting determines which service accounts are prevented from registering a process as a service. Note: This security setting does not apply to the System, Local Service, or Network Service accounts. Only state Blocked is supported.
     *
     * @param DeviceManagementUserRightsSetting $val The userRightsRegisterProcessAsService
     *
@@ -927,6 +1048,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the xboxServicesEnableXboxGameSaveTask
+    * This setting determines whether xbox game save is enabled (1) or disabled (0).
     *
     * @return bool The xboxServicesEnableXboxGameSaveTask
     */
@@ -941,6 +1063,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the xboxServicesEnableXboxGameSaveTask
+    * This setting determines whether xbox game save is enabled (1) or disabled (0).
     *
     * @param bool $val The xboxServicesEnableXboxGameSaveTask
     *
@@ -954,6 +1077,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the xboxServicesAccessoryManagementServiceStartupMode
+    * This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @return ServiceStartType The xboxServicesAccessoryManagementServiceStartupMode
     */
@@ -972,6 +1096,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the xboxServicesAccessoryManagementServiceStartupMode
+    * This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @param ServiceStartType $val The xboxServicesAccessoryManagementServiceStartupMode
     *
@@ -985,6 +1110,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the xboxServicesLiveAuthManagerServiceStartupMode
+    * This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @return ServiceStartType The xboxServicesLiveAuthManagerServiceStartupMode
     */
@@ -1003,6 +1129,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the xboxServicesLiveAuthManagerServiceStartupMode
+    * This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @param ServiceStartType $val The xboxServicesLiveAuthManagerServiceStartupMode
     *
@@ -1016,6 +1143,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the xboxServicesLiveGameSaveServiceStartupMode
+    * This setting determines whether Live Game save service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @return ServiceStartType The xboxServicesLiveGameSaveServiceStartupMode
     */
@@ -1034,6 +1162,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the xboxServicesLiveGameSaveServiceStartupMode
+    * This setting determines whether Live Game save service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @param ServiceStartType $val The xboxServicesLiveGameSaveServiceStartupMode
     *
@@ -1047,6 +1176,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the xboxServicesLiveNetworkingServiceStartupMode
+    * This setting determines whether Networking service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @return ServiceStartType The xboxServicesLiveNetworkingServiceStartupMode
     */
@@ -1065,6 +1195,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the xboxServicesLiveNetworkingServiceStartupMode
+    * This setting determines whether Networking service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
     *
     * @param ServiceStartType $val The xboxServicesLiveNetworkingServiceStartupMode
     *
@@ -1078,6 +1209,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsBlockMicrosoftAccounts
+    * Prevent users from adding new Microsoft accounts to this computer.
     *
     * @return bool The localSecurityOptionsBlockMicrosoftAccounts
     */
@@ -1092,6 +1224,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsBlockMicrosoftAccounts
+    * Prevent users from adding new Microsoft accounts to this computer.
     *
     * @param bool $val The localSecurityOptionsBlockMicrosoftAccounts
     *
@@ -1105,6 +1238,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsBlockRemoteLogonWithBlankPassword
+    * Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled
     *
     * @return bool The localSecurityOptionsBlockRemoteLogonWithBlankPassword
     */
@@ -1119,6 +1253,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsBlockRemoteLogonWithBlankPassword
+    * Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled
     *
     * @param bool $val The localSecurityOptionsBlockRemoteLogonWithBlankPassword
     *
@@ -1131,34 +1266,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
-    * Gets the localSecurityOptionsEnableAdministratorAccount
+    * Gets the localSecurityOptionsDisableAdministratorAccount
+    * Determines whether the Local Administrator account is enabled or disabled.
     *
-    * @return bool The localSecurityOptionsEnableAdministratorAccount
+    * @return bool The localSecurityOptionsDisableAdministratorAccount
     */
-    public function getLocalSecurityOptionsEnableAdministratorAccount()
+    public function getLocalSecurityOptionsDisableAdministratorAccount()
     {
-        if (array_key_exists("localSecurityOptionsEnableAdministratorAccount", $this->_propDict)) {
-            return $this->_propDict["localSecurityOptionsEnableAdministratorAccount"];
+        if (array_key_exists("localSecurityOptionsDisableAdministratorAccount", $this->_propDict)) {
+            return $this->_propDict["localSecurityOptionsDisableAdministratorAccount"];
         } else {
             return null;
         }
     }
     
     /**
-    * Sets the localSecurityOptionsEnableAdministratorAccount
+    * Sets the localSecurityOptionsDisableAdministratorAccount
+    * Determines whether the Local Administrator account is enabled or disabled.
     *
-    * @param bool $val The localSecurityOptionsEnableAdministratorAccount
+    * @param bool $val The localSecurityOptionsDisableAdministratorAccount
     *
     * @return Windows10EndpointProtectionConfiguration
     */
-    public function setLocalSecurityOptionsEnableAdministratorAccount($val)
+    public function setLocalSecurityOptionsDisableAdministratorAccount($val)
     {
-        $this->_propDict["localSecurityOptionsEnableAdministratorAccount"] = boolval($val);
+        $this->_propDict["localSecurityOptionsDisableAdministratorAccount"] = boolval($val);
         return $this;
     }
     
     /**
     * Gets the localSecurityOptionsAdministratorAccountName
+    * Define a different account name to be associated with the security identifier (SID) for the account â€œAdministratorâ€.
     *
     * @return string The localSecurityOptionsAdministratorAccountName
     */
@@ -1173,6 +1311,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAdministratorAccountName
+    * Define a different account name to be associated with the security identifier (SID) for the account â€œAdministratorâ€.
     *
     * @param string $val The localSecurityOptionsAdministratorAccountName
     *
@@ -1185,34 +1324,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
-    * Gets the localSecurityOptionsEnableGuestAccount
+    * Gets the localSecurityOptionsDisableGuestAccount
+    * Determines if the Guest account is enabled or disabled.
     *
-    * @return bool The localSecurityOptionsEnableGuestAccount
+    * @return bool The localSecurityOptionsDisableGuestAccount
     */
-    public function getLocalSecurityOptionsEnableGuestAccount()
+    public function getLocalSecurityOptionsDisableGuestAccount()
     {
-        if (array_key_exists("localSecurityOptionsEnableGuestAccount", $this->_propDict)) {
-            return $this->_propDict["localSecurityOptionsEnableGuestAccount"];
+        if (array_key_exists("localSecurityOptionsDisableGuestAccount", $this->_propDict)) {
+            return $this->_propDict["localSecurityOptionsDisableGuestAccount"];
         } else {
             return null;
         }
     }
     
     /**
-    * Sets the localSecurityOptionsEnableGuestAccount
+    * Sets the localSecurityOptionsDisableGuestAccount
+    * Determines if the Guest account is enabled or disabled.
     *
-    * @param bool $val The localSecurityOptionsEnableGuestAccount
+    * @param bool $val The localSecurityOptionsDisableGuestAccount
     *
     * @return Windows10EndpointProtectionConfiguration
     */
-    public function setLocalSecurityOptionsEnableGuestAccount($val)
+    public function setLocalSecurityOptionsDisableGuestAccount($val)
     {
-        $this->_propDict["localSecurityOptionsEnableGuestAccount"] = boolval($val);
+        $this->_propDict["localSecurityOptionsDisableGuestAccount"] = boolval($val);
         return $this;
     }
     
     /**
     * Gets the localSecurityOptionsGuestAccountName
+    * Define a different account name to be associated with the security identifier (SID) for the account â€œGuestâ€.
     *
     * @return string The localSecurityOptionsGuestAccountName
     */
@@ -1227,6 +1369,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsGuestAccountName
+    * Define a different account name to be associated with the security identifier (SID) for the account â€œGuestâ€.
     *
     * @param string $val The localSecurityOptionsGuestAccountName
     *
@@ -1240,6 +1383,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowUndockWithoutHavingToLogon
+    * Prevent a portable computer from being undocked without having to log in.
     *
     * @return bool The localSecurityOptionsAllowUndockWithoutHavingToLogon
     */
@@ -1254,6 +1398,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowUndockWithoutHavingToLogon
+    * Prevent a portable computer from being undocked without having to log in.
     *
     * @param bool $val The localSecurityOptionsAllowUndockWithoutHavingToLogon
     *
@@ -1267,6 +1412,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsBlockUsersInstallingPrinterDrivers
+    * Restrict installing printer drivers as part of connecting to a shared printer to admins only.
     *
     * @return bool The localSecurityOptionsBlockUsersInstallingPrinterDrivers
     */
@@ -1281,6 +1427,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsBlockUsersInstallingPrinterDrivers
+    * Restrict installing printer drivers as part of connecting to a shared printer to admins only.
     *
     * @param bool $val The localSecurityOptionsBlockUsersInstallingPrinterDrivers
     *
@@ -1294,6 +1441,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsBlockRemoteOpticalDriveAccess
+    * Enabling this settings allows only interactively logged on user to access CD-ROM media.
     *
     * @return bool The localSecurityOptionsBlockRemoteOpticalDriveAccess
     */
@@ -1308,6 +1456,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsBlockRemoteOpticalDriveAccess
+    * Enabling this settings allows only interactively logged on user to access CD-ROM media.
     *
     * @param bool $val The localSecurityOptionsBlockRemoteOpticalDriveAccess
     *
@@ -1321,6 +1470,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
+    * Define who is allowed to format and eject removable NTFS media.
     *
     * @return LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType The localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
     */
@@ -1339,6 +1489,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
+    * Define who is allowed to format and eject removable NTFS media.
     *
     * @param LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType $val The localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
     *
@@ -1352,6 +1503,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsMachineInactivityLimit
+    * Define maximum minutes of inactivity on the interactive desktopâ€™s login screen until the screen saver runs. Valid values 0 to 9999
     *
     * @return int The localSecurityOptionsMachineInactivityLimit
     */
@@ -1366,6 +1518,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsMachineInactivityLimit
+    * Define maximum minutes of inactivity on the interactive desktopâ€™s login screen until the screen saver runs. Valid values 0 to 9999
     *
     * @param int $val The localSecurityOptionsMachineInactivityLimit
     *
@@ -1379,6 +1532,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsMachineInactivityLimitInMinutes
+    * Define maximum minutes of inactivity on the interactive desktopâ€™s login screen until the screen saver runs. Valid values 0 to 9999
     *
     * @return int The localSecurityOptionsMachineInactivityLimitInMinutes
     */
@@ -1393,6 +1547,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsMachineInactivityLimitInMinutes
+    * Define maximum minutes of inactivity on the interactive desktopâ€™s login screen until the screen saver runs. Valid values 0 to 9999
     *
     * @param int $val The localSecurityOptionsMachineInactivityLimitInMinutes
     *
@@ -1406,6 +1561,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDoNotRequireCtrlAltDel
+    * Require CTRL+ALT+DEL to be pressed before a user can log on.
     *
     * @return bool The localSecurityOptionsDoNotRequireCtrlAltDel
     */
@@ -1420,6 +1576,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDoNotRequireCtrlAltDel
+    * Require CTRL+ALT+DEL to be pressed before a user can log on.
     *
     * @param bool $val The localSecurityOptionsDoNotRequireCtrlAltDel
     *
@@ -1433,6 +1590,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsHideLastSignedInUser
+    * Do not display the username of the last person who signed in on this device.
     *
     * @return bool The localSecurityOptionsHideLastSignedInUser
     */
@@ -1447,6 +1605,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsHideLastSignedInUser
+    * Do not display the username of the last person who signed in on this device.
     *
     * @param bool $val The localSecurityOptionsHideLastSignedInUser
     *
@@ -1460,6 +1619,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsHideUsernameAtSignIn
+    * Do not display the username of the person signing in to this device after credentials are entered and before the deviceâ€™s desktop is shown.
     *
     * @return bool The localSecurityOptionsHideUsernameAtSignIn
     */
@@ -1474,6 +1634,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsHideUsernameAtSignIn
+    * Do not display the username of the person signing in to this device after credentials are entered and before the deviceâ€™s desktop is shown.
     *
     * @param bool $val The localSecurityOptionsHideUsernameAtSignIn
     *
@@ -1487,6 +1648,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsLogOnMessageTitle
+    * Set message title for users attempting to log in.
     *
     * @return string The localSecurityOptionsLogOnMessageTitle
     */
@@ -1501,6 +1663,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsLogOnMessageTitle
+    * Set message title for users attempting to log in.
     *
     * @param string $val The localSecurityOptionsLogOnMessageTitle
     *
@@ -1514,6 +1677,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsLogOnMessageText
+    * Set message text for users attempting to log in.
     *
     * @return string The localSecurityOptionsLogOnMessageText
     */
@@ -1528,6 +1692,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsLogOnMessageText
+    * Set message text for users attempting to log in.
     *
     * @param string $val The localSecurityOptionsLogOnMessageText
     *
@@ -1541,6 +1706,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowPKU2UAuthenticationRequests
+    * Block PKU2U authentication requests to this device to use online identities.
     *
     * @return bool The localSecurityOptionsAllowPKU2UAuthenticationRequests
     */
@@ -1555,6 +1721,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowPKU2UAuthenticationRequests
+    * Block PKU2U authentication requests to this device to use online identities.
     *
     * @param bool $val The localSecurityOptionsAllowPKU2UAuthenticationRequests
     *
@@ -1568,6 +1735,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool
+    * UI helper boolean for LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager entity
     *
     * @return bool The localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool
     */
@@ -1582,6 +1750,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool
+    * UI helper boolean for LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager entity
     *
     * @param bool $val The localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool
     *
@@ -1595,6 +1764,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager
+    * Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.
     *
     * @return string The localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager
     */
@@ -1609,6 +1779,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager
+    * Edit the default Security Descriptor Definition Language string to allow or deny users and groups to make remote calls to the SAM.
     *
     * @param string $val The localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager
     *
@@ -1622,6 +1793,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients
+    * This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security.
     *
     * @return LocalSecurityOptionsMinimumSessionSecurity The localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients
     */
@@ -1640,6 +1812,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients
+    * This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security.
     *
     * @param LocalSecurityOptionsMinimumSessionSecurity $val The localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients
     *
@@ -1653,6 +1826,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers
+    * This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security.
     *
     * @return LocalSecurityOptionsMinimumSessionSecurity The localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers
     */
@@ -1671,6 +1845,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers
+    * This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security.
     *
     * @param LocalSecurityOptionsMinimumSessionSecurity $val The localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers
     *
@@ -1684,6 +1859,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the lanManagerAuthenticationLevel
+    * This security setting determines which challenge/response authentication protocol is used for network logons.
     *
     * @return LanManagerAuthenticationLevel The lanManagerAuthenticationLevel
     */
@@ -1702,6 +1878,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the lanManagerAuthenticationLevel
+    * This security setting determines which challenge/response authentication protocol is used for network logons.
     *
     * @param LanManagerAuthenticationLevel $val The lanManagerAuthenticationLevel
     *
@@ -1714,34 +1891,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
-    * Gets the lanManagerWorkstationEnableInsecureGuestLogons
+    * Gets the lanManagerWorkstationDisableInsecureGuestLogons
+    * If enabled,the SMB client will allow insecure guest logons. If not configured, the SMB client will reject insecure guest logons.
     *
-    * @return bool The lanManagerWorkstationEnableInsecureGuestLogons
+    * @return bool The lanManagerWorkstationDisableInsecureGuestLogons
     */
-    public function getLanManagerWorkstationEnableInsecureGuestLogons()
+    public function getLanManagerWorkstationDisableInsecureGuestLogons()
     {
-        if (array_key_exists("lanManagerWorkstationEnableInsecureGuestLogons", $this->_propDict)) {
-            return $this->_propDict["lanManagerWorkstationEnableInsecureGuestLogons"];
+        if (array_key_exists("lanManagerWorkstationDisableInsecureGuestLogons", $this->_propDict)) {
+            return $this->_propDict["lanManagerWorkstationDisableInsecureGuestLogons"];
         } else {
             return null;
         }
     }
     
     /**
-    * Sets the lanManagerWorkstationEnableInsecureGuestLogons
+    * Sets the lanManagerWorkstationDisableInsecureGuestLogons
+    * If enabled,the SMB client will allow insecure guest logons. If not configured, the SMB client will reject insecure guest logons.
     *
-    * @param bool $val The lanManagerWorkstationEnableInsecureGuestLogons
+    * @param bool $val The lanManagerWorkstationDisableInsecureGuestLogons
     *
     * @return Windows10EndpointProtectionConfiguration
     */
-    public function setLanManagerWorkstationEnableInsecureGuestLogons($val)
+    public function setLanManagerWorkstationDisableInsecureGuestLogons($val)
     {
-        $this->_propDict["lanManagerWorkstationEnableInsecureGuestLogons"] = boolval($val);
+        $this->_propDict["lanManagerWorkstationDisableInsecureGuestLogons"] = boolval($val);
         return $this;
     }
     
     /**
     * Gets the localSecurityOptionsClearVirtualMemoryPageFile
+    * This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.
     *
     * @return bool The localSecurityOptionsClearVirtualMemoryPageFile
     */
@@ -1756,6 +1936,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsClearVirtualMemoryPageFile
+    * This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.
     *
     * @param bool $val The localSecurityOptionsClearVirtualMemoryPageFile
     *
@@ -1769,6 +1950,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn
+    * This security setting determines whether a computer can be shut down without having to log on to Windows.
     *
     * @return bool The localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn
     */
@@ -1783,6 +1965,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn
+    * This security setting determines whether a computer can be shut down without having to log on to Windows.
     *
     * @param bool $val The localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn
     *
@@ -1796,6 +1979,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowUIAccessApplicationElevation
+    * Allow UIAccess apps to prompt for elevation without using the secure desktop.
     *
     * @return bool The localSecurityOptionsAllowUIAccessApplicationElevation
     */
@@ -1810,6 +1994,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowUIAccessApplicationElevation
+    * Allow UIAccess apps to prompt for elevation without using the secure desktop.
     *
     * @param bool $val The localSecurityOptionsAllowUIAccessApplicationElevation
     *
@@ -1823,6 +2008,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations
+    * Virtualize file and registry write failures to per user locations
     *
     * @return bool The localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations
     */
@@ -1837,6 +2023,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations
+    * Virtualize file and registry write failures to per user locations
     *
     * @param bool $val The localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations
     *
@@ -1850,6 +2037,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsOnlyElevateSignedExecutables
+    * Enforce PKI certification path validation for a given executable file before it is permitted to run.
     *
     * @return bool The localSecurityOptionsOnlyElevateSignedExecutables
     */
@@ -1864,6 +2052,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsOnlyElevateSignedExecutables
+    * Enforce PKI certification path validation for a given executable file before it is permitted to run.
     *
     * @param bool $val The localSecurityOptionsOnlyElevateSignedExecutables
     *
@@ -1877,6 +2066,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAdministratorElevationPromptBehavior
+    * Define the behavior of the elevation prompt for admins in Admin Approval Mode.
     *
     * @return LocalSecurityOptionsAdministratorElevationPromptBehaviorType The localSecurityOptionsAdministratorElevationPromptBehavior
     */
@@ -1895,6 +2085,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAdministratorElevationPromptBehavior
+    * Define the behavior of the elevation prompt for admins in Admin Approval Mode.
     *
     * @param LocalSecurityOptionsAdministratorElevationPromptBehaviorType $val The localSecurityOptionsAdministratorElevationPromptBehavior
     *
@@ -1908,6 +2099,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsStandardUserElevationPromptBehavior
+    * Define the behavior of the elevation prompt for standard users.
     *
     * @return LocalSecurityOptionsStandardUserElevationPromptBehaviorType The localSecurityOptionsStandardUserElevationPromptBehavior
     */
@@ -1926,6 +2118,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsStandardUserElevationPromptBehavior
+    * Define the behavior of the elevation prompt for standard users.
     *
     * @param LocalSecurityOptionsStandardUserElevationPromptBehaviorType $val The localSecurityOptionsStandardUserElevationPromptBehavior
     *
@@ -1939,6 +2132,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation
+    * Enable all elevation requests to go to the interactive user's desktop rather than the secure desktop. Prompt behavior policy settings for admins and standard users are used.
     *
     * @return bool The localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation
     */
@@ -1953,6 +2147,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation
+    * Enable all elevation requests to go to the interactive user's desktop rather than the secure desktop. Prompt behavior policy settings for admins and standard users are used.
     *
     * @param bool $val The localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation
     *
@@ -1966,6 +2161,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation
+    * App installations requiring elevated privileges will prompt for admin credentials.Default is enabled
     *
     * @return bool The localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation
     */
@@ -1980,6 +2176,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation
+    * App installations requiring elevated privileges will prompt for admin credentials.Default is enabled
     *
     * @param bool $val The localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation
     *
@@ -1993,6 +2190,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowUIAccessApplicationsForSecureLocations
+    * Allow UIAccess apps to prompt for elevation without using the secure desktop.Default is enabled
     *
     * @return bool The localSecurityOptionsAllowUIAccessApplicationsForSecureLocations
     */
@@ -2007,6 +2205,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowUIAccessApplicationsForSecureLocations
+    * Allow UIAccess apps to prompt for elevation without using the secure desktop.Default is enabled
     *
     * @param bool $val The localSecurityOptionsAllowUIAccessApplicationsForSecureLocations
     *
@@ -2020,6 +2219,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsUseAdminApprovalMode
+    * Defines whether the built-in admin account uses Admin Approval Mode or runs all apps with full admin privileges.Default is enabled
     *
     * @return bool The localSecurityOptionsUseAdminApprovalMode
     */
@@ -2034,6 +2234,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsUseAdminApprovalMode
+    * Defines whether the built-in admin account uses Admin Approval Mode or runs all apps with full admin privileges.Default is enabled
     *
     * @param bool $val The localSecurityOptionsUseAdminApprovalMode
     *
@@ -2047,6 +2248,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsUseAdminApprovalModeForAdministrators
+    * Define whether Admin Approval Mode and all UAC policy settings are enabled, default is enabled
     *
     * @return bool The localSecurityOptionsUseAdminApprovalModeForAdministrators
     */
@@ -2061,6 +2263,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsUseAdminApprovalModeForAdministrators
+    * Define whether Admin Approval Mode and all UAC policy settings are enabled, default is enabled
     *
     * @param bool $val The localSecurityOptionsUseAdminApprovalModeForAdministrators
     *
@@ -2074,6 +2277,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsInformationShownOnLockScreen
+    * Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown
     *
     * @return LocalSecurityOptionsInformationShownOnLockScreenType The localSecurityOptionsInformationShownOnLockScreen
     */
@@ -2092,6 +2296,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsInformationShownOnLockScreen
+    * Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown
     *
     * @param LocalSecurityOptionsInformationShownOnLockScreenType $val The localSecurityOptionsInformationShownOnLockScreen
     *
@@ -2105,6 +2310,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsInformationDisplayedOnLockScreen
+    * Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown
     *
     * @return LocalSecurityOptionsInformationDisplayedOnLockScreenType The localSecurityOptionsInformationDisplayedOnLockScreen
     */
@@ -2123,6 +2329,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsInformationDisplayedOnLockScreen
+    * Configure the user information that is displayed when the session is locked. If not configured, user display name, domain and username are shown
     *
     * @param LocalSecurityOptionsInformationDisplayedOnLockScreenType $val The localSecurityOptionsInformationDisplayedOnLockScreen
     *
@@ -2136,6 +2343,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees
+    * This security setting determines whether the SMB client attempts to negotiate SMB packet signing.
     *
     * @return bool The localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees
     */
@@ -2150,6 +2358,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees
+    * This security setting determines whether the SMB client attempts to negotiate SMB packet signing.
     *
     * @param bool $val The localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees
     *
@@ -2163,6 +2372,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsClientDigitallySignCommunicationsAlways
+    * This security setting determines whether packet signing is required by the SMB client component.
     *
     * @return bool The localSecurityOptionsClientDigitallySignCommunicationsAlways
     */
@@ -2177,6 +2387,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsClientDigitallySignCommunicationsAlways
+    * This security setting determines whether packet signing is required by the SMB client component.
     *
     * @param bool $val The localSecurityOptionsClientDigitallySignCommunicationsAlways
     *
@@ -2190,6 +2401,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers
+    * If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that do not support password encryption during authentication.
     *
     * @return bool The localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers
     */
@@ -2204,6 +2416,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers
+    * If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that do not support password encryption during authentication.
     *
     * @param bool $val The localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers
     *
@@ -2217,6 +2430,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDisableServerDigitallySignCommunicationsAlways
+    * This security setting determines whether packet signing is required by the SMB server component.
     *
     * @return bool The localSecurityOptionsDisableServerDigitallySignCommunicationsAlways
     */
@@ -2231,6 +2445,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDisableServerDigitallySignCommunicationsAlways
+    * This security setting determines whether packet signing is required by the SMB server component.
     *
     * @param bool $val The localSecurityOptionsDisableServerDigitallySignCommunicationsAlways
     *
@@ -2244,6 +2459,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees
+    * This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it.
     *
     * @return bool The localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees
     */
@@ -2258,6 +2474,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees
+    * This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it.
     *
     * @param bool $val The localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees
     *
@@ -2271,6 +2488,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares
+    * By default, this security setting restricts anonymous access to shares and pipes to the settings for named pipes that can be accessed anonymously and Shares that can be accessed anonymously
     *
     * @return bool The localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares
     */
@@ -2285,6 +2503,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares
+    * By default, this security setting restricts anonymous access to shares and pipes to the settings for named pipes that can be accessed anonymously and Shares that can be accessed anonymously
     *
     * @param bool $val The localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares
     *
@@ -2298,6 +2517,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts
+    * This security setting determines what additional permissions will be granted for anonymous connections to the computer.
     *
     * @return bool The localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts
     */
@@ -2312,6 +2532,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts
+    * This security setting determines what additional permissions will be granted for anonymous connections to the computer.
     *
     * @param bool $val The localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts
     *
@@ -2325,6 +2546,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares
+    * This security setting determines whether to allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares.
     *
     * @return bool The localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares
     */
@@ -2339,6 +2561,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares
+    * This security setting determines whether to allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares.
     *
     * @param bool $val The localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares
     *
@@ -2352,6 +2575,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange
+    * This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. Itâ€™s not stored by default.
     *
     * @return bool The localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange
     */
@@ -2366,6 +2590,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange
+    * This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. Itâ€™s not stored by default.
     *
     * @param bool $val The localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange
     *
@@ -2379,6 +2604,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the localSecurityOptionsSmartCardRemovalBehavior
+    * This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader.
     *
     * @return LocalSecurityOptionsSmartCardRemovalBehaviorType The localSecurityOptionsSmartCardRemovalBehavior
     */
@@ -2397,6 +2623,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the localSecurityOptionsSmartCardRemovalBehavior
+    * This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader.
     *
     * @param LocalSecurityOptionsSmartCardRemovalBehaviorType $val The localSecurityOptionsSmartCardRemovalBehavior
     *
@@ -2410,6 +2637,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableAppBrowserUI
+    * Used to disable the display of the app and browser protection area.
     *
     * @return bool The defenderSecurityCenterDisableAppBrowserUI
     */
@@ -2424,6 +2652,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableAppBrowserUI
+    * Used to disable the display of the app and browser protection area.
     *
     * @param bool $val The defenderSecurityCenterDisableAppBrowserUI
     *
@@ -2437,6 +2666,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableFamilyUI
+    * Used to disable the display of the family options area.
     *
     * @return bool The defenderSecurityCenterDisableFamilyUI
     */
@@ -2451,6 +2681,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableFamilyUI
+    * Used to disable the display of the family options area.
     *
     * @param bool $val The defenderSecurityCenterDisableFamilyUI
     *
@@ -2464,6 +2695,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableHealthUI
+    * Used to disable the display of the device performance and health area.
     *
     * @return bool The defenderSecurityCenterDisableHealthUI
     */
@@ -2478,6 +2710,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableHealthUI
+    * Used to disable the display of the device performance and health area.
     *
     * @param bool $val The defenderSecurityCenterDisableHealthUI
     *
@@ -2491,6 +2724,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableNetworkUI
+    * Used to disable the display of the firewall and network protection area.
     *
     * @return bool The defenderSecurityCenterDisableNetworkUI
     */
@@ -2505,6 +2739,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableNetworkUI
+    * Used to disable the display of the firewall and network protection area.
     *
     * @param bool $val The defenderSecurityCenterDisableNetworkUI
     *
@@ -2518,6 +2753,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableVirusUI
+    * Used to disable the display of the virus and threat protection area.
     *
     * @return bool The defenderSecurityCenterDisableVirusUI
     */
@@ -2532,6 +2768,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableVirusUI
+    * Used to disable the display of the virus and threat protection area.
     *
     * @param bool $val The defenderSecurityCenterDisableVirusUI
     *
@@ -2545,6 +2782,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableAccountUI
+    * Used to disable the display of the account protection area.
     *
     * @return bool The defenderSecurityCenterDisableAccountUI
     */
@@ -2559,6 +2797,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableAccountUI
+    * Used to disable the display of the account protection area.
     *
     * @param bool $val The defenderSecurityCenterDisableAccountUI
     *
@@ -2571,7 +2810,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the defenderSecurityCenterDisableClearTpmUI
+    * Used to disable the display of the Clear TPM button.
+    *
+    * @return bool The defenderSecurityCenterDisableClearTpmUI
+    */
+    public function getDefenderSecurityCenterDisableClearTpmUI()
+    {
+        if (array_key_exists("defenderSecurityCenterDisableClearTpmUI", $this->_propDict)) {
+            return $this->_propDict["defenderSecurityCenterDisableClearTpmUI"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the defenderSecurityCenterDisableClearTpmUI
+    * Used to disable the display of the Clear TPM button.
+    *
+    * @param bool $val The defenderSecurityCenterDisableClearTpmUI
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDefenderSecurityCenterDisableClearTpmUI($val)
+    {
+        $this->_propDict["defenderSecurityCenterDisableClearTpmUI"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the defenderSecurityCenterDisableHardwareUI
+    * Used to disable the display of the hardware protection area.
     *
     * @return bool The defenderSecurityCenterDisableHardwareUI
     */
@@ -2586,6 +2855,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableHardwareUI
+    * Used to disable the display of the hardware protection area.
     *
     * @param bool $val The defenderSecurityCenterDisableHardwareUI
     *
@@ -2598,7 +2868,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the defenderSecurityCenterDisableNotificationAreaUI
+    * Used to disable the display of the notification area control. The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
+    *
+    * @return bool The defenderSecurityCenterDisableNotificationAreaUI
+    */
+    public function getDefenderSecurityCenterDisableNotificationAreaUI()
+    {
+        if (array_key_exists("defenderSecurityCenterDisableNotificationAreaUI", $this->_propDict)) {
+            return $this->_propDict["defenderSecurityCenterDisableNotificationAreaUI"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the defenderSecurityCenterDisableNotificationAreaUI
+    * Used to disable the display of the notification area control. The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
+    *
+    * @param bool $val The defenderSecurityCenterDisableNotificationAreaUI
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDefenderSecurityCenterDisableNotificationAreaUI($val)
+    {
+        $this->_propDict["defenderSecurityCenterDisableNotificationAreaUI"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the defenderSecurityCenterDisableRansomwareUI
+    * Used to disable the display of the ransomware protection area. 
     *
     * @return bool The defenderSecurityCenterDisableRansomwareUI
     */
@@ -2613,6 +2913,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableRansomwareUI
+    * Used to disable the display of the ransomware protection area. 
     *
     * @param bool $val The defenderSecurityCenterDisableRansomwareUI
     *
@@ -2626,6 +2927,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableSecureBootUI
+    * Used to disable the display of the secure boot area under Device security.
     *
     * @return bool The defenderSecurityCenterDisableSecureBootUI
     */
@@ -2640,6 +2942,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableSecureBootUI
+    * Used to disable the display of the secure boot area under Device security.
     *
     * @param bool $val The defenderSecurityCenterDisableSecureBootUI
     *
@@ -2653,6 +2956,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterDisableTroubleshootingUI
+    * Used to disable the display of the security process troubleshooting under Device security.
     *
     * @return bool The defenderSecurityCenterDisableTroubleshootingUI
     */
@@ -2667,6 +2971,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterDisableTroubleshootingUI
+    * Used to disable the display of the security process troubleshooting under Device security.
     *
     * @param bool $val The defenderSecurityCenterDisableTroubleshootingUI
     *
@@ -2679,7 +2984,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI
+    * Used to disable the display of update TPM Firmware when a vulnerable firmware is detected.
+    *
+    * @return bool The defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI
+    */
+    public function getDefenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI()
+    {
+        if (array_key_exists("defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI", $this->_propDict)) {
+            return $this->_propDict["defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI
+    * Used to disable the display of update TPM Firmware when a vulnerable firmware is detected.
+    *
+    * @param bool $val The defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDefenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI($val)
+    {
+        $this->_propDict["defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the defenderSecurityCenterOrganizationDisplayName
+    * The company name that is displayed to the users.
     *
     * @return string The defenderSecurityCenterOrganizationDisplayName
     */
@@ -2694,6 +3029,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterOrganizationDisplayName
+    * The company name that is displayed to the users.
     *
     * @param string $val The defenderSecurityCenterOrganizationDisplayName
     *
@@ -2707,6 +3043,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterHelpEmail
+    * The email address that is displayed to users.
     *
     * @return string The defenderSecurityCenterHelpEmail
     */
@@ -2721,6 +3058,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterHelpEmail
+    * The email address that is displayed to users.
     *
     * @param string $val The defenderSecurityCenterHelpEmail
     *
@@ -2734,6 +3072,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterHelpPhone
+    * The phone number or Skype ID that is displayed to users.
     *
     * @return string The defenderSecurityCenterHelpPhone
     */
@@ -2748,6 +3087,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterHelpPhone
+    * The phone number or Skype ID that is displayed to users.
     *
     * @param string $val The defenderSecurityCenterHelpPhone
     *
@@ -2761,6 +3101,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterHelpURL
+    * The help portal URL this is displayed to users.
     *
     * @return string The defenderSecurityCenterHelpURL
     */
@@ -2775,6 +3116,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterHelpURL
+    * The help portal URL this is displayed to users.
     *
     * @param string $val The defenderSecurityCenterHelpURL
     *
@@ -2788,6 +3130,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterNotificationsFromApp
+    * Notifications to show from the displayed areas of app
     *
     * @return DefenderSecurityCenterNotificationsFromAppType The defenderSecurityCenterNotificationsFromApp
     */
@@ -2806,6 +3149,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterNotificationsFromApp
+    * Notifications to show from the displayed areas of app
     *
     * @param DefenderSecurityCenterNotificationsFromAppType $val The defenderSecurityCenterNotificationsFromApp
     *
@@ -2819,6 +3163,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterITContactDisplay
+    * Configure where to display IT contact information to end users.
     *
     * @return DefenderSecurityCenterITContactDisplayType The defenderSecurityCenterITContactDisplay
     */
@@ -2837,6 +3182,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterITContactDisplay
+    * Configure where to display IT contact information to end users.
     *
     * @param DefenderSecurityCenterITContactDisplayType $val The defenderSecurityCenterITContactDisplay
     *
@@ -2850,6 +3196,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallBlockStatefulFTP
+    * Blocks stateful FTP connections to the device
     *
     * @return bool The firewallBlockStatefulFTP
     */
@@ -2864,6 +3211,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallBlockStatefulFTP
+    * Blocks stateful FTP connections to the device
     *
     * @param bool $val The firewallBlockStatefulFTP
     *
@@ -2877,6 +3225,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallIdleTimeoutForSecurityAssociationInSeconds
+    * Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600
     *
     * @return int The firewallIdleTimeoutForSecurityAssociationInSeconds
     */
@@ -2891,6 +3240,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallIdleTimeoutForSecurityAssociationInSeconds
+    * Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600
     *
     * @param int $val The firewallIdleTimeoutForSecurityAssociationInSeconds
     *
@@ -2904,6 +3254,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallPreSharedKeyEncodingMethod
+    * Select the preshared key encoding to be used. Possible values are: deviceDefault, none, utF8.
     *
     * @return FirewallPreSharedKeyEncodingMethodType The firewallPreSharedKeyEncodingMethod
     */
@@ -2922,6 +3273,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallPreSharedKeyEncodingMethod
+    * Select the preshared key encoding to be used. Possible values are: deviceDefault, none, utF8.
     *
     * @param FirewallPreSharedKeyEncodingMethodType $val The firewallPreSharedKeyEncodingMethod
     *
@@ -2935,6 +3287,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallIPSecExemptionsAllowNeighborDiscovery
+    * Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes
     *
     * @return bool The firewallIPSecExemptionsAllowNeighborDiscovery
     */
@@ -2949,6 +3302,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallIPSecExemptionsAllowNeighborDiscovery
+    * Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes
     *
     * @param bool $val The firewallIPSecExemptionsAllowNeighborDiscovery
     *
@@ -2962,6 +3316,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallIPSecExemptionsAllowICMP
+    * Configures IPSec exemptions to allow ICMP
     *
     * @return bool The firewallIPSecExemptionsAllowICMP
     */
@@ -2976,6 +3331,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallIPSecExemptionsAllowICMP
+    * Configures IPSec exemptions to allow ICMP
     *
     * @param bool $val The firewallIPSecExemptionsAllowICMP
     *
@@ -2989,6 +3345,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallIPSecExemptionsAllowRouterDiscovery
+    * Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes
     *
     * @return bool The firewallIPSecExemptionsAllowRouterDiscovery
     */
@@ -3003,6 +3360,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallIPSecExemptionsAllowRouterDiscovery
+    * Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes
     *
     * @param bool $val The firewallIPSecExemptionsAllowRouterDiscovery
     *
@@ -3016,6 +3374,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallIPSecExemptionsAllowDHCP
+    * Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic
     *
     * @return bool The firewallIPSecExemptionsAllowDHCP
     */
@@ -3030,6 +3389,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallIPSecExemptionsAllowDHCP
+    * Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic
     *
     * @param bool $val The firewallIPSecExemptionsAllowDHCP
     *
@@ -3043,6 +3403,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallCertificateRevocationListCheckMethod
+    * Specify how the certificate revocation list is to be enforced. Possible values are: deviceDefault, none, attempt, require.
     *
     * @return FirewallCertificateRevocationListCheckMethodType The firewallCertificateRevocationListCheckMethod
     */
@@ -3061,6 +3422,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallCertificateRevocationListCheckMethod
+    * Specify how the certificate revocation list is to be enforced. Possible values are: deviceDefault, none, attempt, require.
     *
     * @param FirewallCertificateRevocationListCheckMethodType $val The firewallCertificateRevocationListCheckMethod
     *
@@ -3074,6 +3436,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallMergeKeyingModuleSettings
+    * If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set
     *
     * @return bool The firewallMergeKeyingModuleSettings
     */
@@ -3088,6 +3451,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallMergeKeyingModuleSettings
+    * If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set
     *
     * @param bool $val The firewallMergeKeyingModuleSettings
     *
@@ -3101,6 +3465,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallPacketQueueingMethod
+    * Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: deviceDefault, disabled, queueInbound, queueOutbound, queueBoth.
     *
     * @return FirewallPacketQueueingMethodType The firewallPacketQueueingMethod
     */
@@ -3119,6 +3484,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallPacketQueueingMethod
+    * Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: deviceDefault, disabled, queueInbound, queueOutbound, queueBoth.
     *
     * @param FirewallPacketQueueingMethodType $val The firewallPacketQueueingMethod
     *
@@ -3132,6 +3498,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallProfileDomain
+    * Configures the firewall profile settings for domain networks
     *
     * @return WindowsFirewallNetworkProfile The firewallProfileDomain
     */
@@ -3150,6 +3517,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallProfileDomain
+    * Configures the firewall profile settings for domain networks
     *
     * @param WindowsFirewallNetworkProfile $val The firewallProfileDomain
     *
@@ -3163,6 +3531,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallProfilePublic
+    * Configures the firewall profile settings for public networks
     *
     * @return WindowsFirewallNetworkProfile The firewallProfilePublic
     */
@@ -3181,6 +3550,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallProfilePublic
+    * Configures the firewall profile settings for public networks
     *
     * @param WindowsFirewallNetworkProfile $val The firewallProfilePublic
     *
@@ -3194,6 +3564,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the firewallProfilePrivate
+    * Configures the firewall profile settings for private networks
     *
     * @return WindowsFirewallNetworkProfile The firewallProfilePrivate
     */
@@ -3212,6 +3583,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the firewallProfilePrivate
+    * Configures the firewall profile settings for private networks
     *
     * @param WindowsFirewallNetworkProfile $val The firewallProfilePrivate
     *
@@ -3224,7 +3596,41 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the defenderAdobeReaderLaunchChildProcess
+    * Value indicating the behavior of Adobe Reader from creating child processes
+    *
+    * @return DefenderProtectionType The defenderAdobeReaderLaunchChildProcess
+    */
+    public function getDefenderAdobeReaderLaunchChildProcess()
+    {
+        if (array_key_exists("defenderAdobeReaderLaunchChildProcess", $this->_propDict)) {
+            if (is_a($this->_propDict["defenderAdobeReaderLaunchChildProcess"], "Microsoft\Graph\Beta\Model\DefenderProtectionType")) {
+                return $this->_propDict["defenderAdobeReaderLaunchChildProcess"];
+            } else {
+                $this->_propDict["defenderAdobeReaderLaunchChildProcess"] = new DefenderProtectionType($this->_propDict["defenderAdobeReaderLaunchChildProcess"]);
+                return $this->_propDict["defenderAdobeReaderLaunchChildProcess"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the defenderAdobeReaderLaunchChildProcess
+    * Value indicating the behavior of Adobe Reader from creating child processes
+    *
+    * @param DefenderProtectionType $val The defenderAdobeReaderLaunchChildProcess
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDefenderAdobeReaderLaunchChildProcess($val)
+    {
+        $this->_propDict["defenderAdobeReaderLaunchChildProcess"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the defenderAttackSurfaceReductionExcludedPaths
+    * List of exe files and folders to be excluded from attack surface reduction rules
     *
     * @return string The defenderAttackSurfaceReductionExcludedPaths
     */
@@ -3239,6 +3645,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderAttackSurfaceReductionExcludedPaths
+    * List of exe files and folders to be excluded from attack surface reduction rules
     *
     * @param string $val The defenderAttackSurfaceReductionExcludedPaths
     *
@@ -3252,6 +3659,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeAppsOtherProcessInjectionType
+    * Value indicating the behavior ofÂ Office applications injecting into other processes
     *
     * @return DefenderAttackSurfaceType The defenderOfficeAppsOtherProcessInjectionType
     */
@@ -3270,6 +3678,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeAppsOtherProcessInjectionType
+    * Value indicating the behavior ofÂ Office applications injecting into other processes
     *
     * @param DefenderAttackSurfaceType $val The defenderOfficeAppsOtherProcessInjectionType
     *
@@ -3283,6 +3692,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeAppsOtherProcessInjection
+    * Value indicating the behavior ofÂ  Office applications injecting into other processes
     *
     * @return DefenderProtectionType The defenderOfficeAppsOtherProcessInjection
     */
@@ -3301,6 +3711,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeAppsOtherProcessInjection
+    * Value indicating the behavior ofÂ  Office applications injecting into other processes
     *
     * @param DefenderProtectionType $val The defenderOfficeAppsOtherProcessInjection
     *
@@ -3313,7 +3724,41 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the defenderOfficeCommunicationAppsLaunchChildProcess
+    * Value indicating the behavior of Office communication applications, including Microsoft Outlook, from creating child processes
+    *
+    * @return DefenderProtectionType The defenderOfficeCommunicationAppsLaunchChildProcess
+    */
+    public function getDefenderOfficeCommunicationAppsLaunchChildProcess()
+    {
+        if (array_key_exists("defenderOfficeCommunicationAppsLaunchChildProcess", $this->_propDict)) {
+            if (is_a($this->_propDict["defenderOfficeCommunicationAppsLaunchChildProcess"], "Microsoft\Graph\Beta\Model\DefenderProtectionType")) {
+                return $this->_propDict["defenderOfficeCommunicationAppsLaunchChildProcess"];
+            } else {
+                $this->_propDict["defenderOfficeCommunicationAppsLaunchChildProcess"] = new DefenderProtectionType($this->_propDict["defenderOfficeCommunicationAppsLaunchChildProcess"]);
+                return $this->_propDict["defenderOfficeCommunicationAppsLaunchChildProcess"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the defenderOfficeCommunicationAppsLaunchChildProcess
+    * Value indicating the behavior of Office communication applications, including Microsoft Outlook, from creating child processes
+    *
+    * @param DefenderProtectionType $val The defenderOfficeCommunicationAppsLaunchChildProcess
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDefenderOfficeCommunicationAppsLaunchChildProcess($val)
+    {
+        $this->_propDict["defenderOfficeCommunicationAppsLaunchChildProcess"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the defenderOfficeAppsExecutableContentCreationOrLaunchType
+    * Value indicating the behavior of Office applications/macros creating or launching executable content
     *
     * @return DefenderAttackSurfaceType The defenderOfficeAppsExecutableContentCreationOrLaunchType
     */
@@ -3332,6 +3777,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeAppsExecutableContentCreationOrLaunchType
+    * Value indicating the behavior of Office applications/macros creating or launching executable content
     *
     * @param DefenderAttackSurfaceType $val The defenderOfficeAppsExecutableContentCreationOrLaunchType
     *
@@ -3345,6 +3791,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeAppsExecutableContentCreationOrLaunch
+    * Value indicating the behavior of Office applications/macros creating or launching executable content
     *
     * @return DefenderProtectionType The defenderOfficeAppsExecutableContentCreationOrLaunch
     */
@@ -3363,6 +3810,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeAppsExecutableContentCreationOrLaunch
+    * Value indicating the behavior of Office applications/macros creating or launching executable content
     *
     * @param DefenderProtectionType $val The defenderOfficeAppsExecutableContentCreationOrLaunch
     *
@@ -3376,6 +3824,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeAppsLaunchChildProcessType
+    * Value indicating the behavior of Office application launching child processes
     *
     * @return DefenderAttackSurfaceType The defenderOfficeAppsLaunchChildProcessType
     */
@@ -3394,6 +3843,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeAppsLaunchChildProcessType
+    * Value indicating the behavior of Office application launching child processes
     *
     * @param DefenderAttackSurfaceType $val The defenderOfficeAppsLaunchChildProcessType
     *
@@ -3407,6 +3857,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeAppsLaunchChildProcess
+    * Value indicating the behavior of Office application launching child processes
     *
     * @return DefenderProtectionType The defenderOfficeAppsLaunchChildProcess
     */
@@ -3425,6 +3876,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeAppsLaunchChildProcess
+    * Value indicating the behavior of Office application launching child processes
     *
     * @param DefenderProtectionType $val The defenderOfficeAppsLaunchChildProcess
     *
@@ -3438,6 +3890,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeMacroCodeAllowWin32ImportsType
+    * Value indicating the behavior of Win32 imports from Macro code in Office
     *
     * @return DefenderAttackSurfaceType The defenderOfficeMacroCodeAllowWin32ImportsType
     */
@@ -3456,6 +3909,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeMacroCodeAllowWin32ImportsType
+    * Value indicating the behavior of Win32 imports from Macro code in Office
     *
     * @param DefenderAttackSurfaceType $val The defenderOfficeMacroCodeAllowWin32ImportsType
     *
@@ -3469,6 +3923,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderOfficeMacroCodeAllowWin32Imports
+    * Value indicating the behavior of Win32 imports from Macro code in Office
     *
     * @return DefenderProtectionType The defenderOfficeMacroCodeAllowWin32Imports
     */
@@ -3487,6 +3942,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderOfficeMacroCodeAllowWin32Imports
+    * Value indicating the behavior of Win32 imports from Macro code in Office
     *
     * @param DefenderProtectionType $val The defenderOfficeMacroCodeAllowWin32Imports
     *
@@ -3500,6 +3956,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderScriptObfuscatedMacroCodeType
+    * Value indicating the behavior of obfuscated js/vbs/ps/macro code
     *
     * @return DefenderAttackSurfaceType The defenderScriptObfuscatedMacroCodeType
     */
@@ -3518,6 +3975,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderScriptObfuscatedMacroCodeType
+    * Value indicating the behavior of obfuscated js/vbs/ps/macro code
     *
     * @param DefenderAttackSurfaceType $val The defenderScriptObfuscatedMacroCodeType
     *
@@ -3531,6 +3989,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderScriptObfuscatedMacroCode
+    * Value indicating the behavior of obfuscated js/vbs/ps/macro code
     *
     * @return DefenderProtectionType The defenderScriptObfuscatedMacroCode
     */
@@ -3549,6 +4008,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderScriptObfuscatedMacroCode
+    * Value indicating the behavior of obfuscated js/vbs/ps/macro code
     *
     * @param DefenderProtectionType $val The defenderScriptObfuscatedMacroCode
     *
@@ -3562,6 +4022,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderScriptDownloadedPayloadExecutionType
+    * Value indicating the behavior of js/vbs executing payload downloaded from Internet
     *
     * @return DefenderAttackSurfaceType The defenderScriptDownloadedPayloadExecutionType
     */
@@ -3580,6 +4041,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderScriptDownloadedPayloadExecutionType
+    * Value indicating the behavior of js/vbs executing payload downloaded from Internet
     *
     * @param DefenderAttackSurfaceType $val The defenderScriptDownloadedPayloadExecutionType
     *
@@ -3593,6 +4055,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderScriptDownloadedPayloadExecution
+    * Value indicating the behavior of js/vbs executing payload downloaded from Internet
     *
     * @return DefenderProtectionType The defenderScriptDownloadedPayloadExecution
     */
@@ -3611,6 +4074,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderScriptDownloadedPayloadExecution
+    * Value indicating the behavior of js/vbs executing payload downloaded from Internet
     *
     * @param DefenderProtectionType $val The defenderScriptDownloadedPayloadExecution
     *
@@ -3624,6 +4088,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderPreventCredentialStealingType
+    * Value indicating if credential stealing from the Windows local security authority subsystem is permitted
     *
     * @return DefenderProtectionType The defenderPreventCredentialStealingType
     */
@@ -3642,6 +4107,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderPreventCredentialStealingType
+    * Value indicating if credential stealing from the Windows local security authority subsystem is permitted
     *
     * @param DefenderProtectionType $val The defenderPreventCredentialStealingType
     *
@@ -3655,6 +4121,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderProcessCreationType
+    * Value indicating response to process creations originating from PSExec and WMI commands
     *
     * @return DefenderAttackSurfaceType The defenderProcessCreationType
     */
@@ -3673,6 +4140,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderProcessCreationType
+    * Value indicating response to process creations originating from PSExec and WMI commands
     *
     * @param DefenderAttackSurfaceType $val The defenderProcessCreationType
     *
@@ -3686,6 +4154,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderProcessCreation
+    * Value indicating response to process creations originating from PSExec and WMI commands
     *
     * @return DefenderProtectionType The defenderProcessCreation
     */
@@ -3704,6 +4173,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderProcessCreation
+    * Value indicating response to process creations originating from PSExec and WMI commands
     *
     * @param DefenderProtectionType $val The defenderProcessCreation
     *
@@ -3717,6 +4187,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderUntrustedUSBProcessType
+    * Value indicating response to untrusted and unsigned processes that run from USB
     *
     * @return DefenderAttackSurfaceType The defenderUntrustedUSBProcessType
     */
@@ -3735,6 +4206,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderUntrustedUSBProcessType
+    * Value indicating response to untrusted and unsigned processes that run from USB
     *
     * @param DefenderAttackSurfaceType $val The defenderUntrustedUSBProcessType
     *
@@ -3748,6 +4220,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderUntrustedUSBProcess
+    * Value indicating response to untrusted and unsigned processes that run from USB
     *
     * @return DefenderProtectionType The defenderUntrustedUSBProcess
     */
@@ -3766,6 +4239,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderUntrustedUSBProcess
+    * Value indicating response to untrusted and unsigned processes that run from USB
     *
     * @param DefenderProtectionType $val The defenderUntrustedUSBProcess
     *
@@ -3779,6 +4253,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderUntrustedExecutableType
+    * Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria
     *
     * @return DefenderAttackSurfaceType The defenderUntrustedExecutableType
     */
@@ -3797,6 +4272,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderUntrustedExecutableType
+    * Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria
     *
     * @param DefenderAttackSurfaceType $val The defenderUntrustedExecutableType
     *
@@ -3810,6 +4286,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderUntrustedExecutable
+    * Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria
     *
     * @return DefenderProtectionType The defenderUntrustedExecutable
     */
@@ -3828,6 +4305,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderUntrustedExecutable
+    * Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria
     *
     * @param DefenderProtectionType $val The defenderUntrustedExecutable
     *
@@ -3841,6 +4319,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderEmailContentExecutionType
+    * Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client)
     *
     * @return DefenderAttackSurfaceType The defenderEmailContentExecutionType
     */
@@ -3859,6 +4338,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderEmailContentExecutionType
+    * Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client)
     *
     * @param DefenderAttackSurfaceType $val The defenderEmailContentExecutionType
     *
@@ -3872,6 +4352,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderEmailContentExecution
+    * Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client)
     *
     * @return DefenderProtectionType The defenderEmailContentExecution
     */
@@ -3890,6 +4371,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderEmailContentExecution
+    * Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client)
     *
     * @param DefenderProtectionType $val The defenderEmailContentExecution
     *
@@ -3903,6 +4385,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderAdvancedRansomewareProtectionType
+    * Value indicating use of advanced protection against ransomeware
     *
     * @return DefenderProtectionType The defenderAdvancedRansomewareProtectionType
     */
@@ -3921,6 +4404,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderAdvancedRansomewareProtectionType
+    * Value indicating use of advanced protection against ransomeware
     *
     * @param DefenderProtectionType $val The defenderAdvancedRansomewareProtectionType
     *
@@ -3934,6 +4418,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderGuardMyFoldersType
+    * Value indicating the behavior of protected folders
     *
     * @return FolderProtectionType The defenderGuardMyFoldersType
     */
@@ -3952,6 +4437,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderGuardMyFoldersType
+    * Value indicating the behavior of protected folders
     *
     * @param FolderProtectionType $val The defenderGuardMyFoldersType
     *
@@ -3965,6 +4451,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderGuardedFoldersAllowedAppPaths
+    * List of paths to exe that are allowed to access protected folders
     *
     * @return string The defenderGuardedFoldersAllowedAppPaths
     */
@@ -3979,6 +4466,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderGuardedFoldersAllowedAppPaths
+    * List of paths to exe that are allowed to access protected folders
     *
     * @param string $val The defenderGuardedFoldersAllowedAppPaths
     *
@@ -3992,6 +4480,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderAdditionalGuardedFolders
+    * List of folder paths to be added to the list of protected folders
     *
     * @return string The defenderAdditionalGuardedFolders
     */
@@ -4006,6 +4495,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderAdditionalGuardedFolders
+    * List of folder paths to be added to the list of protected folders
     *
     * @param string $val The defenderAdditionalGuardedFolders
     *
@@ -4019,6 +4509,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderNetworkProtectionType
+    * Value indicating the behavior of NetworkProtection
     *
     * @return DefenderProtectionType The defenderNetworkProtectionType
     */
@@ -4037,6 +4528,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderNetworkProtectionType
+    * Value indicating the behavior of NetworkProtection
     *
     * @param DefenderProtectionType $val The defenderNetworkProtectionType
     *
@@ -4050,6 +4542,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderExploitProtectionXml
+    * Xml content containing information regarding exploit protection details.
     *
     * @return \GuzzleHttp\Psr7\Stream The defenderExploitProtectionXml
     */
@@ -4068,6 +4561,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderExploitProtectionXml
+    * Xml content containing information regarding exploit protection details.
     *
     * @param \GuzzleHttp\Psr7\Stream $val The defenderExploitProtectionXml
     *
@@ -4081,6 +4575,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderExploitProtectionXmlFileName
+    * Name of the file from which DefenderExploitProtectionXml was obtained.
     *
     * @return string The defenderExploitProtectionXmlFileName
     */
@@ -4095,6 +4590,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderExploitProtectionXmlFileName
+    * Name of the file from which DefenderExploitProtectionXml was obtained.
     *
     * @param string $val The defenderExploitProtectionXmlFileName
     *
@@ -4108,6 +4604,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the defenderSecurityCenterBlockExploitProtectionOverride
+    * Indicates whether or not to block user from overriding Exploit Protection settings.
     *
     * @return bool The defenderSecurityCenterBlockExploitProtectionOverride
     */
@@ -4122,6 +4619,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the defenderSecurityCenterBlockExploitProtectionOverride
+    * Indicates whether or not to block user from overriding Exploit Protection settings.
     *
     * @param bool $val The defenderSecurityCenterBlockExploitProtectionOverride
     *
@@ -4135,6 +4633,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appLockerApplicationControl
+    * Enables the Admin to choose what types of app to allow on devices. Possible values are: notConfigured, enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker, auditComponentsStoreAppsAndSmartlocker.
     *
     * @return AppLockerApplicationControlType The appLockerApplicationControl
     */
@@ -4153,6 +4652,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appLockerApplicationControl
+    * Enables the Admin to choose what types of app to allow on devices. Possible values are: notConfigured, enforceComponentsAndStoreApps, auditComponentsAndStoreApps, enforceComponentsStoreAppsAndSmartlocker, auditComponentsStoreAppsAndSmartlocker.
     *
     * @param AppLockerApplicationControlType $val The appLockerApplicationControl
     *
@@ -4166,6 +4666,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceGuardLocalSystemAuthorityCredentialGuardSettings
+    * Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled.
     *
     * @return DeviceGuardLocalSystemAuthorityCredentialGuardType The deviceGuardLocalSystemAuthorityCredentialGuardSettings
     */
@@ -4184,6 +4685,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceGuardLocalSystemAuthorityCredentialGuardSettings
+    * Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled.
     *
     * @param DeviceGuardLocalSystemAuthorityCredentialGuardType $val The deviceGuardLocalSystemAuthorityCredentialGuardSettings
     *
@@ -4197,6 +4699,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceGuardEnableVirtualizationBasedSecurity
+    * Turns On Virtualization Based Security(VBS).
     *
     * @return bool The deviceGuardEnableVirtualizationBasedSecurity
     */
@@ -4211,6 +4714,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceGuardEnableVirtualizationBasedSecurity
+    * Turns On Virtualization Based Security(VBS).
     *
     * @param bool $val The deviceGuardEnableVirtualizationBasedSecurity
     *
@@ -4224,6 +4728,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceGuardEnableSecureBootWithDMA
+    * Specifies whether Platform Security Level is enabled at next reboot.
     *
     * @return bool The deviceGuardEnableSecureBootWithDMA
     */
@@ -4238,6 +4743,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceGuardEnableSecureBootWithDMA
+    * Specifies whether Platform Security Level is enabled at next reboot.
     *
     * @param bool $val The deviceGuardEnableSecureBootWithDMA
     *
@@ -4250,7 +4756,41 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the deviceGuardLaunchSystemGuard
+    * Allows the IT admin to configure the launch of System Guard.
+    *
+    * @return Enablement The deviceGuardLaunchSystemGuard
+    */
+    public function getDeviceGuardLaunchSystemGuard()
+    {
+        if (array_key_exists("deviceGuardLaunchSystemGuard", $this->_propDict)) {
+            if (is_a($this->_propDict["deviceGuardLaunchSystemGuard"], "Microsoft\Graph\Beta\Model\Enablement")) {
+                return $this->_propDict["deviceGuardLaunchSystemGuard"];
+            } else {
+                $this->_propDict["deviceGuardLaunchSystemGuard"] = new Enablement($this->_propDict["deviceGuardLaunchSystemGuard"]);
+                return $this->_propDict["deviceGuardLaunchSystemGuard"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the deviceGuardLaunchSystemGuard
+    * Allows the IT admin to configure the launch of System Guard.
+    *
+    * @param Enablement $val The deviceGuardLaunchSystemGuard
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDeviceGuardLaunchSystemGuard($val)
+    {
+        $this->_propDict["deviceGuardLaunchSystemGuard"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the smartScreenEnableInShell
+    * Allows IT Admins to configure SmartScreen for Windows.
     *
     * @return bool The smartScreenEnableInShell
     */
@@ -4265,6 +4805,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the smartScreenEnableInShell
+    * Allows IT Admins to configure SmartScreen for Windows.
     *
     * @param bool $val The smartScreenEnableInShell
     *
@@ -4278,6 +4819,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the smartScreenBlockOverrideForFiles
+    * Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
     *
     * @return bool The smartScreenBlockOverrideForFiles
     */
@@ -4292,6 +4834,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the smartScreenBlockOverrideForFiles
+    * Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
     *
     * @param bool $val The smartScreenBlockOverrideForFiles
     *
@@ -4305,6 +4848,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardEnabled
+    * Enable Windows Defender Application Guard
     *
     * @return bool The applicationGuardEnabled
     */
@@ -4319,6 +4863,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardEnabled
+    * Enable Windows Defender Application Guard
     *
     * @param bool $val The applicationGuardEnabled
     *
@@ -4331,7 +4876,41 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the applicationGuardEnabledOptions
+    * Enable Windows Defender Application Guard for newer Windows builds
+    *
+    * @return ApplicationGuardEnabledOptions The applicationGuardEnabledOptions
+    */
+    public function getApplicationGuardEnabledOptions()
+    {
+        if (array_key_exists("applicationGuardEnabledOptions", $this->_propDict)) {
+            if (is_a($this->_propDict["applicationGuardEnabledOptions"], "Microsoft\Graph\Beta\Model\ApplicationGuardEnabledOptions")) {
+                return $this->_propDict["applicationGuardEnabledOptions"];
+            } else {
+                $this->_propDict["applicationGuardEnabledOptions"] = new ApplicationGuardEnabledOptions($this->_propDict["applicationGuardEnabledOptions"]);
+                return $this->_propDict["applicationGuardEnabledOptions"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the applicationGuardEnabledOptions
+    * Enable Windows Defender Application Guard for newer Windows builds
+    *
+    * @param ApplicationGuardEnabledOptions $val The applicationGuardEnabledOptions
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setApplicationGuardEnabledOptions($val)
+    {
+        $this->_propDict["applicationGuardEnabledOptions"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the applicationGuardBlockFileTransfer
+    * Block clipboard to transfer image file, text file or neither of them. Possible values are: notConfigured, blockImageAndTextFile, blockImageFile, blockNone, blockTextFile.
     *
     * @return ApplicationGuardBlockFileTransferType The applicationGuardBlockFileTransfer
     */
@@ -4350,6 +4929,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardBlockFileTransfer
+    * Block clipboard to transfer image file, text file or neither of them. Possible values are: notConfigured, blockImageAndTextFile, blockImageFile, blockNone, blockTextFile.
     *
     * @param ApplicationGuardBlockFileTransferType $val The applicationGuardBlockFileTransfer
     *
@@ -4363,6 +4943,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardBlockNonEnterpriseContent
+    * Block enterprise sites to load non-enterprise content, such as third party plug-ins
     *
     * @return bool The applicationGuardBlockNonEnterpriseContent
     */
@@ -4377,6 +4958,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardBlockNonEnterpriseContent
+    * Block enterprise sites to load non-enterprise content, such as third party plug-ins
     *
     * @param bool $val The applicationGuardBlockNonEnterpriseContent
     *
@@ -4390,6 +4972,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowPersistence
+    * Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)
     *
     * @return bool The applicationGuardAllowPersistence
     */
@@ -4404,6 +4987,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowPersistence
+    * Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)
     *
     * @param bool $val The applicationGuardAllowPersistence
     *
@@ -4417,6 +5001,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardForceAuditing
+    * Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)
     *
     * @return bool The applicationGuardForceAuditing
     */
@@ -4431,6 +5016,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardForceAuditing
+    * Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)
     *
     * @param bool $val The applicationGuardForceAuditing
     *
@@ -4444,6 +5030,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardBlockClipboardSharing
+    * Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: notConfigured, blockBoth, blockHostToContainer, blockContainerToHost, blockNone.
     *
     * @return ApplicationGuardBlockClipboardSharingType The applicationGuardBlockClipboardSharing
     */
@@ -4462,6 +5049,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardBlockClipboardSharing
+    * Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: notConfigured, blockBoth, blockHostToContainer, blockContainerToHost, blockNone.
     *
     * @param ApplicationGuardBlockClipboardSharingType $val The applicationGuardBlockClipboardSharing
     *
@@ -4475,6 +5063,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowPrintToPDF
+    * Allow printing to PDF from Container
     *
     * @return bool The applicationGuardAllowPrintToPDF
     */
@@ -4489,6 +5078,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowPrintToPDF
+    * Allow printing to PDF from Container
     *
     * @param bool $val The applicationGuardAllowPrintToPDF
     *
@@ -4502,6 +5092,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowPrintToXPS
+    * Allow printing to XPS from Container
     *
     * @return bool The applicationGuardAllowPrintToXPS
     */
@@ -4516,6 +5107,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowPrintToXPS
+    * Allow printing to XPS from Container
     *
     * @param bool $val The applicationGuardAllowPrintToXPS
     *
@@ -4529,6 +5121,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowPrintToLocalPrinters
+    * Allow printing to Local Printers from Container
     *
     * @return bool The applicationGuardAllowPrintToLocalPrinters
     */
@@ -4543,6 +5136,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowPrintToLocalPrinters
+    * Allow printing to Local Printers from Container
     *
     * @param bool $val The applicationGuardAllowPrintToLocalPrinters
     *
@@ -4556,6 +5150,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowPrintToNetworkPrinters
+    * Allow printing to Network Printers from Container
     *
     * @return bool The applicationGuardAllowPrintToNetworkPrinters
     */
@@ -4570,6 +5165,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowPrintToNetworkPrinters
+    * Allow printing to Network Printers from Container
     *
     * @param bool $val The applicationGuardAllowPrintToNetworkPrinters
     *
@@ -4583,6 +5179,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowVirtualGPU
+    * Allow application guard to use virtual GPU
     *
     * @return bool The applicationGuardAllowVirtualGPU
     */
@@ -4597,6 +5194,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowVirtualGPU
+    * Allow application guard to use virtual GPU
     *
     * @param bool $val The applicationGuardAllowVirtualGPU
     *
@@ -4610,6 +5208,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the applicationGuardAllowFileSaveOnHost
+    * Allow users to download files from Edge in the application guard container and save them on the host file system
     *
     * @return bool The applicationGuardAllowFileSaveOnHost
     */
@@ -4624,6 +5223,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the applicationGuardAllowFileSaveOnHost
+    * Allow users to download files from Edge in the application guard container and save them on the host file system
     *
     * @param bool $val The applicationGuardAllowFileSaveOnHost
     *
@@ -4636,7 +5236,37 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the bitLockerAllowStandardUserEncryption
+    * Allows the admin to allow standard users to enable encrpytion during Azure AD Join.
+    *
+    * @return bool The bitLockerAllowStandardUserEncryption
+    */
+    public function getBitLockerAllowStandardUserEncryption()
+    {
+        if (array_key_exists("bitLockerAllowStandardUserEncryption", $this->_propDict)) {
+            return $this->_propDict["bitLockerAllowStandardUserEncryption"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the bitLockerAllowStandardUserEncryption
+    * Allows the admin to allow standard users to enable encrpytion during Azure AD Join.
+    *
+    * @param bool $val The bitLockerAllowStandardUserEncryption
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setBitLockerAllowStandardUserEncryption($val)
+    {
+        $this->_propDict["bitLockerAllowStandardUserEncryption"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the bitLockerDisableWarningForOtherDiskEncryption
+    * Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
     *
     * @return bool The bitLockerDisableWarningForOtherDiskEncryption
     */
@@ -4651,6 +5281,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bitLockerDisableWarningForOtherDiskEncryption
+    * Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
     *
     * @param bool $val The bitLockerDisableWarningForOtherDiskEncryption
     *
@@ -4664,6 +5295,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the bitLockerEnableStorageCardEncryptionOnMobile
+    * Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.
     *
     * @return bool The bitLockerEnableStorageCardEncryptionOnMobile
     */
@@ -4678,6 +5310,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bitLockerEnableStorageCardEncryptionOnMobile
+    * Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.
     *
     * @param bool $val The bitLockerEnableStorageCardEncryptionOnMobile
     *
@@ -4691,6 +5324,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the bitLockerEncryptDevice
+    * Allows the admin to require encryption to be turned on using BitLocker.
     *
     * @return bool The bitLockerEncryptDevice
     */
@@ -4705,6 +5339,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bitLockerEncryptDevice
+    * Allows the admin to require encryption to be turned on using BitLocker.
     *
     * @param bool $val The bitLockerEncryptDevice
     *
@@ -4718,6 +5353,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the bitLockerSystemDrivePolicy
+    * BitLocker System Drive Policy.
     *
     * @return BitLockerSystemDrivePolicy The bitLockerSystemDrivePolicy
     */
@@ -4736,6 +5372,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bitLockerSystemDrivePolicy
+    * BitLocker System Drive Policy.
     *
     * @param BitLockerSystemDrivePolicy $val The bitLockerSystemDrivePolicy
     *
@@ -4749,6 +5386,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the bitLockerFixedDrivePolicy
+    * BitLocker Fixed Drive Policy.
     *
     * @return BitLockerFixedDrivePolicy The bitLockerFixedDrivePolicy
     */
@@ -4767,6 +5405,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bitLockerFixedDrivePolicy
+    * BitLocker Fixed Drive Policy.
     *
     * @param BitLockerFixedDrivePolicy $val The bitLockerFixedDrivePolicy
     *
@@ -4780,6 +5419,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the bitLockerRemovableDrivePolicy
+    * BitLocker Removable Drive Policy.
     *
     * @return BitLockerRemovableDrivePolicy The bitLockerRemovableDrivePolicy
     */
@@ -4798,6 +5438,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bitLockerRemovableDrivePolicy
+    * BitLocker Removable Drive Policy.
     *
     * @param BitLockerRemovableDrivePolicy $val The bitLockerRemovableDrivePolicy
     *

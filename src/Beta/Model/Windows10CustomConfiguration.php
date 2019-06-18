@@ -29,6 +29,7 @@ class Windows10CustomConfiguration extends DeviceConfiguration
 
      /** 
      * Gets the omaSettings
+    * OMA settings. This collection can contain a maximum of 1000 elements.
      *
      * @return array The omaSettings
      */
@@ -43,6 +44,7 @@ class Windows10CustomConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the omaSettings
+    * OMA settings. This collection can contain a maximum of 1000 elements.
     *
     * @param OmaSetting $val The omaSettings
     *

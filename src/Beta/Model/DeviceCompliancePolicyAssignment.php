@@ -28,6 +28,7 @@ class DeviceCompliancePolicyAssignment extends Entity
 {
     /**
     * Gets the target
+    * Target for the compliance policy assignment.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class DeviceCompliancePolicyAssignment extends Entity
     
     /**
     * Sets the target
+    * Target for the compliance policy assignment.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

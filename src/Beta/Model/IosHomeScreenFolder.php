@@ -25,9 +25,19 @@ namespace Microsoft\Graph\Beta\Model;
 */
 class IosHomeScreenFolder extends IosHomeScreenItem
 {
+    /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.iosHomeScreenFolder");
+    }
+
 
     /**
     * Gets the pages
+    * Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.
     *
     * @return IosHomeScreenFolderPage The pages
     */
@@ -46,6 +56,7 @@ class IosHomeScreenFolder extends IosHomeScreenItem
 
     /**
     * Sets the pages
+    * Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.
     *
     * @param IosHomeScreenFolderPage $val The value to assign to the pages
     *

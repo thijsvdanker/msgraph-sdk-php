@@ -531,4 +531,32 @@ class EducationAssignment extends Entity
         return $this;
     }
     
+
+     /** 
+     * Gets the categories
+     *
+     * @return array The categories
+     */
+    public function getCategories()
+    {
+        if (array_key_exists("categories", $this->_propDict)) {
+           return $this->_propDict["categories"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the categories
+    *
+    * @param EducationCategory $val The categories
+    *
+    * @return EducationAssignment
+    */
+    public function setCategories($val)
+    {
+		$this->_propDict["categories"] = $val;
+        return $this;
+    }
+    
 }

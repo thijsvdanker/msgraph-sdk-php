@@ -28,6 +28,7 @@ class MobileAppAssignment extends Entity
 {
     /**
     * Gets the intent
+    * The install intent defined by the admin. Possible values are: available, required, uninstall, availableWithoutEnrollment.
     *
     * @return InstallIntent The intent
     */
@@ -46,6 +47,7 @@ class MobileAppAssignment extends Entity
     
     /**
     * Sets the intent
+    * The install intent defined by the admin. Possible values are: available, required, uninstall, availableWithoutEnrollment.
     *
     * @param InstallIntent $val The intent
     *
@@ -59,6 +61,7 @@ class MobileAppAssignment extends Entity
     
     /**
     * Gets the target
+    * The target group assignment defined by the admin.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -77,6 +80,7 @@ class MobileAppAssignment extends Entity
     
     /**
     * Sets the target
+    * The target group assignment defined by the admin.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *
@@ -90,6 +94,7 @@ class MobileAppAssignment extends Entity
     
     /**
     * Gets the settings
+    * The settings for target assignment defined by the admin.
     *
     * @return MobileAppAssignmentSettings The settings
     */
@@ -108,6 +113,7 @@ class MobileAppAssignment extends Entity
     
     /**
     * Sets the settings
+    * The settings for target assignment defined by the admin.
     *
     * @param MobileAppAssignmentSettings $val The settings
     *

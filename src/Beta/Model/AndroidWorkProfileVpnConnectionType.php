@@ -37,4 +37,5 @@ class AndroidWorkProfileVpnConnectionType extends Enum
     const DELL_SONIC_WALL_MOBILE_CONNECT = "dellSonicWallMobileConnect";
     const CHECK_POINT_CAPSULE_VPN = "checkPointCapsuleVpn";
     const CITRIX = "citrix";
+    const PALO_ALTO_GLOBAL_PROTECT = "paloAltoGlobalProtect";
 }

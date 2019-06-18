@@ -33,4 +33,5 @@ class EasAuthenticationMethod extends Enum
     */
     const USERNAME_AND_PASSWORD = "usernameAndPassword";
     const CERTIFICATE = "certificate";
+    const DERIVED_CREDENTIAL = "derivedCredential";
 }

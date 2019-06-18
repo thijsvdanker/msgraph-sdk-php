@@ -27,6 +27,7 @@ class VpnOnDemandRule extends Entity
 {
     /**
     * Gets the ssids
+    * Network Service Set Identifiers (SSIDs).
     *
     * @return string The ssids
     */
@@ -41,6 +42,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the ssids
+    * Network Service Set Identifiers (SSIDs).
     *
     * @param string $val The value of the ssids
     *
@@ -53,6 +55,7 @@ class VpnOnDemandRule extends Entity
     }
     /**
     * Gets the dnsSearchDomains
+    * DNS Search Domains.
     *
     * @return string The dnsSearchDomains
     */
@@ -67,6 +70,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the dnsSearchDomains
+    * DNS Search Domains.
     *
     * @param string $val The value of the dnsSearchDomains
     *
@@ -79,6 +83,7 @@ class VpnOnDemandRule extends Entity
     }
     /**
     * Gets the probeUrl
+    * A URL to probe. If this URL is successfully fetched (returning a 200 HTTP status code) without redirection, this rule matches.
     *
     * @return string The probeUrl
     */
@@ -93,6 +98,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the probeUrl
+    * A URL to probe. If this URL is successfully fetched (returning a 200 HTTP status code) without redirection, this rule matches.
     *
     * @param string $val The value of the probeUrl
     *
@@ -106,6 +112,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Gets the action
+    * Action.
     *
     * @return VpnOnDemandRuleConnectionAction The action
     */
@@ -124,6 +131,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the action
+    * Action.
     *
     * @param VpnOnDemandRuleConnectionAction $val The value to assign to the action
     *
@@ -137,6 +145,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Gets the domainAction
+    * Domain Action (Only applicable when Action is evaluate connection).
     *
     * @return VpnOnDemandRuleConnectionDomainAction The domainAction
     */
@@ -155,6 +164,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the domainAction
+    * Domain Action (Only applicable when Action is evaluate connection).
     *
     * @param VpnOnDemandRuleConnectionDomainAction $val The value to assign to the domainAction
     *
@@ -167,6 +177,7 @@ class VpnOnDemandRule extends Entity
     }
     /**
     * Gets the domains
+    * Domains (Only applicable when Action is evaluate connection).
     *
     * @return string The domains
     */
@@ -181,6 +192,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the domains
+    * Domains (Only applicable when Action is evaluate connection).
     *
     * @param string $val The value of the domains
     *
@@ -193,6 +205,7 @@ class VpnOnDemandRule extends Entity
     }
     /**
     * Gets the probeRequiredUrl
+    * Probe Required Url (Only applicable when Action is evaluate connection and DomainAction is connect if needed).
     *
     * @return string The probeRequiredUrl
     */
@@ -207,6 +220,7 @@ class VpnOnDemandRule extends Entity
 
     /**
     * Sets the probeRequiredUrl
+    * Probe Required Url (Only applicable when Action is evaluate connection and DomainAction is connect if needed).
     *
     * @param string $val The value of the probeRequiredUrl
     *

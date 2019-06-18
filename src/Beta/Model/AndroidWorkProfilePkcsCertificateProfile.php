@@ -28,6 +28,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
 {
     /**
     * Gets the certificationAuthority
+    * PKCS Certification Authority
     *
     * @return string The certificationAuthority
     */
@@ -42,6 +43,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Sets the certificationAuthority
+    * PKCS Certification Authority
     *
     * @param string $val The certificationAuthority
     *
@@ -55,6 +57,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Gets the certificationAuthorityName
+    * PKCS Certification Authority Name
     *
     * @return string The certificationAuthorityName
     */
@@ -69,6 +72,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Sets the certificationAuthorityName
+    * PKCS Certification Authority Name
     *
     * @param string $val The certificationAuthorityName
     *
@@ -82,6 +86,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Gets the certificateTemplateName
+    * PKCS Certificate Template Name
     *
     * @return string The certificateTemplateName
     */
@@ -96,6 +101,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Sets the certificateTemplateName
+    * PKCS Certificate Template Name
     *
     * @param string $val The certificateTemplateName
     *
@@ -109,6 +115,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Gets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @return string The subjectAlternativeNameFormatString
     */
@@ -123,6 +130,7 @@ class AndroidWorkProfilePkcsCertificateProfile extends AndroidWorkProfileCertifi
     
     /**
     * Sets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @param string $val The subjectAlternativeNameFormatString
     *

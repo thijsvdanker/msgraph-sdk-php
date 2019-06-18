@@ -27,6 +27,7 @@ class VpnTrafficRule extends Entity
 {
     /**
     * Gets the name
+    * Name.
     *
     * @return string The name
     */
@@ -41,6 +42,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the name
+    * Name.
     *
     * @param string $val The value of the name
     *
@@ -53,6 +55,7 @@ class VpnTrafficRule extends Entity
     }
     /**
     * Gets the protocols
+    * Protocols (0-255). Valid values 0 to 255
     *
     * @return int The protocols
     */
@@ -67,6 +70,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the protocols
+    * Protocols (0-255). Valid values 0 to 255
     *
     * @param int $val The value of the protocols
     *
@@ -80,6 +84,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Gets the localPortRanges
+    * Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.
     *
     * @return NumberRange The localPortRanges
     */
@@ -98,6 +103,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the localPortRanges
+    * Local port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.
     *
     * @param NumberRange $val The value to assign to the localPortRanges
     *
@@ -111,6 +117,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Gets the remotePortRanges
+    * Remote port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.
     *
     * @return NumberRange The remotePortRanges
     */
@@ -129,6 +136,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the remotePortRanges
+    * Remote port range can be set only when protocol is either TCP or UDP (6 or 17). This collection can contain a maximum of 500 elements.
     *
     * @param NumberRange $val The value to assign to the remotePortRanges
     *
@@ -142,6 +150,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Gets the localAddressRanges
+    * Local address range. This collection can contain a maximum of 500 elements.
     *
     * @return IPv4Range The localAddressRanges
     */
@@ -160,6 +169,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the localAddressRanges
+    * Local address range. This collection can contain a maximum of 500 elements.
     *
     * @param IPv4Range $val The value to assign to the localAddressRanges
     *
@@ -173,6 +183,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Gets the remoteAddressRanges
+    * Remote address range. This collection can contain a maximum of 500 elements.
     *
     * @return IPv4Range The remoteAddressRanges
     */
@@ -191,6 +202,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the remoteAddressRanges
+    * Remote address range. This collection can contain a maximum of 500 elements.
     *
     * @param IPv4Range $val The value to assign to the remoteAddressRanges
     *
@@ -203,6 +215,7 @@ class VpnTrafficRule extends Entity
     }
     /**
     * Gets the appId
+    * App identifier, if this traffic rule is triggered by an app.
     *
     * @return string The appId
     */
@@ -217,6 +230,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the appId
+    * App identifier, if this traffic rule is triggered by an app.
     *
     * @param string $val The value of the appId
     *
@@ -230,6 +244,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Gets the appType
+    * App type, if this traffic rule is triggered by an app.
     *
     * @return VpnTrafficRuleAppType The appType
     */
@@ -248,6 +263,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the appType
+    * App type, if this traffic rule is triggered by an app.
     *
     * @param VpnTrafficRuleAppType $val The value to assign to the appType
     *
@@ -261,6 +277,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Gets the routingPolicyType
+    * When app triggered, indicates whether to enable split tunneling along this route.
     *
     * @return VpnTrafficRuleRoutingPolicyType The routingPolicyType
     */
@@ -279,6 +296,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the routingPolicyType
+    * When app triggered, indicates whether to enable split tunneling along this route.
     *
     * @param VpnTrafficRuleRoutingPolicyType $val The value to assign to the routingPolicyType
     *
@@ -291,6 +309,7 @@ class VpnTrafficRule extends Entity
     }
     /**
     * Gets the claims
+    * Claims associated with this traffic rule.
     *
     * @return string The claims
     */
@@ -305,6 +324,7 @@ class VpnTrafficRule extends Entity
 
     /**
     * Sets the claims
+    * Claims associated with this traffic rule.
     *
     * @param string $val The value of the claims
     *

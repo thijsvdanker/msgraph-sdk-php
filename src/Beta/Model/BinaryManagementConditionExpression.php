@@ -28,6 +28,7 @@ class BinaryManagementConditionExpression extends ManagementConditionExpressionM
 
     /**
     * Gets the operator
+    * The operator used in the evaluation of the binary operation.
     *
     * @return BinaryManagementConditionExpressionOperatorType The operator
     */
@@ -46,6 +47,7 @@ class BinaryManagementConditionExpression extends ManagementConditionExpressionM
 
     /**
     * Sets the operator
+    * The operator used in the evaluation of the binary operation.
     *
     * @param BinaryManagementConditionExpressionOperatorType $val The value to assign to the operator
     *
@@ -59,6 +61,7 @@ class BinaryManagementConditionExpression extends ManagementConditionExpressionM
 
     /**
     * Gets the firstOperand
+    * The first operand of the binary operation.
     *
     * @return ManagementConditionExpressionModel The firstOperand
     */
@@ -77,6 +80,7 @@ class BinaryManagementConditionExpression extends ManagementConditionExpressionM
 
     /**
     * Sets the firstOperand
+    * The first operand of the binary operation.
     *
     * @param ManagementConditionExpressionModel $val The value to assign to the firstOperand
     *
@@ -90,6 +94,7 @@ class BinaryManagementConditionExpression extends ManagementConditionExpressionM
 
     /**
     * Gets the secondOperand
+    * The second operand of the binary operation.
     *
     * @return ManagementConditionExpressionModel The secondOperand
     */
@@ -108,6 +113,7 @@ class BinaryManagementConditionExpression extends ManagementConditionExpressionM
 
     /**
     * Sets the secondOperand
+    * The second operand of the binary operation.
     *
     * @param ManagementConditionExpressionModel $val The value to assign to the secondOperand
     *

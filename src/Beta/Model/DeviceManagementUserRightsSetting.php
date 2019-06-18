@@ -28,6 +28,7 @@ class DeviceManagementUserRightsSetting extends Entity
 
     /**
     * Gets the state
+    * Representing the current state of this user rights setting
     *
     * @return StateManagementSetting The state
     */
@@ -46,6 +47,7 @@ class DeviceManagementUserRightsSetting extends Entity
 
     /**
     * Sets the state
+    * Representing the current state of this user rights setting
     *
     * @param StateManagementSetting $val The value to assign to the state
     *
@@ -59,6 +61,7 @@ class DeviceManagementUserRightsSetting extends Entity
 
     /**
     * Gets the localUsersOrGroups
+    * Representing a collection of local users or groups which will be set on device if the state of this setting is Allowed. This collection can contain a maximum of 500 elements.
     *
     * @return DeviceManagementUserRightsLocalUserOrGroup The localUsersOrGroups
     */
@@ -77,6 +80,7 @@ class DeviceManagementUserRightsSetting extends Entity
 
     /**
     * Sets the localUsersOrGroups
+    * Representing a collection of local users or groups which will be set on device if the state of this setting is Allowed. This collection can contain a maximum of 500 elements.
     *
     * @param DeviceManagementUserRightsLocalUserOrGroup $val The value to assign to the localUsersOrGroups
     *

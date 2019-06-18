@@ -60,6 +60,7 @@ class AndroidForWorkImportedPFXCertificateProfile extends AndroidCertificateProf
 
      /** 
      * Gets the managedDeviceCertificateStates
+    * Certificate state for devices
      *
      * @return array The managedDeviceCertificateStates
      */
@@ -74,6 +75,7 @@ class AndroidForWorkImportedPFXCertificateProfile extends AndroidCertificateProf
     
     /** 
     * Sets the managedDeviceCertificateStates
+    * Certificate state for devices
     *
     * @param ManagedDeviceCertificateState $val The managedDeviceCertificateStates
     *

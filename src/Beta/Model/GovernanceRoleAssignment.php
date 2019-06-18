@@ -162,33 +162,6 @@ class GovernanceRoleAssignment extends Entity
     }
     
     /**
-    * Gets the isPermanent
-    *
-    * @return bool The isPermanent
-    */
-    public function getIsPermanent()
-    {
-        if (array_key_exists("isPermanent", $this->_propDict)) {
-            return $this->_propDict["isPermanent"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the isPermanent
-    *
-    * @param bool $val The isPermanent
-    *
-    * @return GovernanceRoleAssignment
-    */
-    public function setIsPermanent($val)
-    {
-        $this->_propDict["isPermanent"] = boolval($val);
-        return $this;
-    }
-    
-    /**
     * Gets the startDateTime
     *
     * @return \DateTime The startDateTime

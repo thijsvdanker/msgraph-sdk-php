@@ -26,6 +26,32 @@ namespace Microsoft\Graph\Beta\Model;
 class WebApplication extends Entity
 {
     /**
+    * Gets the homePageUrl
+    *
+    * @return string The homePageUrl
+    */
+    public function getHomePageUrl()
+    {
+        if (array_key_exists("homePageUrl", $this->_propDict)) {
+            return $this->_propDict["homePageUrl"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the homePageUrl
+    *
+    * @param string $val The value of the homePageUrl
+    *
+    * @return WebApplication
+    */
+    public function setHomePageUrl($val)
+    {
+        $this->_propDict["homePageUrl"] = $val;
+        return $this;
+    }
+    /**
     * Gets the redirectUris
     *
     * @return string The redirectUris

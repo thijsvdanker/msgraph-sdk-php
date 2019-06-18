@@ -26,6 +26,15 @@ namespace Microsoft\Graph\Beta\Model;
 class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProvider
 {
     /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.educationOneRosterApiDataProvider");
+    }
+
+    /**
     * Gets the connectionUrl
     *
     * @return string The connectionUrl
@@ -106,6 +115,32 @@ class EducationOneRosterApiDataProvider extends EducationSynchronizationDataProv
     public function setSchoolsIds($val)
     {
         $this->_propDict["schoolsIds"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the termIds
+    *
+    * @return string The termIds
+    */
+    public function getTermIds()
+    {
+        if (array_key_exists("termIds", $this->_propDict)) {
+            return $this->_propDict["termIds"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the termIds
+    *
+    * @param string $val The value of the termIds
+    *
+    * @return EducationOneRosterApiDataProvider
+    */
+    public function setTermIds($val)
+    {
+        $this->_propDict["termIds"] = $val;
         return $this;
     }
     /**

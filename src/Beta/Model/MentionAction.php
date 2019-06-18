@@ -28,6 +28,7 @@ class MentionAction extends Entity
 
     /**
     * Gets the mentionees
+    * The identities of the users mentioned in this action.
     *
     * @return IdentitySet The mentionees
     */
@@ -46,6 +47,7 @@ class MentionAction extends Entity
 
     /**
     * Sets the mentionees
+    * The identities of the users mentioned in this action.
     *
     * @param IdentitySet $val The value to assign to the mentionees
     *

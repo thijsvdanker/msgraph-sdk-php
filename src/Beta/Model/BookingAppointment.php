@@ -225,6 +225,7 @@ class BookingAppointment extends Entity
     
     /**
     * Gets the serviceId
+    * The id of the booking service associated with this appointment.
     *
     * @return string The serviceId
     */
@@ -239,6 +240,7 @@ class BookingAppointment extends Entity
     
     /**
     * Sets the serviceId
+    * The id of the booking service associated with this appointment.
     *
     * @param string $val The serviceId
     *

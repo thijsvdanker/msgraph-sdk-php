@@ -28,6 +28,7 @@ class IosStoreApp extends MobileApp
 {
     /**
     * Gets the bundleId
+    * The Identity Name.
     *
     * @return string The bundleId
     */
@@ -42,6 +43,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Sets the bundleId
+    * The Identity Name.
     *
     * @param string $val The bundleId
     *
@@ -55,6 +57,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Gets the appStoreUrl
+    * The Apple App Store URL
     *
     * @return string The appStoreUrl
     */
@@ -69,6 +72,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Sets the appStoreUrl
+    * The Apple App Store URL
     *
     * @param string $val The appStoreUrl
     *
@@ -82,6 +86,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Gets the applicableDeviceType
+    * The iOS architecture for which this app can run on.
     *
     * @return IosDeviceType The applicableDeviceType
     */
@@ -100,6 +105,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Sets the applicableDeviceType
+    * The iOS architecture for which this app can run on.
     *
     * @param IosDeviceType $val The applicableDeviceType
     *
@@ -113,6 +119,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Gets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @return IosMinimumOperatingSystem The minimumSupportedOperatingSystem
     */
@@ -131,6 +138,7 @@ class IosStoreApp extends MobileApp
     
     /**
     * Sets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @param IosMinimumOperatingSystem $val The minimumSupportedOperatingSystem
     *

@@ -29,6 +29,7 @@ class WindowsPhone81AppXBundle extends WindowsPhone81AppX
 
      /** 
      * Gets the appXPackageInformationList
+    * The list of AppX Package Information.
      *
      * @return array The appXPackageInformationList
      */
@@ -43,6 +44,7 @@ class WindowsPhone81AppXBundle extends WindowsPhone81AppX
     
     /** 
     * Sets the appXPackageInformationList
+    * The list of AppX Package Information.
     *
     * @param WindowsPackageInformation $val The appXPackageInformationList
     *

@@ -27,6 +27,7 @@ class AppConfigurationSettingItem extends Entity
 {
     /**
     * Gets the appConfigKey
+    * app configuration key.
     *
     * @return string The appConfigKey
     */
@@ -41,6 +42,7 @@ class AppConfigurationSettingItem extends Entity
 
     /**
     * Sets the appConfigKey
+    * app configuration key.
     *
     * @param string $val The value of the appConfigKey
     *
@@ -54,6 +56,7 @@ class AppConfigurationSettingItem extends Entity
 
     /**
     * Gets the appConfigKeyType
+    * app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType.
     *
     * @return MdmAppConfigKeyType The appConfigKeyType
     */
@@ -72,6 +75,7 @@ class AppConfigurationSettingItem extends Entity
 
     /**
     * Sets the appConfigKeyType
+    * app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType.
     *
     * @param MdmAppConfigKeyType $val The value to assign to the appConfigKeyType
     *
@@ -84,6 +88,7 @@ class AppConfigurationSettingItem extends Entity
     }
     /**
     * Gets the appConfigKeyValue
+    * app configuration key value.
     *
     * @return string The appConfigKeyValue
     */
@@ -98,6 +103,7 @@ class AppConfigurationSettingItem extends Entity
 
     /**
     * Sets the appConfigKeyValue
+    * app configuration key value.
     *
     * @param string $val The value of the appConfigKeyValue
     *

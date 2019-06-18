@@ -27,38 +27,74 @@ namespace Microsoft\Graph\Beta\Model;
 class ItemActivity extends Entity
 {
     /**
-    * Gets the action
+    * Gets the access
+    * An item was accessed.
     *
-    * @return ItemActionSet The action
+    * @return AccessAction The access
     */
-    public function getAction()
+    public function getAccess()
     {
-        if (array_key_exists("action", $this->_propDict)) {
-            if (is_a($this->_propDict["action"], "Microsoft\Graph\Beta\Model\ItemActionSet")) {
-                return $this->_propDict["action"];
+        if (array_key_exists("access", $this->_propDict)) {
+            if (is_a($this->_propDict["access"], "Microsoft\Graph\Beta\Model\AccessAction")) {
+                return $this->_propDict["access"];
             } else {
-                $this->_propDict["action"] = new ItemActionSet($this->_propDict["action"]);
-                return $this->_propDict["action"];
+                $this->_propDict["access"] = new AccessAction($this->_propDict["access"]);
+                return $this->_propDict["access"];
             }
         }
         return null;
     }
     
     /**
-    * Sets the action
+    * Sets the access
+    * An item was accessed.
     *
-    * @param ItemActionSet $val The action
+    * @param AccessAction $val The access
     *
     * @return ItemActivity
     */
-    public function setAction($val)
+    public function setAccess($val)
     {
-        $this->_propDict["action"] = $val;
+        $this->_propDict["access"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the activityDateTime
+    * Details about when the activity took place. Read-only.
+    *
+    * @return \DateTime The activityDateTime
+    */
+    public function getActivityDateTime()
+    {
+        if (array_key_exists("activityDateTime", $this->_propDict)) {
+            if (is_a($this->_propDict["activityDateTime"], "\DateTime")) {
+                return $this->_propDict["activityDateTime"];
+            } else {
+                $this->_propDict["activityDateTime"] = new \DateTime($this->_propDict["activityDateTime"]);
+                return $this->_propDict["activityDateTime"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the activityDateTime
+    * Details about when the activity took place. Read-only.
+    *
+    * @param \DateTime $val The activityDateTime
+    *
+    * @return ItemActivity
+    */
+    public function setActivityDateTime($val)
+    {
+        $this->_propDict["activityDateTime"] = $val;
         return $this;
     }
     
     /**
     * Gets the actor
+    * Identity of who performed the action. Read-only.
     *
     * @return IdentitySet The actor
     */
@@ -77,6 +113,7 @@ class ItemActivity extends Entity
     
     /**
     * Sets the actor
+    * Identity of who performed the action. Read-only.
     *
     * @param IdentitySet $val The actor
     *
@@ -89,38 +126,8 @@ class ItemActivity extends Entity
     }
     
     /**
-    * Gets the times
-    *
-    * @return ItemActivityTimeSet The times
-    */
-    public function getTimes()
-    {
-        if (array_key_exists("times", $this->_propDict)) {
-            if (is_a($this->_propDict["times"], "Microsoft\Graph\Beta\Model\ItemActivityTimeSet")) {
-                return $this->_propDict["times"];
-            } else {
-                $this->_propDict["times"] = new ItemActivityTimeSet($this->_propDict["times"]);
-                return $this->_propDict["times"];
-            }
-        }
-        return null;
-    }
-    
-    /**
-    * Sets the times
-    *
-    * @param ItemActivityTimeSet $val The times
-    *
-    * @return ItemActivity
-    */
-    public function setTimes($val)
-    {
-        $this->_propDict["times"] = $val;
-        return $this;
-    }
-    
-    /**
     * Gets the driveItem
+    * Exposes the driveItem that was the target of this activity.
     *
     * @return DriveItem The driveItem
     */
@@ -139,6 +146,7 @@ class ItemActivity extends Entity
     
     /**
     * Sets the driveItem
+    * Exposes the driveItem that was the target of this activity.
     *
     * @param DriveItem $val The driveItem
     *
@@ -147,37 +155,6 @@ class ItemActivity extends Entity
     public function setDriveItem($val)
     {
         $this->_propDict["driveItem"] = $val;
-        return $this;
-    }
-    
-    /**
-    * Gets the listItem
-    *
-    * @return ListItem The listItem
-    */
-    public function getListItem()
-    {
-        if (array_key_exists("listItem", $this->_propDict)) {
-            if (is_a($this->_propDict["listItem"], "Microsoft\Graph\Beta\Model\ListItem")) {
-                return $this->_propDict["listItem"];
-            } else {
-                $this->_propDict["listItem"] = new ListItem($this->_propDict["listItem"]);
-                return $this->_propDict["listItem"];
-            }
-        }
-        return null;
-    }
-    
-    /**
-    * Sets the listItem
-    *
-    * @param ListItem $val The listItem
-    *
-    * @return ItemActivity
-    */
-    public function setListItem($val)
-    {
-        $this->_propDict["listItem"] = $val;
         return $this;
     }
     

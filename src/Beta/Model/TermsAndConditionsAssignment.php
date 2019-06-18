@@ -28,6 +28,7 @@ class TermsAndConditionsAssignment extends Entity
 {
     /**
     * Gets the target
+    * Assignment target that the T&amp;C policy is assigned to.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class TermsAndConditionsAssignment extends Entity
     
     /**
     * Sets the target
+    * Assignment target that the T&amp;C policy is assigned to.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

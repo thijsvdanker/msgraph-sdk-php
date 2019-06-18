@@ -28,6 +28,7 @@ class OutlookCategory extends Entity
 {
     /**
     * Gets the displayName
+    * A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class OutlookCategory extends Entity
     
     /**
     * Sets the displayName
+    * A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class OutlookCategory extends Entity
     
     /**
     * Gets the color
+    * A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below.
     *
     * @return CategoryColor The color
     */
@@ -73,6 +76,7 @@ class OutlookCategory extends Entity
     
     /**
     * Sets the color
+    * A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below.
     *
     * @param CategoryColor $val The color
     *

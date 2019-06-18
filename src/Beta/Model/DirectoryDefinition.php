@@ -108,4 +108,30 @@ class DirectoryDefinition extends Entity
         $this->_propDict["objects"] = $val;
          return $this;
     }
+    /**
+    * Gets the readOnly
+    *
+    * @return bool The readOnly
+    */
+    public function getReadOnly()
+    {
+        if (array_key_exists("readOnly", $this->_propDict)) {
+            return $this->_propDict["readOnly"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the readOnly
+    *
+    * @param bool $val The value of the readOnly
+    *
+    * @return DirectoryDefinition
+    */
+    public function setReadOnly($val)
+    {
+        $this->_propDict["readOnly"] = $val;
+        return $this;
+    }
 }

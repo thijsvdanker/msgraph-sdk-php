@@ -27,6 +27,7 @@ class IosHomeScreenItem extends Entity
 {
     /**
     * Gets the displayName
+    * Name of the app
     *
     * @return string The displayName
     */
@@ -41,6 +42,7 @@ class IosHomeScreenItem extends Entity
 
     /**
     * Sets the displayName
+    * Name of the app
     *
     * @param string $val The value of the displayName
     *

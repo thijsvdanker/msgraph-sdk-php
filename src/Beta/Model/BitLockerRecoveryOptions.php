@@ -27,6 +27,7 @@ class BitLockerRecoveryOptions extends Entity
 {
     /**
     * Gets the blockDataRecoveryAgent
+    * Indicates whether to block certificate-based data recovery agent.
     *
     * @return bool The blockDataRecoveryAgent
     */
@@ -41,6 +42,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the blockDataRecoveryAgent
+    * Indicates whether to block certificate-based data recovery agent.
     *
     * @param bool $val The value of the blockDataRecoveryAgent
     *
@@ -54,6 +56,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Gets the recoveryPasswordUsage
+    * Indicates whether users are allowed or required to generate a 48-digit recovery password for fixed or system disk.
     *
     * @return ConfigurationUsage The recoveryPasswordUsage
     */
@@ -72,6 +75,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the recoveryPasswordUsage
+    * Indicates whether users are allowed or required to generate a 48-digit recovery password for fixed or system disk.
     *
     * @param ConfigurationUsage $val The value to assign to the recoveryPasswordUsage
     *
@@ -85,6 +89,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Gets the recoveryKeyUsage
+    * Indicates whether users are allowed or required to generate a 256-bit recovery key for fixed or system disk.
     *
     * @return ConfigurationUsage The recoveryKeyUsage
     */
@@ -103,6 +108,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the recoveryKeyUsage
+    * Indicates whether users are allowed or required to generate a 256-bit recovery key for fixed or system disk.
     *
     * @param ConfigurationUsage $val The value to assign to the recoveryKeyUsage
     *
@@ -115,6 +121,7 @@ class BitLockerRecoveryOptions extends Entity
     }
     /**
     * Gets the hideRecoveryOptions
+    * Indicates whether or not to allow showing recovery options in BitLocker Setup Wizard for fixed or system disk.
     *
     * @return bool The hideRecoveryOptions
     */
@@ -129,6 +136,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the hideRecoveryOptions
+    * Indicates whether or not to allow showing recovery options in BitLocker Setup Wizard for fixed or system disk.
     *
     * @param bool $val The value of the hideRecoveryOptions
     *
@@ -141,6 +149,7 @@ class BitLockerRecoveryOptions extends Entity
     }
     /**
     * Gets the enableRecoveryInformationSaveToStore
+    * Indicates whether or not to allow BitLocker recovery information to store in AD DS.
     *
     * @return bool The enableRecoveryInformationSaveToStore
     */
@@ -155,6 +164,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the enableRecoveryInformationSaveToStore
+    * Indicates whether or not to allow BitLocker recovery information to store in AD DS.
     *
     * @param bool $val The value of the enableRecoveryInformationSaveToStore
     *
@@ -168,6 +178,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Gets the recoveryInformationToStore
+    * Configure what pieces of BitLocker recovery information are stored to AD DS.
     *
     * @return BitLockerRecoveryInformationType The recoveryInformationToStore
     */
@@ -186,6 +197,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the recoveryInformationToStore
+    * Configure what pieces of BitLocker recovery information are stored to AD DS.
     *
     * @param BitLockerRecoveryInformationType $val The value to assign to the recoveryInformationToStore
     *
@@ -198,6 +210,7 @@ class BitLockerRecoveryOptions extends Entity
     }
     /**
     * Gets the enableBitLockerAfterRecoveryInformationToStore
+    * Indicates whether or not to enable BitLocker until recovery information is stored in AD DS.
     *
     * @return bool The enableBitLockerAfterRecoveryInformationToStore
     */
@@ -212,6 +225,7 @@ class BitLockerRecoveryOptions extends Entity
 
     /**
     * Sets the enableBitLockerAfterRecoveryInformationToStore
+    * Indicates whether or not to enable BitLocker until recovery information is stored in AD DS.
     *
     * @param bool $val The value of the enableBitLockerAfterRecoveryInformationToStore
     *

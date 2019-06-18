@@ -33,4 +33,5 @@ class ChatMessageImportance extends Enum
     */
     const NORMAL = "normal";
     const HIGH = "high";
+    const URGENT = "urgent";
 }

@@ -28,6 +28,7 @@ class MobileAppInstallStatus extends Entity
 {
     /**
     * Gets the deviceName
+    * Device name
     *
     * @return string The deviceName
     */
@@ -42,6 +43,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the deviceName
+    * Device name
     *
     * @param string $val The deviceName
     *
@@ -55,6 +57,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the deviceId
+    * Device ID
     *
     * @return string The deviceId
     */
@@ -69,6 +72,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the deviceId
+    * Device ID
     *
     * @param string $val The deviceId
     *
@@ -82,6 +86,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the lastSyncDateTime
+    * Last sync date time
     *
     * @return \DateTime The lastSyncDateTime
     */
@@ -100,6 +105,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the lastSyncDateTime
+    * Last sync date time
     *
     * @param \DateTime $val The lastSyncDateTime
     *
@@ -113,6 +119,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the mobileAppInstallStatusValue
+    * The install state of the app.
     *
     * @return ResultantAppState The mobileAppInstallStatusValue
     */
@@ -131,6 +138,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the mobileAppInstallStatusValue
+    * The install state of the app.
     *
     * @param ResultantAppState $val The mobileAppInstallStatusValue
     *
@@ -144,6 +152,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the installState
+    * The install state of the app.
     *
     * @return ResultantAppState The installState
     */
@@ -162,6 +171,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the installState
+    * The install state of the app.
     *
     * @param ResultantAppState $val The installState
     *
@@ -175,6 +185,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the installStateDetail
+    * The install state detail of the app.
     *
     * @return ResultantAppStateDetail The installStateDetail
     */
@@ -193,6 +204,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the installStateDetail
+    * The install state detail of the app.
     *
     * @param ResultantAppStateDetail $val The installStateDetail
     *
@@ -206,6 +218,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the errorCode
+    * The error code for install or uninstall failures.
     *
     * @return int The errorCode
     */
@@ -220,6 +233,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the errorCode
+    * The error code for install or uninstall failures.
     *
     * @param int $val The errorCode
     *
@@ -233,6 +247,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the osVersion
+    * OS Version
     *
     * @return string The osVersion
     */
@@ -247,6 +262,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the osVersion
+    * OS Version
     *
     * @param string $val The osVersion
     *
@@ -260,6 +276,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the osDescription
+    * OS Description
     *
     * @return string The osDescription
     */
@@ -274,6 +291,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the osDescription
+    * OS Description
     *
     * @param string $val The osDescription
     *
@@ -287,6 +305,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the userName
+    * Device User Name
     *
     * @return string The userName
     */
@@ -301,6 +320,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the userName
+    * Device User Name
     *
     * @param string $val The userName
     *
@@ -314,6 +334,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the userPrincipalName
+    * User Principal Name
     *
     * @return string The userPrincipalName
     */
@@ -328,6 +349,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the userPrincipalName
+    * User Principal Name
     *
     * @param string $val The userPrincipalName
     *
@@ -341,6 +363,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the displayVersion
+    * Human readable version of the application
     *
     * @return string The displayVersion
     */
@@ -355,6 +378,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the displayVersion
+    * Human readable version of the application
     *
     * @param string $val The displayVersion
     *
@@ -368,6 +392,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Gets the app
+    * The navigation link to the mobile app.
     *
     * @return MobileApp The app
     */
@@ -386,6 +411,7 @@ class MobileAppInstallStatus extends Entity
     
     /**
     * Sets the app
+    * The navigation link to the mobile app.
     *
     * @param MobileApp $val The app
     *

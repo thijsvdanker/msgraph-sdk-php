@@ -28,6 +28,7 @@ class WindowsStoreApp extends MobileApp
 {
     /**
     * Gets the appStoreUrl
+    * The Windows app store URL.
     *
     * @return string The appStoreUrl
     */
@@ -42,6 +43,7 @@ class WindowsStoreApp extends MobileApp
     
     /**
     * Sets the appStoreUrl
+    * The Windows app store URL.
     *
     * @param string $val The appStoreUrl
     *

@@ -27,6 +27,7 @@ class MobileAppIntentAndStateDetail extends Entity
 {
     /**
     * Gets the applicationId
+    * MobieApp identifier.
     *
     * @return string The applicationId
     */
@@ -41,6 +42,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Sets the applicationId
+    * MobieApp identifier.
     *
     * @param string $val The value of the applicationId
     *
@@ -53,6 +55,7 @@ class MobileAppIntentAndStateDetail extends Entity
     }
     /**
     * Gets the displayName
+    * The admin provided or imported title of the app.
     *
     * @return string The displayName
     */
@@ -67,6 +70,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Sets the displayName
+    * The admin provided or imported title of the app.
     *
     * @param string $val The value of the displayName
     *
@@ -80,6 +84,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Gets the mobileAppIntent
+    * Mobile App Intent.
     *
     * @return MobileAppIntent The mobileAppIntent
     */
@@ -98,6 +103,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Sets the mobileAppIntent
+    * Mobile App Intent.
     *
     * @param MobileAppIntent $val The value to assign to the mobileAppIntent
     *
@@ -110,6 +116,7 @@ class MobileAppIntentAndStateDetail extends Entity
     }
     /**
     * Gets the displayVersion
+    * Human readable version of the application
     *
     * @return string The displayVersion
     */
@@ -124,6 +131,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Sets the displayVersion
+    * Human readable version of the application
     *
     * @param string $val The value of the displayVersion
     *
@@ -137,6 +145,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Gets the installState
+    * The install state of the app.
     *
     * @return ResultantAppState The installState
     */
@@ -155,6 +164,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Sets the installState
+    * The install state of the app.
     *
     * @param ResultantAppState $val The value to assign to the installState
     *
@@ -168,6 +178,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Gets the supportedDeviceTypes
+    * The supported platforms for the app.
     *
     * @return MobileAppSupportedDeviceType The supportedDeviceTypes
     */
@@ -186,6 +197,7 @@ class MobileAppIntentAndStateDetail extends Entity
 
     /**
     * Sets the supportedDeviceTypes
+    * The supported platforms for the app.
     *
     * @param MobileAppSupportedDeviceType $val The value to assign to the supportedDeviceTypes
     *

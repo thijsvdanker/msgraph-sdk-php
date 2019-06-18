@@ -28,6 +28,7 @@ class ShareAction extends Entity
 
     /**
     * Gets the recipients
+    * The identities the item was shared with in this action.
     *
     * @return IdentitySet The recipients
     */
@@ -46,6 +47,7 @@ class ShareAction extends Entity
 
     /**
     * Sets the recipients
+    * The identities the item was shared with in this action.
     *
     * @param IdentitySet $val The value to assign to the recipients
     *

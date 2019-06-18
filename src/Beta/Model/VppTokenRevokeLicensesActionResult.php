@@ -27,6 +27,7 @@ class VppTokenRevokeLicensesActionResult extends VppTokenActionResult
 {
     /**
     * Gets the totalLicensesCount
+    * A count of the number of licenses that were attempted to revoke.
     *
     * @return int The totalLicensesCount
     */
@@ -41,6 +42,7 @@ class VppTokenRevokeLicensesActionResult extends VppTokenActionResult
 
     /**
     * Sets the totalLicensesCount
+    * A count of the number of licenses that were attempted to revoke.
     *
     * @param int $val The value of the totalLicensesCount
     *
@@ -53,6 +55,7 @@ class VppTokenRevokeLicensesActionResult extends VppTokenActionResult
     }
     /**
     * Gets the failedLicensesCount
+    * A count of the number of licenses that failed to revoke.
     *
     * @return int The failedLicensesCount
     */
@@ -67,6 +70,7 @@ class VppTokenRevokeLicensesActionResult extends VppTokenActionResult
 
     /**
     * Sets the failedLicensesCount
+    * A count of the number of licenses that failed to revoke.
     *
     * @param int $val The value of the failedLicensesCount
     *
@@ -80,6 +84,7 @@ class VppTokenRevokeLicensesActionResult extends VppTokenActionResult
 
     /**
     * Gets the actionFailureReason
+    * The reason for the revoke licenses action failure.
     *
     * @return VppTokenActionFailureReason The actionFailureReason
     */
@@ -98,6 +103,7 @@ class VppTokenRevokeLicensesActionResult extends VppTokenActionResult
 
     /**
     * Sets the actionFailureReason
+    * The reason for the revoke licenses action failure.
     *
     * @param VppTokenActionFailureReason $val The value to assign to the actionFailureReason
     *

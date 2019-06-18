@@ -26,7 +26,17 @@ namespace Microsoft\Graph\Beta\Model;
 class IosMobileAppIdentifier extends MobileAppIdentifier
 {
     /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.iosMobileAppIdentifier");
+    }
+
+    /**
     * Gets the bundleId
+    * The identifier for an app, as specified in the app store.
     *
     * @return string The bundleId
     */
@@ -41,6 +51,7 @@ class IosMobileAppIdentifier extends MobileAppIdentifier
 
     /**
     * Sets the bundleId
+    * The identifier for an app, as specified in the app store.
     *
     * @param string $val The value of the bundleId
     *

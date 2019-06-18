@@ -28,6 +28,7 @@ class MediaContentRatingUnitedStates extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for United States. Possible values are: allAllowed, allBlocked, general, parentalGuidance, parentalGuidance13, restricted, adults.
     *
     * @return RatingUnitedStatesMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingUnitedStates extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for United States. Possible values are: allAllowed, allBlocked, general, parentalGuidance, parentalGuidance13, restricted, adults.
     *
     * @param RatingUnitedStatesMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingUnitedStates extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for United States. Possible values are: allAllowed, allBlocked, childrenAll, childrenAbove7, general, parentalGuidance, childrenAbove14, adults.
     *
     * @return RatingUnitedStatesTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingUnitedStates extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for United States. Possible values are: allAllowed, allBlocked, childrenAll, childrenAbove7, general, parentalGuidance, childrenAbove14, adults.
     *
     * @param RatingUnitedStatesTelevisionType $val The value to assign to the tvRating
     *

@@ -28,6 +28,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Gets the encryptionMethod
+    * Select the encryption method for operating system drives.
     *
     * @return BitLockerEncryptionMethod The encryptionMethod
     */
@@ -46,6 +47,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the encryptionMethod
+    * Select the encryption method for operating system drives.
     *
     * @param BitLockerEncryptionMethod $val The value to assign to the encryptionMethod
     *
@@ -58,6 +60,7 @@ class BitLockerSystemDrivePolicy extends Entity
     }
     /**
     * Gets the startupAuthenticationRequired
+    * Require additional authentication at startup.
     *
     * @return bool The startupAuthenticationRequired
     */
@@ -72,6 +75,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the startupAuthenticationRequired
+    * Require additional authentication at startup.
     *
     * @param bool $val The value of the startupAuthenticationRequired
     *
@@ -84,6 +88,7 @@ class BitLockerSystemDrivePolicy extends Entity
     }
     /**
     * Gets the startupAuthenticationBlockWithoutTpmChip
+    * Indicates whether to allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).
     *
     * @return bool The startupAuthenticationBlockWithoutTpmChip
     */
@@ -98,6 +103,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the startupAuthenticationBlockWithoutTpmChip
+    * Indicates whether to allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).
     *
     * @param bool $val The value of the startupAuthenticationBlockWithoutTpmChip
     *
@@ -111,6 +117,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Gets the startupAuthenticationTpmUsage
+    * Indicates if TPM startup is allowed/required/disallowed.
     *
     * @return ConfigurationUsage The startupAuthenticationTpmUsage
     */
@@ -129,6 +136,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the startupAuthenticationTpmUsage
+    * Indicates if TPM startup is allowed/required/disallowed.
     *
     * @param ConfigurationUsage $val The value to assign to the startupAuthenticationTpmUsage
     *
@@ -142,6 +150,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Gets the startupAuthenticationTpmPinUsage
+    * Indicates if TPM startup pin is allowed/required/disallowed.
     *
     * @return ConfigurationUsage The startupAuthenticationTpmPinUsage
     */
@@ -160,6 +169,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the startupAuthenticationTpmPinUsage
+    * Indicates if TPM startup pin is allowed/required/disallowed.
     *
     * @param ConfigurationUsage $val The value to assign to the startupAuthenticationTpmPinUsage
     *
@@ -173,6 +183,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Gets the startupAuthenticationTpmKeyUsage
+    * Indicates if TPM startup key is allowed/required/disallowed.
     *
     * @return ConfigurationUsage The startupAuthenticationTpmKeyUsage
     */
@@ -191,6 +202,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the startupAuthenticationTpmKeyUsage
+    * Indicates if TPM startup key is allowed/required/disallowed.
     *
     * @param ConfigurationUsage $val The value to assign to the startupAuthenticationTpmKeyUsage
     *
@@ -204,6 +216,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Gets the startupAuthenticationTpmPinAndKeyUsage
+    * Indicates if TPM startup pin key and key are allowed/required/disallowed.
     *
     * @return ConfigurationUsage The startupAuthenticationTpmPinAndKeyUsage
     */
@@ -222,6 +235,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the startupAuthenticationTpmPinAndKeyUsage
+    * Indicates if TPM startup pin key and key are allowed/required/disallowed.
     *
     * @param ConfigurationUsage $val The value to assign to the startupAuthenticationTpmPinAndKeyUsage
     *
@@ -234,6 +248,7 @@ class BitLockerSystemDrivePolicy extends Entity
     }
     /**
     * Gets the minimumPinLength
+    * Indicates the minimum length of startup pin. Valid values 4 to 20
     *
     * @return int The minimumPinLength
     */
@@ -248,6 +263,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the minimumPinLength
+    * Indicates the minimum length of startup pin. Valid values 4 to 20
     *
     * @param int $val The value of the minimumPinLength
     *
@@ -261,6 +277,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Gets the recoveryOptions
+    * Allows to recover BitLocker encrypted operating system drives in the absence of the required startup key information. This policy setting is applied when you turn on BitLocker.
     *
     * @return BitLockerRecoveryOptions The recoveryOptions
     */
@@ -279,6 +296,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the recoveryOptions
+    * Allows to recover BitLocker encrypted operating system drives in the absence of the required startup key information. This policy setting is applied when you turn on BitLocker.
     *
     * @param BitLockerRecoveryOptions $val The value to assign to the recoveryOptions
     *
@@ -291,6 +309,7 @@ class BitLockerSystemDrivePolicy extends Entity
     }
     /**
     * Gets the prebootRecoveryEnableMessageAndUrl
+    * Enable pre-boot recovery message and Url. If requireStartupAuthentication is false, this value does not affect.
     *
     * @return bool The prebootRecoveryEnableMessageAndUrl
     */
@@ -305,6 +324,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the prebootRecoveryEnableMessageAndUrl
+    * Enable pre-boot recovery message and Url. If requireStartupAuthentication is false, this value does not affect.
     *
     * @param bool $val The value of the prebootRecoveryEnableMessageAndUrl
     *
@@ -317,6 +337,7 @@ class BitLockerSystemDrivePolicy extends Entity
     }
     /**
     * Gets the prebootRecoveryMessage
+    * Defines a custom recovery message.
     *
     * @return string The prebootRecoveryMessage
     */
@@ -331,6 +352,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the prebootRecoveryMessage
+    * Defines a custom recovery message.
     *
     * @param string $val The value of the prebootRecoveryMessage
     *
@@ -343,6 +365,7 @@ class BitLockerSystemDrivePolicy extends Entity
     }
     /**
     * Gets the prebootRecoveryUrl
+    * Defines a custom recovery URL.
     *
     * @return string The prebootRecoveryUrl
     */
@@ -357,6 +380,7 @@ class BitLockerSystemDrivePolicy extends Entity
 
     /**
     * Sets the prebootRecoveryUrl
+    * Defines a custom recovery URL.
     *
     * @param string $val The value of the prebootRecoveryUrl
     *

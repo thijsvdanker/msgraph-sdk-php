@@ -28,6 +28,7 @@ class MobileAppTroubleshootingAppStateHistory extends MobileAppTroubleshootingHi
 
     /**
     * Gets the actionType
+    * AAD security group id to which it was targeted.
     *
     * @return MobileAppActionType The actionType
     */
@@ -46,6 +47,7 @@ class MobileAppTroubleshootingAppStateHistory extends MobileAppTroubleshootingHi
 
     /**
     * Sets the actionType
+    * AAD security group id to which it was targeted.
     *
     * @param MobileAppActionType $val The value to assign to the actionType
     *
@@ -59,6 +61,7 @@ class MobileAppTroubleshootingAppStateHistory extends MobileAppTroubleshootingHi
 
     /**
     * Gets the runState
+    * Status of the item.
     *
     * @return RunState The runState
     */
@@ -77,6 +80,7 @@ class MobileAppTroubleshootingAppStateHistory extends MobileAppTroubleshootingHi
 
     /**
     * Sets the runState
+    * Status of the item.
     *
     * @param RunState $val The value to assign to the runState
     *
@@ -89,6 +93,7 @@ class MobileAppTroubleshootingAppStateHistory extends MobileAppTroubleshootingHi
     }
     /**
     * Gets the errorCode
+    * Error code for the failure, empty if no failure.
     *
     * @return string The errorCode
     */
@@ -103,6 +108,7 @@ class MobileAppTroubleshootingAppStateHistory extends MobileAppTroubleshootingHi
 
     /**
     * Sets the errorCode
+    * Error code for the failure, empty if no failure.
     *
     * @param string $val The value of the errorCode
     *

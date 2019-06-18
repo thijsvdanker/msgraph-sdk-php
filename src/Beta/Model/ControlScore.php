@@ -27,6 +27,7 @@ class ControlScore extends Entity
 {
     /**
     * Gets the controlCategory
+    * Control action category (Identity, Data, Device, Apps, Infrastructure).
     *
     * @return string The controlCategory
     */
@@ -41,6 +42,7 @@ class ControlScore extends Entity
 
     /**
     * Sets the controlCategory
+    * Control action category (Identity, Data, Device, Apps, Infrastructure).
     *
     * @param string $val The value of the controlCategory
     *
@@ -52,59 +54,8 @@ class ControlScore extends Entity
         return $this;
     }
     /**
-    * Gets the description
-    *
-    * @return string The description
-    */
-    public function getDescription()
-    {
-        if (array_key_exists("description", $this->_propDict)) {
-            return $this->_propDict["description"];
-        } else {
-            return null;
-        }
-    }
-
-    /**
-    * Sets the description
-    *
-    * @param string $val The value of the description
-    *
-    * @return ControlScore
-    */
-    public function setDescription($val)
-    {
-        $this->_propDict["description"] = $val;
-        return $this;
-    }
-    /**
-    * Gets the score
-    *
-    * @return float The score
-    */
-    public function getScore()
-    {
-        if (array_key_exists("score", $this->_propDict)) {
-            return $this->_propDict["score"];
-        } else {
-            return null;
-        }
-    }
-
-    /**
-    * Sets the score
-    *
-    * @param float $val The value of the score
-    *
-    * @return ControlScore
-    */
-    public function setScore($val)
-    {
-        $this->_propDict["score"] = $val;
-        return $this;
-    }
-    /**
     * Gets the controlName
+    * Control unique name.
     *
     * @return string The controlName
     */
@@ -119,6 +70,7 @@ class ControlScore extends Entity
 
     /**
     * Sets the controlName
+    * Control unique name.
     *
     * @param string $val The value of the controlName
     *
@@ -127,6 +79,62 @@ class ControlScore extends Entity
     public function setControlName($val)
     {
         $this->_propDict["controlName"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the description
+    * Description of the control.
+    *
+    * @return string The description
+    */
+    public function getDescription()
+    {
+        if (array_key_exists("description", $this->_propDict)) {
+            return $this->_propDict["description"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the description
+    * Description of the control.
+    *
+    * @param string $val The value of the description
+    *
+    * @return ControlScore
+    */
+    public function setDescription($val)
+    {
+        $this->_propDict["description"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the score
+    * Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
+    *
+    * @return float The score
+    */
+    public function getScore()
+    {
+        if (array_key_exists("score", $this->_propDict)) {
+            return $this->_propDict["score"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the score
+    * Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
+    *
+    * @param float $val The value of the score
+    *
+    * @return ControlScore
+    */
+    public function setScore($val)
+    {
+        $this->_propDict["score"] = $val;
         return $this;
     }
 }

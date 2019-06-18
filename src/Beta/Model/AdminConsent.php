@@ -28,6 +28,7 @@ class AdminConsent extends Entity
 
     /**
     * Gets the shareAPNSData
+    * The admin consent state of sharing user and device data to Apple.
     *
     * @return AdminConsentState The shareAPNSData
     */
@@ -46,6 +47,7 @@ class AdminConsent extends Entity
 
     /**
     * Sets the shareAPNSData
+    * The admin consent state of sharing user and device data to Apple.
     *
     * @param AdminConsentState $val The value to assign to the shareAPNSData
     *

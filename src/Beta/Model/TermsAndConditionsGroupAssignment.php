@@ -28,6 +28,7 @@ class TermsAndConditionsGroupAssignment extends Entity
 {
     /**
     * Gets the targetGroupId
+    * Unique identifier of a group that the T&amp;C policy is assigned to.
     *
     * @return string The targetGroupId
     */
@@ -42,6 +43,7 @@ class TermsAndConditionsGroupAssignment extends Entity
     
     /**
     * Sets the targetGroupId
+    * Unique identifier of a group that the T&amp;C policy is assigned to.
     *
     * @param string $val The targetGroupId
     *
@@ -55,6 +57,7 @@ class TermsAndConditionsGroupAssignment extends Entity
     
     /**
     * Gets the termsAndConditions
+    * Navigation link to the terms and conditions that are assigned.
     *
     * @return TermsAndConditions The termsAndConditions
     */
@@ -73,6 +76,7 @@ class TermsAndConditionsGroupAssignment extends Entity
     
     /**
     * Sets the termsAndConditions
+    * Navigation link to the terms and conditions that are assigned.
     *
     * @param TermsAndConditions $val The termsAndConditions
     *

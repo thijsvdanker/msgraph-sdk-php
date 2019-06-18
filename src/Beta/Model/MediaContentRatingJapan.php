@@ -28,6 +28,7 @@ class MediaContentRatingJapan extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for Japan. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove15, agesAbove18.
     *
     * @return RatingJapanMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingJapan extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for Japan. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove15, agesAbove18.
     *
     * @param RatingJapanMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingJapan extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for Japan. Possible values are: allAllowed, allBlocked, explicitAllowed.
     *
     * @return RatingJapanTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingJapan extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for Japan. Possible values are: allAllowed, allBlocked, explicitAllowed.
     *
     * @param RatingJapanTelevisionType $val The value to assign to the tvRating
     *

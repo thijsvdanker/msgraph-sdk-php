@@ -27,6 +27,7 @@ class HourlySchedule extends RunSchedule
 {
     /**
     * Gets the interval
+    * Interval in number of hours
     *
     * @return int The interval
     */
@@ -41,6 +42,7 @@ class HourlySchedule extends RunSchedule
 
     /**
     * Sets the interval
+    * Interval in number of hours
     *
     * @param int $val The value of the interval
     *

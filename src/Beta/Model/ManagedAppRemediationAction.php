@@ -33,4 +33,5 @@ class ManagedAppRemediationAction extends Enum
     */
     const BLOCK = "block";
     const WIPE = "wipe";
+    const WARN = "warn";
 }

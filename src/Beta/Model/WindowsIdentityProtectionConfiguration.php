@@ -27,7 +27,37 @@ namespace Microsoft\Graph\Beta\Model;
 class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
 {
     /**
+    * Gets the useSecurityKeyForSignin
+    * Boolean value used to enable the Windows Hello security key as a logon credential.
+    *
+    * @return bool The useSecurityKeyForSignin
+    */
+    public function getUseSecurityKeyForSignin()
+    {
+        if (array_key_exists("useSecurityKeyForSignin", $this->_propDict)) {
+            return $this->_propDict["useSecurityKeyForSignin"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the useSecurityKeyForSignin
+    * Boolean value used to enable the Windows Hello security key as a logon credential.
+    *
+    * @param bool $val The useSecurityKeyForSignin
+    *
+    * @return WindowsIdentityProtectionConfiguration
+    */
+    public function setUseSecurityKeyForSignin($val)
+    {
+        $this->_propDict["useSecurityKeyForSignin"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the enhancedAntiSpoofingForFacialFeaturesEnabled
+    * Boolean value used to enable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication.
     *
     * @return bool The enhancedAntiSpoofingForFacialFeaturesEnabled
     */
@@ -42,6 +72,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the enhancedAntiSpoofingForFacialFeaturesEnabled
+    * Boolean value used to enable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication.
     *
     * @param bool $val The enhancedAntiSpoofingForFacialFeaturesEnabled
     *
@@ -55,6 +86,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinMinimumLength
+    * Integer value that sets the minimum number of characters required for the Windows Hello for Business PIN. Valid values are 4 to 127 inclusive and less than or equal to the value set for the maximum PIN. Valid values 4 to 127
     *
     * @return int The pinMinimumLength
     */
@@ -69,6 +101,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinMinimumLength
+    * Integer value that sets the minimum number of characters required for the Windows Hello for Business PIN. Valid values are 4 to 127 inclusive and less than or equal to the value set for the maximum PIN. Valid values 4 to 127
     *
     * @param int $val The pinMinimumLength
     *
@@ -82,6 +115,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinMaximumLength
+    * Integer value that sets the maximum number of characters allowed for the work PIN. Valid values are 4 to 127 inclusive and greater than or equal to the value set for the minimum PIN. Valid values 4 to 127
     *
     * @return int The pinMaximumLength
     */
@@ -96,6 +130,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinMaximumLength
+    * Integer value that sets the maximum number of characters allowed for the work PIN. Valid values are 4 to 127 inclusive and greater than or equal to the value set for the minimum PIN. Valid values 4 to 127
     *
     * @param int $val The pinMaximumLength
     *
@@ -109,6 +144,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinUppercaseCharactersUsage
+    * This value configures the use of uppercase characters in the Windows Hello for Business PIN.
     *
     * @return ConfigurationUsage The pinUppercaseCharactersUsage
     */
@@ -127,6 +163,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinUppercaseCharactersUsage
+    * This value configures the use of uppercase characters in the Windows Hello for Business PIN.
     *
     * @param ConfigurationUsage $val The pinUppercaseCharactersUsage
     *
@@ -140,6 +177,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinLowercaseCharactersUsage
+    * This value configures the use of lowercase characters in the Windows Hello for Business PIN.
     *
     * @return ConfigurationUsage The pinLowercaseCharactersUsage
     */
@@ -158,6 +196,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinLowercaseCharactersUsage
+    * This value configures the use of lowercase characters in the Windows Hello for Business PIN.
     *
     * @param ConfigurationUsage $val The pinLowercaseCharactersUsage
     *
@@ -171,6 +210,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinSpecialCharactersUsage
+    * Controls the ability to use special characters in the Windows Hello for Business PIN.
     *
     * @return ConfigurationUsage The pinSpecialCharactersUsage
     */
@@ -189,6 +229,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinSpecialCharactersUsage
+    * Controls the ability to use special characters in the Windows Hello for Business PIN.
     *
     * @param ConfigurationUsage $val The pinSpecialCharactersUsage
     *
@@ -202,6 +243,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinExpirationInDays
+    * Integer value specifies the period (in days) that a PIN can be used before the system requires the user to change it. Valid values are 0 to 730 inclusive. Valid values 0 to 730
     *
     * @return int The pinExpirationInDays
     */
@@ -216,6 +258,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinExpirationInDays
+    * Integer value specifies the period (in days) that a PIN can be used before the system requires the user to change it. Valid values are 0 to 730 inclusive. Valid values 0 to 730
     *
     * @param int $val The pinExpirationInDays
     *
@@ -229,6 +272,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinPreviousBlockCount
+    * Controls the ability to prevent users from using past PINs. This must be set between 0 and 50, inclusive, and the current PIN of the user is included in that count. If set to 0, previous PINs are not stored. PIN history is not preserved through a PIN reset. Valid values 0 to 50
     *
     * @return int The pinPreviousBlockCount
     */
@@ -243,6 +287,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinPreviousBlockCount
+    * Controls the ability to prevent users from using past PINs. This must be set between 0 and 50, inclusive, and the current PIN of the user is included in that count. If set to 0, previous PINs are not stored. PIN history is not preserved through a PIN reset. Valid values 0 to 50
     *
     * @param int $val The pinPreviousBlockCount
     *
@@ -256,6 +301,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the pinRecoveryEnabled
+    * Boolean value that enables a user to change their PIN by using the Windows Hello for Business PIN recovery service.
     *
     * @return bool The pinRecoveryEnabled
     */
@@ -270,6 +316,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the pinRecoveryEnabled
+    * Boolean value that enables a user to change their PIN by using the Windows Hello for Business PIN recovery service.
     *
     * @param bool $val The pinRecoveryEnabled
     *
@@ -283,6 +330,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the securityDeviceRequired
+    * Controls whether to require a Trusted Platform Module (TPM) for provisioning Windows Hello for Business. A TPM provides an additional security benefit in that data stored on it cannot be used on other devices. If set to False, all devices can provision Windows Hello for Business even if there is not a usable TPM.
     *
     * @return bool The securityDeviceRequired
     */
@@ -297,6 +345,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the securityDeviceRequired
+    * Controls whether to require a Trusted Platform Module (TPM) for provisioning Windows Hello for Business. A TPM provides an additional security benefit in that data stored on it cannot be used on other devices. If set to False, all devices can provision Windows Hello for Business even if there is not a usable TPM.
     *
     * @param bool $val The securityDeviceRequired
     *
@@ -310,6 +359,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the unlockWithBiometricsEnabled
+    * Controls the use of biometric gestures, such as face and fingerprint, as an alternative to the Windows Hello for Business PIN.  If set to False, biometric gestures are not allowed. Users must still configure a PIN as a backup in case of failures.
     *
     * @return bool The unlockWithBiometricsEnabled
     */
@@ -324,6 +374,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the unlockWithBiometricsEnabled
+    * Controls the use of biometric gestures, such as face and fingerprint, as an alternative to the Windows Hello for Business PIN.  If set to False, biometric gestures are not allowed. Users must still configure a PIN as a backup in case of failures.
     *
     * @param bool $val The unlockWithBiometricsEnabled
     *
@@ -337,6 +388,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the useCertificatesForOnPremisesAuthEnabled
+    * Boolean value that enables Windows Hello for Business to use certificates to authenticate on-premise resources.
     *
     * @return bool The useCertificatesForOnPremisesAuthEnabled
     */
@@ -351,6 +403,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the useCertificatesForOnPremisesAuthEnabled
+    * Boolean value that enables Windows Hello for Business to use certificates to authenticate on-premise resources.
     *
     * @param bool $val The useCertificatesForOnPremisesAuthEnabled
     *
@@ -364,6 +417,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the windowsHelloForBusinessBlocked
+    * Boolean value that blocks Windows Hello for Business as a method for signing into Windows.
     *
     * @return bool The windowsHelloForBusinessBlocked
     */
@@ -378,6 +432,7 @@ class WindowsIdentityProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the windowsHelloForBusinessBlocked
+    * Boolean value that blocks Windows Hello for Business as a method for signing into Windows.
     *
     * @param bool $val The windowsHelloForBusinessBlocked
     *

@@ -33,4 +33,6 @@ class TeamVisibilityType extends Enum
     */
     const GRAPHPRIVATE = "private";
     const GRAPHPUBLIC = "public";
+    const HIDDEN_MEMBERSHIP = "hiddenMembership";
+    const UNKNOWN_FUTURE_VALUE = "unknownFutureValue";
 }

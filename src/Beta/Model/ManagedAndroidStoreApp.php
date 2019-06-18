@@ -28,6 +28,7 @@ class ManagedAndroidStoreApp extends ManagedApp
 {
     /**
     * Gets the packageId
+    * The app's package ID.
     *
     * @return string The packageId
     */
@@ -42,6 +43,7 @@ class ManagedAndroidStoreApp extends ManagedApp
     
     /**
     * Sets the packageId
+    * The app's package ID.
     *
     * @param string $val The packageId
     *
@@ -55,6 +57,7 @@ class ManagedAndroidStoreApp extends ManagedApp
     
     /**
     * Gets the appStoreUrl
+    * The Android AppStoreUrl.
     *
     * @return string The appStoreUrl
     */
@@ -69,6 +72,7 @@ class ManagedAndroidStoreApp extends ManagedApp
     
     /**
     * Sets the appStoreUrl
+    * The Android AppStoreUrl.
     *
     * @param string $val The appStoreUrl
     *
@@ -82,6 +86,7 @@ class ManagedAndroidStoreApp extends ManagedApp
     
     /**
     * Gets the minimumSupportedOperatingSystem
+    * The value for the minimum supported operating system.
     *
     * @return AndroidMinimumOperatingSystem The minimumSupportedOperatingSystem
     */
@@ -100,6 +105,7 @@ class ManagedAndroidStoreApp extends ManagedApp
     
     /**
     * Sets the minimumSupportedOperatingSystem
+    * The value for the minimum supported operating system.
     *
     * @param AndroidMinimumOperatingSystem $val The minimumSupportedOperatingSystem
     *

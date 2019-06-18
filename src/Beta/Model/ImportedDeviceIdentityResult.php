@@ -28,6 +28,7 @@ class ImportedDeviceIdentityResult extends ImportedDeviceIdentity
 {
     /**
     * Gets the status
+    * Status of imported device identity
     *
     * @return bool The status
     */
@@ -42,6 +43,7 @@ class ImportedDeviceIdentityResult extends ImportedDeviceIdentity
     
     /**
     * Sets the status
+    * Status of imported device identity
     *
     * @param bool $val The status
     *

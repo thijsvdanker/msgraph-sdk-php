@@ -28,6 +28,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
 {
     /**
     * Gets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage.
     *
     * @return int The renewalThresholdPercentage
     */
@@ -42,6 +43,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage.
     *
     * @param int $val The renewalThresholdPercentage
     *
@@ -55,6 +57,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the keyStorageProvider
+    * Key Storage Provider (KSP).
     *
     * @return KeyStorageProviderOption The keyStorageProvider
     */
@@ -73,6 +76,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the keyStorageProvider
+    * Key Storage Provider (KSP).
     *
     * @param KeyStorageProviderOption $val The keyStorageProvider
     *
@@ -86,6 +90,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @return SubjectNameFormat The subjectNameFormat
     */
@@ -104,6 +109,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @param SubjectNameFormat $val The subjectNameFormat
     *
@@ -117,6 +123,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type.
     *
     * @return SubjectAlternativeNameType The subjectAlternativeNameType
     */
@@ -135,6 +142,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type.
     *
     * @param SubjectAlternativeNameType $val The subjectAlternativeNameType
     *
@@ -148,6 +156,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodValue
+    * Value for the Certificate Validtiy Period.
     *
     * @return int The certificateValidityPeriodValue
     */
@@ -162,6 +171,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodValue
+    * Value for the Certificate Validtiy Period.
     *
     * @param int $val The certificateValidityPeriodValue
     *
@@ -175,6 +185,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @return CertificateValidityPeriodScale The certificateValidityPeriodScale
     */
@@ -193,6 +204,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @param CertificateValidityPeriodScale $val The certificateValidityPeriodScale
     *
@@ -207,6 +219,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
 
      /** 
      * Gets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The extendedKeyUsages
      */
@@ -221,6 +234,7 @@ class WindowsPhone81CertificateProfileBase extends DeviceConfiguration
     
     /** 
     * Sets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
     *
     * @param ExtendedKeyUsage $val The extendedKeyUsages
     *

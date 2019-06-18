@@ -26,7 +26,17 @@ namespace Microsoft\Graph\Beta\Model;
 class GroupAssignmentTarget extends DeviceAndAppManagementAssignmentTarget
 {
     /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.groupAssignmentTarget");
+    }
+
+    /**
     * Gets the groupId
+    * The group Id that is the target of the assignment.
     *
     * @return string The groupId
     */
@@ -41,6 +51,7 @@ class GroupAssignmentTarget extends DeviceAndAppManagementAssignmentTarget
 
     /**
     * Sets the groupId
+    * The group Id that is the target of the assignment.
     *
     * @param string $val The value of the groupId
     *

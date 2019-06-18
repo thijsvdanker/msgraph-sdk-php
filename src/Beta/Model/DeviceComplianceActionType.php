@@ -38,4 +38,5 @@ class DeviceComplianceActionType extends Enum
     const WIPE = "wipe";
     const REMOVE_RESOURCE_ACCESS_PROFILES = "removeResourceAccessProfiles";
     const PUSH_NOTIFICATION = "pushNotification";
+    const REMOTE_LOCK = "remoteLock";
 }

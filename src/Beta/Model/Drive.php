@@ -28,6 +28,7 @@ class Drive extends BaseItem
 {
     /**
     * Gets the driveType
+    * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
     *
     * @return string The driveType
     */
@@ -42,6 +43,7 @@ class Drive extends BaseItem
     
     /**
     * Sets the driveType
+    * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
     *
     * @param string $val The driveType
     *
@@ -55,6 +57,7 @@ class Drive extends BaseItem
     
     /**
     * Gets the owner
+    * Optional. The user account that owns the drive. Read-only.
     *
     * @return IdentitySet The owner
     */
@@ -73,6 +76,7 @@ class Drive extends BaseItem
     
     /**
     * Sets the owner
+    * Optional. The user account that owns the drive. Read-only.
     *
     * @param IdentitySet $val The owner
     *
@@ -86,6 +90,7 @@ class Drive extends BaseItem
     
     /**
     * Gets the quota
+    * Optional. Information about the drive's storage space quota. Read-only.
     *
     * @return Quota The quota
     */
@@ -104,6 +109,7 @@ class Drive extends BaseItem
     
     /**
     * Sets the quota
+    * Optional. Information about the drive's storage space quota. Read-only.
     *
     * @param Quota $val The quota
     *
@@ -148,6 +154,7 @@ class Drive extends BaseItem
     
     /**
     * Gets the system
+    * If present, indicates that this is a system-managed drive. Read-only.
     *
     * @return SystemFacet The system
     */
@@ -166,6 +173,7 @@ class Drive extends BaseItem
     
     /**
     * Sets the system
+    * If present, indicates that this is a system-managed drive. Read-only.
     *
     * @param SystemFacet $val The system
     *
@@ -195,7 +203,7 @@ class Drive extends BaseItem
     /** 
     * Sets the activities
     *
-    * @param ItemActivity $val The activities
+    * @param ItemActivityOLD $val The activities
     *
     * @return Drive
     */
@@ -207,7 +215,64 @@ class Drive extends BaseItem
     
 
      /** 
+     * Gets the bundles
+     *
+     * @return array The bundles
+     */
+    public function getBundles()
+    {
+        if (array_key_exists("bundles", $this->_propDict)) {
+           return $this->_propDict["bundles"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the bundles
+    *
+    * @param DriveItem $val The bundles
+    *
+    * @return Drive
+    */
+    public function setBundles($val)
+    {
+		$this->_propDict["bundles"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the following
+     *
+     * @return array The following
+     */
+    public function getFollowing()
+    {
+        if (array_key_exists("following", $this->_propDict)) {
+           return $this->_propDict["following"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the following
+    *
+    * @param DriveItem $val The following
+    *
+    * @return Drive
+    */
+    public function setFollowing($val)
+    {
+		$this->_propDict["following"] = $val;
+        return $this;
+    }
+    
+
+     /** 
      * Gets the items
+    * All items contained in the drive. Read-only. Nullable.
      *
      * @return array The items
      */
@@ -222,6 +287,7 @@ class Drive extends BaseItem
     
     /** 
     * Sets the items
+    * All items contained in the drive. Read-only. Nullable.
     *
     * @param DriveItem $val The items
     *
@@ -235,6 +301,7 @@ class Drive extends BaseItem
     
     /**
     * Gets the list
+    * For drives in SharePoint, the underlying document library list. Read-only. Nullable.
     *
     * @return GraphList The list
     */
@@ -253,6 +320,7 @@ class Drive extends BaseItem
     
     /**
     * Sets the list
+    * For drives in SharePoint, the underlying document library list. Read-only. Nullable.
     *
     * @param GraphList $val The list
     *
@@ -266,6 +334,7 @@ class Drive extends BaseItem
     
     /**
     * Gets the root
+    * The root folder of the drive. Read-only.
     *
     * @return DriveItem The root
     */
@@ -284,6 +353,7 @@ class Drive extends BaseItem
     
     /**
     * Sets the root
+    * The root folder of the drive. Read-only.
     *
     * @param DriveItem $val The root
     *
@@ -298,6 +368,7 @@ class Drive extends BaseItem
 
      /** 
      * Gets the special
+    * Collection of common folders available in OneDrive. Read-only. Nullable.
      *
      * @return array The special
      */
@@ -312,6 +383,7 @@ class Drive extends BaseItem
     
     /** 
     * Sets the special
+    * Collection of common folders available in OneDrive. Read-only. Nullable.
     *
     * @param DriveItem $val The special
     *

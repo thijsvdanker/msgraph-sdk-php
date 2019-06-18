@@ -28,6 +28,7 @@ class IosLobAppProvisioningConfiguration extends Entity
 {
     /**
     * Gets the expirationDateTime
+    * Optional profile expiration date and time.
     *
     * @return \DateTime The expirationDateTime
     */
@@ -46,6 +47,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the expirationDateTime
+    * Optional profile expiration date and time.
     *
     * @param \DateTime $val The expirationDateTime
     *
@@ -59,6 +61,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Gets the payloadFileName
+    * Payload file name (*.mobileprovision | *.xml).
     *
     * @return string The payloadFileName
     */
@@ -73,6 +76,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the payloadFileName
+    * Payload file name (*.mobileprovision | *.xml).
     *
     * @param string $val The payloadFileName
     *
@@ -86,6 +90,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Gets the payload
+    * Payload. (UTF8 encoded byte array)
     *
     * @return \GuzzleHttp\Psr7\Stream The payload
     */
@@ -104,6 +109,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the payload
+    * Payload. (UTF8 encoded byte array)
     *
     * @param \GuzzleHttp\Psr7\Stream $val The payload
     *
@@ -116,7 +122,37 @@ class IosLobAppProvisioningConfiguration extends Entity
     }
     
     /**
+    * Gets the roleScopeTagIds
+    * List of Scope Tags for this iOS LOB app provisioning configuration entity.
+    *
+    * @return string The roleScopeTagIds
+    */
+    public function getRoleScopeTagIds()
+    {
+        if (array_key_exists("roleScopeTagIds", $this->_propDict)) {
+            return $this->_propDict["roleScopeTagIds"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the roleScopeTagIds
+    * List of Scope Tags for this iOS LOB app provisioning configuration entity.
+    *
+    * @param string $val The roleScopeTagIds
+    *
+    * @return IosLobAppProvisioningConfiguration
+    */
+    public function setRoleScopeTagIds($val)
+    {
+        $this->_propDict["roleScopeTagIds"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the createdDateTime
+    * DateTime the object was created.
     *
     * @return \DateTime The createdDateTime
     */
@@ -135,6 +171,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the createdDateTime
+    * DateTime the object was created.
     *
     * @param \DateTime $val The createdDateTime
     *
@@ -148,6 +185,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Gets the description
+    * Admin provided description of the Device Configuration.
     *
     * @return string The description
     */
@@ -162,6 +200,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the description
+    * Admin provided description of the Device Configuration.
     *
     * @param string $val The description
     *
@@ -175,6 +214,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Gets the lastModifiedDateTime
+    * DateTime the object was last modified.
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -193,6 +233,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the lastModifiedDateTime
+    * DateTime the object was last modified.
     *
     * @param \DateTime $val The lastModifiedDateTime
     *
@@ -206,6 +247,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Gets the displayName
+    * Admin provided name of the device configuration.
     *
     * @return string The displayName
     */
@@ -220,6 +262,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the displayName
+    * Admin provided name of the device configuration.
     *
     * @param string $val The displayName
     *
@@ -233,6 +276,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Gets the version
+    * Version of the device configuration.
     *
     * @return int The version
     */
@@ -247,6 +291,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /**
     * Sets the version
+    * Version of the device configuration.
     *
     * @param int $val The version
     *
@@ -261,6 +306,7 @@ class IosLobAppProvisioningConfiguration extends Entity
 
      /** 
      * Gets the groupAssignments
+    * The associated group assignments.
      *
      * @return array The groupAssignments
      */
@@ -275,6 +321,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /** 
     * Sets the groupAssignments
+    * The associated group assignments.
     *
     * @param MobileAppProvisioningConfigGroupAssignment $val The groupAssignments
     *
@@ -289,6 +336,7 @@ class IosLobAppProvisioningConfiguration extends Entity
 
      /** 
      * Gets the assignments
+    * The associated group assignments for IosLobAppProvisioningConfiguration.
      *
      * @return array The assignments
      */
@@ -303,6 +351,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /** 
     * Sets the assignments
+    * The associated group assignments for IosLobAppProvisioningConfiguration.
     *
     * @param IosLobAppProvisioningConfigurationAssignment $val The assignments
     *
@@ -317,6 +366,7 @@ class IosLobAppProvisioningConfiguration extends Entity
 
      /** 
      * Gets the deviceStatuses
+    * The list of device installation states for this mobile app configuration.
      *
      * @return array The deviceStatuses
      */
@@ -331,6 +381,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /** 
     * Sets the deviceStatuses
+    * The list of device installation states for this mobile app configuration.
     *
     * @param ManagedDeviceMobileAppConfigurationDeviceStatus $val The deviceStatuses
     *
@@ -345,6 +396,7 @@ class IosLobAppProvisioningConfiguration extends Entity
 
      /** 
      * Gets the userStatuses
+    * The list of user installation states for this mobile app configuration.
      *
      * @return array The userStatuses
      */
@@ -359,6 +411,7 @@ class IosLobAppProvisioningConfiguration extends Entity
     
     /** 
     * Sets the userStatuses
+    * The list of user installation states for this mobile app configuration.
     *
     * @param ManagedDeviceMobileAppConfigurationUserStatus $val The userStatuses
     *

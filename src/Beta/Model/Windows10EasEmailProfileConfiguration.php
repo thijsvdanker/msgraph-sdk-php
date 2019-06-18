@@ -28,6 +28,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
 {
     /**
     * Gets the accountName
+    * Account name.
     *
     * @return string The accountName
     */
@@ -42,6 +43,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the accountName
+    * Account name.
     *
     * @param string $val The accountName
     *
@@ -55,6 +57,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the syncCalendar
+    * Whether or not to sync the calendar.
     *
     * @return bool The syncCalendar
     */
@@ -69,6 +72,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the syncCalendar
+    * Whether or not to sync the calendar.
     *
     * @param bool $val The syncCalendar
     *
@@ -82,6 +86,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the syncContacts
+    * Whether or not to sync contacts.
     *
     * @return bool The syncContacts
     */
@@ -96,6 +101,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the syncContacts
+    * Whether or not to sync contacts.
     *
     * @param bool $val The syncContacts
     *
@@ -109,6 +115,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the syncTasks
+    * Whether or not to sync tasks.
     *
     * @return bool The syncTasks
     */
@@ -123,6 +130,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the syncTasks
+    * Whether or not to sync tasks.
     *
     * @param bool $val The syncTasks
     *
@@ -136,6 +144,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the durationOfEmailToSync
+    * Duration of email to sync.
     *
     * @return EmailSyncDuration The durationOfEmailToSync
     */
@@ -154,6 +163,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the durationOfEmailToSync
+    * Duration of email to sync.
     *
     * @param EmailSyncDuration $val The durationOfEmailToSync
     *
@@ -167,6 +177,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return UserEmailSource The emailAddressSource
     */
@@ -185,6 +196,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param UserEmailSource $val The emailAddressSource
     *
@@ -198,6 +210,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the emailSyncSchedule
+    * Email sync schedule.
     *
     * @return EmailSyncSchedule The emailSyncSchedule
     */
@@ -216,6 +229,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the emailSyncSchedule
+    * Email sync schedule.
     *
     * @param EmailSyncSchedule $val The emailSyncSchedule
     *
@@ -229,6 +243,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the hostName
+    * Exchange location that (URL) that the native mail app connects to.
     *
     * @return string The hostName
     */
@@ -243,6 +258,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the hostName
+    * Exchange location that (URL) that the native mail app connects to.
     *
     * @param string $val The hostName
     *
@@ -256,6 +272,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Gets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @return bool The requireSsl
     */
@@ -270,6 +287,7 @@ class Windows10EasEmailProfileConfiguration extends EasEmailProfileConfiguration
     
     /**
     * Sets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @param bool $val The requireSsl
     *

@@ -28,6 +28,7 @@ class MobileAppTroubleshootingHistoryItem extends Entity
 
     /**
     * Gets the occurrenceDateTime
+    * Time when the history item occurred.
     *
     * @return \DateTime The occurrenceDateTime
     */
@@ -46,6 +47,7 @@ class MobileAppTroubleshootingHistoryItem extends Entity
 
     /**
     * Sets the occurrenceDateTime
+    * Time when the history item occurred.
     *
     * @param \DateTime $val The value to assign to the occurrenceDateTime
     *

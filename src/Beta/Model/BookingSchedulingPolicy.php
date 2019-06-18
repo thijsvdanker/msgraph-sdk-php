@@ -28,6 +28,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Gets the timeSlotInterval
+    * Duration of each time slot.
     *
     * @return Duration The timeSlotInterval
     */
@@ -46,6 +47,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Sets the timeSlotInterval
+    * Duration of each time slot.
     *
     * @param Duration $val The value to assign to the timeSlotInterval
     *
@@ -59,6 +61,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Gets the minimumLeadTime
+    * Minimum lead time for bookings and cancellations.
     *
     * @return Duration The minimumLeadTime
     */
@@ -77,6 +80,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Sets the minimumLeadTime
+    * Minimum lead time for bookings and cancellations.
     *
     * @param Duration $val The value to assign to the minimumLeadTime
     *
@@ -90,6 +94,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Gets the maximumAdvance
+    * Maximum number of days in advance that a booking can be made.
     *
     * @return Duration The maximumAdvance
     */
@@ -108,6 +113,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Sets the maximumAdvance
+    * Maximum number of days in advance that a booking can be made.
     *
     * @param Duration $val The value to assign to the maximumAdvance
     *
@@ -120,6 +126,7 @@ class BookingSchedulingPolicy extends Entity
     }
     /**
     * Gets the sendConfirmationsToOwner
+    * Notify the business via email when a booking is created or changed.
     *
     * @return bool The sendConfirmationsToOwner
     */
@@ -134,6 +141,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Sets the sendConfirmationsToOwner
+    * Notify the business via email when a booking is created or changed.
     *
     * @param bool $val The value of the sendConfirmationsToOwner
     *
@@ -146,6 +154,7 @@ class BookingSchedulingPolicy extends Entity
     }
     /**
     * Gets the allowStaffSelection
+    * Allow customers to choose a specific person for the booking.
     *
     * @return bool The allowStaffSelection
     */
@@ -160,6 +169,7 @@ class BookingSchedulingPolicy extends Entity
 
     /**
     * Sets the allowStaffSelection
+    * Allow customers to choose a specific person for the booking.
     *
     * @param bool $val The value of the allowStaffSelection
     *

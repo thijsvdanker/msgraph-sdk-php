@@ -28,6 +28,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
 {
     /**
     * Gets the eapType
+    * Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router).
     *
     * @return AndroidEapType The eapType
     */
@@ -46,6 +47,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the eapType
+    * Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router).
     *
     * @param AndroidEapType $val The eapType
     *
@@ -59,6 +61,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Gets the authenticationMethod
+    * Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS.
     *
     * @return WiFiAuthenticationMethod The authenticationMethod
     */
@@ -77,6 +80,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the authenticationMethod
+    * Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS.
     *
     * @param WiFiAuthenticationMethod $val The authenticationMethod
     *
@@ -90,6 +94,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Gets the innerAuthenticationProtocolForEapTtls
+    * Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password.
     *
     * @return NonEapAuthenticationMethodForEapTtlsType The innerAuthenticationProtocolForEapTtls
     */
@@ -108,6 +113,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the innerAuthenticationProtocolForEapTtls
+    * Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password.
     *
     * @param NonEapAuthenticationMethodForEapTtlsType $val The innerAuthenticationProtocolForEapTtls
     *
@@ -121,6 +127,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Gets the innerAuthenticationProtocolForPeap
+    * Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password.
     *
     * @return NonEapAuthenticationMethodForPeap The innerAuthenticationProtocolForPeap
     */
@@ -139,6 +146,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the innerAuthenticationProtocolForPeap
+    * Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password.
     *
     * @param NonEapAuthenticationMethodForPeap $val The innerAuthenticationProtocolForPeap
     *
@@ -152,6 +160,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Gets the outerIdentityPrivacyTemporaryValue
+    * Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.
     *
     * @return string The outerIdentityPrivacyTemporaryValue
     */
@@ -166,6 +175,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the outerIdentityPrivacyTemporaryValue
+    * Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.
     *
     * @param string $val The outerIdentityPrivacyTemporaryValue
     *
@@ -178,7 +188,95 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     }
     
     /**
+    * Gets the usernameFormatString
+    * Username format string used to build the username to connect to wifi
+    *
+    * @return string The usernameFormatString
+    */
+    public function getUsernameFormatString()
+    {
+        if (array_key_exists("usernameFormatString", $this->_propDict)) {
+            return $this->_propDict["usernameFormatString"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the usernameFormatString
+    * Username format string used to build the username to connect to wifi
+    *
+    * @param string $val The usernameFormatString
+    *
+    * @return AndroidEnterpriseWiFiConfiguration
+    */
+    public function setUsernameFormatString($val)
+    {
+        $this->_propDict["usernameFormatString"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordFormatString
+    * Password format string used to build the password to connect to wifi
+    *
+    * @return string The passwordFormatString
+    */
+    public function getPasswordFormatString()
+    {
+        if (array_key_exists("passwordFormatString", $this->_propDict)) {
+            return $this->_propDict["passwordFormatString"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordFormatString
+    * Password format string used to build the password to connect to wifi
+    *
+    * @param string $val The passwordFormatString
+    *
+    * @return AndroidEnterpriseWiFiConfiguration
+    */
+    public function setPasswordFormatString($val)
+    {
+        $this->_propDict["passwordFormatString"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the preSharedKey
+    * PreSharedKey used to build the password to connect to wifi
+    *
+    * @return string The preSharedKey
+    */
+    public function getPreSharedKey()
+    {
+        if (array_key_exists("preSharedKey", $this->_propDict)) {
+            return $this->_propDict["preSharedKey"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the preSharedKey
+    * PreSharedKey used to build the password to connect to wifi
+    *
+    * @param string $val The preSharedKey
+    *
+    * @return AndroidEnterpriseWiFiConfiguration
+    */
+    public function setPreSharedKey($val)
+    {
+        $this->_propDict["preSharedKey"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the rootCertificateForServerValidation
+    * Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS, EAP-TTLS or PEAP. This is the certificate presented by the Wi-Fi endpoint when the device attempts to connect to Wi-Fi endpoint. The device (or user) must accept this certificate to continue the connection attempt.
     *
     * @return AndroidTrustedRootCertificate The rootCertificateForServerValidation
     */
@@ -197,6 +295,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the rootCertificateForServerValidation
+    * Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS, EAP-TTLS or PEAP. This is the certificate presented by the Wi-Fi endpoint when the device attempts to connect to Wi-Fi endpoint. The device (or user) must accept this certificate to continue the connection attempt.
     *
     * @param AndroidTrustedRootCertificate $val The rootCertificateForServerValidation
     *
@@ -210,6 +309,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Gets the identityCertificateForClientAuthentication
+    * Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication). This is the certificate presented by client to the Wi-Fi endpoint. The authentication server sitting behind the Wi-Fi endpoint must accept this certificate to successfully establish a Wi-Fi connection.
     *
     * @return AndroidCertificateProfileBase The identityCertificateForClientAuthentication
     */
@@ -228,6 +328,7 @@ class AndroidEnterpriseWiFiConfiguration extends AndroidWiFiConfiguration
     
     /**
     * Sets the identityCertificateForClientAuthentication
+    * Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication). This is the certificate presented by client to the Wi-Fi endpoint. The authentication server sitting behind the Wi-Fi endpoint must accept this certificate to successfully establish a Wi-Fi connection.
     *
     * @param AndroidCertificateProfileBase $val The identityCertificateForClientAuthentication
     *

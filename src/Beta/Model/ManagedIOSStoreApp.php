@@ -28,6 +28,7 @@ class ManagedIOSStoreApp extends ManagedApp
 {
     /**
     * Gets the bundleId
+    * The app's Bundle ID.
     *
     * @return string The bundleId
     */
@@ -42,6 +43,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Sets the bundleId
+    * The app's Bundle ID.
     *
     * @param string $val The bundleId
     *
@@ -55,6 +57,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Gets the appStoreUrl
+    * The Apple AppStoreUrl.
     *
     * @return string The appStoreUrl
     */
@@ -69,6 +72,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Sets the appStoreUrl
+    * The Apple AppStoreUrl.
     *
     * @param string $val The appStoreUrl
     *
@@ -82,6 +86,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Gets the applicableDeviceType
+    * The iOS architecture for which this app can run on.
     *
     * @return IosDeviceType The applicableDeviceType
     */
@@ -100,6 +105,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Sets the applicableDeviceType
+    * The iOS architecture for which this app can run on.
     *
     * @param IosDeviceType $val The applicableDeviceType
     *
@@ -113,6 +119,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Gets the minimumSupportedOperatingSystem
+    * The value for the minimum supported operating system.
     *
     * @return IosMinimumOperatingSystem The minimumSupportedOperatingSystem
     */
@@ -131,6 +138,7 @@ class ManagedIOSStoreApp extends ManagedApp
     
     /**
     * Sets the minimumSupportedOperatingSystem
+    * The value for the minimum supported operating system.
     *
     * @param IosMinimumOperatingSystem $val The minimumSupportedOperatingSystem
     *

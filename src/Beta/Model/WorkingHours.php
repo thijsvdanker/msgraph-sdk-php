@@ -28,6 +28,7 @@ class WorkingHours extends Entity
 
     /**
     * Gets the daysOfWeek
+    * The days of the week on which the user works.
     *
     * @return DayOfWeek The daysOfWeek
     */
@@ -46,6 +47,7 @@ class WorkingHours extends Entity
 
     /**
     * Sets the daysOfWeek
+    * The days of the week on which the user works.
     *
     * @param DayOfWeek $val The value to assign to the daysOfWeek
     *
@@ -59,6 +61,7 @@ class WorkingHours extends Entity
 
     /**
     * Gets the startTime
+    * The time of the day that the user starts working.
     *
     * @return TimeOfDay The startTime
     */
@@ -77,6 +80,7 @@ class WorkingHours extends Entity
 
     /**
     * Sets the startTime
+    * The time of the day that the user starts working.
     *
     * @param TimeOfDay $val The value to assign to the startTime
     *
@@ -90,6 +94,7 @@ class WorkingHours extends Entity
 
     /**
     * Gets the endTime
+    * The time of the day that the user stops working.
     *
     * @return TimeOfDay The endTime
     */
@@ -108,6 +113,7 @@ class WorkingHours extends Entity
 
     /**
     * Sets the endTime
+    * The time of the day that the user stops working.
     *
     * @param TimeOfDay $val The value to assign to the endTime
     *
@@ -121,6 +127,7 @@ class WorkingHours extends Entity
 
     /**
     * Gets the timeZone
+    * The time zone to which the working hours apply.
     *
     * @return TimeZoneBase The timeZone
     */
@@ -139,6 +146,7 @@ class WorkingHours extends Entity
 
     /**
     * Sets the timeZone
+    * The time zone to which the working hours apply.
     *
     * @param TimeZoneBase $val The value to assign to the timeZone
     *

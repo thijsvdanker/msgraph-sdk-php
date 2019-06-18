@@ -28,6 +28,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
 {
     /**
     * Gets the applicationName
+    * Application Name
     *
     * @return string The applicationName
     */
@@ -42,6 +43,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
     
     /**
     * Sets the applicationName
+    * Application Name
     *
     * @param string $val The applicationName
     *
@@ -55,6 +57,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
     
     /**
     * Gets the applicationType
+    * Application Type. Possible values are: universal, desktop.
     *
     * @return ApplicationType The applicationType
     */
@@ -73,6 +76,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
     
     /**
     * Sets the applicationType
+    * Application Type. Possible values are: universal, desktop.
     *
     * @param ApplicationType $val The applicationType
     *
@@ -86,6 +90,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
     
     /**
     * Gets the deviceCount
+    * Device Count
     *
     * @return int The deviceCount
     */
@@ -100,6 +105,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
     
     /**
     * Sets the deviceCount
+    * Device Count
     *
     * @param int $val The deviceCount
     *

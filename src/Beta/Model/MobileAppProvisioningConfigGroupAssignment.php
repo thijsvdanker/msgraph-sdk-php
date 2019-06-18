@@ -28,6 +28,7 @@ class MobileAppProvisioningConfigGroupAssignment extends Entity
 {
     /**
     * Gets the targetGroupId
+    * The ID of the AAD group in which the app provisioning configuration is being targeted.
     *
     * @return string The targetGroupId
     */
@@ -42,6 +43,7 @@ class MobileAppProvisioningConfigGroupAssignment extends Entity
     
     /**
     * Sets the targetGroupId
+    * The ID of the AAD group in which the app provisioning configuration is being targeted.
     *
     * @param string $val The targetGroupId
     *

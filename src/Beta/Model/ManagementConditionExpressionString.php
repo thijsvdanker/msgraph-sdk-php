@@ -26,7 +26,17 @@ namespace Microsoft\Graph\Beta\Model;
 class ManagementConditionExpressionString extends ManagementConditionExpression
 {
     /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.managementConditionExpressionString");
+    }
+
+    /**
     * Gets the value
+    * The management condition statement expression string value.
     *
     * @return string The value
     */
@@ -41,6 +51,7 @@ class ManagementConditionExpressionString extends ManagementConditionExpression
 
     /**
     * Sets the value
+    * The management condition statement expression string value.
     *
     * @param string $val The value of the value
     *

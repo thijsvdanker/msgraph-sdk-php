@@ -28,6 +28,7 @@ class ScheduleItem extends Entity
 
     /**
     * Gets the start
+    * The date, time, and time zone that the corresponding event starts.
     *
     * @return DateTimeTimeZone The start
     */
@@ -46,6 +47,7 @@ class ScheduleItem extends Entity
 
     /**
     * Sets the start
+    * The date, time, and time zone that the corresponding event starts.
     *
     * @param DateTimeTimeZone $val The value to assign to the start
     *
@@ -59,6 +61,7 @@ class ScheduleItem extends Entity
 
     /**
     * Gets the end
+    * The date, time, and time zone that the corresponding event ends.
     *
     * @return DateTimeTimeZone The end
     */
@@ -77,6 +80,7 @@ class ScheduleItem extends Entity
 
     /**
     * Sets the end
+    * The date, time, and time zone that the corresponding event ends.
     *
     * @param DateTimeTimeZone $val The value to assign to the end
     *
@@ -89,6 +93,7 @@ class ScheduleItem extends Entity
     }
     /**
     * Gets the isPrivate
+    * The sensitivity of the corresponding event. True if the event is marked private, false otherwise. Optional.
     *
     * @return bool The isPrivate
     */
@@ -103,6 +108,7 @@ class ScheduleItem extends Entity
 
     /**
     * Sets the isPrivate
+    * The sensitivity of the corresponding event. True if the event is marked private, false otherwise. Optional.
     *
     * @param bool $val The value of the isPrivate
     *
@@ -116,6 +122,7 @@ class ScheduleItem extends Entity
 
     /**
     * Gets the status
+    * The availability status of the user or resource during the corresponding event. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
     *
     * @return FreeBusyStatus The status
     */
@@ -134,6 +141,7 @@ class ScheduleItem extends Entity
 
     /**
     * Sets the status
+    * The availability status of the user or resource during the corresponding event. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
     *
     * @param FreeBusyStatus $val The value to assign to the status
     *
@@ -146,6 +154,7 @@ class ScheduleItem extends Entity
     }
     /**
     * Gets the subject
+    * The corresponding event's subject line. Optional.
     *
     * @return string The subject
     */
@@ -160,6 +169,7 @@ class ScheduleItem extends Entity
 
     /**
     * Sets the subject
+    * The corresponding event's subject line. Optional.
     *
     * @param string $val The value of the subject
     *
@@ -172,6 +182,7 @@ class ScheduleItem extends Entity
     }
     /**
     * Gets the location
+    * The location where the corresponding event is held or attended from. Optional.
     *
     * @return string The location
     */
@@ -186,6 +197,7 @@ class ScheduleItem extends Entity
 
     /**
     * Sets the location
+    * The location where the corresponding event is held or attended from. Optional.
     *
     * @param string $val The value of the location
     *

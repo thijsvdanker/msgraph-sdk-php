@@ -27,6 +27,7 @@ class VersionAction extends Entity
 {
     /**
     * Gets the newVersion
+    * The name of the new version that was created by this action.
     *
     * @return string The newVersion
     */
@@ -41,6 +42,7 @@ class VersionAction extends Entity
 
     /**
     * Sets the newVersion
+    * The name of the new version that was created by this action.
     *
     * @param string $val The value of the newVersion
     *

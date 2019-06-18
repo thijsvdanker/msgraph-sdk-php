@@ -28,6 +28,7 @@ class Windows10NetworkBoundaryConfiguration extends DeviceConfiguration
 {
     /**
     * Gets the windowsNetworkIsolationPolicy
+    * Windows Network Isolation Policy
     *
     * @return WindowsNetworkIsolationPolicy The windowsNetworkIsolationPolicy
     */
@@ -46,6 +47,7 @@ class Windows10NetworkBoundaryConfiguration extends DeviceConfiguration
     
     /**
     * Sets the windowsNetworkIsolationPolicy
+    * Windows Network Isolation Policy
     *
     * @param WindowsNetworkIsolationPolicy $val The windowsNetworkIsolationPolicy
     *

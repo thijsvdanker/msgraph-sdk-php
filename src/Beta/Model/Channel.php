@@ -28,6 +28,7 @@ class Channel extends Entity
 {
     /**
     * Gets the displayName
+    * Channel name as it will appear to the user in Microsoft Teams.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class Channel extends Entity
     
     /**
     * Sets the displayName
+    * Channel name as it will appear to the user in Microsoft Teams.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class Channel extends Entity
     
     /**
     * Gets the description
+    * Optional textual description for the channel.
     *
     * @return string The description
     */
@@ -69,6 +72,7 @@ class Channel extends Entity
     
     /**
     * Sets the description
+    * Optional textual description for the channel.
     *
     * @param string $val The description
     *
@@ -77,6 +81,91 @@ class Channel extends Entity
     public function setDescription($val)
     {
         $this->_propDict["description"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the isFavoriteByDefault
+    *
+    * @return bool The isFavoriteByDefault
+    */
+    public function getIsFavoriteByDefault()
+    {
+        if (array_key_exists("isFavoriteByDefault", $this->_propDict)) {
+            return $this->_propDict["isFavoriteByDefault"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the isFavoriteByDefault
+    *
+    * @param bool $val The isFavoriteByDefault
+    *
+    * @return Channel
+    */
+    public function setIsFavoriteByDefault($val)
+    {
+        $this->_propDict["isFavoriteByDefault"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the email
+    * The email address for sending messages to the channel. Read-only.
+    *
+    * @return string The email
+    */
+    public function getEmail()
+    {
+        if (array_key_exists("email", $this->_propDict)) {
+            return $this->_propDict["email"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the email
+    * The email address for sending messages to the channel. Read-only.
+    *
+    * @param string $val The email
+    *
+    * @return Channel
+    */
+    public function setEmail($val)
+    {
+        $this->_propDict["email"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the webUrl
+    * A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
+    *
+    * @return string The webUrl
+    */
+    public function getWebUrl()
+    {
+        if (array_key_exists("webUrl", $this->_propDict)) {
+            return $this->_propDict["webUrl"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the webUrl
+    * A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
+    *
+    * @param string $val The webUrl
+    *
+    * @return Channel
+    */
+    public function setWebUrl($val)
+    {
+        $this->_propDict["webUrl"] = $val;
         return $this;
     }
     
@@ -133,6 +222,36 @@ class Channel extends Entity
     public function setChatThreads($val)
     {
 		$this->_propDict["chatThreads"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the tabs
+    * A collection of all the tabs in the channel. A navigation property.
+     *
+     * @return array The tabs
+     */
+    public function getTabs()
+    {
+        if (array_key_exists("tabs", $this->_propDict)) {
+           return $this->_propDict["tabs"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the tabs
+    * A collection of all the tabs in the channel. A navigation property.
+    *
+    * @param TeamsTab $val The tabs
+    *
+    * @return Channel
+    */
+    public function setTabs($val)
+    {
+		$this->_propDict["tabs"] = $val;
         return $this;
     }
     

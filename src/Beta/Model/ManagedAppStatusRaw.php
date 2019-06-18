@@ -28,6 +28,7 @@ class ManagedAppStatusRaw extends ManagedAppStatus
 {
     /**
     * Gets the content
+    * Status report content.
     *
     * @return string The content
     */
@@ -42,6 +43,7 @@ class ManagedAppStatusRaw extends ManagedAppStatus
     
     /**
     * Sets the content
+    * Status report content.
     *
     * @param string $val The content
     *

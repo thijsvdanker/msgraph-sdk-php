@@ -28,6 +28,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
 {
     /**
     * Gets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @return string The scepServerUrls
     */
@@ -42,6 +43,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @param string $val The scepServerUrls
     *
@@ -55,6 +57,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Gets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @return string The subjectNameFormatString
     */
@@ -69,6 +72,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @param string $val The subjectNameFormatString
     *
@@ -82,6 +86,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Gets the keyUsage
+    * SCEP Key Usage.
     *
     * @return KeyUsages The keyUsage
     */
@@ -100,6 +105,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the keyUsage
+    * SCEP Key Usage.
     *
     * @param KeyUsages $val The keyUsage
     *
@@ -113,6 +119,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Gets the keySize
+    * SCEP Key Size.
     *
     * @return KeySize The keySize
     */
@@ -131,6 +138,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the keySize
+    * SCEP Key Size.
     *
     * @param KeySize $val The keySize
     *
@@ -144,6 +152,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Gets the hashAlgorithm
+    * SCEP Hash Algorithm.
     *
     * @return HashAlgorithms The hashAlgorithm
     */
@@ -162,6 +171,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the hashAlgorithm
+    * SCEP Hash Algorithm.
     *
     * @param HashAlgorithms $val The hashAlgorithm
     *
@@ -175,6 +185,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Gets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @return string The subjectAlternativeNameFormatString
     */
@@ -189,6 +200,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @param string $val The subjectAlternativeNameFormatString
     *
@@ -202,6 +214,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Gets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @return WindowsPhone81TrustedRootCertificate The rootCertificate
     */
@@ -220,6 +233,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /**
     * Sets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @param WindowsPhone81TrustedRootCertificate $val The rootCertificate
     *
@@ -234,6 +248,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
 
      /** 
      * Gets the managedDeviceCertificateStates
+    * Certificate state for devices
      *
      * @return array The managedDeviceCertificateStates
      */
@@ -248,6 +263,7 @@ class WindowsPhone81SCEPCertificateProfile extends WindowsPhone81CertificateProf
     
     /** 
     * Sets the managedDeviceCertificateStates
+    * Certificate state for devices
     *
     * @param ManagedDeviceCertificateState $val The managedDeviceCertificateStates
     *

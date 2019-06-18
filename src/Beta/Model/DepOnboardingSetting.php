@@ -28,6 +28,7 @@ class DepOnboardingSetting extends Entity
 {
     /**
     * Gets the appleIdentifier
+    * The Apple ID used to obtain the current token.
     *
     * @return string The appleIdentifier
     */
@@ -42,6 +43,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the appleIdentifier
+    * The Apple ID used to obtain the current token.
     *
     * @param string $val The appleIdentifier
     *
@@ -55,6 +57,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the tokenExpirationDateTime
+    * When the token will expire.
     *
     * @return \DateTime The tokenExpirationDateTime
     */
@@ -73,6 +76,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the tokenExpirationDateTime
+    * When the token will expire.
     *
     * @param \DateTime $val The tokenExpirationDateTime
     *
@@ -86,6 +90,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the lastModifiedDateTime
+    * When the service was onboarded.
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -104,6 +109,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the lastModifiedDateTime
+    * When the service was onboarded.
     *
     * @param \DateTime $val The lastModifiedDateTime
     *
@@ -117,6 +123,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the lastSuccessfulSyncDateTime
+    * When the service last syned with Intune
     *
     * @return \DateTime The lastSuccessfulSyncDateTime
     */
@@ -135,6 +142,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the lastSuccessfulSyncDateTime
+    * When the service last syned with Intune
     *
     * @param \DateTime $val The lastSuccessfulSyncDateTime
     *
@@ -148,6 +156,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the lastSyncTriggeredDateTime
+    * When Intune last requested a sync.
     *
     * @return \DateTime The lastSyncTriggeredDateTime
     */
@@ -166,6 +175,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the lastSyncTriggeredDateTime
+    * When Intune last requested a sync.
     *
     * @param \DateTime $val The lastSyncTriggeredDateTime
     *
@@ -179,6 +189,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the shareTokenWithSchoolDataSyncService
+    * Whether or not the Dep token sharing is enabled with the School Data Sync service.
     *
     * @return bool The shareTokenWithSchoolDataSyncService
     */
@@ -193,6 +204,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the shareTokenWithSchoolDataSyncService
+    * Whether or not the Dep token sharing is enabled with the School Data Sync service.
     *
     * @param bool $val The shareTokenWithSchoolDataSyncService
     *
@@ -206,6 +218,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the lastSyncErrorCode
+    * Error code reported by Apple during last dep sync.
     *
     * @return int The lastSyncErrorCode
     */
@@ -220,6 +233,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the lastSyncErrorCode
+    * Error code reported by Apple during last dep sync.
     *
     * @param int $val The lastSyncErrorCode
     *
@@ -233,6 +247,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the tokenType
+    * Gets or sets the Dep Token Type.
     *
     * @return DepTokenType The tokenType
     */
@@ -251,6 +266,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the tokenType
+    * Gets or sets the Dep Token Type.
     *
     * @param DepTokenType $val The tokenType
     *
@@ -264,6 +280,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the tokenName
+    * Friendly Name for Dep Token
     *
     * @return string The tokenName
     */
@@ -278,6 +295,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the tokenName
+    * Friendly Name for Dep Token
     *
     * @param string $val The tokenName
     *
@@ -291,6 +309,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the syncedDeviceCount
+    * Gets synced device count
     *
     * @return int The syncedDeviceCount
     */
@@ -305,6 +324,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the syncedDeviceCount
+    * Gets synced device count
     *
     * @param int $val The syncedDeviceCount
     *
@@ -317,34 +337,8 @@ class DepOnboardingSetting extends Entity
     }
     
     /**
-    * Gets the defaultProfileDisplayName
-    *
-    * @return string The defaultProfileDisplayName
-    */
-    public function getDefaultProfileDisplayName()
-    {
-        if (array_key_exists("defaultProfileDisplayName", $this->_propDict)) {
-            return $this->_propDict["defaultProfileDisplayName"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the defaultProfileDisplayName
-    *
-    * @param string $val The defaultProfileDisplayName
-    *
-    * @return DepOnboardingSetting
-    */
-    public function setDefaultProfileDisplayName($val)
-    {
-        $this->_propDict["defaultProfileDisplayName"] = $val;
-        return $this;
-    }
-    
-    /**
     * Gets the dataSharingConsentGranted
+    * Consent granted for data sharing with Apple Dep Service
     *
     * @return bool The dataSharingConsentGranted
     */
@@ -359,6 +353,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the dataSharingConsentGranted
+    * Consent granted for data sharing with Apple Dep Service
     *
     * @param bool $val The dataSharingConsentGranted
     *
@@ -371,7 +366,37 @@ class DepOnboardingSetting extends Entity
     }
     
     /**
+    * Gets the roleScopeTagIds
+    * List of Scope Tags for this Entity instance.
+    *
+    * @return string The roleScopeTagIds
+    */
+    public function getRoleScopeTagIds()
+    {
+        if (array_key_exists("roleScopeTagIds", $this->_propDict)) {
+            return $this->_propDict["roleScopeTagIds"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the roleScopeTagIds
+    * List of Scope Tags for this Entity instance.
+    *
+    * @param string $val The roleScopeTagIds
+    *
+    * @return DepOnboardingSetting
+    */
+    public function setRoleScopeTagIds($val)
+    {
+        $this->_propDict["roleScopeTagIds"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the defaultIosEnrollmentProfile
+    * Default iOS Enrollment Profile
     *
     * @return DepIOSEnrollmentProfile The defaultIosEnrollmentProfile
     */
@@ -390,6 +415,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the defaultIosEnrollmentProfile
+    * Default iOS Enrollment Profile
     *
     * @param DepIOSEnrollmentProfile $val The defaultIosEnrollmentProfile
     *
@@ -403,6 +429,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Gets the defaultMacOsEnrollmentProfile
+    * Default MacOs Enrollment Profile
     *
     * @return DepMacOSEnrollmentProfile The defaultMacOsEnrollmentProfile
     */
@@ -421,6 +448,7 @@ class DepOnboardingSetting extends Entity
     
     /**
     * Sets the defaultMacOsEnrollmentProfile
+    * Default MacOs Enrollment Profile
     *
     * @param DepMacOSEnrollmentProfile $val The defaultMacOsEnrollmentProfile
     *
@@ -435,6 +463,7 @@ class DepOnboardingSetting extends Entity
 
      /** 
      * Gets the enrollmentProfiles
+    * The enrollment profiles.
      *
      * @return array The enrollmentProfiles
      */
@@ -449,6 +478,7 @@ class DepOnboardingSetting extends Entity
     
     /** 
     * Sets the enrollmentProfiles
+    * The enrollment profiles.
     *
     * @param EnrollmentProfile $val The enrollmentProfiles
     *
@@ -463,6 +493,7 @@ class DepOnboardingSetting extends Entity
 
      /** 
      * Gets the importedAppleDeviceIdentities
+    * The imported Apple device identities.
      *
      * @return array The importedAppleDeviceIdentities
      */
@@ -477,6 +508,7 @@ class DepOnboardingSetting extends Entity
     
     /** 
     * Sets the importedAppleDeviceIdentities
+    * The imported Apple device identities.
     *
     * @param ImportedAppleDeviceIdentity $val The importedAppleDeviceIdentities
     *

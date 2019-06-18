@@ -28,6 +28,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
 {
     /**
     * Gets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage. Valid values 1 to 99
     *
     * @return int The renewalThresholdPercentage
     */
@@ -42,6 +43,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage. Valid values 1 to 99
     *
     * @param int $val The renewalThresholdPercentage
     *
@@ -55,6 +57,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the keyStorageProvider
+    * Key Storage Provider (KSP)
     *
     * @return KeyStorageProviderOption The keyStorageProvider
     */
@@ -73,6 +76,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the keyStorageProvider
+    * Key Storage Provider (KSP)
     *
     * @param KeyStorageProviderOption $val The keyStorageProvider
     *
@@ -86,6 +90,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectNameFormat
+    * Certificate Subject Name Format
     *
     * @return SubjectNameFormat The subjectNameFormat
     */
@@ -104,6 +109,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectNameFormat
+    * Certificate Subject Name Format
     *
     * @param SubjectNameFormat $val The subjectNameFormat
     *
@@ -117,6 +123,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type
     *
     * @return SubjectAlternativeNameType The subjectAlternativeNameType
     */
@@ -135,6 +142,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type
     *
     * @param SubjectAlternativeNameType $val The subjectAlternativeNameType
     *
@@ -148,6 +156,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period
     *
     * @return int The certificateValidityPeriodValue
     */
@@ -162,6 +171,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period
     *
     * @param int $val The certificateValidityPeriodValue
     *
@@ -175,6 +185,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period
     *
     * @return CertificateValidityPeriodScale The certificateValidityPeriodScale
     */
@@ -193,6 +204,7 @@ class WindowsCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period
     *
     * @param CertificateValidityPeriodScale $val The certificateValidityPeriodScale
     *

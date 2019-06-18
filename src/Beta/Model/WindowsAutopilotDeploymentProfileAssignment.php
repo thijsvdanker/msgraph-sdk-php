@@ -28,6 +28,7 @@ class WindowsAutopilotDeploymentProfileAssignment extends Entity
 {
     /**
     * Gets the target
+    * The assignment target for the Windows Autopilot deployment profile.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class WindowsAutopilotDeploymentProfileAssignment extends Entity
     
     /**
     * Sets the target
+    * The assignment target for the Windows Autopilot deployment profile.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

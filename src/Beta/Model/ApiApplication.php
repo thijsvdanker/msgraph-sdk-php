@@ -26,6 +26,89 @@ namespace Microsoft\Graph\Beta\Model;
 class ApiApplication extends Entity
 {
     /**
+    * Gets the acceptMappedClaims
+    *
+    * @return bool The acceptMappedClaims
+    */
+    public function getAcceptMappedClaims()
+    {
+        if (array_key_exists("acceptMappedClaims", $this->_propDict)) {
+            return $this->_propDict["acceptMappedClaims"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the acceptMappedClaims
+    *
+    * @param bool $val The value of the acceptMappedClaims
+    *
+    * @return ApiApplication
+    */
+    public function setAcceptMappedClaims($val)
+    {
+        $this->_propDict["acceptMappedClaims"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the knownClientApplications
+    *
+    * @return string The knownClientApplications
+    */
+    public function getKnownClientApplications()
+    {
+        if (array_key_exists("knownClientApplications", $this->_propDict)) {
+            return $this->_propDict["knownClientApplications"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the knownClientApplications
+    *
+    * @param string $val The value of the knownClientApplications
+    *
+    * @return ApiApplication
+    */
+    public function setKnownClientApplications($val)
+    {
+        $this->_propDict["knownClientApplications"] = $val;
+        return $this;
+    }
+
+    /**
+    * Gets the preAuthorizedApplications
+    *
+    * @return PreAuthorizedApplication The preAuthorizedApplications
+    */
+    public function getPreAuthorizedApplications()
+    {
+        if (array_key_exists("preAuthorizedApplications", $this->_propDict)) {
+            if (is_a($this->_propDict["preAuthorizedApplications"], "Microsoft\Graph\Beta\Model\PreAuthorizedApplication")) {
+                return $this->_propDict["preAuthorizedApplications"];
+            } else {
+                $this->_propDict["preAuthorizedApplications"] = new PreAuthorizedApplication($this->_propDict["preAuthorizedApplications"]);
+                return $this->_propDict["preAuthorizedApplications"];
+            }
+        }
+        return null;
+    }
+
+    /**
+    * Sets the preAuthorizedApplications
+    *
+    * @param PreAuthorizedApplication $val The value to assign to the preAuthorizedApplications
+    *
+    * @return ApiApplication The ApiApplication
+    */
+    public function setPreAuthorizedApplications($val)
+    {
+        $this->_propDict["preAuthorizedApplications"] = $val;
+         return $this;
+    }
+    /**
     * Gets the requestedAccessTokenVersion
     *
     * @return int The requestedAccessTokenVersion

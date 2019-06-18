@@ -28,6 +28,7 @@ class ActiveDirectoryWindowsAutopilotDeploymentProfile extends WindowsAutopilotD
 {
     /**
     * Gets the domainJoinConfiguration
+    * Configuration to join Active Directory domain
     *
     * @return WindowsDomainJoinConfiguration The domainJoinConfiguration
     */
@@ -46,6 +47,7 @@ class ActiveDirectoryWindowsAutopilotDeploymentProfile extends WindowsAutopilotD
     
     /**
     * Sets the domainJoinConfiguration
+    * Configuration to join Active Directory domain
     *
     * @param WindowsDomainJoinConfiguration $val The domainJoinConfiguration
     *

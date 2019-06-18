@@ -28,6 +28,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
 {
     /**
     * Gets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage. Valid values 1 to 99
     *
     * @return int The renewalThresholdPercentage
     */
@@ -42,6 +43,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage. Valid values 1 to 99
     *
     * @param int $val The renewalThresholdPercentage
     *
@@ -55,6 +57,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @return SubjectNameFormat The subjectNameFormat
     */
@@ -73,6 +76,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @param SubjectNameFormat $val The subjectNameFormat
     *
@@ -86,6 +90,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type.
     *
     * @return SubjectAlternativeNameType The subjectAlternativeNameType
     */
@@ -104,6 +109,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type.
     *
     * @param SubjectAlternativeNameType $val The subjectAlternativeNameType
     *
@@ -117,6 +123,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period.
     *
     * @return int The certificateValidityPeriodValue
     */
@@ -131,6 +138,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period.
     *
     * @param int $val The certificateValidityPeriodValue
     *
@@ -144,6 +152,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @return CertificateValidityPeriodScale The certificateValidityPeriodScale
     */
@@ -162,6 +171,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @param CertificateValidityPeriodScale $val The certificateValidityPeriodScale
     *
@@ -176,6 +186,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
 
      /** 
      * Gets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The extendedKeyUsages
      */
@@ -190,6 +201,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /** 
     * Sets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
     *
     * @param ExtendedKeyUsage $val The extendedKeyUsages
     *
@@ -203,6 +215,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @return AndroidTrustedRootCertificate The rootCertificate
     */
@@ -221,6 +234,7 @@ class AndroidCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @param AndroidTrustedRootCertificate $val The rootCertificate
     *

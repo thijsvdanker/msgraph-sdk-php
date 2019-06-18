@@ -28,6 +28,7 @@ class IosLobAppProvisioningConfigurationAssignment extends Entity
 {
     /**
     * Gets the target
+    * The target group assignment defined by the admin.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class IosLobAppProvisioningConfigurationAssignment extends Entity
     
     /**
     * Sets the target
+    * The target group assignment defined by the admin.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

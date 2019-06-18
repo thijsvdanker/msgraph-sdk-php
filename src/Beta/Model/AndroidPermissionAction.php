@@ -27,6 +27,7 @@ class AndroidPermissionAction extends Entity
 {
     /**
     * Gets the permission
+    * Android permission string, defined in the official Android documentation.  Example 'android.permission.READ_CONTACTS'.
     *
     * @return string The permission
     */
@@ -41,6 +42,7 @@ class AndroidPermissionAction extends Entity
 
     /**
     * Sets the permission
+    * Android permission string, defined in the official Android documentation.  Example 'android.permission.READ_CONTACTS'.
     *
     * @param string $val The value of the permission
     *
@@ -54,6 +56,7 @@ class AndroidPermissionAction extends Entity
 
     /**
     * Gets the action
+    * Type of Android permission action.
     *
     * @return AndroidPermissionActionType The action
     */
@@ -72,6 +75,7 @@ class AndroidPermissionAction extends Entity
 
     /**
     * Sets the action
+    * Type of Android permission action.
     *
     * @param AndroidPermissionActionType $val The value to assign to the action
     *

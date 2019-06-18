@@ -28,6 +28,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
 {
     /**
     * Gets the accountsBlockModification
+    * Indicates whether or not adding or removing accounts is disabled.
     *
     * @return bool The accountsBlockModification
     */
@@ -42,6 +43,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the accountsBlockModification
+    * Indicates whether or not adding or removing accounts is disabled.
     *
     * @param bool $val The accountsBlockModification
     *
@@ -55,6 +57,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appsAllowInstallFromUnknownSources
+    * Indicates whether or not the user is allowed to enable to unknown sources setting.
     *
     * @return bool The appsAllowInstallFromUnknownSources
     */
@@ -69,6 +72,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appsAllowInstallFromUnknownSources
+    * Indicates whether or not the user is allowed to enable to unknown sources setting.
     *
     * @param bool $val The appsAllowInstallFromUnknownSources
     *
@@ -82,6 +86,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appsAutoUpdatePolicy
+    * Indicates the value of the app auto update policy.
     *
     * @return AndroidDeviceOwnerAppAutoUpdatePolicyType The appsAutoUpdatePolicy
     */
@@ -100,6 +105,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appsAutoUpdatePolicy
+    * Indicates the value of the app auto update policy.
     *
     * @param AndroidDeviceOwnerAppAutoUpdatePolicyType $val The appsAutoUpdatePolicy
     *
@@ -113,6 +119,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appsDefaultPermissionPolicy
+    * Indicates the permission policy for requests for runtime permissions if one is not defined for the app specifically.
     *
     * @return AndroidDeviceOwnerDefaultAppPermissionPolicyType The appsDefaultPermissionPolicy
     */
@@ -131,6 +138,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appsDefaultPermissionPolicy
+    * Indicates the permission policy for requests for runtime permissions if one is not defined for the app specifically.
     *
     * @param AndroidDeviceOwnerDefaultAppPermissionPolicyType $val The appsDefaultPermissionPolicy
     *
@@ -143,7 +151,37 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the appsRecommendSkippingFirstUseHints
+    * Whether or not to recommend all apps skip any first-time-use hints they may have added.
+    *
+    * @return bool The appsRecommendSkippingFirstUseHints
+    */
+    public function getAppsRecommendSkippingFirstUseHints()
+    {
+        if (array_key_exists("appsRecommendSkippingFirstUseHints", $this->_propDict)) {
+            return $this->_propDict["appsRecommendSkippingFirstUseHints"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the appsRecommendSkippingFirstUseHints
+    * Whether or not to recommend all apps skip any first-time-use hints they may have added.
+    *
+    * @param bool $val The appsRecommendSkippingFirstUseHints
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setAppsRecommendSkippingFirstUseHints($val)
+    {
+        $this->_propDict["appsRecommendSkippingFirstUseHints"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the bluetoothBlockConfiguration
+    * Indicates whether or not to block a user from configuring bluetooth.
     *
     * @return bool The bluetoothBlockConfiguration
     */
@@ -158,6 +196,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bluetoothBlockConfiguration
+    * Indicates whether or not to block a user from configuring bluetooth.
     *
     * @param bool $val The bluetoothBlockConfiguration
     *
@@ -171,6 +210,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the bluetoothBlockContactSharing
+    * Indicates whether or not to block a user from sharing contacts via bluetooth.
     *
     * @return bool The bluetoothBlockContactSharing
     */
@@ -185,6 +225,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bluetoothBlockContactSharing
+    * Indicates whether or not to block a user from sharing contacts via bluetooth.
     *
     * @param bool $val The bluetoothBlockContactSharing
     *
@@ -198,6 +239,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cameraBlocked
+    * Indicates whether or not to disable the use of the camera.
     *
     * @return bool The cameraBlocked
     */
@@ -212,6 +254,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cameraBlocked
+    * Indicates whether or not to disable the use of the camera.
     *
     * @param bool $val The cameraBlocked
     *
@@ -225,6 +268,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cellularBlockWiFiTethering
+    * Indicates whether or not to block Wi-Fi tethering.
     *
     * @return bool The cellularBlockWiFiTethering
     */
@@ -239,6 +283,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cellularBlockWiFiTethering
+    * Indicates whether or not to block Wi-Fi tethering.
     *
     * @param bool $val The cellularBlockWiFiTethering
     *
@@ -252,6 +297,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the dataRoamingBlocked
+    * Indicates whether or not to block a user from data roaming.
     *
     * @return bool The dataRoamingBlocked
     */
@@ -266,6 +312,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the dataRoamingBlocked
+    * Indicates whether or not to block a user from data roaming.
     *
     * @param bool $val The dataRoamingBlocked
     *
@@ -279,6 +326,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the dateTimeConfigurationBlocked
+    * Indicates whether or not to block the user from manually changing the date or time on the device
     *
     * @return bool The dateTimeConfigurationBlocked
     */
@@ -293,6 +341,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the dateTimeConfigurationBlocked
+    * Indicates whether or not to block the user from manually changing the date or time on the device
     *
     * @param bool $val The dateTimeConfigurationBlocked
     *
@@ -306,6 +355,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the factoryResetDeviceAdministratorEmails
+    * List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.
     *
     * @return string The factoryResetDeviceAdministratorEmails
     */
@@ -320,6 +370,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the factoryResetDeviceAdministratorEmails
+    * List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.
     *
     * @param string $val The factoryResetDeviceAdministratorEmails
     *
@@ -333,6 +384,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the factoryResetBlocked
+    * Indicates whether or not the factory reset option in settings is disabled.
     *
     * @return bool The factoryResetBlocked
     */
@@ -347,6 +399,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the factoryResetBlocked
+    * Indicates whether or not the factory reset option in settings is disabled.
     *
     * @param bool $val The factoryResetBlocked
     *
@@ -361,6 +414,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
 
      /** 
      * Gets the kioskModeApps
+    * A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.
      *
      * @return array The kioskModeApps
      */
@@ -375,6 +429,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the kioskModeApps
+    * A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.
     *
     * @param AppListItem $val The kioskModeApps
     *
@@ -387,7 +442,153 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeWallpaperUrl
+    * URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.
+    *
+    * @return string The kioskModeWallpaperUrl
+    */
+    public function getKioskModeWallpaperUrl()
+    {
+        if (array_key_exists("kioskModeWallpaperUrl", $this->_propDict)) {
+            return $this->_propDict["kioskModeWallpaperUrl"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeWallpaperUrl
+    * URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.
+    *
+    * @param string $val The kioskModeWallpaperUrl
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setKioskModeWallpaperUrl($val)
+    {
+        $this->_propDict["kioskModeWallpaperUrl"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the kioskModeExitCode
+    * Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.
+    *
+    * @return string The kioskModeExitCode
+    */
+    public function getKioskModeExitCode()
+    {
+        if (array_key_exists("kioskModeExitCode", $this->_propDict)) {
+            return $this->_propDict["kioskModeExitCode"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeExitCode
+    * Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.
+    *
+    * @param string $val The kioskModeExitCode
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setKioskModeExitCode($val)
+    {
+        $this->_propDict["kioskModeExitCode"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the kioskModeVirtualHomeButtonEnabled
+    * Whether or not to display a virtual home button when the device is in Kiosk Mode.
+    *
+    * @return bool The kioskModeVirtualHomeButtonEnabled
+    */
+    public function getKioskModeVirtualHomeButtonEnabled()
+    {
+        if (array_key_exists("kioskModeVirtualHomeButtonEnabled", $this->_propDict)) {
+            return $this->_propDict["kioskModeVirtualHomeButtonEnabled"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeVirtualHomeButtonEnabled
+    * Whether or not to display a virtual home button when the device is in Kiosk Mode.
+    *
+    * @param bool $val The kioskModeVirtualHomeButtonEnabled
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setKioskModeVirtualHomeButtonEnabled($val)
+    {
+        $this->_propDict["kioskModeVirtualHomeButtonEnabled"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the kioskModeBluetoothConfigurationEnabled
+    * Whether or not to allow a user to configure Bluetooth settings in Kiosk Mode.
+    *
+    * @return bool The kioskModeBluetoothConfigurationEnabled
+    */
+    public function getKioskModeBluetoothConfigurationEnabled()
+    {
+        if (array_key_exists("kioskModeBluetoothConfigurationEnabled", $this->_propDict)) {
+            return $this->_propDict["kioskModeBluetoothConfigurationEnabled"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBluetoothConfigurationEnabled
+    * Whether or not to allow a user to configure Bluetooth settings in Kiosk Mode.
+    *
+    * @param bool $val The kioskModeBluetoothConfigurationEnabled
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setKioskModeBluetoothConfigurationEnabled($val)
+    {
+        $this->_propDict["kioskModeBluetoothConfigurationEnabled"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the kioskModeWiFiConfigurationEnabled
+    * Whether or not to allow a user to configure Wi-Fi settings in Kiosk Mode.
+    *
+    * @return bool The kioskModeWiFiConfigurationEnabled
+    */
+    public function getKioskModeWiFiConfigurationEnabled()
+    {
+        if (array_key_exists("kioskModeWiFiConfigurationEnabled", $this->_propDict)) {
+            return $this->_propDict["kioskModeWiFiConfigurationEnabled"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeWiFiConfigurationEnabled
+    * Whether or not to allow a user to configure Wi-Fi settings in Kiosk Mode.
+    *
+    * @param bool $val The kioskModeWiFiConfigurationEnabled
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setKioskModeWiFiConfigurationEnabled($val)
+    {
+        $this->_propDict["kioskModeWiFiConfigurationEnabled"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the microphoneForceMute
+    * Indicates whether or not to block unmuting the microphone on the device.
     *
     * @return bool The microphoneForceMute
     */
@@ -402,6 +603,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the microphoneForceMute
+    * Indicates whether or not to block unmuting the microphone on the device.
     *
     * @param bool $val The microphoneForceMute
     *
@@ -415,6 +617,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the networkEscapeHatchAllowed
+    * Indicates whether or not the device will allow connecting to a temporary network connection at boot time.
     *
     * @return bool The networkEscapeHatchAllowed
     */
@@ -429,6 +632,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the networkEscapeHatchAllowed
+    * Indicates whether or not the device will allow connecting to a temporary network connection at boot time.
     *
     * @param bool $val The networkEscapeHatchAllowed
     *
@@ -442,6 +646,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the nfcBlockOutgoingBeam
+    * Indicates whether or not to block NFC outgoing beam.
     *
     * @return bool The nfcBlockOutgoingBeam
     */
@@ -456,6 +661,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the nfcBlockOutgoingBeam
+    * Indicates whether or not to block NFC outgoing beam.
     *
     * @param bool $val The nfcBlockOutgoingBeam
     *
@@ -469,6 +675,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passwordBlockKeyguard
+    * Indicates whether or not the keyguard is disabled.
     *
     * @return bool The passwordBlockKeyguard
     */
@@ -483,6 +690,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordBlockKeyguard
+    * Indicates whether or not the keyguard is disabled.
     *
     * @param bool $val The passwordBlockKeyguard
     *
@@ -494,8 +702,39 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
         return $this;
     }
     
+
+     /** 
+     * Gets the passwordBlockKeyguardFeatures
+    * List of device keyguard features to block. This collection can contain a maximum of 7 elements.
+     *
+     * @return array The passwordBlockKeyguardFeatures
+     */
+    public function getPasswordBlockKeyguardFeatures()
+    {
+        if (array_key_exists("passwordBlockKeyguardFeatures", $this->_propDict)) {
+           return $this->_propDict["passwordBlockKeyguardFeatures"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the passwordBlockKeyguardFeatures
+    * List of device keyguard features to block. This collection can contain a maximum of 7 elements.
+    *
+    * @param AndroidKeyguardFeature $val The passwordBlockKeyguardFeatures
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordBlockKeyguardFeatures($val)
+    {
+		$this->_propDict["passwordBlockKeyguardFeatures"] = $val;
+        return $this;
+    }
+    
     /**
     * Gets the passwordExpirationDays
+    * Indicates the amount of time in seconds that a password can be set for before it expires and a new password will be required. Valid values 1 to 365
     *
     * @return int The passwordExpirationDays
     */
@@ -510,6 +749,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordExpirationDays
+    * Indicates the amount of time in seconds that a password can be set for before it expires and a new password will be required. Valid values 1 to 365
     *
     * @param int $val The passwordExpirationDays
     *
@@ -523,6 +763,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passwordMinimumLength
+    * Indicates the minimum length of the password required on the device. Valid values 4 to 16
     *
     * @return int The passwordMinimumLength
     */
@@ -537,6 +778,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordMinimumLength
+    * Indicates the minimum length of the password required on the device. Valid values 4 to 16
     *
     * @param int $val The passwordMinimumLength
     *
@@ -549,7 +791,182 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the passwordMinimumLetterCharacters
+    * Indicates the minimum number of letter characters required for device password. Valid values 1 to 16
+    *
+    * @return int The passwordMinimumLetterCharacters
+    */
+    public function getPasswordMinimumLetterCharacters()
+    {
+        if (array_key_exists("passwordMinimumLetterCharacters", $this->_propDict)) {
+            return $this->_propDict["passwordMinimumLetterCharacters"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordMinimumLetterCharacters
+    * Indicates the minimum number of letter characters required for device password. Valid values 1 to 16
+    *
+    * @param int $val The passwordMinimumLetterCharacters
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordMinimumLetterCharacters($val)
+    {
+        $this->_propDict["passwordMinimumLetterCharacters"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordMinimumLowerCaseCharacters
+    * Indicates the minimum number of lower case characters required for device password. Valid values 1 to 16
+    *
+    * @return int The passwordMinimumLowerCaseCharacters
+    */
+    public function getPasswordMinimumLowerCaseCharacters()
+    {
+        if (array_key_exists("passwordMinimumLowerCaseCharacters", $this->_propDict)) {
+            return $this->_propDict["passwordMinimumLowerCaseCharacters"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordMinimumLowerCaseCharacters
+    * Indicates the minimum number of lower case characters required for device password. Valid values 1 to 16
+    *
+    * @param int $val The passwordMinimumLowerCaseCharacters
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordMinimumLowerCaseCharacters($val)
+    {
+        $this->_propDict["passwordMinimumLowerCaseCharacters"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordMinimumNonLetterCharacters
+    * Indicates the minimum number of non-letter characters required for device password. Valid values 1 to 16
+    *
+    * @return int The passwordMinimumNonLetterCharacters
+    */
+    public function getPasswordMinimumNonLetterCharacters()
+    {
+        if (array_key_exists("passwordMinimumNonLetterCharacters", $this->_propDict)) {
+            return $this->_propDict["passwordMinimumNonLetterCharacters"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordMinimumNonLetterCharacters
+    * Indicates the minimum number of non-letter characters required for device password. Valid values 1 to 16
+    *
+    * @param int $val The passwordMinimumNonLetterCharacters
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordMinimumNonLetterCharacters($val)
+    {
+        $this->_propDict["passwordMinimumNonLetterCharacters"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordMinimumNumericCharacters
+    * Indicates the minimum number of numeric characters required for device password. Valid values 1 to 16
+    *
+    * @return int The passwordMinimumNumericCharacters
+    */
+    public function getPasswordMinimumNumericCharacters()
+    {
+        if (array_key_exists("passwordMinimumNumericCharacters", $this->_propDict)) {
+            return $this->_propDict["passwordMinimumNumericCharacters"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordMinimumNumericCharacters
+    * Indicates the minimum number of numeric characters required for device password. Valid values 1 to 16
+    *
+    * @param int $val The passwordMinimumNumericCharacters
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordMinimumNumericCharacters($val)
+    {
+        $this->_propDict["passwordMinimumNumericCharacters"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordMinimumSymbolCharacters
+    * Indicates the minimum number of symbol characters required for device password. Valid values 1 to 16
+    *
+    * @return int The passwordMinimumSymbolCharacters
+    */
+    public function getPasswordMinimumSymbolCharacters()
+    {
+        if (array_key_exists("passwordMinimumSymbolCharacters", $this->_propDict)) {
+            return $this->_propDict["passwordMinimumSymbolCharacters"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordMinimumSymbolCharacters
+    * Indicates the minimum number of symbol characters required for device password. Valid values 1 to 16
+    *
+    * @param int $val The passwordMinimumSymbolCharacters
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordMinimumSymbolCharacters($val)
+    {
+        $this->_propDict["passwordMinimumSymbolCharacters"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordMinimumUpperCaseCharacters
+    * Indicates the minimum number of upper caseletter characters required for device password. Valid values 1 to 16
+    *
+    * @return int The passwordMinimumUpperCaseCharacters
+    */
+    public function getPasswordMinimumUpperCaseCharacters()
+    {
+        if (array_key_exists("passwordMinimumUpperCaseCharacters", $this->_propDict)) {
+            return $this->_propDict["passwordMinimumUpperCaseCharacters"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordMinimumUpperCaseCharacters
+    * Indicates the minimum number of upper caseletter characters required for device password. Valid values 1 to 16
+    *
+    * @param int $val The passwordMinimumUpperCaseCharacters
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPasswordMinimumUpperCaseCharacters($val)
+    {
+        $this->_propDict["passwordMinimumUpperCaseCharacters"] = intval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the passwordMinutesOfInactivityBeforeScreenTimeout
+    * Milliseconds of inactivity before the screen times out.
     *
     * @return int The passwordMinutesOfInactivityBeforeScreenTimeout
     */
@@ -564,6 +981,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordMinutesOfInactivityBeforeScreenTimeout
+    * Milliseconds of inactivity before the screen times out.
     *
     * @param int $val The passwordMinutesOfInactivityBeforeScreenTimeout
     *
@@ -577,6 +995,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passwordPreviousPasswordCountToBlock
+    * Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24
     *
     * @return int The passwordPreviousPasswordCountToBlock
     */
@@ -591,6 +1010,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordPreviousPasswordCountToBlock
+    * Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24
     *
     * @param int $val The passwordPreviousPasswordCountToBlock
     *
@@ -604,6 +1024,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passwordRequiredType
+    * Indicates the minimum password quality required on the device.
     *
     * @return AndroidDeviceOwnerRequiredPasswordType The passwordRequiredType
     */
@@ -622,6 +1043,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordRequiredType
+    * Indicates the minimum password quality required on the device.
     *
     * @param AndroidDeviceOwnerRequiredPasswordType $val The passwordRequiredType
     *
@@ -635,6 +1057,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passwordSignInFailureCountBeforeFactoryReset
+    * Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11
     *
     * @return int The passwordSignInFailureCountBeforeFactoryReset
     */
@@ -649,6 +1072,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passwordSignInFailureCountBeforeFactoryReset
+    * Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11
     *
     * @param int $val The passwordSignInFailureCountBeforeFactoryReset
     *
@@ -661,7 +1085,41 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the playStoreMode
+    * Indicates the Play Store mode of the device.
+    *
+    * @return AndroidDeviceOwnerPlayStoreMode The playStoreMode
+    */
+    public function getPlayStoreMode()
+    {
+        if (array_key_exists("playStoreMode", $this->_propDict)) {
+            if (is_a($this->_propDict["playStoreMode"], "Microsoft\Graph\Beta\Model\AndroidDeviceOwnerPlayStoreMode")) {
+                return $this->_propDict["playStoreMode"];
+            } else {
+                $this->_propDict["playStoreMode"] = new AndroidDeviceOwnerPlayStoreMode($this->_propDict["playStoreMode"]);
+                return $this->_propDict["playStoreMode"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the playStoreMode
+    * Indicates the Play Store mode of the device.
+    *
+    * @param AndroidDeviceOwnerPlayStoreMode $val The playStoreMode
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setPlayStoreMode($val)
+    {
+        $this->_propDict["playStoreMode"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the safeBootBlocked
+    * Indicates whether or not rebooting the device into safe boot is disabled.
     *
     * @return bool The safeBootBlocked
     */
@@ -676,6 +1134,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safeBootBlocked
+    * Indicates whether or not rebooting the device into safe boot is disabled.
     *
     * @param bool $val The safeBootBlocked
     *
@@ -689,6 +1148,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the screenCaptureBlocked
+    * Indicates whether or not to disable the capability to take screenshots.
     *
     * @return bool The screenCaptureBlocked
     */
@@ -703,6 +1163,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the screenCaptureBlocked
+    * Indicates whether or not to disable the capability to take screenshots.
     *
     * @param bool $val The screenCaptureBlocked
     *
@@ -716,6 +1177,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the securityAllowDebuggingFeatures
+    * Indicates whether or not to block the user from enabling debugging features on the device.
     *
     * @return bool The securityAllowDebuggingFeatures
     */
@@ -730,6 +1192,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the securityAllowDebuggingFeatures
+    * Indicates whether or not to block the user from enabling debugging features on the device.
     *
     * @param bool $val The securityAllowDebuggingFeatures
     *
@@ -743,6 +1206,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the securityRequireVerifyApps
+    * Indicates whether or not verify apps is required.
     *
     * @return bool The securityRequireVerifyApps
     */
@@ -757,6 +1221,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the securityRequireVerifyApps
+    * Indicates whether or not verify apps is required.
     *
     * @param bool $val The securityRequireVerifyApps
     *
@@ -770,6 +1235,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the statusBarBlocked
+    * Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.
     *
     * @return bool The statusBarBlocked
     */
@@ -784,6 +1250,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the statusBarBlocked
+    * Indicates whether or the status bar is disabled, including notifications, quick settings and other screen overlays.
     *
     * @param bool $val The statusBarBlocked
     *
@@ -798,6 +1265,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
 
      /** 
      * Gets the stayOnModes
+    * List of modes in which the device's display will stay powered-on. This collection can contain a maximum of 4 elements.
      *
      * @return array The stayOnModes
      */
@@ -812,6 +1280,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the stayOnModes
+    * List of modes in which the device's display will stay powered-on. This collection can contain a maximum of 4 elements.
     *
     * @param AndroidDeviceOwnerBatteryPluggedMode $val The stayOnModes
     *
@@ -825,6 +1294,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the storageAllowUsb
+    * Indicates whether or not to allow USB mass storage.
     *
     * @return bool The storageAllowUsb
     */
@@ -839,6 +1309,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the storageAllowUsb
+    * Indicates whether or not to allow USB mass storage.
     *
     * @param bool $val The storageAllowUsb
     *
@@ -852,6 +1323,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the storageBlockExternalMedia
+    * Indicates whether or not to block external media.
     *
     * @return bool The storageBlockExternalMedia
     */
@@ -866,6 +1338,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the storageBlockExternalMedia
+    * Indicates whether or not to block external media.
     *
     * @param bool $val The storageBlockExternalMedia
     *
@@ -879,6 +1352,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the storageBlockUsbFileTransfer
+    * Indicates whether or not to block USB file transfer.
     *
     * @return bool The storageBlockUsbFileTransfer
     */
@@ -893,6 +1367,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the storageBlockUsbFileTransfer
+    * Indicates whether or not to block USB file transfer.
     *
     * @param bool $val The storageBlockUsbFileTransfer
     *
@@ -906,6 +1381,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the systemUpdateWindowStartMinutesAfterMidnight
+    * Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440
     *
     * @return int The systemUpdateWindowStartMinutesAfterMidnight
     */
@@ -920,6 +1396,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the systemUpdateWindowStartMinutesAfterMidnight
+    * Indicates the number of minutes after midnight that the system update window starts. Valid values 0 to 1440
     *
     * @param int $val The systemUpdateWindowStartMinutesAfterMidnight
     *
@@ -933,6 +1410,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the systemUpdateWindowEndMinutesAfterMidnight
+    * Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440
     *
     * @return int The systemUpdateWindowEndMinutesAfterMidnight
     */
@@ -947,6 +1425,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the systemUpdateWindowEndMinutesAfterMidnight
+    * Indicates the number of minutes after midnight that the system update window ends. Valid values 0 to 1440
     *
     * @param int $val The systemUpdateWindowEndMinutesAfterMidnight
     *
@@ -960,6 +1439,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the systemUpdateInstallType
+    * The type of system update configuration.
     *
     * @return AndroidDeviceOwnerSystemUpdateInstallType The systemUpdateInstallType
     */
@@ -978,6 +1458,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the systemUpdateInstallType
+    * The type of system update configuration.
     *
     * @param AndroidDeviceOwnerSystemUpdateInstallType $val The systemUpdateInstallType
     *
@@ -990,7 +1471,37 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the systemWindowsBlocked
+    * Whether or not to block Android system prompt windows, like toasts, phone activities, and system alerts.
+    *
+    * @return bool The systemWindowsBlocked
+    */
+    public function getSystemWindowsBlocked()
+    {
+        if (array_key_exists("systemWindowsBlocked", $this->_propDict)) {
+            return $this->_propDict["systemWindowsBlocked"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the systemWindowsBlocked
+    * Whether or not to block Android system prompt windows, like toasts, phone activities, and system alerts.
+    *
+    * @param bool $val The systemWindowsBlocked
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setSystemWindowsBlocked($val)
+    {
+        $this->_propDict["systemWindowsBlocked"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the usersBlockAdd
+    * Indicates whether or not adding users and profiles is disabled.
     *
     * @return bool The usersBlockAdd
     */
@@ -1005,6 +1516,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the usersBlockAdd
+    * Indicates whether or not adding users and profiles is disabled.
     *
     * @param bool $val The usersBlockAdd
     *
@@ -1018,6 +1530,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the usersBlockRemove
+    * Indicates whether or not to disable removing other users from the device.
     *
     * @return bool The usersBlockRemove
     */
@@ -1032,6 +1545,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the usersBlockRemove
+    * Indicates whether or not to disable removing other users from the device.
     *
     * @param bool $val The usersBlockRemove
     *
@@ -1045,6 +1559,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the volumeBlockAdjustment
+    * Indicates whether or not adjusting the master volume is disabled.
     *
     * @return bool The volumeBlockAdjustment
     */
@@ -1059,6 +1574,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the volumeBlockAdjustment
+    * Indicates whether or not adjusting the master volume is disabled.
     *
     * @param bool $val The volumeBlockAdjustment
     *
@@ -1071,7 +1587,66 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the vpnAlwaysOnPackageIdentifier
+    * Android app package name for app that will handle an always-on VPN connection.
+    *
+    * @return string The vpnAlwaysOnPackageIdentifier
+    */
+    public function getVpnAlwaysOnPackageIdentifier()
+    {
+        if (array_key_exists("vpnAlwaysOnPackageIdentifier", $this->_propDict)) {
+            return $this->_propDict["vpnAlwaysOnPackageIdentifier"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the vpnAlwaysOnPackageIdentifier
+    * Android app package name for app that will handle an always-on VPN connection.
+    *
+    * @param string $val The vpnAlwaysOnPackageIdentifier
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setVpnAlwaysOnPackageIdentifier($val)
+    {
+        $this->_propDict["vpnAlwaysOnPackageIdentifier"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the vpnAlwaysOnLockdownMode
+    * If an always on VPN package name is specified, whether or not to lock network traffic when that VPN is disconnected.
+    *
+    * @return bool The vpnAlwaysOnLockdownMode
+    */
+    public function getVpnAlwaysOnLockdownMode()
+    {
+        if (array_key_exists("vpnAlwaysOnLockdownMode", $this->_propDict)) {
+            return $this->_propDict["vpnAlwaysOnLockdownMode"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the vpnAlwaysOnLockdownMode
+    * If an always on VPN package name is specified, whether or not to lock network traffic when that VPN is disconnected.
+    *
+    * @param bool $val The vpnAlwaysOnLockdownMode
+    *
+    * @return AndroidDeviceOwnerGeneralDeviceConfiguration
+    */
+    public function setVpnAlwaysOnLockdownMode($val)
+    {
+        $this->_propDict["vpnAlwaysOnLockdownMode"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the wifiBlockEditConfigurations
+    * Indicates whether or not to block the user from editing the wifi connection settings.
     *
     * @return bool The wifiBlockEditConfigurations
     */
@@ -1086,6 +1661,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the wifiBlockEditConfigurations
+    * Indicates whether or not to block the user from editing the wifi connection settings.
     *
     * @param bool $val The wifiBlockEditConfigurations
     *
@@ -1099,6 +1675,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the wifiBlockEditPolicyDefinedConfigurations
+    * Indicates whether or not to block the user from editing just the networks defined by the policy.
     *
     * @return bool The wifiBlockEditPolicyDefinedConfigurations
     */
@@ -1113,6 +1690,7 @@ class AndroidDeviceOwnerGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the wifiBlockEditPolicyDefinedConfigurations
+    * Indicates whether or not to block the user from editing just the networks defined by the policy.
     *
     * @param bool $val The wifiBlockEditPolicyDefinedConfigurations
     *

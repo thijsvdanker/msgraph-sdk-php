@@ -27,6 +27,7 @@ class RemoteLockActionResult extends DeviceActionResult
 {
     /**
     * Gets the unlockPin
+    * Pin to unlock the client
     *
     * @return string The unlockPin
     */
@@ -41,6 +42,7 @@ class RemoteLockActionResult extends DeviceActionResult
 
     /**
     * Sets the unlockPin
+    * Pin to unlock the client
     *
     * @param string $val The value of the unlockPin
     *

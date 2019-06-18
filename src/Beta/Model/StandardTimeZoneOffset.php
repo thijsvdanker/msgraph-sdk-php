@@ -28,6 +28,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Gets the time
+    * Represents the time of day when the transition from daylight saving time to standard time occurs.
     *
     * @return TimeOfDay The time
     */
@@ -46,6 +47,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Sets the time
+    * Represents the time of day when the transition from daylight saving time to standard time occurs.
     *
     * @param TimeOfDay $val The value to assign to the time
     *
@@ -58,6 +60,7 @@ class StandardTimeZoneOffset extends Entity
     }
     /**
     * Gets the dayOccurrence
+    * Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.
     *
     * @return int The dayOccurrence
     */
@@ -72,6 +75,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Sets the dayOccurrence
+    * Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.
     *
     * @param int $val The value of the dayOccurrence
     *
@@ -85,6 +89,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Gets the dayOfWeek
+    * Represents the day of the week when the transition from daylight saving time to standard time.
     *
     * @return DayOfWeek The dayOfWeek
     */
@@ -103,6 +108,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Sets the dayOfWeek
+    * Represents the day of the week when the transition from daylight saving time to standard time.
     *
     * @param DayOfWeek $val The value to assign to the dayOfWeek
     *
@@ -115,6 +121,7 @@ class StandardTimeZoneOffset extends Entity
     }
     /**
     * Gets the month
+    * Represents the month of the year when the transition from daylight saving time to standard time occurs.
     *
     * @return int The month
     */
@@ -129,6 +136,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Sets the month
+    * Represents the month of the year when the transition from daylight saving time to standard time occurs.
     *
     * @param int $val The value of the month
     *
@@ -141,6 +149,7 @@ class StandardTimeZoneOffset extends Entity
     }
     /**
     * Gets the year
+    * Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.
     *
     * @return int The year
     */
@@ -155,6 +164,7 @@ class StandardTimeZoneOffset extends Entity
 
     /**
     * Sets the year
+    * Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example, a value of 0 means every year.
     *
     * @param int $val The value of the year
     *

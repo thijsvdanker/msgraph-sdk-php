@@ -28,6 +28,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
 {
     /**
     * Gets the authenticationMethod
+    * Authentication method for Exchange ActiveSync.
     *
     * @return EasAuthenticationMethod The authenticationMethod
     */
@@ -46,6 +47,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the authenticationMethod
+    * Authentication method for Exchange ActiveSync.
     *
     * @param EasAuthenticationMethod $val The authenticationMethod
     *
@@ -59,6 +61,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Gets the durationOfEmailToSync
+    * Duration of time email should be synced to.
     *
     * @return EmailSyncDuration The durationOfEmailToSync
     */
@@ -77,6 +80,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the durationOfEmailToSync
+    * Duration of time email should be synced to.
     *
     * @param EmailSyncDuration $val The durationOfEmailToSync
     *
@@ -90,6 +94,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Gets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return UserEmailSource The emailAddressSource
     */
@@ -108,6 +113,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param UserEmailSource $val The emailAddressSource
     *
@@ -121,6 +127,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Gets the hostName
+    * Exchange location (URL) that the mail app connects to.
     *
     * @return string The hostName
     */
@@ -135,6 +142,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the hostName
+    * Exchange location (URL) that the mail app connects to.
     *
     * @param string $val The hostName
     *
@@ -148,6 +156,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Gets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @return bool The requireSsl
     */
@@ -162,6 +171,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @param bool $val The requireSsl
     *
@@ -175,6 +185,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Gets the usernameSource
+    * Username attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return AndroidUsernameSource The usernameSource
     */
@@ -193,6 +204,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the usernameSource
+    * Username attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param AndroidUsernameSource $val The usernameSource
     *
@@ -206,6 +218,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Gets the identityCertificate
+    * Identity certificate.
     *
     * @return AndroidWorkProfileCertificateProfileBase The identityCertificate
     */
@@ -224,6 +237,7 @@ class AndroidWorkProfileEasEmailProfileBase extends DeviceConfiguration
     
     /**
     * Sets the identityCertificate
+    * Identity certificate.
     *
     * @param AndroidWorkProfileCertificateProfileBase $val The identityCertificate
     *

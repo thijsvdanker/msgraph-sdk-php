@@ -28,6 +28,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
 {
     /**
     * Gets the eapType
+    * Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router).
     *
     * @return EapType The eapType
     */
@@ -46,6 +47,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the eapType
+    * Extensible Authentication Protocol (EAP). Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router).
     *
     * @param EapType $val The eapType
     *
@@ -59,6 +61,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the eapFastConfiguration
+    * EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type.
     *
     * @return EapFastConfiguration The eapFastConfiguration
     */
@@ -77,6 +80,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the eapFastConfiguration
+    * EAP-FAST Configuration Option when EAP-FAST is the selected EAP Type.
     *
     * @param EapFastConfiguration $val The eapFastConfiguration
     *
@@ -90,6 +94,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the trustedServerCertificateNames
+    * Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users devices when they connect to this Wi-Fi network.
     *
     * @return string The trustedServerCertificateNames
     */
@@ -104,6 +109,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the trustedServerCertificateNames
+    * Trusted server certificate names when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP. This is the common name used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users devices when they connect to this Wi-Fi network.
     *
     * @param string $val The trustedServerCertificateNames
     *
@@ -117,6 +123,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the authenticationMethod
+    * Authentication Method when EAP Type is configured to PEAP or EAP-TTLS.
     *
     * @return WiFiAuthenticationMethod The authenticationMethod
     */
@@ -135,6 +142,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the authenticationMethod
+    * Authentication Method when EAP Type is configured to PEAP or EAP-TTLS.
     *
     * @param WiFiAuthenticationMethod $val The authenticationMethod
     *
@@ -148,6 +156,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the innerAuthenticationProtocolForEapTtls
+    * Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password.
     *
     * @return NonEapAuthenticationMethodForEapTtlsType The innerAuthenticationProtocolForEapTtls
     */
@@ -166,6 +175,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the innerAuthenticationProtocolForEapTtls
+    * Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password.
     *
     * @param NonEapAuthenticationMethodForEapTtlsType $val The innerAuthenticationProtocolForEapTtls
     *
@@ -179,6 +189,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the outerIdentityPrivacyTemporaryValue
+    * Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.
     *
     * @return string The outerIdentityPrivacyTemporaryValue
     */
@@ -193,6 +204,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the outerIdentityPrivacyTemporaryValue
+    * Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS, EAP-FAST or PEAP. This property masks usernames with the text you enter. For example, if you use 'anonymous', each user that authenticates with this Wi-Fi connection using their real username is displayed as 'anonymous'.
     *
     * @param string $val The outerIdentityPrivacyTemporaryValue
     *
@@ -206,6 +218,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the rootCertificateForServerValidation
+    * Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP.
     *
     * @return MacOSTrustedRootCertificate The rootCertificateForServerValidation
     */
@@ -224,6 +237,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the rootCertificateForServerValidation
+    * Trusted Root Certificate for Server Validation when EAP Type is configured to EAP-TLS/TTLS/FAST or PEAP.
     *
     * @param MacOSTrustedRootCertificate $val The rootCertificateForServerValidation
     *
@@ -237,6 +251,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Gets the identityCertificateForClientAuthentication
+    * Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).
     *
     * @return MacOSCertificateProfileBase The identityCertificateForClientAuthentication
     */
@@ -255,6 +270,7 @@ class MacOSEnterpriseWiFiConfiguration extends MacOSWiFiConfiguration
     
     /**
     * Sets the identityCertificateForClientAuthentication
+    * Identity Certificate for client authentication when EAP Type is configured to EAP-TLS, EAP-TTLS (with Certificate Authentication), or PEAP (with Certificate Authentication).
     *
     * @param MacOSCertificateProfileBase $val The identityCertificateForClientAuthentication
     *

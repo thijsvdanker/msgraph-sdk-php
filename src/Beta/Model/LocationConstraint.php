@@ -25,61 +25,10 @@ namespace Microsoft\Graph\Beta\Model;
 */
 class LocationConstraint extends Entity
 {
-    /**
-    * Gets the isRequired
-    *
-    * @return bool The isRequired
-    */
-    public function getIsRequired()
-    {
-        if (array_key_exists("isRequired", $this->_propDict)) {
-            return $this->_propDict["isRequired"];
-        } else {
-            return null;
-        }
-    }
-
-    /**
-    * Sets the isRequired
-    *
-    * @param bool $val The value of the isRequired
-    *
-    * @return LocationConstraint
-    */
-    public function setIsRequired($val)
-    {
-        $this->_propDict["isRequired"] = $val;
-        return $this;
-    }
-    /**
-    * Gets the suggestLocation
-    *
-    * @return bool The suggestLocation
-    */
-    public function getSuggestLocation()
-    {
-        if (array_key_exists("suggestLocation", $this->_propDict)) {
-            return $this->_propDict["suggestLocation"];
-        } else {
-            return null;
-        }
-    }
-
-    /**
-    * Sets the suggestLocation
-    *
-    * @param bool $val The value of the suggestLocation
-    *
-    * @return LocationConstraint
-    */
-    public function setSuggestLocation($val)
-    {
-        $this->_propDict["suggestLocation"] = $val;
-        return $this;
-    }
 
     /**
     * Gets the locations
+    * Constraint information for one or more locations that the client requests for the meeting.
     *
     * @return LocationConstraintItem The locations
     */
@@ -98,6 +47,7 @@ class LocationConstraint extends Entity
 
     /**
     * Sets the locations
+    * Constraint information for one or more locations that the client requests for the meeting.
     *
     * @param LocationConstraintItem $val The value to assign to the locations
     *
@@ -107,5 +57,61 @@ class LocationConstraint extends Entity
     {
         $this->_propDict["locations"] = $val;
          return $this;
+    }
+    /**
+    * Gets the isRequired
+    * The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes will not return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
+    *
+    * @return bool The isRequired
+    */
+    public function getIsRequired()
+    {
+        if (array_key_exists("isRequired", $this->_propDict)) {
+            return $this->_propDict["isRequired"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the isRequired
+    * The client requests the service to include in the response a meeting location for the meeting. If this is true and all the resources are busy, findMeetingTimes will not return any meeting time suggestions. If this is false and all the resources are busy, findMeetingTimes would still look for meeting times without locations.
+    *
+    * @param bool $val The value of the isRequired
+    *
+    * @return LocationConstraint
+    */
+    public function setIsRequired($val)
+    {
+        $this->_propDict["isRequired"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the suggestLocation
+    * The client requests the service to suggest one or more meeting locations.
+    *
+    * @return bool The suggestLocation
+    */
+    public function getSuggestLocation()
+    {
+        if (array_key_exists("suggestLocation", $this->_propDict)) {
+            return $this->_propDict["suggestLocation"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the suggestLocation
+    * The client requests the service to suggest one or more meeting locations.
+    *
+    * @param bool $val The value of the suggestLocation
+    *
+    * @return LocationConstraint
+    */
+    public function setSuggestLocation($val)
+    {
+        $this->_propDict["suggestLocation"] = $val;
+        return $this;
     }
 }

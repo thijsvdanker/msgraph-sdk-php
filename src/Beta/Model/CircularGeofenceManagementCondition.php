@@ -28,6 +28,7 @@ class CircularGeofenceManagementCondition extends LocationManagementCondition
 {
     /**
     * Gets the latitude
+    * Latitude in degrees, between -90 and +90 inclusive.
     *
     * @return float The latitude
     */
@@ -42,6 +43,7 @@ class CircularGeofenceManagementCondition extends LocationManagementCondition
     
     /**
     * Sets the latitude
+    * Latitude in degrees, between -90 and +90 inclusive.
     *
     * @param float $val The latitude
     *
@@ -55,6 +57,7 @@ class CircularGeofenceManagementCondition extends LocationManagementCondition
     
     /**
     * Gets the longitude
+    * Longitude in degrees, between -180 and +180 inclusive.
     *
     * @return float The longitude
     */
@@ -69,6 +72,7 @@ class CircularGeofenceManagementCondition extends LocationManagementCondition
     
     /**
     * Sets the longitude
+    * Longitude in degrees, between -180 and +180 inclusive.
     *
     * @param float $val The longitude
     *
@@ -82,6 +86,7 @@ class CircularGeofenceManagementCondition extends LocationManagementCondition
     
     /**
     * Gets the radiusInMeters
+    * Radius in meters.
     *
     * @return Single The radiusInMeters
     */
@@ -100,6 +105,7 @@ class CircularGeofenceManagementCondition extends LocationManagementCondition
     
     /**
     * Sets the radiusInMeters
+    * Radius in meters.
     *
     * @param Single $val The radiusInMeters
     *

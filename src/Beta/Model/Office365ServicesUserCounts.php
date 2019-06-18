@@ -382,6 +382,60 @@ class Office365ServicesUserCounts extends Entity
     }
     
     /**
+    * Gets the office365Active
+    *
+    * @return int The office365Active
+    */
+    public function getOffice365Active()
+    {
+        if (array_key_exists("office365Active", $this->_propDict)) {
+            return $this->_propDict["office365Active"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the office365Active
+    *
+    * @param int $val The office365Active
+    *
+    * @return Office365ServicesUserCounts
+    */
+    public function setOffice365Active($val)
+    {
+        $this->_propDict["office365Active"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the office365Inactive
+    *
+    * @return int The office365Inactive
+    */
+    public function getOffice365Inactive()
+    {
+        if (array_key_exists("office365Inactive", $this->_propDict)) {
+            return $this->_propDict["office365Inactive"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the office365Inactive
+    *
+    * @param int $val The office365Inactive
+    *
+    * @return Office365ServicesUserCounts
+    */
+    public function setOffice365Inactive($val)
+    {
+        $this->_propDict["office365Inactive"] = intval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the reportPeriod
     *
     * @return string The reportPeriod

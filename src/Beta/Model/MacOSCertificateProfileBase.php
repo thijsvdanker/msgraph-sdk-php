@@ -28,6 +28,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
 {
     /**
     * Gets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage.
     *
     * @return int The renewalThresholdPercentage
     */
@@ -42,6 +43,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage.
     *
     * @param int $val The renewalThresholdPercentage
     *
@@ -55,6 +57,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @return AppleSubjectNameFormat The subjectNameFormat
     */
@@ -73,6 +76,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @param AppleSubjectNameFormat $val The subjectNameFormat
     *
@@ -86,6 +90,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type.
     *
     * @return SubjectAlternativeNameType The subjectAlternativeNameType
     */
@@ -104,6 +109,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name Type.
     *
     * @param SubjectAlternativeNameType $val The subjectAlternativeNameType
     *
@@ -117,6 +123,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period.
     *
     * @return int The certificateValidityPeriodValue
     */
@@ -131,6 +138,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period.
     *
     * @param int $val The certificateValidityPeriodValue
     *
@@ -144,6 +152,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Gets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @return CertificateValidityPeriodScale The certificateValidityPeriodScale
     */
@@ -162,6 +171,7 @@ class MacOSCertificateProfileBase extends DeviceConfiguration
     
     /**
     * Sets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @param CertificateValidityPeriodScale $val The certificateValidityPeriodScale
     *

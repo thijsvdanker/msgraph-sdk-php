@@ -27,6 +27,7 @@ class RolePermission extends Entity
 {
     /**
     * Gets the actions
+    * Allowed Actions - Deprecated
     *
     * @return string The actions
     */
@@ -41,6 +42,7 @@ class RolePermission extends Entity
 
     /**
     * Sets the actions
+    * Allowed Actions - Deprecated
     *
     * @param string $val The value of the actions
     *
@@ -54,6 +56,7 @@ class RolePermission extends Entity
 
     /**
     * Gets the resourceActions
+    * Actions
     *
     * @return ResourceAction The resourceActions
     */
@@ -72,6 +75,7 @@ class RolePermission extends Entity
 
     /**
     * Sets the resourceActions
+    * Actions
     *
     * @param ResourceAction $val The value to assign to the resourceActions
     *

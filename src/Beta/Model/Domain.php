@@ -28,6 +28,7 @@ class Domain extends Entity
 {
     /**
     * Gets the authenticationType
+    * Indicates the configured authentication type for the domain. The value is either Managed or Federated. Managed indicates a cloud managed domain where Azure AD performs user authentication.Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable
     *
     * @return string The authenticationType
     */
@@ -42,6 +43,7 @@ class Domain extends Entity
     
     /**
     * Sets the authenticationType
+    * Indicates the configured authentication type for the domain. The value is either Managed or Federated. Managed indicates a cloud managed domain where Azure AD performs user authentication.Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable
     *
     * @param string $val The authenticationType
     *
@@ -55,6 +57,7 @@ class Domain extends Entity
     
     /**
     * Gets the availabilityStatus
+    * This property is always null except when the verify action is used. When the verify action is used, a domain entity is returned in the response. The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
     *
     * @return string The availabilityStatus
     */
@@ -69,6 +72,7 @@ class Domain extends Entity
     
     /**
     * Sets the availabilityStatus
+    * This property is always null except when the verify action is used. When the verify action is used, a domain entity is returned in the response. The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
     *
     * @param string $val The availabilityStatus
     *
@@ -82,6 +86,7 @@ class Domain extends Entity
     
     /**
     * Gets the isAdminManaged
+    * The value of the property is false if the DNS record management of the domain has been delegated to Office 365. Otherwise, the value is true. Not nullable
     *
     * @return bool The isAdminManaged
     */
@@ -96,6 +101,7 @@ class Domain extends Entity
     
     /**
     * Sets the isAdminManaged
+    * The value of the property is false if the DNS record management of the domain has been delegated to Office 365. Otherwise, the value is true. Not nullable
     *
     * @param bool $val The isAdminManaged
     *
@@ -109,6 +115,7 @@ class Domain extends Entity
     
     /**
     * Gets the isDefault
+    * True if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable
     *
     * @return bool The isDefault
     */
@@ -123,6 +130,7 @@ class Domain extends Entity
     
     /**
     * Sets the isDefault
+    * True if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable
     *
     * @param bool $val The isDefault
     *
@@ -136,6 +144,7 @@ class Domain extends Entity
     
     /**
     * Gets the isInitial
+    * True if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable
     *
     * @return bool The isInitial
     */
@@ -150,6 +159,7 @@ class Domain extends Entity
     
     /**
     * Sets the isInitial
+    * True if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable
     *
     * @param bool $val The isInitial
     *
@@ -163,6 +173,7 @@ class Domain extends Entity
     
     /**
     * Gets the isRoot
+    * True if the domain is a verified root domain. Otherwise, false if the domain is a subdomain or unverified. Not nullable
     *
     * @return bool The isRoot
     */
@@ -177,6 +188,7 @@ class Domain extends Entity
     
     /**
     * Sets the isRoot
+    * True if the domain is a verified root domain. Otherwise, false if the domain is a subdomain or unverified. Not nullable
     *
     * @param bool $val The isRoot
     *
@@ -190,6 +202,7 @@ class Domain extends Entity
     
     /**
     * Gets the isVerified
+    * True if the domain has completed domain ownership verification. Not nullable
     *
     * @return bool The isVerified
     */
@@ -204,6 +217,7 @@ class Domain extends Entity
     
     /**
     * Sets the isVerified
+    * True if the domain has completed domain ownership verification. Not nullable
     *
     * @param bool $val The isVerified
     *
@@ -216,7 +230,66 @@ class Domain extends Entity
     }
     
     /**
+    * Gets the passwordNotificationWindowInDays
+    * Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.
+    *
+    * @return int The passwordNotificationWindowInDays
+    */
+    public function getPasswordNotificationWindowInDays()
+    {
+        if (array_key_exists("passwordNotificationWindowInDays", $this->_propDict)) {
+            return $this->_propDict["passwordNotificationWindowInDays"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordNotificationWindowInDays
+    * Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.
+    *
+    * @param int $val The passwordNotificationWindowInDays
+    *
+    * @return Domain
+    */
+    public function setPasswordNotificationWindowInDays($val)
+    {
+        $this->_propDict["passwordNotificationWindowInDays"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordValidityPeriodInDays
+    * Specifies the length of time that a password is valid before it must be changed. If the property is not set, a default value of 90 days will be used.
+    *
+    * @return int The passwordValidityPeriodInDays
+    */
+    public function getPasswordValidityPeriodInDays()
+    {
+        if (array_key_exists("passwordValidityPeriodInDays", $this->_propDict)) {
+            return $this->_propDict["passwordValidityPeriodInDays"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordValidityPeriodInDays
+    * Specifies the length of time that a password is valid before it must be changed. If the property is not set, a default value of 90 days will be used.
+    *
+    * @param int $val The passwordValidityPeriodInDays
+    *
+    * @return Domain
+    */
+    public function setPasswordValidityPeriodInDays($val)
+    {
+        $this->_propDict["passwordValidityPeriodInDays"] = intval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the supportedServices
+    * The capabilities assigned to the domain.Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, YammerNot nullable
     *
     * @return string The supportedServices
     */
@@ -231,6 +304,7 @@ class Domain extends Entity
     
     /**
     * Sets the supportedServices
+    * The capabilities assigned to the domain.Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, YammerNot nullable
     *
     * @param string $val The supportedServices
     *
@@ -244,6 +318,7 @@ class Domain extends Entity
     
     /**
     * Gets the state
+    * Status of asynchronous operations scheduled for the domain.
     *
     * @return DomainState The state
     */
@@ -262,6 +337,7 @@ class Domain extends Entity
     
     /**
     * Sets the state
+    * Status of asynchronous operations scheduled for the domain.
     *
     * @param DomainState $val The state
     *
@@ -276,6 +352,7 @@ class Domain extends Entity
 
      /** 
      * Gets the serviceConfigurationRecords
+    * DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.Read-only, Nullable
      *
      * @return array The serviceConfigurationRecords
      */
@@ -290,6 +367,7 @@ class Domain extends Entity
     
     /** 
     * Sets the serviceConfigurationRecords
+    * DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.Read-only, Nullable
     *
     * @param DomainDnsRecord $val The serviceConfigurationRecords
     *
@@ -304,6 +382,7 @@ class Domain extends Entity
 
      /** 
      * Gets the verificationDnsRecords
+    * DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.Read-only, Nullable
      *
      * @return array The verificationDnsRecords
      */
@@ -318,6 +397,7 @@ class Domain extends Entity
     
     /** 
     * Sets the verificationDnsRecords
+    * DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.Read-only, Nullable
     *
     * @param DomainDnsRecord $val The verificationDnsRecords
     *
@@ -332,6 +412,7 @@ class Domain extends Entity
 
      /** 
      * Gets the domainNameReferences
+    * Read-only, Nullable
      *
      * @return array The domainNameReferences
      */
@@ -346,6 +427,7 @@ class Domain extends Entity
     
     /** 
     * Sets the domainNameReferences
+    * Read-only, Nullable
     *
     * @param DirectoryObject $val The domainNameReferences
     *

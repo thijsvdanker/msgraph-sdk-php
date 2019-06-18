@@ -28,6 +28,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
 {
     /**
     * Gets the accountBlockModification
+    * Indicates whether or not to allow account modification when the device is in supervised mode.
     *
     * @return bool The accountBlockModification
     */
@@ -42,6 +43,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the accountBlockModification
+    * Indicates whether or not to allow account modification when the device is in supervised mode.
     *
     * @param bool $val The accountBlockModification
     *
@@ -55,6 +57,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the activationLockAllowWhenSupervised
+    * Indicates whether or not to allow activation lock when the device is in the supervised mode.
     *
     * @return bool The activationLockAllowWhenSupervised
     */
@@ -69,6 +72,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the activationLockAllowWhenSupervised
+    * Indicates whether or not to allow activation lock when the device is in the supervised mode.
     *
     * @param bool $val The activationLockAllowWhenSupervised
     *
@@ -82,6 +86,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the airDropBlocked
+    * Indicates whether or not to allow AirDrop when the device is in supervised mode.
     *
     * @return bool The airDropBlocked
     */
@@ -96,6 +101,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the airDropBlocked
+    * Indicates whether or not to allow AirDrop when the device is in supervised mode.
     *
     * @param bool $val The airDropBlocked
     *
@@ -109,6 +115,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the airDropForceUnmanagedDropTarget
+    * Indicates whether or not to cause AirDrop to be considered an unmanaged drop target (iOS 9.0 and later).
     *
     * @return bool The airDropForceUnmanagedDropTarget
     */
@@ -123,6 +130,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the airDropForceUnmanagedDropTarget
+    * Indicates whether or not to cause AirDrop to be considered an unmanaged drop target (iOS 9.0 and later).
     *
     * @param bool $val The airDropForceUnmanagedDropTarget
     *
@@ -136,6 +144,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the airPlayForcePairingPasswordForOutgoingRequests
+    * Indicates whether or not to enforce all devices receiving AirPlay requests from this device to use a pairing password.
     *
     * @return bool The airPlayForcePairingPasswordForOutgoingRequests
     */
@@ -150,6 +159,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the airPlayForcePairingPasswordForOutgoingRequests
+    * Indicates whether or not to enforce all devices receiving AirPlay requests from this device to use a pairing password.
     *
     * @param bool $val The airPlayForcePairingPasswordForOutgoingRequests
     *
@@ -163,6 +173,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appleWatchBlockPairing
+    * Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).
     *
     * @return bool The appleWatchBlockPairing
     */
@@ -177,6 +188,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appleWatchBlockPairing
+    * Indicates whether or not to allow Apple Watch pairing when the device is in supervised mode (iOS 9.0 and later).
     *
     * @param bool $val The appleWatchBlockPairing
     *
@@ -190,6 +202,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appleWatchForceWristDetection
+    * Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).
     *
     * @return bool The appleWatchForceWristDetection
     */
@@ -204,6 +217,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appleWatchForceWristDetection
+    * Indicates whether or not to force a paired Apple Watch to use Wrist Detection (iOS 8.2 and later).
     *
     * @param bool $val The appleWatchForceWristDetection
     *
@@ -217,6 +231,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appleNewsBlocked
+    * Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).
     *
     * @return bool The appleNewsBlocked
     */
@@ -231,6 +246,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appleNewsBlocked
+    * Indicates whether or not to block the user from using News when the device is in supervised mode (iOS 9.0 and later).
     *
     * @param bool $val The appleNewsBlocked
     *
@@ -245,6 +261,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
 
      /** 
      * Gets the appsSingleAppModeList
+    * Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later. This collection can contain a maximum of 500 elements.
      *
      * @return array The appsSingleAppModeList
      */
@@ -259,6 +276,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the appsSingleAppModeList
+    * Gets or sets the list of iOS apps allowed to autonomously enter Single App Mode. Supervised only. iOS 7.0 and later. This collection can contain a maximum of 500 elements.
     *
     * @param AppListItem $val The appsSingleAppModeList
     *
@@ -273,6 +291,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
 
      /** 
      * Gets the appsVisibilityList
+    * List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later). This collection can contain a maximum of 10000 elements.
      *
      * @return array The appsVisibilityList
      */
@@ -287,6 +306,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the appsVisibilityList
+    * List of apps in the visibility list (either visible/launchable apps list or hidden/unlaunchable apps list, controlled by AppsVisibilityListType) (iOS 9.3 and later). This collection can contain a maximum of 10000 elements.
     *
     * @param AppListItem $val The appsVisibilityList
     *
@@ -300,6 +320,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appsVisibilityListType
+    * Type of list that is in the AppsVisibilityList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
     *
     * @return AppListType The appsVisibilityListType
     */
@@ -318,6 +339,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appsVisibilityListType
+    * Type of list that is in the AppsVisibilityList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
     *
     * @param AppListType $val The appsVisibilityListType
     *
@@ -331,6 +353,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appStoreBlockAutomaticDownloads
+    * Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).
     *
     * @return bool The appStoreBlockAutomaticDownloads
     */
@@ -345,6 +368,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appStoreBlockAutomaticDownloads
+    * Indicates whether or not to block the automatic downloading of apps purchased on other devices when the device is in supervised mode (iOS 9.0 and later).
     *
     * @param bool $val The appStoreBlockAutomaticDownloads
     *
@@ -358,6 +382,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appStoreBlocked
+    * Indicates whether or not to block the user from using the App Store.
     *
     * @return bool The appStoreBlocked
     */
@@ -372,6 +397,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appStoreBlocked
+    * Indicates whether or not to block the user from using the App Store.
     *
     * @param bool $val The appStoreBlocked
     *
@@ -385,6 +411,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appStoreBlockInAppPurchases
+    * Indicates whether or not to block the user from making in app purchases.
     *
     * @return bool The appStoreBlockInAppPurchases
     */
@@ -399,6 +426,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appStoreBlockInAppPurchases
+    * Indicates whether or not to block the user from making in app purchases.
     *
     * @param bool $val The appStoreBlockInAppPurchases
     *
@@ -412,6 +440,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appStoreBlockUIAppInstallation
+    * Indicates whether or not to block the App Store app, not restricting installation through Host apps. Applies to supervised mode only (iOS 9.0 and later).
     *
     * @return bool The appStoreBlockUIAppInstallation
     */
@@ -426,6 +455,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appStoreBlockUIAppInstallation
+    * Indicates whether or not to block the App Store app, not restricting installation through Host apps. Applies to supervised mode only (iOS 9.0 and later).
     *
     * @param bool $val The appStoreBlockUIAppInstallation
     *
@@ -439,6 +469,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the appStoreRequirePassword
+    * Indicates whether or not to require a password when using the app store.
     *
     * @return bool The appStoreRequirePassword
     */
@@ -453,6 +484,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the appStoreRequirePassword
+    * Indicates whether or not to require a password when using the app store.
     *
     * @param bool $val The appStoreRequirePassword
     *
@@ -465,7 +497,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the autoFillForceAuthentication
+    * Indicates whether or not to force user authentication before autofilling passwords and credit card information in Safari and other apps on supervised devices.
+    *
+    * @return bool The autoFillForceAuthentication
+    */
+    public function getAutoFillForceAuthentication()
+    {
+        if (array_key_exists("autoFillForceAuthentication", $this->_propDict)) {
+            return $this->_propDict["autoFillForceAuthentication"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the autoFillForceAuthentication
+    * Indicates whether or not to force user authentication before autofilling passwords and credit card information in Safari and other apps on supervised devices.
+    *
+    * @param bool $val The autoFillForceAuthentication
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setAutoFillForceAuthentication($val)
+    {
+        $this->_propDict["autoFillForceAuthentication"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the bluetoothBlockModification
+    * Indicates whether or not to allow modification of Bluetooth settings when the device is in supervised mode (iOS 10.0 and later).
     *
     * @return bool The bluetoothBlockModification
     */
@@ -480,6 +542,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the bluetoothBlockModification
+    * Indicates whether or not to allow modification of Bluetooth settings when the device is in supervised mode (iOS 10.0 and later).
     *
     * @param bool $val The bluetoothBlockModification
     *
@@ -493,6 +556,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cameraBlocked
+    * Indicates whether or not to block the user from accessing the camera of the device.
     *
     * @return bool The cameraBlocked
     */
@@ -507,6 +571,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cameraBlocked
+    * Indicates whether or not to block the user from accessing the camera of the device.
     *
     * @param bool $val The cameraBlocked
     *
@@ -520,6 +585,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cellularBlockDataRoaming
+    * Indicates whether or not to block data roaming.
     *
     * @return bool The cellularBlockDataRoaming
     */
@@ -534,6 +600,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cellularBlockDataRoaming
+    * Indicates whether or not to block data roaming.
     *
     * @param bool $val The cellularBlockDataRoaming
     *
@@ -547,6 +614,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cellularBlockGlobalBackgroundFetchWhileRoaming
+    * Indicates whether or not to block global background fetch while roaming.
     *
     * @return bool The cellularBlockGlobalBackgroundFetchWhileRoaming
     */
@@ -561,6 +629,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cellularBlockGlobalBackgroundFetchWhileRoaming
+    * Indicates whether or not to block global background fetch while roaming.
     *
     * @param bool $val The cellularBlockGlobalBackgroundFetchWhileRoaming
     *
@@ -574,6 +643,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cellularBlockPerAppDataModification
+    * Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.
     *
     * @return bool The cellularBlockPerAppDataModification
     */
@@ -588,6 +658,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cellularBlockPerAppDataModification
+    * Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.
     *
     * @param bool $val The cellularBlockPerAppDataModification
     *
@@ -601,6 +672,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the cellularBlockPersonalHotspot
+    * Indicates whether or not to block Personal Hotspot.
     *
     * @return bool The cellularBlockPersonalHotspot
     */
@@ -615,6 +687,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cellularBlockPersonalHotspot
+    * Indicates whether or not to block Personal Hotspot.
     *
     * @param bool $val The cellularBlockPersonalHotspot
     *
@@ -627,7 +700,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the cellularBlockPlanModification
+    * Indicates whether or not to allow users to change the settings of the cellular plan on a supervised device.
+    *
+    * @return bool The cellularBlockPlanModification
+    */
+    public function getCellularBlockPlanModification()
+    {
+        if (array_key_exists("cellularBlockPlanModification", $this->_propDict)) {
+            return $this->_propDict["cellularBlockPlanModification"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the cellularBlockPlanModification
+    * Indicates whether or not to allow users to change the settings of the cellular plan on a supervised device.
+    *
+    * @param bool $val The cellularBlockPlanModification
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setCellularBlockPlanModification($val)
+    {
+        $this->_propDict["cellularBlockPlanModification"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the cellularBlockVoiceRoaming
+    * Indicates whether or not to block voice roaming.
     *
     * @return bool The cellularBlockVoiceRoaming
     */
@@ -642,6 +745,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the cellularBlockVoiceRoaming
+    * Indicates whether or not to block voice roaming.
     *
     * @param bool $val The cellularBlockVoiceRoaming
     *
@@ -655,6 +759,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the certificatesBlockUntrustedTlsCertificates
+    * Indicates whether or not to block untrusted TLS certificates.
     *
     * @return bool The certificatesBlockUntrustedTlsCertificates
     */
@@ -669,6 +774,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the certificatesBlockUntrustedTlsCertificates
+    * Indicates whether or not to block untrusted TLS certificates.
     *
     * @param bool $val The certificatesBlockUntrustedTlsCertificates
     *
@@ -682,6 +788,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the classroomAppBlockRemoteScreenObservation
+    * Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).
     *
     * @return bool The classroomAppBlockRemoteScreenObservation
     */
@@ -696,6 +803,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the classroomAppBlockRemoteScreenObservation
+    * Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).
     *
     * @param bool $val The classroomAppBlockRemoteScreenObservation
     *
@@ -709,6 +817,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the classroomAppForceUnpromptedScreenObservation
+    * Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting when the device is in supervised mode.
     *
     * @return bool The classroomAppForceUnpromptedScreenObservation
     */
@@ -723,6 +832,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the classroomAppForceUnpromptedScreenObservation
+    * Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting when the device is in supervised mode.
     *
     * @param bool $val The classroomAppForceUnpromptedScreenObservation
     *
@@ -734,9 +844,68 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
         return $this;
     }
     
+    /**
+    * Gets the classroomForceAutomaticallyJoinClasses
+    * Indicates whether or not to automatically give permission to the teacher's requests, without prompting the student, when the device is in supervised mode.
+    *
+    * @return bool The classroomForceAutomaticallyJoinClasses
+    */
+    public function getClassroomForceAutomaticallyJoinClasses()
+    {
+        if (array_key_exists("classroomForceAutomaticallyJoinClasses", $this->_propDict)) {
+            return $this->_propDict["classroomForceAutomaticallyJoinClasses"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the classroomForceAutomaticallyJoinClasses
+    * Indicates whether or not to automatically give permission to the teacher's requests, without prompting the student, when the device is in supervised mode.
+    *
+    * @param bool $val The classroomForceAutomaticallyJoinClasses
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setClassroomForceAutomaticallyJoinClasses($val)
+    {
+        $this->_propDict["classroomForceAutomaticallyJoinClasses"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the classroomForceUnpromptedAppAndDeviceLock
+    * Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Supervised only.
+    *
+    * @return bool The classroomForceUnpromptedAppAndDeviceLock
+    */
+    public function getClassroomForceUnpromptedAppAndDeviceLock()
+    {
+        if (array_key_exists("classroomForceUnpromptedAppAndDeviceLock", $this->_propDict)) {
+            return $this->_propDict["classroomForceUnpromptedAppAndDeviceLock"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the classroomForceUnpromptedAppAndDeviceLock
+    * Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Supervised only.
+    *
+    * @param bool $val The classroomForceUnpromptedAppAndDeviceLock
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setClassroomForceUnpromptedAppAndDeviceLock($val)
+    {
+        $this->_propDict["classroomForceUnpromptedAppAndDeviceLock"] = boolval($val);
+        return $this;
+    }
+    
 
      /** 
      * Gets the compliantAppsList
+    * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
      *
      * @return array The compliantAppsList
      */
@@ -751,6 +920,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the compliantAppsList
+    * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
     *
     * @param AppListItem $val The compliantAppsList
     *
@@ -764,6 +934,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the compliantAppListType
+    * List that is in the AppComplianceList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
     *
     * @return AppListType The compliantAppListType
     */
@@ -782,6 +953,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the compliantAppListType
+    * List that is in the AppComplianceList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
     *
     * @param AppListType $val The compliantAppListType
     *
@@ -795,6 +967,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the configurationProfileBlockChanges
+    * Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.
     *
     * @return bool The configurationProfileBlockChanges
     */
@@ -809,6 +982,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the configurationProfileBlockChanges
+    * Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.
     *
     * @param bool $val The configurationProfileBlockChanges
     *
@@ -822,6 +996,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the definitionLookupBlocked
+    * Indicates whether or not to block definition lookup when the device is in supervised mode (iOS 8.1.3 and later ).
     *
     * @return bool The definitionLookupBlocked
     */
@@ -836,6 +1011,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the definitionLookupBlocked
+    * Indicates whether or not to block definition lookup when the device is in supervised mode (iOS 8.1.3 and later ).
     *
     * @param bool $val The definitionLookupBlocked
     *
@@ -849,6 +1025,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceBlockEnableRestrictions
+    * Indicates whether or not to allow the user to enables restrictions in the device settings when the device is in supervised mode.
     *
     * @return bool The deviceBlockEnableRestrictions
     */
@@ -863,6 +1040,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceBlockEnableRestrictions
+    * Indicates whether or not to allow the user to enables restrictions in the device settings when the device is in supervised mode.
     *
     * @param bool $val The deviceBlockEnableRestrictions
     *
@@ -876,6 +1054,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceBlockEraseContentAndSettings
+    * Indicates whether or not to allow the use of the 'Erase all content and settings' option on the device when the device is in supervised mode.
     *
     * @return bool The deviceBlockEraseContentAndSettings
     */
@@ -890,6 +1069,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceBlockEraseContentAndSettings
+    * Indicates whether or not to allow the use of the 'Erase all content and settings' option on the device when the device is in supervised mode.
     *
     * @param bool $val The deviceBlockEraseContentAndSettings
     *
@@ -903,6 +1083,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceBlockNameModification
+    * Indicates whether or not to allow device name modification when the device is in supervised mode (iOS 9.0 and later).
     *
     * @return bool The deviceBlockNameModification
     */
@@ -917,6 +1098,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceBlockNameModification
+    * Indicates whether or not to allow device name modification when the device is in supervised mode (iOS 9.0 and later).
     *
     * @param bool $val The deviceBlockNameModification
     *
@@ -930,6 +1112,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the diagnosticDataBlockSubmission
+    * Indicates whether or not to block diagnostic data submission.
     *
     * @return bool The diagnosticDataBlockSubmission
     */
@@ -944,6 +1127,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the diagnosticDataBlockSubmission
+    * Indicates whether or not to block diagnostic data submission.
     *
     * @param bool $val The diagnosticDataBlockSubmission
     *
@@ -957,6 +1141,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the diagnosticDataBlockSubmissionModification
+    * Indicates whether or not to allow diagnostics submission settings modification when the device is in supervised mode (iOS 9.3.2 and later).
     *
     * @return bool The diagnosticDataBlockSubmissionModification
     */
@@ -971,6 +1156,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the diagnosticDataBlockSubmissionModification
+    * Indicates whether or not to allow diagnostics submission settings modification when the device is in supervised mode (iOS 9.3.2 and later).
     *
     * @param bool $val The diagnosticDataBlockSubmissionModification
     *
@@ -984,6 +1170,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the documentsBlockManagedDocumentsInUnmanagedApps
+    * Indicates whether or not to block the user from viewing managed documents in unmanaged apps.
     *
     * @return bool The documentsBlockManagedDocumentsInUnmanagedApps
     */
@@ -998,6 +1185,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the documentsBlockManagedDocumentsInUnmanagedApps
+    * Indicates whether or not to block the user from viewing managed documents in unmanaged apps.
     *
     * @param bool $val The documentsBlockManagedDocumentsInUnmanagedApps
     *
@@ -1011,6 +1199,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the documentsBlockUnmanagedDocumentsInManagedApps
+    * Indicates whether or not to block the user from viewing unmanaged documents in managed apps.
     *
     * @return bool The documentsBlockUnmanagedDocumentsInManagedApps
     */
@@ -1025,6 +1214,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the documentsBlockUnmanagedDocumentsInManagedApps
+    * Indicates whether or not to block the user from viewing unmanaged documents in managed apps.
     *
     * @param bool $val The documentsBlockUnmanagedDocumentsInManagedApps
     *
@@ -1038,6 +1228,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the emailInDomainSuffixes
+    * An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
     *
     * @return string The emailInDomainSuffixes
     */
@@ -1052,6 +1243,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the emailInDomainSuffixes
+    * An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
     *
     * @param string $val The emailInDomainSuffixes
     *
@@ -1065,6 +1257,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the enterpriseAppBlockTrust
+    * Indicates whether or not to block the user from trusting an enterprise app.
     *
     * @return bool The enterpriseAppBlockTrust
     */
@@ -1079,6 +1272,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the enterpriseAppBlockTrust
+    * Indicates whether or not to block the user from trusting an enterprise app.
     *
     * @param bool $val The enterpriseAppBlockTrust
     *
@@ -1092,6 +1286,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the enterpriseAppBlockTrustModification
+    * Indicates whether or not to block the user from modifying the enterprise app trust settings.
     *
     * @return bool The enterpriseAppBlockTrustModification
     */
@@ -1106,6 +1301,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the enterpriseAppBlockTrustModification
+    * Indicates whether or not to block the user from modifying the enterprise app trust settings.
     *
     * @param bool $val The enterpriseAppBlockTrustModification
     *
@@ -1118,7 +1314,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the esimBlockModification
+    * Indicates whether or not to allow the addition or removal of cellular plans on the eSIM of a supervised device.
+    *
+    * @return bool The esimBlockModification
+    */
+    public function getEsimBlockModification()
+    {
+        if (array_key_exists("esimBlockModification", $this->_propDict)) {
+            return $this->_propDict["esimBlockModification"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the esimBlockModification
+    * Indicates whether or not to allow the addition or removal of cellular plans on the eSIM of a supervised device.
+    *
+    * @param bool $val The esimBlockModification
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setEsimBlockModification($val)
+    {
+        $this->_propDict["esimBlockModification"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the faceTimeBlocked
+    * Indicates whether or not to block the user from using FaceTime.
     *
     * @return bool The faceTimeBlocked
     */
@@ -1133,6 +1359,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the faceTimeBlocked
+    * Indicates whether or not to block the user from using FaceTime.
     *
     * @param bool $val The faceTimeBlocked
     *
@@ -1146,6 +1373,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the findMyFriendsBlocked
+    * Indicates whether or not to block Find My Friends when the device is in supervised mode.
     *
     * @return bool The findMyFriendsBlocked
     */
@@ -1160,6 +1388,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the findMyFriendsBlocked
+    * Indicates whether or not to block Find My Friends when the device is in supervised mode.
     *
     * @param bool $val The findMyFriendsBlocked
     *
@@ -1173,6 +1402,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the gamingBlockGameCenterFriends
+    * Indicates whether or not to block the user from having friends in Game Center.
     *
     * @return bool The gamingBlockGameCenterFriends
     */
@@ -1187,6 +1417,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the gamingBlockGameCenterFriends
+    * Indicates whether or not to block the user from having friends in Game Center.
     *
     * @param bool $val The gamingBlockGameCenterFriends
     *
@@ -1200,6 +1431,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the gamingBlockMultiplayer
+    * Indicates whether or not to block the user from using multiplayer gaming.
     *
     * @return bool The gamingBlockMultiplayer
     */
@@ -1214,6 +1446,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the gamingBlockMultiplayer
+    * Indicates whether or not to block the user from using multiplayer gaming.
     *
     * @param bool $val The gamingBlockMultiplayer
     *
@@ -1227,6 +1460,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the gameCenterBlocked
+    * Indicates whether or not to block the user from using Game Center when the device is in supervised mode.
     *
     * @return bool The gameCenterBlocked
     */
@@ -1241,6 +1475,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the gameCenterBlocked
+    * Indicates whether or not to block the user from using Game Center when the device is in supervised mode.
     *
     * @param bool $val The gameCenterBlocked
     *
@@ -1254,6 +1489,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the hostPairingBlocked
+    * indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.
     *
     * @return bool The hostPairingBlocked
     */
@@ -1268,6 +1504,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the hostPairingBlocked
+    * indicates whether or not to allow host pairing to control the devices an iOS device can pair with when the iOS device is in supervised mode.
     *
     * @param bool $val The hostPairingBlocked
     *
@@ -1281,6 +1518,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iBooksStoreBlocked
+    * Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.
     *
     * @return bool The iBooksStoreBlocked
     */
@@ -1295,6 +1533,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iBooksStoreBlocked
+    * Indicates whether or not to block the user from using the iBooks Store when the device is in supervised mode.
     *
     * @param bool $val The iBooksStoreBlocked
     *
@@ -1308,6 +1547,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iBooksStoreBlockErotica
+    * Indicates whether or not to block the user from downloading media from the iBookstore that has been tagged as erotica.
     *
     * @return bool The iBooksStoreBlockErotica
     */
@@ -1322,6 +1562,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iBooksStoreBlockErotica
+    * Indicates whether or not to block the user from downloading media from the iBookstore that has been tagged as erotica.
     *
     * @param bool $val The iBooksStoreBlockErotica
     *
@@ -1335,6 +1576,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockActivityContinuation
+    * Indicates whether or not to block  the the user from continuing work they started on iOS device to another iOS or macOS device.
     *
     * @return bool The iCloudBlockActivityContinuation
     */
@@ -1349,6 +1591,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockActivityContinuation
+    * Indicates whether or not to block  the the user from continuing work they started on iOS device to another iOS or macOS device.
     *
     * @param bool $val The iCloudBlockActivityContinuation
     *
@@ -1362,6 +1605,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockBackup
+    * Indicates whether or not to block iCloud backup.
     *
     * @return bool The iCloudBlockBackup
     */
@@ -1376,6 +1620,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockBackup
+    * Indicates whether or not to block iCloud backup.
     *
     * @param bool $val The iCloudBlockBackup
     *
@@ -1389,6 +1634,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockDocumentSync
+    * Indicates whether or not to block iCloud document sync.
     *
     * @return bool The iCloudBlockDocumentSync
     */
@@ -1403,6 +1649,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockDocumentSync
+    * Indicates whether or not to block iCloud document sync.
     *
     * @param bool $val The iCloudBlockDocumentSync
     *
@@ -1416,6 +1663,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockManagedAppsSync
+    * Indicates whether or not to block Managed Apps Cloud Sync.
     *
     * @return bool The iCloudBlockManagedAppsSync
     */
@@ -1430,6 +1678,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockManagedAppsSync
+    * Indicates whether or not to block Managed Apps Cloud Sync.
     *
     * @param bool $val The iCloudBlockManagedAppsSync
     *
@@ -1443,6 +1692,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockPhotoLibrary
+    * Indicates whether or not to block iCloud Photo Library.
     *
     * @return bool The iCloudBlockPhotoLibrary
     */
@@ -1457,6 +1707,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockPhotoLibrary
+    * Indicates whether or not to block iCloud Photo Library.
     *
     * @param bool $val The iCloudBlockPhotoLibrary
     *
@@ -1470,6 +1721,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockPhotoStreamSync
+    * Indicates whether or not to block iCloud Photo Stream Sync.
     *
     * @return bool The iCloudBlockPhotoStreamSync
     */
@@ -1484,6 +1736,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockPhotoStreamSync
+    * Indicates whether or not to block iCloud Photo Stream Sync.
     *
     * @param bool $val The iCloudBlockPhotoStreamSync
     *
@@ -1497,6 +1750,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudBlockSharedPhotoStream
+    * Indicates whether or not to block Shared Photo Stream.
     *
     * @return bool The iCloudBlockSharedPhotoStream
     */
@@ -1511,6 +1765,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudBlockSharedPhotoStream
+    * Indicates whether or not to block Shared Photo Stream.
     *
     * @param bool $val The iCloudBlockSharedPhotoStream
     *
@@ -1524,6 +1779,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iCloudRequireEncryptedBackup
+    * Indicates whether or not to require backups to iCloud be encrypted.
     *
     * @return bool The iCloudRequireEncryptedBackup
     */
@@ -1538,6 +1794,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iCloudRequireEncryptedBackup
+    * Indicates whether or not to require backups to iCloud be encrypted.
     *
     * @param bool $val The iCloudRequireEncryptedBackup
     *
@@ -1551,6 +1808,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iTunesBlockExplicitContent
+    * Indicates whether or not to block the user from accessing explicit content in iTunes and the App Store.
     *
     * @return bool The iTunesBlockExplicitContent
     */
@@ -1565,6 +1823,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iTunesBlockExplicitContent
+    * Indicates whether or not to block the user from accessing explicit content in iTunes and the App Store.
     *
     * @param bool $val The iTunesBlockExplicitContent
     *
@@ -1578,6 +1837,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iTunesBlockMusicService
+    * Indicates whether or not to block Music service and revert Music app to classic mode when the device is in supervised mode (iOS 9.3 and later and macOS 10.12 and later).
     *
     * @return bool The iTunesBlockMusicService
     */
@@ -1592,6 +1852,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iTunesBlockMusicService
+    * Indicates whether or not to block Music service and revert Music app to classic mode when the device is in supervised mode (iOS 9.3 and later and macOS 10.12 and later).
     *
     * @param bool $val The iTunesBlockMusicService
     *
@@ -1605,6 +1866,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the iTunesBlockRadio
+    * Indicates whether or not to block the user from using iTunes Radio when the device is in supervised mode (iOS 9.3 and later).
     *
     * @return bool The iTunesBlockRadio
     */
@@ -1619,6 +1881,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the iTunesBlockRadio
+    * Indicates whether or not to block the user from using iTunes Radio when the device is in supervised mode (iOS 9.3 and later).
     *
     * @param bool $val The iTunesBlockRadio
     *
@@ -1632,6 +1895,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the keyboardBlockAutoCorrect
+    * Indicates whether or not to block keyboard auto-correction when the device is in supervised mode (iOS 8.1.3 and later).
     *
     * @return bool The keyboardBlockAutoCorrect
     */
@@ -1646,6 +1910,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the keyboardBlockAutoCorrect
+    * Indicates whether or not to block keyboard auto-correction when the device is in supervised mode (iOS 8.1.3 and later).
     *
     * @param bool $val The keyboardBlockAutoCorrect
     *
@@ -1659,6 +1924,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the keyboardBlockDictation
+    * Indicates whether or not to block the user from using dictation input when the device is in supervised mode.
     *
     * @return bool The keyboardBlockDictation
     */
@@ -1673,6 +1939,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the keyboardBlockDictation
+    * Indicates whether or not to block the user from using dictation input when the device is in supervised mode.
     *
     * @param bool $val The keyboardBlockDictation
     *
@@ -1686,6 +1953,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the keyboardBlockPredictive
+    * Indicates whether or not to block predictive keyboards when device is in supervised mode (iOS 8.1.3 and later).
     *
     * @return bool The keyboardBlockPredictive
     */
@@ -1700,6 +1968,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the keyboardBlockPredictive
+    * Indicates whether or not to block predictive keyboards when device is in supervised mode (iOS 8.1.3 and later).
     *
     * @param bool $val The keyboardBlockPredictive
     *
@@ -1713,6 +1982,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the keyboardBlockShortcuts
+    * Indicates whether or not to block keyboard shortcuts when the device is in supervised mode (iOS 9.0 and later).
     *
     * @return bool The keyboardBlockShortcuts
     */
@@ -1727,6 +1997,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the keyboardBlockShortcuts
+    * Indicates whether or not to block keyboard shortcuts when the device is in supervised mode (iOS 9.0 and later).
     *
     * @param bool $val The keyboardBlockShortcuts
     *
@@ -1740,6 +2011,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the keyboardBlockSpellCheck
+    * Indicates whether or not to block keyboard spell-checking when the device is in supervised mode (iOS 8.1.3 and later).
     *
     * @return bool The keyboardBlockSpellCheck
     */
@@ -1754,6 +2026,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the keyboardBlockSpellCheck
+    * Indicates whether or not to block keyboard spell-checking when the device is in supervised mode (iOS 8.1.3 and later).
     *
     * @param bool $val The keyboardBlockSpellCheck
     *
@@ -1767,6 +2040,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeAllowAssistiveSpeak
+    * Indicates whether or not to allow assistive speak while in kiosk mode.
     *
     * @return bool The kioskModeAllowAssistiveSpeak
     */
@@ -1781,6 +2055,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowAssistiveSpeak
+    * Indicates whether or not to allow assistive speak while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowAssistiveSpeak
     *
@@ -1794,6 +2069,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeAllowAssistiveTouchSettings
+    * Indicates whether or not to allow access to the Assistive Touch Settings while in kiosk mode.
     *
     * @return bool The kioskModeAllowAssistiveTouchSettings
     */
@@ -1808,6 +2084,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowAssistiveTouchSettings
+    * Indicates whether or not to allow access to the Assistive Touch Settings while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowAssistiveTouchSettings
     *
@@ -1821,6 +2098,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeAllowAutoLock
+    * Indicates whether or not to allow device auto lock while in kiosk mode.
     *
     * @return bool The kioskModeAllowAutoLock
     */
@@ -1835,6 +2113,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowAutoLock
+    * Indicates whether or not to allow device auto lock while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowAutoLock
     *
@@ -1847,7 +2126,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeBlockAutoLock
+    * Indicates whether or not to block device auto lock while in kiosk mode.
+    *
+    * @return bool The kioskModeBlockAutoLock
+    */
+    public function getKioskModeBlockAutoLock()
+    {
+        if (array_key_exists("kioskModeBlockAutoLock", $this->_propDict)) {
+            return $this->_propDict["kioskModeBlockAutoLock"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBlockAutoLock
+    * Indicates whether or not to block device auto lock while in kiosk mode.
+    *
+    * @param bool $val The kioskModeBlockAutoLock
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKioskModeBlockAutoLock($val)
+    {
+        $this->_propDict["kioskModeBlockAutoLock"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the kioskModeAllowColorInversionSettings
+    * Indicates whether or not to allow access to the Color Inversion Settings while in kiosk mode.
     *
     * @return bool The kioskModeAllowColorInversionSettings
     */
@@ -1862,6 +2171,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowColorInversionSettings
+    * Indicates whether or not to allow access to the Color Inversion Settings while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowColorInversionSettings
     *
@@ -1875,6 +2185,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeAllowRingerSwitch
+    * Indicates whether or not to allow use of the ringer switch while in kiosk mode.
     *
     * @return bool The kioskModeAllowRingerSwitch
     */
@@ -1889,6 +2200,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowRingerSwitch
+    * Indicates whether or not to allow use of the ringer switch while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowRingerSwitch
     *
@@ -1901,7 +2213,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeBlockRingerSwitch
+    * Indicates whether or not to block use of the ringer switch while in kiosk mode.
+    *
+    * @return bool The kioskModeBlockRingerSwitch
+    */
+    public function getKioskModeBlockRingerSwitch()
+    {
+        if (array_key_exists("kioskModeBlockRingerSwitch", $this->_propDict)) {
+            return $this->_propDict["kioskModeBlockRingerSwitch"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBlockRingerSwitch
+    * Indicates whether or not to block use of the ringer switch while in kiosk mode.
+    *
+    * @param bool $val The kioskModeBlockRingerSwitch
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKioskModeBlockRingerSwitch($val)
+    {
+        $this->_propDict["kioskModeBlockRingerSwitch"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the kioskModeAllowScreenRotation
+    * Indicates whether or not to allow screen rotation while in kiosk mode.
     *
     * @return bool The kioskModeAllowScreenRotation
     */
@@ -1916,6 +2258,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowScreenRotation
+    * Indicates whether or not to allow screen rotation while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowScreenRotation
     *
@@ -1928,7 +2271,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeBlockScreenRotation
+    * Indicates whether or not to block screen rotation while in kiosk mode.
+    *
+    * @return bool The kioskModeBlockScreenRotation
+    */
+    public function getKioskModeBlockScreenRotation()
+    {
+        if (array_key_exists("kioskModeBlockScreenRotation", $this->_propDict)) {
+            return $this->_propDict["kioskModeBlockScreenRotation"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBlockScreenRotation
+    * Indicates whether or not to block screen rotation while in kiosk mode.
+    *
+    * @param bool $val The kioskModeBlockScreenRotation
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKioskModeBlockScreenRotation($val)
+    {
+        $this->_propDict["kioskModeBlockScreenRotation"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the kioskModeAllowSleepButton
+    * Indicates whether or not to allow use of the sleep button while in kiosk mode.
     *
     * @return bool The kioskModeAllowSleepButton
     */
@@ -1943,6 +2316,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowSleepButton
+    * Indicates whether or not to allow use of the sleep button while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowSleepButton
     *
@@ -1955,7 +2329,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeBlockSleepButton
+    * Indicates whether or not to block use of the sleep button while in kiosk mode.
+    *
+    * @return bool The kioskModeBlockSleepButton
+    */
+    public function getKioskModeBlockSleepButton()
+    {
+        if (array_key_exists("kioskModeBlockSleepButton", $this->_propDict)) {
+            return $this->_propDict["kioskModeBlockSleepButton"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBlockSleepButton
+    * Indicates whether or not to block use of the sleep button while in kiosk mode.
+    *
+    * @param bool $val The kioskModeBlockSleepButton
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKioskModeBlockSleepButton($val)
+    {
+        $this->_propDict["kioskModeBlockSleepButton"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the kioskModeAllowTouchscreen
+    * Indicates whether or not to allow use of the touchscreen while in kiosk mode.
     *
     * @return bool The kioskModeAllowTouchscreen
     */
@@ -1970,6 +2374,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowTouchscreen
+    * Indicates whether or not to allow use of the touchscreen while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowTouchscreen
     *
@@ -1982,7 +2387,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeBlockTouchscreen
+    * Indicates whether or not to block use of the touchscreen while in kiosk mode.
+    *
+    * @return bool The kioskModeBlockTouchscreen
+    */
+    public function getKioskModeBlockTouchscreen()
+    {
+        if (array_key_exists("kioskModeBlockTouchscreen", $this->_propDict)) {
+            return $this->_propDict["kioskModeBlockTouchscreen"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBlockTouchscreen
+    * Indicates whether or not to block use of the touchscreen while in kiosk mode.
+    *
+    * @param bool $val The kioskModeBlockTouchscreen
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKioskModeBlockTouchscreen($val)
+    {
+        $this->_propDict["kioskModeBlockTouchscreen"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the kioskModeAllowVoiceOverSettings
+    * Indicates whether or not to allow access to the voice over settings while in kiosk mode.
     *
     * @return bool The kioskModeAllowVoiceOverSettings
     */
@@ -1997,6 +2432,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowVoiceOverSettings
+    * Indicates whether or not to allow access to the voice over settings while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowVoiceOverSettings
     *
@@ -2010,6 +2446,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeAllowVolumeButtons
+    * Indicates whether or not to allow use of the volume buttons while in kiosk mode.
     *
     * @return bool The kioskModeAllowVolumeButtons
     */
@@ -2024,6 +2461,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowVolumeButtons
+    * Indicates whether or not to allow use of the volume buttons while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowVolumeButtons
     *
@@ -2036,7 +2474,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the kioskModeBlockVolumeButtons
+    * Indicates whether or not to block the volume buttons while in Kiosk Mode.
+    *
+    * @return bool The kioskModeBlockVolumeButtons
+    */
+    public function getKioskModeBlockVolumeButtons()
+    {
+        if (array_key_exists("kioskModeBlockVolumeButtons", $this->_propDict)) {
+            return $this->_propDict["kioskModeBlockVolumeButtons"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the kioskModeBlockVolumeButtons
+    * Indicates whether or not to block the volume buttons while in Kiosk Mode.
+    *
+    * @param bool $val The kioskModeBlockVolumeButtons
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKioskModeBlockVolumeButtons($val)
+    {
+        $this->_propDict["kioskModeBlockVolumeButtons"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the kioskModeAllowZoomSettings
+    * Indicates whether or not to allow access to the zoom settings while in kiosk mode.
     *
     * @return bool The kioskModeAllowZoomSettings
     */
@@ -2051,6 +2519,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAllowZoomSettings
+    * Indicates whether or not to allow access to the zoom settings while in kiosk mode.
     *
     * @param bool $val The kioskModeAllowZoomSettings
     *
@@ -2064,6 +2533,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeAppStoreUrl
+    * URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.
     *
     * @return string The kioskModeAppStoreUrl
     */
@@ -2078,6 +2548,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeAppStoreUrl
+    * URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.
     *
     * @param string $val The kioskModeAppStoreUrl
     *
@@ -2091,6 +2562,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeBuiltInAppId
+    * ID for built-in apps to use for kiosk mode. Used when KioskModeManagedAppId and KioskModeAppStoreUrl are not set.
     *
     * @return string The kioskModeBuiltInAppId
     */
@@ -2105,6 +2577,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeBuiltInAppId
+    * ID for built-in apps to use for kiosk mode. Used when KioskModeManagedAppId and KioskModeAppStoreUrl are not set.
     *
     * @param string $val The kioskModeBuiltInAppId
     *
@@ -2118,6 +2591,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeRequireAssistiveTouch
+    * Indicates whether or not to require assistive touch while in kiosk mode.
     *
     * @return bool The kioskModeRequireAssistiveTouch
     */
@@ -2132,6 +2606,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeRequireAssistiveTouch
+    * Indicates whether or not to require assistive touch while in kiosk mode.
     *
     * @param bool $val The kioskModeRequireAssistiveTouch
     *
@@ -2145,6 +2620,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeRequireColorInversion
+    * Indicates whether or not to require color inversion while in kiosk mode.
     *
     * @return bool The kioskModeRequireColorInversion
     */
@@ -2159,6 +2635,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeRequireColorInversion
+    * Indicates whether or not to require color inversion while in kiosk mode.
     *
     * @param bool $val The kioskModeRequireColorInversion
     *
@@ -2172,6 +2649,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeRequireMonoAudio
+    * Indicates whether or not to require mono audio while in kiosk mode.
     *
     * @return bool The kioskModeRequireMonoAudio
     */
@@ -2186,6 +2664,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeRequireMonoAudio
+    * Indicates whether or not to require mono audio while in kiosk mode.
     *
     * @param bool $val The kioskModeRequireMonoAudio
     *
@@ -2199,6 +2678,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeRequireVoiceOver
+    * Indicates whether or not to require voice over while in kiosk mode.
     *
     * @return bool The kioskModeRequireVoiceOver
     */
@@ -2213,6 +2693,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeRequireVoiceOver
+    * Indicates whether or not to require voice over while in kiosk mode.
     *
     * @param bool $val The kioskModeRequireVoiceOver
     *
@@ -2226,6 +2707,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeRequireZoom
+    * Indicates whether or not to require zoom while in kiosk mode.
     *
     * @return bool The kioskModeRequireZoom
     */
@@ -2240,6 +2722,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeRequireZoom
+    * Indicates whether or not to require zoom while in kiosk mode.
     *
     * @param bool $val The kioskModeRequireZoom
     *
@@ -2253,6 +2736,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the kioskModeManagedAppId
+    * Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.
     *
     * @return string The kioskModeManagedAppId
     */
@@ -2267,6 +2751,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the kioskModeManagedAppId
+    * Managed app id of the app to use for kiosk mode. If KioskModeManagedAppId is specified then KioskModeAppStoreUrl will be ignored.
     *
     * @param string $val The kioskModeManagedAppId
     *
@@ -2280,6 +2765,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the lockScreenBlockControlCenter
+    * Indicates whether or not to block the user from using control center on the lock screen.
     *
     * @return bool The lockScreenBlockControlCenter
     */
@@ -2294,6 +2780,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the lockScreenBlockControlCenter
+    * Indicates whether or not to block the user from using control center on the lock screen.
     *
     * @param bool $val The lockScreenBlockControlCenter
     *
@@ -2307,6 +2794,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the lockScreenBlockNotificationView
+    * Indicates whether or not to block the user from using the notification view on the lock screen.
     *
     * @return bool The lockScreenBlockNotificationView
     */
@@ -2321,6 +2809,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the lockScreenBlockNotificationView
+    * Indicates whether or not to block the user from using the notification view on the lock screen.
     *
     * @param bool $val The lockScreenBlockNotificationView
     *
@@ -2334,6 +2823,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the lockScreenBlockPassbook
+    * Indicates whether or not to block the user from using passbook when the device is locked.
     *
     * @return bool The lockScreenBlockPassbook
     */
@@ -2348,6 +2838,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the lockScreenBlockPassbook
+    * Indicates whether or not to block the user from using passbook when the device is locked.
     *
     * @param bool $val The lockScreenBlockPassbook
     *
@@ -2361,6 +2852,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the lockScreenBlockTodayView
+    * Indicates whether or not to block the user from using the Today View on the lock screen.
     *
     * @return bool The lockScreenBlockTodayView
     */
@@ -2375,6 +2867,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the lockScreenBlockTodayView
+    * Indicates whether or not to block the user from using the Today View on the lock screen.
     *
     * @param bool $val The lockScreenBlockTodayView
     *
@@ -2388,6 +2881,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingAustralia
+    * Media content rating settings for Australia
     *
     * @return MediaContentRatingAustralia The mediaContentRatingAustralia
     */
@@ -2406,6 +2900,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingAustralia
+    * Media content rating settings for Australia
     *
     * @param MediaContentRatingAustralia $val The mediaContentRatingAustralia
     *
@@ -2419,6 +2914,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingCanada
+    * Media content rating settings for Canada
     *
     * @return MediaContentRatingCanada The mediaContentRatingCanada
     */
@@ -2437,6 +2933,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingCanada
+    * Media content rating settings for Canada
     *
     * @param MediaContentRatingCanada $val The mediaContentRatingCanada
     *
@@ -2450,6 +2947,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingFrance
+    * Media content rating settings for France
     *
     * @return MediaContentRatingFrance The mediaContentRatingFrance
     */
@@ -2468,6 +2966,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingFrance
+    * Media content rating settings for France
     *
     * @param MediaContentRatingFrance $val The mediaContentRatingFrance
     *
@@ -2481,6 +2980,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingGermany
+    * Media content rating settings for Germany
     *
     * @return MediaContentRatingGermany The mediaContentRatingGermany
     */
@@ -2499,6 +2999,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingGermany
+    * Media content rating settings for Germany
     *
     * @param MediaContentRatingGermany $val The mediaContentRatingGermany
     *
@@ -2512,6 +3013,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingIreland
+    * Media content rating settings for Ireland
     *
     * @return MediaContentRatingIreland The mediaContentRatingIreland
     */
@@ -2530,6 +3032,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingIreland
+    * Media content rating settings for Ireland
     *
     * @param MediaContentRatingIreland $val The mediaContentRatingIreland
     *
@@ -2543,6 +3046,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingJapan
+    * Media content rating settings for Japan
     *
     * @return MediaContentRatingJapan The mediaContentRatingJapan
     */
@@ -2561,6 +3065,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingJapan
+    * Media content rating settings for Japan
     *
     * @param MediaContentRatingJapan $val The mediaContentRatingJapan
     *
@@ -2574,6 +3079,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingNewZealand
+    * Media content rating settings for New Zealand
     *
     * @return MediaContentRatingNewZealand The mediaContentRatingNewZealand
     */
@@ -2592,6 +3098,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingNewZealand
+    * Media content rating settings for New Zealand
     *
     * @param MediaContentRatingNewZealand $val The mediaContentRatingNewZealand
     *
@@ -2605,6 +3112,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingUnitedKingdom
+    * Media content rating settings for United Kingdom
     *
     * @return MediaContentRatingUnitedKingdom The mediaContentRatingUnitedKingdom
     */
@@ -2623,6 +3131,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingUnitedKingdom
+    * Media content rating settings for United Kingdom
     *
     * @param MediaContentRatingUnitedKingdom $val The mediaContentRatingUnitedKingdom
     *
@@ -2636,6 +3145,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingUnitedStates
+    * Media content rating settings for United States
     *
     * @return MediaContentRatingUnitedStates The mediaContentRatingUnitedStates
     */
@@ -2654,6 +3164,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingUnitedStates
+    * Media content rating settings for United States
     *
     * @param MediaContentRatingUnitedStates $val The mediaContentRatingUnitedStates
     *
@@ -2668,6 +3179,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
 
      /** 
      * Gets the networkUsageRules
+    * List of managed apps and the network rules that applies to them. This collection can contain a maximum of 1000 elements.
      *
      * @return array The networkUsageRules
      */
@@ -2682,6 +3194,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /** 
     * Sets the networkUsageRules
+    * List of managed apps and the network rules that applies to them. This collection can contain a maximum of 1000 elements.
     *
     * @param IosNetworkUsageRule $val The networkUsageRules
     *
@@ -2695,6 +3208,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the mediaContentRatingApps
+    * Media content rating settings for Apps. Possible values are: allAllowed, allBlocked, agesAbove4, agesAbove9, agesAbove12, agesAbove17.
     *
     * @return RatingAppsType The mediaContentRatingApps
     */
@@ -2713,6 +3227,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the mediaContentRatingApps
+    * Media content rating settings for Apps. Possible values are: allAllowed, allBlocked, agesAbove4, agesAbove9, agesAbove12, agesAbove17.
     *
     * @param RatingAppsType $val The mediaContentRatingApps
     *
@@ -2726,6 +3241,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the messagesBlocked
+    * Indicates whether or not to block the user from using the Messages app on the supervised device.
     *
     * @return bool The messagesBlocked
     */
@@ -2740,6 +3256,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the messagesBlocked
+    * Indicates whether or not to block the user from using the Messages app on the supervised device.
     *
     * @param bool $val The messagesBlocked
     *
@@ -2753,6 +3270,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the notificationsBlockSettingsModification
+    * Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).
     *
     * @return bool The notificationsBlockSettingsModification
     */
@@ -2767,6 +3285,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the notificationsBlockSettingsModification
+    * Indicates whether or not to allow notifications settings modification (iOS 9.3 and later).
     *
     * @param bool $val The notificationsBlockSettingsModification
     *
@@ -2780,6 +3299,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeBlockFingerprintUnlock
+    * Indicates whether or not to block fingerprint unlock.
     *
     * @return bool The passcodeBlockFingerprintUnlock
     */
@@ -2794,6 +3314,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeBlockFingerprintUnlock
+    * Indicates whether or not to block fingerprint unlock.
     *
     * @param bool $val The passcodeBlockFingerprintUnlock
     *
@@ -2807,6 +3328,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeBlockFingerprintModification
+    * Block modification of registered Touch ID fingerprints when in supervised mode.
     *
     * @return bool The passcodeBlockFingerprintModification
     */
@@ -2821,6 +3343,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeBlockFingerprintModification
+    * Block modification of registered Touch ID fingerprints when in supervised mode.
     *
     * @param bool $val The passcodeBlockFingerprintModification
     *
@@ -2834,6 +3357,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeBlockModification
+    * Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).
     *
     * @return bool The passcodeBlockModification
     */
@@ -2848,6 +3372,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeBlockModification
+    * Indicates whether or not to allow passcode modification on the supervised device (iOS 9.0 and later).
     *
     * @param bool $val The passcodeBlockModification
     *
@@ -2861,6 +3386,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeBlockSimple
+    * Indicates whether or not to block simple passcodes.
     *
     * @return bool The passcodeBlockSimple
     */
@@ -2875,6 +3401,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeBlockSimple
+    * Indicates whether or not to block simple passcodes.
     *
     * @param bool $val The passcodeBlockSimple
     *
@@ -2888,6 +3415,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeExpirationDays
+    * Number of days before the passcode expires. Valid values 1 to 65535
     *
     * @return int The passcodeExpirationDays
     */
@@ -2902,6 +3430,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeExpirationDays
+    * Number of days before the passcode expires. Valid values 1 to 65535
     *
     * @param int $val The passcodeExpirationDays
     *
@@ -2915,6 +3444,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeMinimumLength
+    * Minimum length of passcode. Valid values 4 to 14
     *
     * @return int The passcodeMinimumLength
     */
@@ -2929,6 +3459,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeMinimumLength
+    * Minimum length of passcode. Valid values 4 to 14
     *
     * @param int $val The passcodeMinimumLength
     *
@@ -2942,6 +3473,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeMinutesOfInactivityBeforeLock
+    * Minutes of inactivity before a passcode is required.
     *
     * @return int The passcodeMinutesOfInactivityBeforeLock
     */
@@ -2956,6 +3488,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeMinutesOfInactivityBeforeLock
+    * Minutes of inactivity before a passcode is required.
     *
     * @param int $val The passcodeMinutesOfInactivityBeforeLock
     *
@@ -2969,6 +3502,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeMinutesOfInactivityBeforeScreenTimeout
+    * Minutes of inactivity before the screen times out.
     *
     * @return int The passcodeMinutesOfInactivityBeforeScreenTimeout
     */
@@ -2983,6 +3517,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeMinutesOfInactivityBeforeScreenTimeout
+    * Minutes of inactivity before the screen times out.
     *
     * @param int $val The passcodeMinutesOfInactivityBeforeScreenTimeout
     *
@@ -2996,6 +3531,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeMinimumCharacterSetCount
+    * Number of character sets a passcode must contain. Valid values 0 to 4
     *
     * @return int The passcodeMinimumCharacterSetCount
     */
@@ -3010,6 +3546,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeMinimumCharacterSetCount
+    * Number of character sets a passcode must contain. Valid values 0 to 4
     *
     * @param int $val The passcodeMinimumCharacterSetCount
     *
@@ -3023,6 +3560,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodePreviousPasscodeBlockCount
+    * Number of previous passcodes to block. Valid values 1 to 24
     *
     * @return int The passcodePreviousPasscodeBlockCount
     */
@@ -3037,6 +3575,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodePreviousPasscodeBlockCount
+    * Number of previous passcodes to block. Valid values 1 to 24
     *
     * @param int $val The passcodePreviousPasscodeBlockCount
     *
@@ -3050,6 +3589,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeSignInFailureCountBeforeWipe
+    * Number of sign in failures allowed before wiping the device. Valid values 4 to 11
     *
     * @return int The passcodeSignInFailureCountBeforeWipe
     */
@@ -3064,6 +3604,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeSignInFailureCountBeforeWipe
+    * Number of sign in failures allowed before wiping the device. Valid values 4 to 11
     *
     * @param int $val The passcodeSignInFailureCountBeforeWipe
     *
@@ -3077,6 +3618,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeRequiredType
+    * Type of passcode that is required. Possible values are: deviceDefault, alphanumeric, numeric.
     *
     * @return RequiredPasswordType The passcodeRequiredType
     */
@@ -3095,6 +3637,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeRequiredType
+    * Type of passcode that is required. Possible values are: deviceDefault, alphanumeric, numeric.
     *
     * @param RequiredPasswordType $val The passcodeRequiredType
     *
@@ -3108,6 +3651,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the passcodeRequired
+    * Indicates whether or not to require a passcode.
     *
     * @return bool The passcodeRequired
     */
@@ -3122,6 +3666,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the passcodeRequired
+    * Indicates whether or not to require a passcode.
     *
     * @param bool $val The passcodeRequired
     *
@@ -3135,6 +3680,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the podcastsBlocked
+    * Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).
     *
     * @return bool The podcastsBlocked
     */
@@ -3149,6 +3695,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the podcastsBlocked
+    * Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).
     *
     * @param bool $val The podcastsBlocked
     *
@@ -3161,7 +3708,37 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the proximityBlockSetupToNewDevice
+    * Indicates whether or not to enable the prompt to setup nearby devices with a supervised device.
+    *
+    * @return bool The proximityBlockSetupToNewDevice
+    */
+    public function getProximityBlockSetupToNewDevice()
+    {
+        if (array_key_exists("proximityBlockSetupToNewDevice", $this->_propDict)) {
+            return $this->_propDict["proximityBlockSetupToNewDevice"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the proximityBlockSetupToNewDevice
+    * Indicates whether or not to enable the prompt to setup nearby devices with a supervised device.
+    *
+    * @param bool $val The proximityBlockSetupToNewDevice
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setProximityBlockSetupToNewDevice($val)
+    {
+        $this->_propDict["proximityBlockSetupToNewDevice"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the safariBlockAutofill
+    * Indicates whether or not to block the user from using Auto fill in Safari.
     *
     * @return bool The safariBlockAutofill
     */
@@ -3176,6 +3753,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariBlockAutofill
+    * Indicates whether or not to block the user from using Auto fill in Safari.
     *
     * @param bool $val The safariBlockAutofill
     *
@@ -3189,6 +3767,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariBlockJavaScript
+    * Indicates whether or not to block JavaScript in Safari.
     *
     * @return bool The safariBlockJavaScript
     */
@@ -3203,6 +3782,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariBlockJavaScript
+    * Indicates whether or not to block JavaScript in Safari.
     *
     * @param bool $val The safariBlockJavaScript
     *
@@ -3216,6 +3796,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariBlockPopups
+    * Indicates whether or not to block popups in Safari.
     *
     * @return bool The safariBlockPopups
     */
@@ -3230,6 +3811,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariBlockPopups
+    * Indicates whether or not to block popups in Safari.
     *
     * @param bool $val The safariBlockPopups
     *
@@ -3243,6 +3825,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariBlocked
+    * Indicates whether or not to block the user from using Safari.
     *
     * @return bool The safariBlocked
     */
@@ -3257,6 +3840,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariBlocked
+    * Indicates whether or not to block the user from using Safari.
     *
     * @param bool $val The safariBlocked
     *
@@ -3270,6 +3854,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariCookieSettings
+    * Cookie settings for Safari. Possible values are: browserDefault, blockAlways, allowCurrentWebSite, allowFromWebsitesVisited, allowAlways.
     *
     * @return WebBrowserCookieSettings The safariCookieSettings
     */
@@ -3288,6 +3873,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariCookieSettings
+    * Cookie settings for Safari. Possible values are: browserDefault, blockAlways, allowCurrentWebSite, allowFromWebsitesVisited, allowAlways.
     *
     * @param WebBrowserCookieSettings $val The safariCookieSettings
     *
@@ -3301,6 +3887,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariManagedDomains
+    * URLs matching the patterns listed here will be considered managed.
     *
     * @return string The safariManagedDomains
     */
@@ -3315,6 +3902,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariManagedDomains
+    * URLs matching the patterns listed here will be considered managed.
     *
     * @param string $val The safariManagedDomains
     *
@@ -3328,6 +3916,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariPasswordAutoFillDomains
+    * Users can save passwords in Safari only from URLs matching the patterns listed here. Applies to devices in supervised mode (iOS 9.3 and later).
     *
     * @return string The safariPasswordAutoFillDomains
     */
@@ -3342,6 +3931,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariPasswordAutoFillDomains
+    * Users can save passwords in Safari only from URLs matching the patterns listed here. Applies to devices in supervised mode (iOS 9.3 and later).
     *
     * @param string $val The safariPasswordAutoFillDomains
     *
@@ -3355,6 +3945,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the safariRequireFraudWarning
+    * Indicates whether or not to require fraud warning in Safari.
     *
     * @return bool The safariRequireFraudWarning
     */
@@ -3369,6 +3960,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the safariRequireFraudWarning
+    * Indicates whether or not to require fraud warning in Safari.
     *
     * @param bool $val The safariRequireFraudWarning
     *
@@ -3382,6 +3974,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the screenCaptureBlocked
+    * Indicates whether or not to block the user from taking Screenshots.
     *
     * @return bool The screenCaptureBlocked
     */
@@ -3396,6 +3989,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the screenCaptureBlocked
+    * Indicates whether or not to block the user from taking Screenshots.
     *
     * @param bool $val The screenCaptureBlocked
     *
@@ -3409,6 +4003,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the siriBlocked
+    * Indicates whether or not to block the user from using Siri.
     *
     * @return bool The siriBlocked
     */
@@ -3423,6 +4018,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the siriBlocked
+    * Indicates whether or not to block the user from using Siri.
     *
     * @param bool $val The siriBlocked
     *
@@ -3436,6 +4032,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the siriBlockedWhenLocked
+    * Indicates whether or not to block the user from using Siri when locked.
     *
     * @return bool The siriBlockedWhenLocked
     */
@@ -3450,6 +4047,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the siriBlockedWhenLocked
+    * Indicates whether or not to block the user from using Siri when locked.
     *
     * @param bool $val The siriBlockedWhenLocked
     *
@@ -3463,6 +4061,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the siriBlockUserGeneratedContent
+    * Indicates whether or not to block Siri from querying user-generated content when used on a supervised device.
     *
     * @return bool The siriBlockUserGeneratedContent
     */
@@ -3477,6 +4076,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the siriBlockUserGeneratedContent
+    * Indicates whether or not to block Siri from querying user-generated content when used on a supervised device.
     *
     * @param bool $val The siriBlockUserGeneratedContent
     *
@@ -3490,6 +4090,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the siriRequireProfanityFilter
+    * Indicates whether or not to prevent Siri from dictating, or speaking profane language on supervised device.
     *
     * @return bool The siriRequireProfanityFilter
     */
@@ -3504,6 +4105,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the siriRequireProfanityFilter
+    * Indicates whether or not to prevent Siri from dictating, or speaking profane language on supervised device.
     *
     * @param bool $val The siriRequireProfanityFilter
     *
@@ -3516,7 +4118,66 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     }
     
     /**
+    * Gets the softwareUpdatesEnforcedDelayInDays
+    * Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90
+    *
+    * @return int The softwareUpdatesEnforcedDelayInDays
+    */
+    public function getSoftwareUpdatesEnforcedDelayInDays()
+    {
+        if (array_key_exists("softwareUpdatesEnforcedDelayInDays", $this->_propDict)) {
+            return $this->_propDict["softwareUpdatesEnforcedDelayInDays"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the softwareUpdatesEnforcedDelayInDays
+    * Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90
+    *
+    * @param int $val The softwareUpdatesEnforcedDelayInDays
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setSoftwareUpdatesEnforcedDelayInDays($val)
+    {
+        $this->_propDict["softwareUpdatesEnforcedDelayInDays"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the softwareUpdatesForceDelayed
+    * Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.
+    *
+    * @return bool The softwareUpdatesForceDelayed
+    */
+    public function getSoftwareUpdatesForceDelayed()
+    {
+        if (array_key_exists("softwareUpdatesForceDelayed", $this->_propDict)) {
+            return $this->_propDict["softwareUpdatesForceDelayed"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the softwareUpdatesForceDelayed
+    * Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.
+    *
+    * @param bool $val The softwareUpdatesForceDelayed
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setSoftwareUpdatesForceDelayed($val)
+    {
+        $this->_propDict["softwareUpdatesForceDelayed"] = boolval($val);
+        return $this;
+    }
+    
+    /**
     * Gets the spotlightBlockInternetResults
+    * Indicates whether or not to block Spotlight search from returning internet results on supervised device.
     *
     * @return bool The spotlightBlockInternetResults
     */
@@ -3531,6 +4192,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the spotlightBlockInternetResults
+    * Indicates whether or not to block Spotlight search from returning internet results on supervised device.
     *
     * @param bool $val The spotlightBlockInternetResults
     *
@@ -3544,6 +4206,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the voiceDialingBlocked
+    * Indicates whether or not to block voice dialing.
     *
     * @return bool The voiceDialingBlocked
     */
@@ -3558,6 +4221,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the voiceDialingBlocked
+    * Indicates whether or not to block voice dialing.
     *
     * @param bool $val The voiceDialingBlocked
     *
@@ -3571,6 +4235,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the wallpaperBlockModification
+    * Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .
     *
     * @return bool The wallpaperBlockModification
     */
@@ -3585,6 +4250,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the wallpaperBlockModification
+    * Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .
     *
     * @param bool $val The wallpaperBlockModification
     *
@@ -3598,6 +4264,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the wiFiConnectOnlyToConfiguredNetworks
+    * Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.
     *
     * @return bool The wiFiConnectOnlyToConfiguredNetworks
     */
@@ -3612,6 +4279,7 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the wiFiConnectOnlyToConfiguredNetworks
+    * Indicates whether or not to force the device to use only Wi-Fi networks from configuration profiles when the device is in supervised mode.
     *
     * @param bool $val The wiFiConnectOnlyToConfiguredNetworks
     *
@@ -3620,6 +4288,644 @@ class IosGeneralDeviceConfiguration extends DeviceConfiguration
     public function setWiFiConnectOnlyToConfiguredNetworks($val)
     {
         $this->_propDict["wiFiConnectOnlyToConfiguredNetworks"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the classroomForceRequestPermissionToLeaveClasses
+    * Indicates whether a student enrolled in an unmanaged course via Classroom will request permission from the teacher when attempting to leave the course (iOS 11.3 and later).
+    *
+    * @return bool The classroomForceRequestPermissionToLeaveClasses
+    */
+    public function getClassroomForceRequestPermissionToLeaveClasses()
+    {
+        if (array_key_exists("classroomForceRequestPermissionToLeaveClasses", $this->_propDict)) {
+            return $this->_propDict["classroomForceRequestPermissionToLeaveClasses"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the classroomForceRequestPermissionToLeaveClasses
+    * Indicates whether a student enrolled in an unmanaged course via Classroom will request permission from the teacher when attempting to leave the course (iOS 11.3 and later).
+    *
+    * @param bool $val The classroomForceRequestPermissionToLeaveClasses
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setClassroomForceRequestPermissionToLeaveClasses($val)
+    {
+        $this->_propDict["classroomForceRequestPermissionToLeaveClasses"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the keychainBlockCloudSync
+    * Indicates whether or not iCloud keychain synchronization is blocked.
+    *
+    * @return bool The keychainBlockCloudSync
+    */
+    public function getKeychainBlockCloudSync()
+    {
+        if (array_key_exists("keychainBlockCloudSync", $this->_propDict)) {
+            return $this->_propDict["keychainBlockCloudSync"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the keychainBlockCloudSync
+    * Indicates whether or not iCloud keychain synchronization is blocked.
+    *
+    * @param bool $val The keychainBlockCloudSync
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setKeychainBlockCloudSync($val)
+    {
+        $this->_propDict["keychainBlockCloudSync"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the pkiBlockOTAUpdates
+    * Indicates whether or not over-the-air PKI updates are blocked. Setting this restriction to false does not disable CRL and OCSP checks (iOS 7.0 and later).
+    *
+    * @return bool The pkiBlockOTAUpdates
+    */
+    public function getPkiBlockOTAUpdates()
+    {
+        if (array_key_exists("pkiBlockOTAUpdates", $this->_propDict)) {
+            return $this->_propDict["pkiBlockOTAUpdates"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the pkiBlockOTAUpdates
+    * Indicates whether or not over-the-air PKI updates are blocked. Setting this restriction to false does not disable CRL and OCSP checks (iOS 7.0 and later).
+    *
+    * @param bool $val The pkiBlockOTAUpdates
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setPkiBlockOTAUpdates($val)
+    {
+        $this->_propDict["pkiBlockOTAUpdates"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the privacyForceLimitAdTracking
+    * Indicates if ad tracking is limited.(iOS 7.0 and later).
+    *
+    * @return bool The privacyForceLimitAdTracking
+    */
+    public function getPrivacyForceLimitAdTracking()
+    {
+        if (array_key_exists("privacyForceLimitAdTracking", $this->_propDict)) {
+            return $this->_propDict["privacyForceLimitAdTracking"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the privacyForceLimitAdTracking
+    * Indicates if ad tracking is limited.(iOS 7.0 and later).
+    *
+    * @param bool $val The privacyForceLimitAdTracking
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setPrivacyForceLimitAdTracking($val)
+    {
+        $this->_propDict["privacyForceLimitAdTracking"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the enterpriseBookBlockBackup
+    * Indicates whether or not Enterprise book back up is blocked.
+    *
+    * @return bool The enterpriseBookBlockBackup
+    */
+    public function getEnterpriseBookBlockBackup()
+    {
+        if (array_key_exists("enterpriseBookBlockBackup", $this->_propDict)) {
+            return $this->_propDict["enterpriseBookBlockBackup"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the enterpriseBookBlockBackup
+    * Indicates whether or not Enterprise book back up is blocked.
+    *
+    * @param bool $val The enterpriseBookBlockBackup
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setEnterpriseBookBlockBackup($val)
+    {
+        $this->_propDict["enterpriseBookBlockBackup"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the enterpriseBookBlockMetadataSync
+    * Indicates whether or not Enterprise book notes and highlights sync is blocked.
+    *
+    * @return bool The enterpriseBookBlockMetadataSync
+    */
+    public function getEnterpriseBookBlockMetadataSync()
+    {
+        if (array_key_exists("enterpriseBookBlockMetadataSync", $this->_propDict)) {
+            return $this->_propDict["enterpriseBookBlockMetadataSync"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the enterpriseBookBlockMetadataSync
+    * Indicates whether or not Enterprise book notes and highlights sync is blocked.
+    *
+    * @param bool $val The enterpriseBookBlockMetadataSync
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setEnterpriseBookBlockMetadataSync($val)
+    {
+        $this->_propDict["enterpriseBookBlockMetadataSync"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the airPrintBlocked
+    * Indicates whether or not AirPrint is blocked (iOS 11.0 and later).
+    *
+    * @return bool The airPrintBlocked
+    */
+    public function getAirPrintBlocked()
+    {
+        if (array_key_exists("airPrintBlocked", $this->_propDict)) {
+            return $this->_propDict["airPrintBlocked"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the airPrintBlocked
+    * Indicates whether or not AirPrint is blocked (iOS 11.0 and later).
+    *
+    * @param bool $val The airPrintBlocked
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setAirPrintBlocked($val)
+    {
+        $this->_propDict["airPrintBlocked"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the airPrintBlockCredentialsStorage
+    * Indicates whether or not keychain storage of username and password for Airprint is blocked (iOS 11.0 and later).
+    *
+    * @return bool The airPrintBlockCredentialsStorage
+    */
+    public function getAirPrintBlockCredentialsStorage()
+    {
+        if (array_key_exists("airPrintBlockCredentialsStorage", $this->_propDict)) {
+            return $this->_propDict["airPrintBlockCredentialsStorage"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the airPrintBlockCredentialsStorage
+    * Indicates whether or not keychain storage of username and password for Airprint is blocked (iOS 11.0 and later).
+    *
+    * @param bool $val The airPrintBlockCredentialsStorage
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setAirPrintBlockCredentialsStorage($val)
+    {
+        $this->_propDict["airPrintBlockCredentialsStorage"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the airPrintForceTrustedTLS
+    * Indicates if trusted certificates are required for TLS printing communication (iOS 11.0 and later).
+    *
+    * @return bool The airPrintForceTrustedTLS
+    */
+    public function getAirPrintForceTrustedTLS()
+    {
+        if (array_key_exists("airPrintForceTrustedTLS", $this->_propDict)) {
+            return $this->_propDict["airPrintForceTrustedTLS"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the airPrintForceTrustedTLS
+    * Indicates if trusted certificates are required for TLS printing communication (iOS 11.0 and later).
+    *
+    * @param bool $val The airPrintForceTrustedTLS
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setAirPrintForceTrustedTLS($val)
+    {
+        $this->_propDict["airPrintForceTrustedTLS"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the airPrintBlockiBeaconDiscovery
+    * Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (iOS 11.0 and later).
+    *
+    * @return bool The airPrintBlockiBeaconDiscovery
+    */
+    public function getAirPrintBlockiBeaconDiscovery()
+    {
+        if (array_key_exists("airPrintBlockiBeaconDiscovery", $this->_propDict)) {
+            return $this->_propDict["airPrintBlockiBeaconDiscovery"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the airPrintBlockiBeaconDiscovery
+    * Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (iOS 11.0 and later).
+    *
+    * @param bool $val The airPrintBlockiBeaconDiscovery
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setAirPrintBlockiBeaconDiscovery($val)
+    {
+        $this->_propDict["airPrintBlockiBeaconDiscovery"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the blockSystemAppRemoval
+    * Indicates whether or not the removal of system apps from the device is blocked on a supervised device (iOS 11.0 and later).
+    *
+    * @return bool The blockSystemAppRemoval
+    */
+    public function getBlockSystemAppRemoval()
+    {
+        if (array_key_exists("blockSystemAppRemoval", $this->_propDict)) {
+            return $this->_propDict["blockSystemAppRemoval"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the blockSystemAppRemoval
+    * Indicates whether or not the removal of system apps from the device is blocked on a supervised device (iOS 11.0 and later).
+    *
+    * @param bool $val The blockSystemAppRemoval
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setBlockSystemAppRemoval($val)
+    {
+        $this->_propDict["blockSystemAppRemoval"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the vpnBlockCreation
+    * Indicates whether or not the creation of VPN configurations is blocked (iOS 11.0 and later).
+    *
+    * @return bool The vpnBlockCreation
+    */
+    public function getVpnBlockCreation()
+    {
+        if (array_key_exists("vpnBlockCreation", $this->_propDict)) {
+            return $this->_propDict["vpnBlockCreation"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the vpnBlockCreation
+    * Indicates whether or not the creation of VPN configurations is blocked (iOS 11.0 and later).
+    *
+    * @param bool $val The vpnBlockCreation
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setVpnBlockCreation($val)
+    {
+        $this->_propDict["vpnBlockCreation"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the appRemovalBlocked
+    * Indicates if the removal of apps is allowed.
+    *
+    * @return bool The appRemovalBlocked
+    */
+    public function getAppRemovalBlocked()
+    {
+        if (array_key_exists("appRemovalBlocked", $this->_propDict)) {
+            return $this->_propDict["appRemovalBlocked"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the appRemovalBlocked
+    * Indicates if the removal of apps is allowed.
+    *
+    * @param bool $val The appRemovalBlocked
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setAppRemovalBlocked($val)
+    {
+        $this->_propDict["appRemovalBlocked"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the usbRestrictedModeBlocked
+    * Indicates if connecting to USB accessories while the device is locked is allowed (iOS 11.4.1 and later).
+    *
+    * @return bool The usbRestrictedModeBlocked
+    */
+    public function getUsbRestrictedModeBlocked()
+    {
+        if (array_key_exists("usbRestrictedModeBlocked", $this->_propDict)) {
+            return $this->_propDict["usbRestrictedModeBlocked"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the usbRestrictedModeBlocked
+    * Indicates if connecting to USB accessories while the device is locked is allowed (iOS 11.4.1 and later).
+    *
+    * @param bool $val The usbRestrictedModeBlocked
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setUsbRestrictedModeBlocked($val)
+    {
+        $this->_propDict["usbRestrictedModeBlocked"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordBlockAutoFill
+    * Indicates if the AutoFill passwords feature is allowed (iOS 12.0 and later).
+    *
+    * @return bool The passwordBlockAutoFill
+    */
+    public function getPasswordBlockAutoFill()
+    {
+        if (array_key_exists("passwordBlockAutoFill", $this->_propDict)) {
+            return $this->_propDict["passwordBlockAutoFill"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordBlockAutoFill
+    * Indicates if the AutoFill passwords feature is allowed (iOS 12.0 and later).
+    *
+    * @param bool $val The passwordBlockAutoFill
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setPasswordBlockAutoFill($val)
+    {
+        $this->_propDict["passwordBlockAutoFill"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordBlockProximityRequests
+    * Indicates whether or not to block requesting passwords from nearby devices (iOS 12.0 and later).
+    *
+    * @return bool The passwordBlockProximityRequests
+    */
+    public function getPasswordBlockProximityRequests()
+    {
+        if (array_key_exists("passwordBlockProximityRequests", $this->_propDict)) {
+            return $this->_propDict["passwordBlockProximityRequests"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordBlockProximityRequests
+    * Indicates whether or not to block requesting passwords from nearby devices (iOS 12.0 and later).
+    *
+    * @param bool $val The passwordBlockProximityRequests
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setPasswordBlockProximityRequests($val)
+    {
+        $this->_propDict["passwordBlockProximityRequests"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the passwordBlockAirDropSharing
+    * Indicates whether or not to block sharing passwords with the AirDrop passwords feature iOS 12.0 and later).
+    *
+    * @return bool The passwordBlockAirDropSharing
+    */
+    public function getPasswordBlockAirDropSharing()
+    {
+        if (array_key_exists("passwordBlockAirDropSharing", $this->_propDict)) {
+            return $this->_propDict["passwordBlockAirDropSharing"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the passwordBlockAirDropSharing
+    * Indicates whether or not to block sharing passwords with the AirDrop passwords feature iOS 12.0 and later).
+    *
+    * @param bool $val The passwordBlockAirDropSharing
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setPasswordBlockAirDropSharing($val)
+    {
+        $this->_propDict["passwordBlockAirDropSharing"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the dateAndTimeForceSetAutomatically
+    * Indicates whether or not the Date and Time "Set Automatically" feature is enabled and cannot be turned off by the user (iOS 12.0 and later).
+    *
+    * @return bool The dateAndTimeForceSetAutomatically
+    */
+    public function getDateAndTimeForceSetAutomatically()
+    {
+        if (array_key_exists("dateAndTimeForceSetAutomatically", $this->_propDict)) {
+            return $this->_propDict["dateAndTimeForceSetAutomatically"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the dateAndTimeForceSetAutomatically
+    * Indicates whether or not the Date and Time "Set Automatically" feature is enabled and cannot be turned off by the user (iOS 12.0 and later).
+    *
+    * @param bool $val The dateAndTimeForceSetAutomatically
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setDateAndTimeForceSetAutomatically($val)
+    {
+        $this->_propDict["dateAndTimeForceSetAutomatically"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the contactsAllowManagedToUnmanagedWrite
+    * Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).
+    *
+    * @return bool The contactsAllowManagedToUnmanagedWrite
+    */
+    public function getContactsAllowManagedToUnmanagedWrite()
+    {
+        if (array_key_exists("contactsAllowManagedToUnmanagedWrite", $this->_propDict)) {
+            return $this->_propDict["contactsAllowManagedToUnmanagedWrite"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the contactsAllowManagedToUnmanagedWrite
+    * Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).
+    *
+    * @param bool $val The contactsAllowManagedToUnmanagedWrite
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setContactsAllowManagedToUnmanagedWrite($val)
+    {
+        $this->_propDict["contactsAllowManagedToUnmanagedWrite"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the contactsAllowUnmanagedToManagedRead
+    * Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).
+    *
+    * @return bool The contactsAllowUnmanagedToManagedRead
+    */
+    public function getContactsAllowUnmanagedToManagedRead()
+    {
+        if (array_key_exists("contactsAllowUnmanagedToManagedRead", $this->_propDict)) {
+            return $this->_propDict["contactsAllowUnmanagedToManagedRead"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the contactsAllowUnmanagedToManagedRead
+    * Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).
+    *
+    * @param bool $val The contactsAllowUnmanagedToManagedRead
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setContactsAllowUnmanagedToManagedRead($val)
+    {
+        $this->_propDict["contactsAllowUnmanagedToManagedRead"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the cellularBlockPersonalHotspotModification
+    * Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).
+    *
+    * @return bool The cellularBlockPersonalHotspotModification
+    */
+    public function getCellularBlockPersonalHotspotModification()
+    {
+        if (array_key_exists("cellularBlockPersonalHotspotModification", $this->_propDict)) {
+            return $this->_propDict["cellularBlockPersonalHotspotModification"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the cellularBlockPersonalHotspotModification
+    * Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).
+    *
+    * @param bool $val The cellularBlockPersonalHotspotModification
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setCellularBlockPersonalHotspotModification($val)
+    {
+        $this->_propDict["cellularBlockPersonalHotspotModification"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the siriDisableServerLogging
+    * Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).
+    *
+    * @return bool The siriDisableServerLogging
+    */
+    public function getSiriDisableServerLogging()
+    {
+        if (array_key_exists("siriDisableServerLogging", $this->_propDict)) {
+            return $this->_propDict["siriDisableServerLogging"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the siriDisableServerLogging
+    * Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).
+    *
+    * @param bool $val The siriDisableServerLogging
+    *
+    * @return IosGeneralDeviceConfiguration
+    */
+    public function setSiriDisableServerLogging($val)
+    {
+        $this->_propDict["siriDisableServerLogging"] = boolval($val);
         return $this;
     }
     

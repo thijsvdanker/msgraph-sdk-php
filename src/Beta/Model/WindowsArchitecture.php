@@ -36,4 +36,5 @@ class WindowsArchitecture extends Enum
     const X64 = "x64";
     const ARM = "arm";
     const NEUTRAL = "neutral";
+    const ARM64 = "arm64";
 }

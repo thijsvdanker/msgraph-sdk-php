@@ -28,6 +28,7 @@ class MediaContentRatingAustralia extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for Australia. Possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove15, agesAbove18.
     *
     * @return RatingAustraliaMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingAustralia extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for Australia. Possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove15, agesAbove18.
     *
     * @param RatingAustraliaMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingAustralia extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for Australia. Possible values are: allAllowed, allBlocked, preschoolers, children, general, parentalGuidance, mature, agesAbove15, agesAbove15AdultViolence.
     *
     * @return RatingAustraliaTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingAustralia extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for Australia. Possible values are: allAllowed, allBlocked, preschoolers, children, general, parentalGuidance, mature, agesAbove15, agesAbove15AdultViolence.
     *
     * @param RatingAustraliaTelevisionType $val The value to assign to the tvRating
     *

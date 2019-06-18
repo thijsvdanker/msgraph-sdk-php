@@ -28,6 +28,7 @@ class AndroidManagedStoreApp extends MobileApp
 {
     /**
     * Gets the packageId
+    * The package identifier.
     *
     * @return string The packageId
     */
@@ -42,6 +43,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Sets the packageId
+    * The package identifier.
     *
     * @param string $val The packageId
     *
@@ -55,6 +57,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Gets the appIdentifier
+    * The Identity Name.
     *
     * @return string The appIdentifier
     */
@@ -69,6 +72,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Sets the appIdentifier
+    * The Identity Name.
     *
     * @param string $val The appIdentifier
     *
@@ -82,6 +86,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Gets the usedLicenseCount
+    * The number of VPP licenses in use.
     *
     * @return int The usedLicenseCount
     */
@@ -96,6 +101,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Sets the usedLicenseCount
+    * The number of VPP licenses in use.
     *
     * @param int $val The usedLicenseCount
     *
@@ -109,6 +115,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Gets the totalLicenseCount
+    * The total number of VPP licenses.
     *
     * @return int The totalLicenseCount
     */
@@ -123,6 +130,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Sets the totalLicenseCount
+    * The total number of VPP licenses.
     *
     * @param int $val The totalLicenseCount
     *
@@ -136,6 +144,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Gets the appStoreUrl
+    * The Play for Work Store app URL.
     *
     * @return string The appStoreUrl
     */
@@ -150,6 +159,7 @@ class AndroidManagedStoreApp extends MobileApp
     
     /**
     * Sets the appStoreUrl
+    * The Play for Work Store app URL.
     *
     * @param string $val The appStoreUrl
     *
@@ -158,6 +168,35 @@ class AndroidManagedStoreApp extends MobileApp
     public function setAppStoreUrl($val)
     {
         $this->_propDict["appStoreUrl"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the supportsOemConfig
+    * Whether this app supports OEMConfig policy.
+    *
+    * @return bool The supportsOemConfig
+    */
+    public function getSupportsOemConfig()
+    {
+        if (array_key_exists("supportsOemConfig", $this->_propDict)) {
+            return $this->_propDict["supportsOemConfig"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the supportsOemConfig
+    * Whether this app supports OEMConfig policy.
+    *
+    * @param bool $val The supportsOemConfig
+    *
+    * @return AndroidManagedStoreApp
+    */
+    public function setSupportsOemConfig($val)
+    {
+        $this->_propDict["supportsOemConfig"] = boolval($val);
         return $this;
     }
     

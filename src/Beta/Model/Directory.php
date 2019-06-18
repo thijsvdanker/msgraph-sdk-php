@@ -29,6 +29,7 @@ class Directory extends Entity
 
      /** 
      * Gets the deletedItems
+    * Recently deleted items. Read-only. Nullable.
      *
      * @return array The deletedItems
      */
@@ -43,6 +44,7 @@ class Directory extends Entity
     
     /** 
     * Sets the deletedItems
+    * Recently deleted items. Read-only. Nullable.
     *
     * @param DirectoryObject $val The deletedItems
     *
@@ -51,6 +53,34 @@ class Directory extends Entity
     public function setDeletedItems($val)
     {
 		$this->_propDict["deletedItems"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the featureRolloutPolicies
+     *
+     * @return array The featureRolloutPolicies
+     */
+    public function getFeatureRolloutPolicies()
+    {
+        if (array_key_exists("featureRolloutPolicies", $this->_propDict)) {
+           return $this->_propDict["featureRolloutPolicies"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the featureRolloutPolicies
+    *
+    * @param FeatureRolloutPolicy $val The featureRolloutPolicies
+    *
+    * @return Directory
+    */
+    public function setFeatureRolloutPolicies($val)
+    {
+		$this->_propDict["featureRolloutPolicies"] = $val;
         return $this;
     }
     

@@ -28,6 +28,7 @@ class DeviceConfiguration extends Entity
 {
     /**
     * Gets the lastModifiedDateTime
+    * DateTime the object was last modified.
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -46,6 +47,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the lastModifiedDateTime
+    * DateTime the object was last modified.
     *
     * @param \DateTime $val The lastModifiedDateTime
     *
@@ -59,6 +61,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the roleScopeTagIds
+    * List of Scope Tags for this Entity instance.
     *
     * @return string The roleScopeTagIds
     */
@@ -73,6 +76,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the roleScopeTagIds
+    * List of Scope Tags for this Entity instance.
     *
     * @param string $val The roleScopeTagIds
     *
@@ -86,6 +90,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the supportsScopeTags
+    * Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only.
     *
     * @return bool The supportsScopeTags
     */
@@ -100,6 +105,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the supportsScopeTags
+    * Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only.
     *
     * @param bool $val The supportsScopeTags
     *
@@ -113,6 +119,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the createdDateTime
+    * DateTime the object was created.
     *
     * @return \DateTime The createdDateTime
     */
@@ -131,6 +138,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the createdDateTime
+    * DateTime the object was created.
     *
     * @param \DateTime $val The createdDateTime
     *
@@ -144,6 +152,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the description
+    * Admin provided description of the Device Configuration.
     *
     * @return string The description
     */
@@ -158,6 +167,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the description
+    * Admin provided description of the Device Configuration.
     *
     * @param string $val The description
     *
@@ -171,6 +181,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the displayName
+    * Admin provided name of the device configuration.
     *
     * @return string The displayName
     */
@@ -185,6 +196,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the displayName
+    * Admin provided name of the device configuration.
     *
     * @param string $val The displayName
     *
@@ -198,6 +210,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the version
+    * Version of the device configuration.
     *
     * @return int The version
     */
@@ -212,6 +225,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the version
+    * Version of the device configuration.
     *
     * @param int $val The version
     *
@@ -226,6 +240,7 @@ class DeviceConfiguration extends Entity
 
      /** 
      * Gets the groupAssignments
+    * The list of group assignments for the device configuration profile.
      *
      * @return array The groupAssignments
      */
@@ -240,6 +255,7 @@ class DeviceConfiguration extends Entity
     
     /** 
     * Sets the groupAssignments
+    * The list of group assignments for the device configuration profile.
     *
     * @param DeviceConfigurationGroupAssignment $val The groupAssignments
     *
@@ -254,6 +270,7 @@ class DeviceConfiguration extends Entity
 
      /** 
      * Gets the assignments
+    * The list of assignments for the device configuration profile.
      *
      * @return array The assignments
      */
@@ -268,6 +285,7 @@ class DeviceConfiguration extends Entity
     
     /** 
     * Sets the assignments
+    * The list of assignments for the device configuration profile.
     *
     * @param DeviceConfigurationAssignment $val The assignments
     *
@@ -282,6 +300,7 @@ class DeviceConfiguration extends Entity
 
      /** 
      * Gets the deviceStatuses
+    * Device configuration installation status by device.
      *
      * @return array The deviceStatuses
      */
@@ -296,6 +315,7 @@ class DeviceConfiguration extends Entity
     
     /** 
     * Sets the deviceStatuses
+    * Device configuration installation status by device.
     *
     * @param DeviceConfigurationDeviceStatus $val The deviceStatuses
     *
@@ -310,6 +330,7 @@ class DeviceConfiguration extends Entity
 
      /** 
      * Gets the userStatuses
+    * Device configuration installation status by user.
      *
      * @return array The userStatuses
      */
@@ -324,6 +345,7 @@ class DeviceConfiguration extends Entity
     
     /** 
     * Sets the userStatuses
+    * Device configuration installation status by user.
     *
     * @param DeviceConfigurationUserStatus $val The userStatuses
     *
@@ -337,6 +359,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the deviceStatusOverview
+    * Device Configuration devices status overview
     *
     * @return DeviceConfigurationDeviceOverview The deviceStatusOverview
     */
@@ -355,6 +378,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the deviceStatusOverview
+    * Device Configuration devices status overview
     *
     * @param DeviceConfigurationDeviceOverview $val The deviceStatusOverview
     *
@@ -368,6 +392,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Gets the userStatusOverview
+    * Device Configuration users status overview
     *
     * @return DeviceConfigurationUserOverview The userStatusOverview
     */
@@ -386,6 +411,7 @@ class DeviceConfiguration extends Entity
     
     /**
     * Sets the userStatusOverview
+    * Device Configuration users status overview
     *
     * @param DeviceConfigurationUserOverview $val The userStatusOverview
     *
@@ -400,6 +426,7 @@ class DeviceConfiguration extends Entity
 
      /** 
      * Gets the deviceSettingStateSummaries
+    * Device Configuration Setting State Device Summary
      *
      * @return array The deviceSettingStateSummaries
      */
@@ -414,6 +441,7 @@ class DeviceConfiguration extends Entity
     
     /** 
     * Sets the deviceSettingStateSummaries
+    * Device Configuration Setting State Device Summary
     *
     * @param SettingStateDeviceSummary $val The deviceSettingStateSummaries
     *

@@ -28,6 +28,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
 {
     /**
     * Gets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage. Valid values 1 to 99
     *
     * @return int The renewalThresholdPercentage
     */
@@ -42,6 +43,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Sets the renewalThresholdPercentage
+    * Certificate renewal threshold percentage. Valid values 1 to 99
     *
     * @param int $val The renewalThresholdPercentage
     *
@@ -55,6 +57,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Gets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @return AppleSubjectNameFormat The subjectNameFormat
     */
@@ -73,6 +76,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Sets the subjectNameFormat
+    * Certificate Subject Name Format.
     *
     * @param AppleSubjectNameFormat $val The subjectNameFormat
     *
@@ -86,6 +90,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Gets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name type.
     *
     * @return SubjectAlternativeNameType The subjectAlternativeNameType
     */
@@ -104,6 +109,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Sets the subjectAlternativeNameType
+    * Certificate Subject Alternative Name type.
     *
     * @param SubjectAlternativeNameType $val The subjectAlternativeNameType
     *
@@ -117,6 +123,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Gets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period.
     *
     * @return int The certificateValidityPeriodValue
     */
@@ -131,6 +138,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Sets the certificateValidityPeriodValue
+    * Value for the Certificate Validity Period.
     *
     * @param int $val The certificateValidityPeriodValue
     *
@@ -144,6 +152,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Gets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @return CertificateValidityPeriodScale The certificateValidityPeriodScale
     */
@@ -162,6 +171,7 @@ class IosCertificateProfileBase extends IosCertificateProfile
     
     /**
     * Sets the certificateValidityPeriodScale
+    * Scale for the Certificate Validity Period.
     *
     * @param CertificateValidityPeriodScale $val The certificateValidityPeriodScale
     *

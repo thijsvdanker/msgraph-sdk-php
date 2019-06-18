@@ -27,6 +27,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 {
     /**
     * Gets the userId
+    * UserId associated with the action.
     *
     * @return string The userId
     */
@@ -41,6 +42,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the userId
+    * UserId associated with the action.
     *
     * @param string $val The value of the userId
     *
@@ -53,6 +55,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
     }
     /**
     * Gets the managedDeviceId
+    * DeviceId associated with the action.
     *
     * @return string The managedDeviceId
     */
@@ -67,6 +70,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the managedDeviceId
+    * DeviceId associated with the action.
     *
     * @param string $val The value of the managedDeviceId
     *
@@ -79,6 +83,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
     }
     /**
     * Gets the totalLicensesCount
+    * A count of the number of licenses for which revoke was attempted.
     *
     * @return int The totalLicensesCount
     */
@@ -93,6 +98,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the totalLicensesCount
+    * A count of the number of licenses for which revoke was attempted.
     *
     * @param int $val The value of the totalLicensesCount
     *
@@ -105,6 +111,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
     }
     /**
     * Gets the failedLicensesCount
+    * A count of the number of licenses for which revoke failed.
     *
     * @return int The failedLicensesCount
     */
@@ -119,6 +126,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the failedLicensesCount
+    * A count of the number of licenses for which revoke failed.
     *
     * @param int $val The value of the failedLicensesCount
     *
@@ -132,6 +140,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Gets the actionFailureReason
+    * The reason for the revoke licenses action failure.
     *
     * @return VppTokenActionFailureReason The actionFailureReason
     */
@@ -150,6 +159,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the actionFailureReason
+    * The reason for the revoke licenses action failure.
     *
     * @param VppTokenActionFailureReason $val The value to assign to the actionFailureReason
     *
@@ -162,6 +172,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
     }
     /**
     * Gets the actionName
+    * Action name
     *
     * @return string The actionName
     */
@@ -176,6 +187,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the actionName
+    * Action name
     *
     * @param string $val The value of the actionName
     *
@@ -189,6 +201,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Gets the actionState
+    * State of the action
     *
     * @return ActionState The actionState
     */
@@ -207,6 +220,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the actionState
+    * State of the action
     *
     * @param ActionState $val The value to assign to the actionState
     *
@@ -220,6 +234,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Gets the startDateTime
+    * Time the action was initiated
     *
     * @return \DateTime The startDateTime
     */
@@ -238,6 +253,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the startDateTime
+    * Time the action was initiated
     *
     * @param \DateTime $val The value to assign to the startDateTime
     *
@@ -251,6 +267,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Gets the lastUpdatedDateTime
+    * Time the action state was last updated
     *
     * @return \DateTime The lastUpdatedDateTime
     */
@@ -269,6 +286,7 @@ class IosVppAppRevokeLicensesActionResult extends Entity
 
     /**
     * Sets the lastUpdatedDateTime
+    * Time the action state was last updated
     *
     * @param \DateTime $val The value to assign to the lastUpdatedDateTime
     *

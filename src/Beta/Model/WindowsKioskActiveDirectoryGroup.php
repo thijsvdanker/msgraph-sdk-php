@@ -27,6 +27,7 @@ class WindowsKioskActiveDirectoryGroup extends WindowsKioskUser
 {
     /**
     * Gets the groupName
+    * The name of the AD group that will be locked to this kiosk configuration
     *
     * @return string The groupName
     */
@@ -41,6 +42,7 @@ class WindowsKioskActiveDirectoryGroup extends WindowsKioskUser
 
     /**
     * Sets the groupName
+    * The name of the AD group that will be locked to this kiosk configuration
     *
     * @param string $val The value of the groupName
     *

@@ -28,6 +28,7 @@ class Site extends BaseItem
 {
     /**
     * Gets the displayName
+    * The full title for the site. Read-only.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class Site extends BaseItem
     
     /**
     * Sets the displayName
+    * The full title for the site. Read-only.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class Site extends BaseItem
     
     /**
     * Gets the root
+    * If present, indicates that this is the root site in the site collection. Read-only.
     *
     * @return Root The root
     */
@@ -73,6 +76,7 @@ class Site extends BaseItem
     
     /**
     * Sets the root
+    * If present, indicates that this is the root site in the site collection. Read-only.
     *
     * @param Root $val The root
     *
@@ -86,6 +90,7 @@ class Site extends BaseItem
     
     /**
     * Gets the sharepointIds
+    * Returns identifiers useful for SharePoint REST compatibility. Read-only.
     *
     * @return SharepointIds The sharepointIds
     */
@@ -104,6 +109,7 @@ class Site extends BaseItem
     
     /**
     * Sets the sharepointIds
+    * Returns identifiers useful for SharePoint REST compatibility. Read-only.
     *
     * @param SharepointIds $val The sharepointIds
     *
@@ -117,6 +123,7 @@ class Site extends BaseItem
     
     /**
     * Gets the siteCollection
+    * Provides details about the site's site collection. Available only on the root site. Read-only.
     *
     * @return SiteCollection The siteCollection
     */
@@ -135,6 +142,7 @@ class Site extends BaseItem
     
     /**
     * Sets the siteCollection
+    * Provides details about the site's site collection. Available only on the root site. Read-only.
     *
     * @param SiteCollection $val The siteCollection
     *
@@ -146,9 +154,43 @@ class Site extends BaseItem
         return $this;
     }
     
+    /**
+    * Gets the analytics
+    * Analytics about the view activities that took place in this site.
+    *
+    * @return ItemAnalytics The analytics
+    */
+    public function getAnalytics()
+    {
+        if (array_key_exists("analytics", $this->_propDict)) {
+            if (is_a($this->_propDict["analytics"], "Microsoft\Graph\Beta\Model\ItemAnalytics")) {
+                return $this->_propDict["analytics"];
+            } else {
+                $this->_propDict["analytics"] = new ItemAnalytics($this->_propDict["analytics"]);
+                return $this->_propDict["analytics"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the analytics
+    * Analytics about the view activities that took place in this site.
+    *
+    * @param ItemAnalytics $val The analytics
+    *
+    * @return Site
+    */
+    public function setAnalytics($val)
+    {
+        $this->_propDict["analytics"] = $val;
+        return $this;
+    }
+    
 
      /** 
      * Gets the columns
+    * The collection of column definitions reusable across lists under this site.
      *
      * @return array The columns
      */
@@ -163,6 +205,7 @@ class Site extends BaseItem
     
     /** 
     * Sets the columns
+    * The collection of column definitions reusable across lists under this site.
     *
     * @param ColumnDefinition $val The columns
     *
@@ -177,6 +220,7 @@ class Site extends BaseItem
 
      /** 
      * Gets the contentTypes
+    * The collection of content types defined for this site.
      *
      * @return array The contentTypes
      */
@@ -191,6 +235,7 @@ class Site extends BaseItem
     
     /** 
     * Sets the contentTypes
+    * The collection of content types defined for this site.
     *
     * @param ContentType $val The contentTypes
     *
@@ -204,6 +249,7 @@ class Site extends BaseItem
     
     /**
     * Gets the drive
+    * The default drive (document library) for this site.
     *
     * @return Drive The drive
     */
@@ -222,6 +268,7 @@ class Site extends BaseItem
     
     /**
     * Sets the drive
+    * The default drive (document library) for this site.
     *
     * @param Drive $val The drive
     *
@@ -236,6 +283,7 @@ class Site extends BaseItem
 
      /** 
      * Gets the drives
+    * The collection of drives (document libraries) under this site.
      *
      * @return array The drives
      */
@@ -250,6 +298,7 @@ class Site extends BaseItem
     
     /** 
     * Sets the drives
+    * The collection of drives (document libraries) under this site.
     *
     * @param Drive $val The drives
     *
@@ -264,6 +313,7 @@ class Site extends BaseItem
 
      /** 
      * Gets the items
+    * Used to address any item contained in this site. This collection cannot be enumerated.
      *
      * @return array The items
      */
@@ -278,6 +328,7 @@ class Site extends BaseItem
     
     /** 
     * Sets the items
+    * Used to address any item contained in this site. This collection cannot be enumerated.
     *
     * @param BaseItem $val The items
     *
@@ -292,6 +343,7 @@ class Site extends BaseItem
 
      /** 
      * Gets the lists
+    * The collection of lists under this site.
      *
      * @return array The lists
      */
@@ -306,6 +358,7 @@ class Site extends BaseItem
     
     /** 
     * Sets the lists
+    * The collection of lists under this site.
     *
     * @param GraphList $val The lists
     *
@@ -319,7 +372,36 @@ class Site extends BaseItem
     
 
      /** 
+     * Gets the pages
+     *
+     * @return array The pages
+     */
+    public function getPages()
+    {
+        if (array_key_exists("pages", $this->_propDict)) {
+           return $this->_propDict["pages"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the pages
+    *
+    * @param SitePage $val The pages
+    *
+    * @return Site
+    */
+    public function setPages($val)
+    {
+		$this->_propDict["pages"] = $val;
+        return $this;
+    }
+    
+
+     /** 
      * Gets the sites
+    * The collection of the sub-sites under this site.
      *
      * @return array The sites
      */
@@ -334,6 +416,7 @@ class Site extends BaseItem
     
     /** 
     * Sets the sites
+    * The collection of the sub-sites under this site.
     *
     * @param Site $val The sites
     *
@@ -347,6 +430,7 @@ class Site extends BaseItem
     
     /**
     * Gets the onenote
+    * Calls the OneNote service for notebook related operations.
     *
     * @return Onenote The onenote
     */
@@ -365,6 +449,7 @@ class Site extends BaseItem
     
     /**
     * Sets the onenote
+    * Calls the OneNote service for notebook related operations.
     *
     * @param Onenote $val The onenote
     *

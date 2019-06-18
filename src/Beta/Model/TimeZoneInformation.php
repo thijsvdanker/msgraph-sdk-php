@@ -27,6 +27,7 @@ class TimeZoneInformation extends Entity
 {
     /**
     * Gets the alias
+    * An identifier for the time zone.
     *
     * @return string The alias
     */
@@ -41,6 +42,7 @@ class TimeZoneInformation extends Entity
 
     /**
     * Sets the alias
+    * An identifier for the time zone.
     *
     * @param string $val The value of the alias
     *
@@ -53,6 +55,7 @@ class TimeZoneInformation extends Entity
     }
     /**
     * Gets the displayName
+    * A display string that represents the time zone.
     *
     * @return string The displayName
     */
@@ -67,6 +70,7 @@ class TimeZoneInformation extends Entity
 
     /**
     * Sets the displayName
+    * A display string that represents the time zone.
     *
     * @param string $val The value of the displayName
     *

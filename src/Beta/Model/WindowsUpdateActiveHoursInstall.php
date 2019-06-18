@@ -25,9 +25,19 @@ namespace Microsoft\Graph\Beta\Model;
 */
 class WindowsUpdateActiveHoursInstall extends WindowsUpdateInstallScheduleType
 {
+    /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.windowsUpdateActiveHoursInstall");
+    }
+
 
     /**
     * Gets the activeHoursStart
+    * Active Hours Start
     *
     * @return TimeOfDay The activeHoursStart
     */
@@ -46,6 +56,7 @@ class WindowsUpdateActiveHoursInstall extends WindowsUpdateInstallScheduleType
 
     /**
     * Sets the activeHoursStart
+    * Active Hours Start
     *
     * @param TimeOfDay $val The value to assign to the activeHoursStart
     *
@@ -59,6 +70,7 @@ class WindowsUpdateActiveHoursInstall extends WindowsUpdateInstallScheduleType
 
     /**
     * Gets the activeHoursEnd
+    * Active Hours End
     *
     * @return TimeOfDay The activeHoursEnd
     */
@@ -77,6 +89,7 @@ class WindowsUpdateActiveHoursInstall extends WindowsUpdateInstallScheduleType
 
     /**
     * Sets the activeHoursEnd
+    * Active Hours End
     *
     * @param TimeOfDay $val The value to assign to the activeHoursEnd
     *

@@ -35,4 +35,6 @@ class TeamsAsyncOperationType extends Enum
     const CLONE_TEAM = "cloneTeam";
     const ARCHIVE_TEAM = "archiveTeam";
     const UNARCHIVE_TEAM = "unarchiveTeam";
+    const CREATE_TEAM = "createTeam";
+    const UNKNOWN_FUTURE_VALUE = "unknownFutureValue";
 }

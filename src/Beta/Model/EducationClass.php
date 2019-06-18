@@ -28,6 +28,7 @@ class EducationClass extends Entity
 {
     /**
     * Gets the displayName
+    * Name of the class.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the displayName
+    * Name of the class.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the mailNickname
+    * Mail name for sending email to all members, if this is enabled.
     *
     * @return string The mailNickname
     */
@@ -69,6 +72,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the mailNickname
+    * Mail name for sending email to all members, if this is enabled.
     *
     * @param string $val The mailNickname
     *
@@ -82,6 +86,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the description
+    * Description of the class.
     *
     * @return string The description
     */
@@ -96,6 +101,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the description
+    * Description of the class.
     *
     * @param string $val The description
     *
@@ -109,6 +115,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the createdBy
+    * Entity who created the class
     *
     * @return IdentitySet The createdBy
     */
@@ -127,6 +134,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the createdBy
+    * Entity who created the class
     *
     * @param IdentitySet $val The createdBy
     *
@@ -140,6 +148,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the classCode
+    * Class code used by the school to identify the class.
     *
     * @return string The classCode
     */
@@ -154,6 +163,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the classCode
+    * Class code used by the school to identify the class.
     *
     * @param string $val The classCode
     *
@@ -167,6 +177,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the externalName
+    * Name of the class in the syncing system.
     *
     * @return string The externalName
     */
@@ -181,6 +192,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the externalName
+    * Name of the class in the syncing system.
     *
     * @param string $val The externalName
     *
@@ -194,6 +206,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the externalId
+    * ID of the class from the syncing system.
     *
     * @return string The externalId
     */
@@ -208,6 +221,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the externalId
+    * ID of the class from the syncing system.
     *
     * @param string $val The externalId
     *
@@ -221,6 +235,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the externalSource
+    * How this class was created. The possible values are: sis, manual, unknownFutureValue.
     *
     * @return EducationExternalSource The externalSource
     */
@@ -239,6 +254,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the externalSource
+    * How this class was created. The possible values are: sis, manual, unknownFutureValue.
     *
     * @param EducationExternalSource $val The externalSource
     *
@@ -252,6 +268,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the term
+    * Term for this class.
     *
     * @return EducationTerm The term
     */
@@ -270,6 +287,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the term
+    * Term for this class.
     *
     * @param EducationTerm $val The term
     *
@@ -281,9 +299,41 @@ class EducationClass extends Entity
         return $this;
     }
     
+    /**
+    * Gets the course
+    *
+    * @return EducationCourse The course
+    */
+    public function getCourse()
+    {
+        if (array_key_exists("course", $this->_propDict)) {
+            if (is_a($this->_propDict["course"], "Microsoft\Graph\Beta\Model\EducationCourse")) {
+                return $this->_propDict["course"];
+            } else {
+                $this->_propDict["course"] = new EducationCourse($this->_propDict["course"]);
+                return $this->_propDict["course"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the course
+    *
+    * @param EducationCourse $val The course
+    *
+    * @return EducationClass
+    */
+    public function setCourse($val)
+    {
+        $this->_propDict["course"] = $val;
+        return $this;
+    }
+    
 
      /** 
      * Gets the schools
+    * All schools that this class is associated with. Nullable.
      *
      * @return array The schools
      */
@@ -298,6 +348,7 @@ class EducationClass extends Entity
     
     /** 
     * Sets the schools
+    * All schools that this class is associated with. Nullable.
     *
     * @param EducationSchool $val The schools
     *
@@ -312,6 +363,7 @@ class EducationClass extends Entity
 
      /** 
      * Gets the members
+    * All users in the class. Nullable.
      *
      * @return array The members
      */
@@ -326,6 +378,7 @@ class EducationClass extends Entity
     
     /** 
     * Sets the members
+    * All users in the class. Nullable.
     *
     * @param EducationUser $val The members
     *
@@ -340,6 +393,7 @@ class EducationClass extends Entity
 
      /** 
      * Gets the teachers
+    * All teachers in the class. Nullable.
      *
      * @return array The teachers
      */
@@ -354,6 +408,7 @@ class EducationClass extends Entity
     
     /** 
     * Sets the teachers
+    * All teachers in the class. Nullable.
     *
     * @param EducationUser $val The teachers
     *
@@ -367,6 +422,7 @@ class EducationClass extends Entity
     
     /**
     * Gets the group
+    * The directory group corresponding to this class.
     *
     * @return Group The group
     */
@@ -385,6 +441,7 @@ class EducationClass extends Entity
     
     /**
     * Sets the group
+    * The directory group corresponding to this class.
     *
     * @param Group $val The group
     *
@@ -421,6 +478,34 @@ class EducationClass extends Entity
     public function setAssignments($val)
     {
 		$this->_propDict["assignments"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the assignmentCategories
+     *
+     * @return array The assignmentCategories
+     */
+    public function getAssignmentCategories()
+    {
+        if (array_key_exists("assignmentCategories", $this->_propDict)) {
+           return $this->_propDict["assignmentCategories"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the assignmentCategories
+    *
+    * @param EducationCategory $val The assignmentCategories
+    *
+    * @return EducationClass
+    */
+    public function setAssignmentCategories($val)
+    {
+		$this->_propDict["assignmentCategories"] = $val;
         return $this;
     }
     

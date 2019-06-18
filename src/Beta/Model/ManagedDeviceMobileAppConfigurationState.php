@@ -28,6 +28,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
 {
     /**
     * Gets the displayName
+    * The name of the policy for this policyBase
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the displayName
+    * The name of the policy for this policyBase
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Gets the version
+    * The version of the policy
     *
     * @return int The version
     */
@@ -69,6 +72,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the version
+    * The version of the policy
     *
     * @param int $val The version
     *
@@ -82,6 +86,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Gets the platformType
+    * Platform type that the policy applies to
     *
     * @return PolicyPlatformType The platformType
     */
@@ -100,6 +105,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the platformType
+    * Platform type that the policy applies to
     *
     * @param PolicyPlatformType $val The platformType
     *
@@ -113,6 +119,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Gets the state
+    * The compliance state of the policy
     *
     * @return ComplianceStatus The state
     */
@@ -131,6 +138,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the state
+    * The compliance state of the policy
     *
     * @param ComplianceStatus $val The state
     *
@@ -144,6 +152,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Gets the settingCount
+    * Count of how many setting a policy holds
     *
     * @return int The settingCount
     */
@@ -158,6 +167,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the settingCount
+    * Count of how many setting a policy holds
     *
     * @param int $val The settingCount
     *
@@ -171,6 +181,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Gets the userId
+    * User unique identifier, must be Guid
     *
     * @return string The userId
     */
@@ -185,6 +196,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the userId
+    * User unique identifier, must be Guid
     *
     * @param string $val The userId
     *
@@ -198,6 +210,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Gets the userPrincipalName
+    * User Principal Name
     *
     * @return string The userPrincipalName
     */
@@ -212,6 +225,7 @@ class ManagedDeviceMobileAppConfigurationState extends Entity
     
     /**
     * Sets the userPrincipalName
+    * User Principal Name
     *
     * @param string $val The userPrincipalName
     *

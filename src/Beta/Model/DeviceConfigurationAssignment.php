@@ -28,6 +28,7 @@ class DeviceConfigurationAssignment extends Entity
 {
     /**
     * Gets the target
+    * The assignment target for the device configuration.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class DeviceConfigurationAssignment extends Entity
     
     /**
     * Sets the target
+    * The assignment target for the device configuration.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

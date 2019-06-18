@@ -28,6 +28,7 @@ class EmbeddedSIMActivationCodePoolAssignment extends Entity
 {
     /**
     * Gets the target
+    * The type of groups targeted by the embedded SIM activation code pool.
     *
     * @return DeviceAndAppManagementAssignmentTarget The target
     */
@@ -46,6 +47,7 @@ class EmbeddedSIMActivationCodePoolAssignment extends Entity
     
     /**
     * Sets the target
+    * The type of groups targeted by the embedded SIM activation code pool.
     *
     * @param DeviceAndAppManagementAssignmentTarget $val The target
     *

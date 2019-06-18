@@ -27,6 +27,7 @@ class DateTimeTimeZone extends Entity
 {
     /**
     * Gets the dateTime
+    * A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     *
     * @return string The dateTime
     */
@@ -41,6 +42,7 @@ class DateTimeTimeZone extends Entity
 
     /**
     * Sets the dateTime
+    * A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
     *
     * @param string $val The value of the dateTime
     *
@@ -53,6 +55,7 @@ class DateTimeTimeZone extends Entity
     }
     /**
     * Gets the timeZone
+    * One of the following time zone names.
     *
     * @return string The timeZone
     */
@@ -67,6 +70,7 @@ class DateTimeTimeZone extends Entity
 
     /**
     * Sets the timeZone
+    * One of the following time zone names.
     *
     * @param string $val The value of the timeZone
     *

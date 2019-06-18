@@ -28,6 +28,7 @@ class User extends DirectoryObject
 {
     /**
     * Gets the accountEnabled
+    * true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter.
     *
     * @return bool The accountEnabled
     */
@@ -42,6 +43,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the accountEnabled
+    * true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter.
     *
     * @param bool $val The accountEnabled
     *
@@ -55,6 +57,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the ageGroup
+    * Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information.
     *
     * @return string The ageGroup
     */
@@ -69,6 +72,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the ageGroup
+    * Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information.
     *
     * @param string $val The ageGroup
     *
@@ -83,6 +87,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the assignedLicenses
+    * The licenses that are assigned to the user. Not nullable.
      *
      * @return array The assignedLicenses
      */
@@ -97,6 +102,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the assignedLicenses
+    * The licenses that are assigned to the user. Not nullable.
     *
     * @param AssignedLicense $val The assignedLicenses
     *
@@ -111,6 +117,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the assignedPlans
+    * The plans that are assigned to the user. Read-only. Not nullable.
      *
      * @return array The assignedPlans
      */
@@ -125,6 +132,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the assignedPlans
+    * The plans that are assigned to the user. Read-only. Not nullable.
     *
     * @param AssignedPlan $val The assignedPlans
     *
@@ -138,6 +146,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the businessPhones
+    * The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.
     *
     * @return string The businessPhones
     */
@@ -152,6 +161,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the businessPhones
+    * The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property.
     *
     * @param string $val The businessPhones
     *
@@ -165,6 +175,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the city
+    * The city in which the user is located. Supports $filter.
     *
     * @return string The city
     */
@@ -179,6 +190,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the city
+    * The city in which the user is located. Supports $filter.
     *
     * @param string $val The city
     *
@@ -192,6 +204,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the companyName
+    * The company name which the user is associated. This property can be useful for describing the company that an external user comes from.
     *
     * @return string The companyName
     */
@@ -206,6 +219,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the companyName
+    * The company name which the user is associated. This property can be useful for describing the company that an external user comes from.
     *
     * @param string $val The companyName
     *
@@ -219,6 +233,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the consentProvidedForMinor
+    * Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information.
     *
     * @return string The consentProvidedForMinor
     */
@@ -233,6 +248,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the consentProvidedForMinor
+    * Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information.
     *
     * @param string $val The consentProvidedForMinor
     *
@@ -246,6 +262,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the country
+    * The country/region in which the user is located; for example, 'US' or 'UK'. Supports $filter.
     *
     * @return string The country
     */
@@ -260,6 +277,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the country
+    * The country/region in which the user is located; for example, 'US' or 'UK'. Supports $filter.
     *
     * @param string $val The country
     *
@@ -272,7 +290,41 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the createdDateTime
+    * The created date of the user object.
+    *
+    * @return \DateTime The createdDateTime
+    */
+    public function getCreatedDateTime()
+    {
+        if (array_key_exists("createdDateTime", $this->_propDict)) {
+            if (is_a($this->_propDict["createdDateTime"], "\DateTime")) {
+                return $this->_propDict["createdDateTime"];
+            } else {
+                $this->_propDict["createdDateTime"] = new \DateTime($this->_propDict["createdDateTime"]);
+                return $this->_propDict["createdDateTime"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the createdDateTime
+    * The created date of the user object.
+    *
+    * @param \DateTime $val The createdDateTime
+    *
+    * @return User
+    */
+    public function setCreatedDateTime($val)
+    {
+        $this->_propDict["createdDateTime"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the department
+    * The name for the department in which the user works. Supports $filter.
     *
     * @return string The department
     */
@@ -287,6 +339,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the department
+    * The name for the department in which the user works. Supports $filter.
     *
     * @param string $val The department
     *
@@ -328,6 +381,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the displayName
+    * The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.
     *
     * @return string The displayName
     */
@@ -342,6 +396,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the displayName
+    * The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.
     *
     * @param string $val The displayName
     *
@@ -355,6 +410,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the employeeId
+    * The employee identifier assigned to the user by the organization. Supports $filter.
     *
     * @return string The employeeId
     */
@@ -369,6 +425,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the employeeId
+    * The employee identifier assigned to the user by the organization. Supports $filter.
     *
     * @param string $val The employeeId
     *
@@ -381,7 +438,37 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the faxNumber
+    * The fax number of the user.
+    *
+    * @return string The faxNumber
+    */
+    public function getFaxNumber()
+    {
+        if (array_key_exists("faxNumber", $this->_propDict)) {
+            return $this->_propDict["faxNumber"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the faxNumber
+    * The fax number of the user.
+    *
+    * @param string $val The faxNumber
+    *
+    * @return User
+    */
+    public function setFaxNumber($val)
+    {
+        $this->_propDict["faxNumber"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the givenName
+    * The given name (first name) of the user. Supports $filter.
     *
     * @return string The givenName
     */
@@ -396,6 +483,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the givenName
+    * The given name (first name) of the user. Supports $filter.
     *
     * @param string $val The givenName
     *
@@ -409,6 +497,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the imAddresses
+    * The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.
     *
     * @return string The imAddresses
     */
@@ -423,6 +512,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the imAddresses
+    * The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.
     *
     * @param string $val The imAddresses
     *
@@ -436,6 +526,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the isResourceAccount
+    * true if the user is a resource account; otherwise, false. Null value should be considered false.
     *
     * @return bool The isResourceAccount
     */
@@ -450,6 +541,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the isResourceAccount
+    * true if the user is a resource account; otherwise, false. Null value should be considered false.
     *
     * @param bool $val The isResourceAccount
     *
@@ -463,6 +555,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the jobTitle
+    * The user’s job title. Supports $filter.
     *
     * @return string The jobTitle
     */
@@ -477,6 +570,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the jobTitle
+    * The user’s job title. Supports $filter.
     *
     * @param string $val The jobTitle
     *
@@ -490,6 +584,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the legalAgeGroupClassification
+    * Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information.)
     *
     * @return string The legalAgeGroupClassification
     */
@@ -504,6 +599,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the legalAgeGroupClassification
+    * Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information.)
     *
     * @param string $val The legalAgeGroupClassification
     *
@@ -515,8 +611,39 @@ class User extends DirectoryObject
         return $this;
     }
     
+
+     /** 
+     * Gets the licenseAssignmentStates
+    * State of license assignments for this user. Read-only.
+     *
+     * @return array The licenseAssignmentStates
+     */
+    public function getLicenseAssignmentStates()
+    {
+        if (array_key_exists("licenseAssignmentStates", $this->_propDict)) {
+           return $this->_propDict["licenseAssignmentStates"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the licenseAssignmentStates
+    * State of license assignments for this user. Read-only.
+    *
+    * @param LicenseAssignmentState $val The licenseAssignmentStates
+    *
+    * @return User
+    */
+    public function setLicenseAssignmentStates($val)
+    {
+		$this->_propDict["licenseAssignmentStates"] = $val;
+        return $this;
+    }
+    
     /**
     * Gets the mail
+    * The SMTP address for the user, for example, 'jeff@contoso.onmicrosoft.com'. Read-Only. Supports $filter.
     *
     * @return string The mail
     */
@@ -531,6 +658,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the mail
+    * The SMTP address for the user, for example, 'jeff@contoso.onmicrosoft.com'. Read-Only. Supports $filter.
     *
     * @param string $val The mail
     *
@@ -544,6 +672,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the mailNickname
+    * The mail alias for the user. This property must be specified when a user is created. Supports $filter.
     *
     * @return string The mailNickname
     */
@@ -558,6 +687,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the mailNickname
+    * The mail alias for the user. This property must be specified when a user is created. Supports $filter.
     *
     * @param string $val The mailNickname
     *
@@ -571,6 +701,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the mobilePhone
+    * The primary cellular telephone number for the user.
     *
     * @return string The mobilePhone
     */
@@ -585,6 +716,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the mobilePhone
+    * The primary cellular telephone number for the user.
     *
     * @param string $val The mobilePhone
     *
@@ -597,7 +729,37 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the onPremisesDistinguishedName
+    * Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
+    *
+    * @return string The onPremisesDistinguishedName
+    */
+    public function getOnPremisesDistinguishedName()
+    {
+        if (array_key_exists("onPremisesDistinguishedName", $this->_propDict)) {
+            return $this->_propDict["onPremisesDistinguishedName"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the onPremisesDistinguishedName
+    * Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
+    *
+    * @param string $val The onPremisesDistinguishedName
+    *
+    * @return User
+    */
+    public function setOnPremisesDistinguishedName($val)
+    {
+        $this->_propDict["onPremisesDistinguishedName"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the onPremisesExtensionAttributes
+    * Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an onPremisesSyncEnabled user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.
     *
     * @return OnPremisesExtensionAttributes The onPremisesExtensionAttributes
     */
@@ -616,6 +778,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesExtensionAttributes
+    * Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an onPremisesSyncEnabled user, this set of properties is mastered on-premises and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.
     *
     * @param OnPremisesExtensionAttributes $val The onPremisesExtensionAttributes
     *
@@ -629,6 +792,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesImmutableId
+    * This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s userPrincipalName (UPN) property. Important: The $ and _ characters cannot be used when specifying this property. Supports $filter.
     *
     * @return string The onPremisesImmutableId
     */
@@ -643,6 +807,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesImmutableId
+    * This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s userPrincipalName (UPN) property. Important: The $ and _ characters cannot be used when specifying this property. Supports $filter.
     *
     * @param string $val The onPremisesImmutableId
     *
@@ -656,6 +821,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesLastSyncDateTime
+    * Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     *
     * @return \DateTime The onPremisesLastSyncDateTime
     */
@@ -674,6 +840,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesLastSyncDateTime
+    * Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.
     *
     * @param \DateTime $val The onPremisesLastSyncDateTime
     *
@@ -688,6 +855,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the onPremisesProvisioningErrors
+    * Errors when using Microsoft synchronization product during provisioning.
      *
      * @return array The onPremisesProvisioningErrors
      */
@@ -702,6 +870,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the onPremisesProvisioningErrors
+    * Errors when using Microsoft synchronization product during provisioning.
     *
     * @param OnPremisesProvisioningError $val The onPremisesProvisioningErrors
     *
@@ -715,6 +884,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesSecurityIdentifier
+    * Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.
     *
     * @return string The onPremisesSecurityIdentifier
     */
@@ -729,6 +899,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesSecurityIdentifier
+    * Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only.
     *
     * @param string $val The onPremisesSecurityIdentifier
     *
@@ -742,6 +913,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesSyncEnabled
+    * true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only
     *
     * @return bool The onPremisesSyncEnabled
     */
@@ -756,6 +928,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesSyncEnabled
+    * true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only
     *
     * @param bool $val The onPremisesSyncEnabled
     *
@@ -769,6 +942,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesDomainName
+    * Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     *
     * @return string The onPremisesDomainName
     */
@@ -783,6 +957,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesDomainName
+    * Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     *
     * @param string $val The onPremisesDomainName
     *
@@ -796,6 +971,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesSamAccountName
+    * Contains the on-premises samAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     *
     * @return string The onPremisesSamAccountName
     */
@@ -810,6 +986,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesSamAccountName
+    * Contains the on-premises samAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     *
     * @param string $val The onPremisesSamAccountName
     *
@@ -823,6 +1000,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onPremisesUserPrincipalName
+    * Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     *
     * @return string The onPremisesUserPrincipalName
     */
@@ -837,6 +1015,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onPremisesUserPrincipalName
+    * Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     *
     * @param string $val The onPremisesUserPrincipalName
     *
@@ -849,7 +1028,37 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the otherMails
+    * A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com']. Supports $filter.
+    *
+    * @return string The otherMails
+    */
+    public function getOtherMails()
+    {
+        if (array_key_exists("otherMails", $this->_propDict)) {
+            return $this->_propDict["otherMails"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the otherMails
+    * A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com']. Supports $filter.
+    *
+    * @param string $val The otherMails
+    *
+    * @return User
+    */
+    public function setOtherMails($val)
+    {
+        $this->_propDict["otherMails"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the passwordPolicies
+    * Specifies password policies for the user. This value is an enumeration with one possible value being 'DisableStrongPassword', which allows weaker passwords than the default policy to be specified. 'DisablePasswordExpiration' can also be specified. The two may be specified together; for example: 'DisablePasswordExpiration, DisableStrongPassword'.
     *
     * @return string The passwordPolicies
     */
@@ -864,6 +1073,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the passwordPolicies
+    * Specifies password policies for the user. This value is an enumeration with one possible value being 'DisableStrongPassword', which allows weaker passwords than the default policy to be specified. 'DisablePasswordExpiration' can also be specified. The two may be specified together; for example: 'DisablePasswordExpiration, DisableStrongPassword'.
     *
     * @param string $val The passwordPolicies
     *
@@ -877,6 +1087,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the passwordProfile
+    * Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies property. By default, a strong password is required.
     *
     * @return PasswordProfile The passwordProfile
     */
@@ -895,6 +1106,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the passwordProfile
+    * Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the passwordPolicies property. By default, a strong password is required.
     *
     * @param PasswordProfile $val The passwordProfile
     *
@@ -908,6 +1120,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the officeLocation
+    * The office location in the user's place of business.
     *
     * @return string The officeLocation
     */
@@ -922,6 +1135,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the officeLocation
+    * The office location in the user's place of business.
     *
     * @param string $val The officeLocation
     *
@@ -935,6 +1149,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the postalCode
+    * The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.
     *
     * @return string The postalCode
     */
@@ -949,6 +1164,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the postalCode
+    * The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.
     *
     * @param string $val The postalCode
     *
@@ -962,6 +1178,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the preferredDataLocation
+    * The preferred data location for the user. For more information, see OneDrive Online Multi-Geo.
     *
     * @return string The preferredDataLocation
     */
@@ -976,6 +1193,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the preferredDataLocation
+    * The preferred data location for the user. For more information, see OneDrive Online Multi-Geo.
     *
     * @param string $val The preferredDataLocation
     *
@@ -989,6 +1207,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the preferredLanguage
+    * The preferred language for the user. Should follow ISO 639-1 Code; for example 'en-US'.
     *
     * @return string The preferredLanguage
     */
@@ -1003,6 +1222,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the preferredLanguage
+    * The preferred language for the user. Should follow ISO 639-1 Code; for example 'en-US'.
     *
     * @param string $val The preferredLanguage
     *
@@ -1017,6 +1237,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the provisionedPlans
+    * The plans that are provisioned for the user. Read-only. Not nullable.
      *
      * @return array The provisionedPlans
      */
@@ -1031,6 +1252,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the provisionedPlans
+    * The plans that are provisioned for the user. Read-only. Not nullable.
     *
     * @param ProvisionedPlan $val The provisionedPlans
     *
@@ -1044,6 +1266,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the proxyAddresses
+    * For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'] The any operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.
     *
     * @return string The proxyAddresses
     */
@@ -1058,6 +1281,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the proxyAddresses
+    * For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'] The any operator is required for filter expressions on multi-valued properties. Read-only, Not nullable. Supports $filter.
     *
     * @param string $val The proxyAddresses
     *
@@ -1102,6 +1326,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the showInAddressList
+    * true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false.
     *
     * @return bool The showInAddressList
     */
@@ -1116,6 +1341,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the showInAddressList
+    * true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false.
     *
     * @param bool $val The showInAddressList
     *
@@ -1128,7 +1354,41 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the signInSessionsValidFromDateTime
+    * Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
+    *
+    * @return \DateTime The signInSessionsValidFromDateTime
+    */
+    public function getSignInSessionsValidFromDateTime()
+    {
+        if (array_key_exists("signInSessionsValidFromDateTime", $this->_propDict)) {
+            if (is_a($this->_propDict["signInSessionsValidFromDateTime"], "\DateTime")) {
+                return $this->_propDict["signInSessionsValidFromDateTime"];
+            } else {
+                $this->_propDict["signInSessionsValidFromDateTime"] = new \DateTime($this->_propDict["signInSessionsValidFromDateTime"]);
+                return $this->_propDict["signInSessionsValidFromDateTime"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the signInSessionsValidFromDateTime
+    * Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
+    *
+    * @param \DateTime $val The signInSessionsValidFromDateTime
+    *
+    * @return User
+    */
+    public function setSignInSessionsValidFromDateTime($val)
+    {
+        $this->_propDict["signInSessionsValidFromDateTime"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the state
+    * The state or province in the user's address. Supports $filter.
     *
     * @return string The state
     */
@@ -1143,6 +1403,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the state
+    * The state or province in the user's address. Supports $filter.
     *
     * @param string $val The state
     *
@@ -1156,6 +1417,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the streetAddress
+    * The street address of the user's place of business.
     *
     * @return string The streetAddress
     */
@@ -1170,6 +1432,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the streetAddress
+    * The street address of the user's place of business.
     *
     * @param string $val The streetAddress
     *
@@ -1183,6 +1446,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the surname
+    * The user's surname (family name or last name). Supports $filter.
     *
     * @return string The surname
     */
@@ -1197,6 +1461,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the surname
+    * The user's surname (family name or last name). Supports $filter.
     *
     * @param string $val The surname
     *
@@ -1210,6 +1475,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the usageLocation
+    * A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: 'US', 'JP', and 'GB'. Not nullable. Supports $filter.
     *
     * @return string The usageLocation
     */
@@ -1224,6 +1490,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the usageLocation
+    * A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: 'US', 'JP', and 'GB'. Not nullable. Supports $filter.
     *
     * @param string $val The usageLocation
     *
@@ -1237,6 +1504,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the userPrincipalName
+    * The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. Supports $filter and $orderby.
     *
     * @return string The userPrincipalName
     */
@@ -1251,6 +1519,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the userPrincipalName
+    * The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization. Supports $filter and $orderby.
     *
     * @param string $val The userPrincipalName
     *
@@ -1263,7 +1532,62 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the externalUserState
+    *
+    * @return string The externalUserState
+    */
+    public function getExternalUserState()
+    {
+        if (array_key_exists("externalUserState", $this->_propDict)) {
+            return $this->_propDict["externalUserState"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the externalUserState
+    *
+    * @param string $val The externalUserState
+    *
+    * @return User
+    */
+    public function setExternalUserState($val)
+    {
+        $this->_propDict["externalUserState"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the externalUserStateChangeDateTime
+    *
+    * @return string The externalUserStateChangeDateTime
+    */
+    public function getExternalUserStateChangeDateTime()
+    {
+        if (array_key_exists("externalUserStateChangeDateTime", $this->_propDict)) {
+            return $this->_propDict["externalUserStateChangeDateTime"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the externalUserStateChangeDateTime
+    *
+    * @param string $val The externalUserStateChangeDateTime
+    *
+    * @return User
+    */
+    public function setExternalUserStateChangeDateTime($val)
+    {
+        $this->_propDict["externalUserStateChangeDateTime"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the userType
+    * A string value that can be used to classify user types in your directory, such as 'Member' and 'Guest'. Supports $filter.
     *
     * @return string The userType
     */
@@ -1278,6 +1602,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the userType
+    * A string value that can be used to classify user types in your directory, such as 'Member' and 'Guest'. Supports $filter.
     *
     * @param string $val The userType
     *
@@ -1291,6 +1616,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the mailboxSettings
+    * Settings for the primary mailbox of the signed-in user. You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
     *
     * @return MailboxSettings The mailboxSettings
     */
@@ -1309,6 +1635,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the mailboxSettings
+    * Settings for the primary mailbox of the signed-in user. You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
     *
     * @param MailboxSettings $val The mailboxSettings
     *
@@ -1322,6 +1649,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the aboutMe
+    * A freeform text entry field for the user to describe themselves.
     *
     * @return string The aboutMe
     */
@@ -1336,6 +1664,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the aboutMe
+    * A freeform text entry field for the user to describe themselves.
     *
     * @param string $val The aboutMe
     *
@@ -1349,6 +1678,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the birthday
+    * The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     *
     * @return \DateTime The birthday
     */
@@ -1367,6 +1697,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the birthday
+    * The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     *
     * @param \DateTime $val The birthday
     *
@@ -1380,6 +1711,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the hireDate
+    * The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     *
     * @return \DateTime The hireDate
     */
@@ -1398,6 +1730,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the hireDate
+    * The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     *
     * @param \DateTime $val The hireDate
     *
@@ -1411,6 +1744,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the interests
+    * A list for the user to describe their interests.
     *
     * @return string The interests
     */
@@ -1425,6 +1759,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the interests
+    * A list for the user to describe their interests.
     *
     * @param string $val The interests
     *
@@ -1438,6 +1773,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the mySite
+    * The URL for the user's personal site.
     *
     * @return string The mySite
     */
@@ -1452,6 +1788,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the mySite
+    * The URL for the user's personal site.
     *
     * @param string $val The mySite
     *
@@ -1465,6 +1802,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the pastProjects
+    * A list for the user to enumerate their past projects.
     *
     * @return string The pastProjects
     */
@@ -1479,6 +1817,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the pastProjects
+    * A list for the user to enumerate their past projects.
     *
     * @param string $val The pastProjects
     *
@@ -1492,6 +1831,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the preferredName
+    * The preferred name for the user.
     *
     * @return string The preferredName
     */
@@ -1506,6 +1846,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the preferredName
+    * The preferred name for the user.
     *
     * @param string $val The preferredName
     *
@@ -1519,6 +1860,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the responsibilities
+    * A list for the user to enumerate their responsibilities.
     *
     * @return string The responsibilities
     */
@@ -1533,6 +1875,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the responsibilities
+    * A list for the user to enumerate their responsibilities.
     *
     * @param string $val The responsibilities
     *
@@ -1546,6 +1889,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the schools
+    * A list for the user to enumerate the schools they have attended.
     *
     * @return string The schools
     */
@@ -1560,6 +1904,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the schools
+    * A list for the user to enumerate the schools they have attended.
     *
     * @param string $val The schools
     *
@@ -1573,6 +1918,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the skills
+    * A list for the user to enumerate their skills.
     *
     * @return string The skills
     */
@@ -1587,6 +1933,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the skills
+    * A list for the user to enumerate their skills.
     *
     * @param string $val The skills
     *
@@ -1631,6 +1978,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the deviceEnrollmentLimit
+    * The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
     *
     * @return int The deviceEnrollmentLimit
     */
@@ -1645,6 +1993,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the deviceEnrollmentLimit
+    * The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
     *
     * @param int $val The deviceEnrollmentLimit
     *
@@ -1659,6 +2008,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the extensions
+    * The collection of open extensions defined for the user. Read-only. Nullable.
      *
      * @return array The extensions
      */
@@ -1673,6 +2023,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the extensions
+    * The collection of open extensions defined for the user. Read-only. Nullable.
     *
     * @param Extension $val The extensions
     *
@@ -1714,62 +2065,97 @@ class User extends DirectoryObject
     
 
      /** 
-     * Gets the ownedDevices
+     * Gets the createdObjects
+    * Directory objects that were created by the user. Read-only. Nullable.
      *
-     * @return array The ownedDevices
+     * @return array The createdObjects
      */
-    public function getOwnedDevices()
+    public function getCreatedObjects()
     {
-        if (array_key_exists("ownedDevices", $this->_propDict)) {
-           return $this->_propDict["ownedDevices"];
+        if (array_key_exists("createdObjects", $this->_propDict)) {
+           return $this->_propDict["createdObjects"];
         } else {
             return null;
         }
     }
     
     /** 
-    * Sets the ownedDevices
+    * Sets the createdObjects
+    * Directory objects that were created by the user. Read-only. Nullable.
     *
-    * @param DirectoryObject $val The ownedDevices
+    * @param DirectoryObject $val The createdObjects
     *
     * @return User
     */
-    public function setOwnedDevices($val)
+    public function setCreatedObjects($val)
     {
-		$this->_propDict["ownedDevices"] = $val;
+		$this->_propDict["createdObjects"] = $val;
         return $this;
     }
     
 
      /** 
-     * Gets the registeredDevices
+     * Gets the directReports
+    * The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
      *
-     * @return array The registeredDevices
+     * @return array The directReports
      */
-    public function getRegisteredDevices()
+    public function getDirectReports()
     {
-        if (array_key_exists("registeredDevices", $this->_propDict)) {
-           return $this->_propDict["registeredDevices"];
+        if (array_key_exists("directReports", $this->_propDict)) {
+           return $this->_propDict["directReports"];
         } else {
             return null;
         }
     }
     
     /** 
-    * Sets the registeredDevices
+    * Sets the directReports
+    * The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
     *
-    * @param DirectoryObject $val The registeredDevices
+    * @param DirectoryObject $val The directReports
     *
     * @return User
     */
-    public function setRegisteredDevices($val)
+    public function setDirectReports($val)
     {
-		$this->_propDict["registeredDevices"] = $val;
+		$this->_propDict["directReports"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the licenseDetails
+    * A collection of this user's license details. Read-only.
+     *
+     * @return array The licenseDetails
+     */
+    public function getLicenseDetails()
+    {
+        if (array_key_exists("licenseDetails", $this->_propDict)) {
+           return $this->_propDict["licenseDetails"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the licenseDetails
+    * A collection of this user's license details. Read-only.
+    *
+    * @param LicenseDetails $val The licenseDetails
+    *
+    * @return User
+    */
+    public function setLicenseDetails($val)
+    {
+		$this->_propDict["licenseDetails"] = $val;
         return $this;
     }
     
     /**
     * Gets the manager
+    * The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)
     *
     * @return DirectoryObject The manager
     */
@@ -1788,6 +2174,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the manager
+    * The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)
     *
     * @param DirectoryObject $val The manager
     *
@@ -1801,35 +2188,8 @@ class User extends DirectoryObject
     
 
      /** 
-     * Gets the directReports
-     *
-     * @return array The directReports
-     */
-    public function getDirectReports()
-    {
-        if (array_key_exists("directReports", $this->_propDict)) {
-           return $this->_propDict["directReports"];
-        } else {
-            return null;
-        }
-    }
-    
-    /** 
-    * Sets the directReports
-    *
-    * @param DirectoryObject $val The directReports
-    *
-    * @return User
-    */
-    public function setDirectReports($val)
-    {
-		$this->_propDict["directReports"] = $val;
-        return $this;
-    }
-    
-
-     /** 
      * Gets the memberOf
+    * The groups and directory roles that the user is a member of. Read-only. Nullable.
      *
      * @return array The memberOf
      */
@@ -1844,6 +2204,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the memberOf
+    * The groups and directory roles that the user is a member of. Read-only. Nullable.
     *
     * @param DirectoryObject $val The memberOf
     *
@@ -1857,35 +2218,38 @@ class User extends DirectoryObject
     
 
      /** 
-     * Gets the createdObjects
+     * Gets the ownedDevices
+    * Devices that are owned by the user. Read-only. Nullable.
      *
-     * @return array The createdObjects
+     * @return array The ownedDevices
      */
-    public function getCreatedObjects()
+    public function getOwnedDevices()
     {
-        if (array_key_exists("createdObjects", $this->_propDict)) {
-           return $this->_propDict["createdObjects"];
+        if (array_key_exists("ownedDevices", $this->_propDict)) {
+           return $this->_propDict["ownedDevices"];
         } else {
             return null;
         }
     }
     
     /** 
-    * Sets the createdObjects
+    * Sets the ownedDevices
+    * Devices that are owned by the user. Read-only. Nullable.
     *
-    * @param DirectoryObject $val The createdObjects
+    * @param DirectoryObject $val The ownedDevices
     *
     * @return User
     */
-    public function setCreatedObjects($val)
+    public function setOwnedDevices($val)
     {
-		$this->_propDict["createdObjects"] = $val;
+		$this->_propDict["ownedDevices"] = $val;
         return $this;
     }
     
 
      /** 
      * Gets the ownedObjects
+    * Directory objects that are owned by the user. Read-only. Nullable.
      *
      * @return array The ownedObjects
      */
@@ -1900,6 +2264,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the ownedObjects
+    * Directory objects that are owned by the user. Read-only. Nullable.
     *
     * @param DirectoryObject $val The ownedObjects
     *
@@ -1908,6 +2273,36 @@ class User extends DirectoryObject
     public function setOwnedObjects($val)
     {
 		$this->_propDict["ownedObjects"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the registeredDevices
+    * Devices that are registered for the user. Read-only. Nullable.
+     *
+     * @return array The registeredDevices
+     */
+    public function getRegisteredDevices()
+    {
+        if (array_key_exists("registeredDevices", $this->_propDict)) {
+           return $this->_propDict["registeredDevices"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the registeredDevices
+    * Devices that are registered for the user. Read-only. Nullable.
+    *
+    * @param DirectoryObject $val The registeredDevices
+    *
+    * @return User
+    */
+    public function setRegisteredDevices($val)
+    {
+		$this->_propDict["registeredDevices"] = $val;
         return $this;
     }
     
@@ -1941,35 +2336,36 @@ class User extends DirectoryObject
     
 
      /** 
-     * Gets the licenseDetails
+     * Gets the transitiveMemberOf
      *
-     * @return array The licenseDetails
+     * @return array The transitiveMemberOf
      */
-    public function getLicenseDetails()
+    public function getTransitiveMemberOf()
     {
-        if (array_key_exists("licenseDetails", $this->_propDict)) {
-           return $this->_propDict["licenseDetails"];
+        if (array_key_exists("transitiveMemberOf", $this->_propDict)) {
+           return $this->_propDict["transitiveMemberOf"];
         } else {
             return null;
         }
     }
     
     /** 
-    * Sets the licenseDetails
+    * Sets the transitiveMemberOf
     *
-    * @param LicenseDetails $val The licenseDetails
+    * @param DirectoryObject $val The transitiveMemberOf
     *
     * @return User
     */
-    public function setLicenseDetails($val)
+    public function setTransitiveMemberOf($val)
     {
-		$this->_propDict["licenseDetails"] = $val;
+		$this->_propDict["transitiveMemberOf"] = $val;
         return $this;
     }
     
 
      /** 
      * Gets the activities
+    * The user's activities across devices. Read-only. Nullable.
      *
      * @return array The activities
      */
@@ -1984,6 +2380,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the activities
+    * The user's activities across devices. Read-only. Nullable.
     *
     * @param UserActivity $val The activities
     *
@@ -1997,6 +2394,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the outlook
+    * Read-only.
     *
     * @return OutlookUser The outlook
     */
@@ -2015,6 +2413,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the outlook
+    * Read-only.
     *
     * @param OutlookUser $val The outlook
     *
@@ -2029,6 +2428,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the messages
+    * The messages in a mailbox or folder. Read-only. Nullable.
      *
      * @return array The messages
      */
@@ -2043,6 +2443,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the messages
+    * The messages in a mailbox or folder. Read-only. Nullable.
     *
     * @param Message $val The messages
     *
@@ -2085,6 +2486,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the mailFolders
+    * The user's mail folders. Read-only. Nullable.
      *
      * @return array The mailFolders
      */
@@ -2099,6 +2501,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the mailFolders
+    * The user's mail folders. Read-only. Nullable.
     *
     * @param MailFolder $val The mailFolders
     *
@@ -2112,6 +2515,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the calendar
+    * The user's primary calendar. Read-only.
     *
     * @return Calendar The calendar
     */
@@ -2130,6 +2534,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the calendar
+    * The user's primary calendar. Read-only.
     *
     * @param Calendar $val The calendar
     *
@@ -2144,6 +2549,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the calendars
+    * The user's calendars. Read-only. Nullable.
      *
      * @return array The calendars
      */
@@ -2158,6 +2564,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the calendars
+    * The user's calendars. Read-only. Nullable.
     *
     * @param Calendar $val The calendars
     *
@@ -2172,6 +2579,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the calendarGroups
+    * The user's calendar groups. Read-only. Nullable.
      *
      * @return array The calendarGroups
      */
@@ -2186,6 +2594,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the calendarGroups
+    * The user's calendar groups. Read-only. Nullable.
     *
     * @param CalendarGroup $val The calendarGroups
     *
@@ -2200,6 +2609,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the calendarView
+    * The calendar view for the calendar. Read-only. Nullable.
      *
      * @return array The calendarView
      */
@@ -2214,6 +2624,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the calendarView
+    * The calendar view for the calendar. Read-only. Nullable.
     *
     * @param Event $val The calendarView
     *
@@ -2228,6 +2639,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the events
+    * The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.
      *
      * @return array The events
      */
@@ -2242,6 +2654,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the events
+    * The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.
     *
     * @param Event $val The events
     *
@@ -2256,6 +2669,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the people
+    * People that are relevant to the user. Read-only. Nullable.
      *
      * @return array The people
      */
@@ -2270,6 +2684,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the people
+    * People that are relevant to the user. Read-only. Nullable.
     *
     * @param Person $val The people
     *
@@ -2284,6 +2699,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the contacts
+    * The user's contacts. Read-only. Nullable.
      *
      * @return array The contacts
      */
@@ -2298,6 +2714,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the contacts
+    * The user's contacts. Read-only. Nullable.
     *
     * @param Contact $val The contacts
     *
@@ -2312,6 +2729,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the contactFolders
+    * The user's contacts folders. Read-only. Nullable.
      *
      * @return array The contactFolders
      */
@@ -2326,6 +2744,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the contactFolders
+    * The user's contacts folders. Read-only. Nullable.
     *
     * @param ContactFolder $val The contactFolders
     *
@@ -2339,6 +2758,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the inferenceClassification
+    * Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
     *
     * @return InferenceClassification The inferenceClassification
     */
@@ -2357,6 +2777,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the inferenceClassification
+    * Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
     *
     * @param InferenceClassification $val The inferenceClassification
     *
@@ -2370,6 +2791,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the photo
+    * The user's profile photo. Read-only.
     *
     * @return ProfilePhoto The photo
     */
@@ -2388,6 +2810,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the photo
+    * The user's profile photo. Read-only.
     *
     * @param ProfilePhoto $val The photo
     *
@@ -2429,6 +2852,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the drive
+    * The user's OneDrive. Read-only.
     *
     * @return Drive The drive
     */
@@ -2447,6 +2871,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the drive
+    * The user's OneDrive. Read-only.
     *
     * @param Drive $val The drive
     *
@@ -2461,6 +2886,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the drives
+    * A collection of drives available for this user. Read-only.
      *
      * @return array The drives
      */
@@ -2475,6 +2901,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the drives
+    * A collection of drives available for this user. Read-only.
     *
     * @param Drive $val The drives
     *
@@ -2483,6 +2910,34 @@ class User extends DirectoryObject
     public function setDrives($val)
     {
 		$this->_propDict["drives"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the followedSites
+     *
+     * @return array The followedSites
+     */
+    public function getFollowedSites()
+    {
+        if (array_key_exists("followedSites", $this->_propDict)) {
+           return $this->_propDict["followedSites"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the followedSites
+    *
+    * @param Site $val The followedSites
+    *
+    * @return User
+    */
+    public function setFollowedSites($val)
+    {
+		$this->_propDict["followedSites"] = $val;
         return $this;
     }
     
@@ -2550,6 +3005,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the planner
+    * Entry-point to the Planner resource that might exist for a user. Read-only.
     *
     * @return PlannerUser The planner
     */
@@ -2568,6 +3024,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the planner
+    * Entry-point to the Planner resource that might exist for a user. Read-only.
     *
     * @param PlannerUser $val The planner
     *
@@ -2581,6 +3038,7 @@ class User extends DirectoryObject
     
     /**
     * Gets the onenote
+    * Read-only.
     *
     * @return Onenote The onenote
     */
@@ -2599,6 +3057,7 @@ class User extends DirectoryObject
     
     /**
     * Sets the onenote
+    * Read-only.
     *
     * @param Onenote $val The onenote
     *
@@ -2613,6 +3072,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the managedDevices
+    * The managed devices associated with the user.
      *
      * @return array The managedDevices
      */
@@ -2627,6 +3087,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the managedDevices
+    * The managed devices associated with the user.
     *
     * @param ManagedDevice $val The managedDevices
     *
@@ -2641,6 +3102,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the deviceEnrollmentConfigurations
+    * Get enrollment configurations targeted to the user
      *
      * @return array The deviceEnrollmentConfigurations
      */
@@ -2655,6 +3117,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the deviceEnrollmentConfigurations
+    * Get enrollment configurations targeted to the user
     *
     * @param DeviceEnrollmentConfiguration $val The deviceEnrollmentConfigurations
     *
@@ -2669,6 +3132,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the managedAppRegistrations
+    * Zero or more managed app registrations that belong to the user.
      *
      * @return array The managedAppRegistrations
      */
@@ -2683,6 +3147,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the managedAppRegistrations
+    * Zero or more managed app registrations that belong to the user.
     *
     * @param ManagedAppRegistration $val The managedAppRegistrations
     *
@@ -2691,6 +3156,36 @@ class User extends DirectoryObject
     public function setManagedAppRegistrations($val)
     {
 		$this->_propDict["managedAppRegistrations"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the windowsInformationProtectionDeviceRegistrations
+    * Zero or more WIP device registrations that belong to the user.
+     *
+     * @return array The windowsInformationProtectionDeviceRegistrations
+     */
+    public function getWindowsInformationProtectionDeviceRegistrations()
+    {
+        if (array_key_exists("windowsInformationProtectionDeviceRegistrations", $this->_propDict)) {
+           return $this->_propDict["windowsInformationProtectionDeviceRegistrations"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the windowsInformationProtectionDeviceRegistrations
+    * Zero or more WIP device registrations that belong to the user.
+    *
+    * @param WindowsInformationProtectionDeviceRegistration $val The windowsInformationProtectionDeviceRegistrations
+    *
+    * @return User
+    */
+    public function setWindowsInformationProtectionDeviceRegistrations($val)
+    {
+		$this->_propDict["windowsInformationProtectionDeviceRegistrations"] = $val;
         return $this;
     }
     
@@ -2753,6 +3248,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the deviceManagementTroubleshootingEvents
+    * The list of troubleshooting events for this user.
      *
      * @return array The deviceManagementTroubleshootingEvents
      */
@@ -2767,6 +3263,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the deviceManagementTroubleshootingEvents
+    * The list of troubleshooting events for this user.
     *
     * @param DeviceManagementTroubleshootingEvent $val The deviceManagementTroubleshootingEvents
     *
@@ -2781,6 +3278,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the mobileAppIntentAndStates
+    * The list of troubleshooting events for this user.
      *
      * @return array The mobileAppIntentAndStates
      */
@@ -2795,6 +3293,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the mobileAppIntentAndStates
+    * The list of troubleshooting events for this user.
     *
     * @param MobileAppIntentAndState $val The mobileAppIntentAndStates
     *
@@ -2809,6 +3308,7 @@ class User extends DirectoryObject
 
      /** 
      * Gets the mobileAppTroubleshootingEvents
+    * The list of mobile app troubleshooting events for this user.
      *
      * @return array The mobileAppTroubleshootingEvents
      */
@@ -2823,6 +3323,7 @@ class User extends DirectoryObject
     
     /** 
     * Sets the mobileAppTroubleshootingEvents
+    * The list of mobile app troubleshooting events for this user.
     *
     * @param MobileAppTroubleshootingEvent $val The mobileAppTroubleshootingEvents
     *
@@ -2831,6 +3332,65 @@ class User extends DirectoryObject
     public function setMobileAppTroubleshootingEvents($val)
     {
 		$this->_propDict["mobileAppTroubleshootingEvents"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the informationProtection
+    *
+    * @return InformationProtection The informationProtection
+    */
+    public function getInformationProtection()
+    {
+        if (array_key_exists("informationProtection", $this->_propDict)) {
+            if (is_a($this->_propDict["informationProtection"], "Microsoft\Graph\Beta\Model\InformationProtection")) {
+                return $this->_propDict["informationProtection"];
+            } else {
+                $this->_propDict["informationProtection"] = new InformationProtection($this->_propDict["informationProtection"]);
+                return $this->_propDict["informationProtection"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the informationProtection
+    *
+    * @param InformationProtection $val The informationProtection
+    *
+    * @return User
+    */
+    public function setInformationProtection($val)
+    {
+        $this->_propDict["informationProtection"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the chats
+     *
+     * @return array The chats
+     */
+    public function getChats()
+    {
+        if (array_key_exists("chats", $this->_propDict)) {
+           return $this->_propDict["chats"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the chats
+    *
+    * @param Chat $val The chats
+    *
+    * @return User
+    */
+    public function setChats($val)
+    {
+		$this->_propDict["chats"] = $val;
         return $this;
     }
     

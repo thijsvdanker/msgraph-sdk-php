@@ -28,6 +28,7 @@ class BookingWorkHours extends Entity
 
     /**
     * Gets the day
+    * The day of the week represented by this instance.
     *
     * @return DayOfWeek The day
     */
@@ -46,6 +47,7 @@ class BookingWorkHours extends Entity
 
     /**
     * Sets the day
+    * The day of the week represented by this instance.
     *
     * @param DayOfWeek $val The value to assign to the day
     *
@@ -59,6 +61,7 @@ class BookingWorkHours extends Entity
 
     /**
     * Gets the timeSlots
+    * A list of start/end times during a day.
     *
     * @return BookingWorkTimeSlot The timeSlots
     */
@@ -77,6 +80,7 @@ class BookingWorkHours extends Entity
 
     /**
     * Sets the timeSlots
+    * A list of start/end times during a day.
     *
     * @param BookingWorkTimeSlot $val The value to assign to the timeSlots
     *

@@ -28,6 +28,7 @@ class MediaContentRatingUnitedKingdom extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for United Kingdom. Possible values are: allAllowed, allBlocked, general, universalChildren, parentalGuidance, agesAbove12Video, agesAbove12Cinema, agesAbove15, adults.
     *
     * @return RatingUnitedKingdomMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingUnitedKingdom extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for United Kingdom. Possible values are: allAllowed, allBlocked, general, universalChildren, parentalGuidance, agesAbove12Video, agesAbove12Cinema, agesAbove15, adults.
     *
     * @param RatingUnitedKingdomMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingUnitedKingdom extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for United Kingdom. Possible values are: allAllowed, allBlocked, caution.
     *
     * @return RatingUnitedKingdomTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingUnitedKingdom extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for United Kingdom. Possible values are: allAllowed, allBlocked, caution.
     *
     * @param RatingUnitedKingdomTelevisionType $val The value to assign to the tvRating
     *

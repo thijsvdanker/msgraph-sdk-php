@@ -139,6 +139,33 @@ class SharePointSiteUsageDetail extends Entity
     }
     
     /**
+    * Gets the ownerPrincipalName
+    *
+    * @return string The ownerPrincipalName
+    */
+    public function getOwnerPrincipalName()
+    {
+        if (array_key_exists("ownerPrincipalName", $this->_propDict)) {
+            return $this->_propDict["ownerPrincipalName"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the ownerPrincipalName
+    *
+    * @param string $val The ownerPrincipalName
+    *
+    * @return SharePointSiteUsageDetail
+    */
+    public function setOwnerPrincipalName($val)
+    {
+        $this->_propDict["ownerPrincipalName"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the isDeleted
     *
     * @return bool The isDeleted

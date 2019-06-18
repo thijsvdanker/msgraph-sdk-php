@@ -28,6 +28,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
 {
     /**
     * Gets the managedDeviceIdentifier
+    * Device identifier created or collected by Intune.
     *
     * @return string The managedDeviceIdentifier
     */
@@ -42,6 +43,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the managedDeviceIdentifier
+    * Device identifier created or collected by Intune.
     *
     * @param string $val The managedDeviceIdentifier
     *
@@ -55,6 +57,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the operatingSystem
+    * Operating System.
     *
     * @return string The operatingSystem
     */
@@ -69,6 +72,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the operatingSystem
+    * Operating System.
     *
     * @param string $val The operatingSystem
     *
@@ -82,6 +86,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the osVersion
+    * OS Version.
     *
     * @return string The osVersion
     */
@@ -96,6 +101,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the osVersion
+    * OS Version.
     *
     * @param string $val The osVersion
     *
@@ -109,6 +115,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the userId
+    * Identifier for the user that tried to enroll the device.
     *
     * @return string The userId
     */
@@ -123,6 +130,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the userId
+    * Identifier for the user that tried to enroll the device.
     *
     * @param string $val The userId
     *
@@ -136,6 +144,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the deviceId
+    * Azure AD device identifier.
     *
     * @return string The deviceId
     */
@@ -150,6 +159,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the deviceId
+    * Azure AD device identifier.
     *
     * @param string $val The deviceId
     *
@@ -163,6 +173,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the enrollmentType
+    * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
     *
     * @return DeviceEnrollmentType The enrollmentType
     */
@@ -181,6 +192,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the enrollmentType
+    * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
     *
     * @param DeviceEnrollmentType $val The enrollmentType
     *
@@ -194,6 +206,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the failureCategory
+    * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation, userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced, clientDisconnected, userAbandonment.
     *
     * @return DeviceEnrollmentFailureReason The failureCategory
     */
@@ -212,6 +225,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the failureCategory
+    * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation, userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced, clientDisconnected, userAbandonment.
     *
     * @param DeviceEnrollmentFailureReason $val The failureCategory
     *
@@ -225,6 +239,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Gets the failureReason
+    * Detailed failure reason.
     *
     * @return string The failureReason
     */
@@ -239,6 +254,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
     
     /**
     * Sets the failureReason
+    * Detailed failure reason.
     *
     * @param string $val The failureReason
     *

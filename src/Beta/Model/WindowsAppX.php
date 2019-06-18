@@ -28,6 +28,7 @@ class WindowsAppX extends MobileLobApp
 {
     /**
     * Gets the applicableArchitectures
+    * The Windows architecture(s) for which this app can run on.
     *
     * @return WindowsArchitecture The applicableArchitectures
     */
@@ -46,6 +47,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the applicableArchitectures
+    * The Windows architecture(s) for which this app can run on.
     *
     * @param WindowsArchitecture $val The applicableArchitectures
     *
@@ -59,6 +61,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Gets the identityName
+    * The Identity Name.
     *
     * @return string The identityName
     */
@@ -73,6 +76,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the identityName
+    * The Identity Name.
     *
     * @param string $val The identityName
     *
@@ -86,6 +90,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Gets the identityPublisherHash
+    * The Identity Publisher Hash.
     *
     * @return string The identityPublisherHash
     */
@@ -100,6 +105,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the identityPublisherHash
+    * The Identity Publisher Hash.
     *
     * @param string $val The identityPublisherHash
     *
@@ -113,6 +119,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Gets the identityResourceIdentifier
+    * The Identity Resource Identifier.
     *
     * @return string The identityResourceIdentifier
     */
@@ -127,6 +134,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the identityResourceIdentifier
+    * The Identity Resource Identifier.
     *
     * @param string $val The identityResourceIdentifier
     *
@@ -140,6 +148,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Gets the isBundle
+    * Whether or not the app is a bundle.
     *
     * @return bool The isBundle
     */
@@ -154,6 +163,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the isBundle
+    * Whether or not the app is a bundle.
     *
     * @param bool $val The isBundle
     *
@@ -167,6 +177,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Gets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @return WindowsMinimumOperatingSystem The minimumSupportedOperatingSystem
     */
@@ -185,6 +196,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the minimumSupportedOperatingSystem
+    * The value for the minimum applicable operating system.
     *
     * @param WindowsMinimumOperatingSystem $val The minimumSupportedOperatingSystem
     *
@@ -198,6 +210,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Gets the identityVersion
+    * The identity version.
     *
     * @return string The identityVersion
     */
@@ -212,6 +225,7 @@ class WindowsAppX extends MobileLobApp
     
     /**
     * Sets the identityVersion
+    * The identity version.
     *
     * @param string $val The identityVersion
     *

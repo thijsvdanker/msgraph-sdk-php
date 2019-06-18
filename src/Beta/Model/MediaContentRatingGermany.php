@@ -28,6 +28,7 @@ class MediaContentRatingGermany extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for Germany. Possible values are: allAllowed, allBlocked, general, agesAbove6, agesAbove12, agesAbove16, adults.
     *
     * @return RatingGermanyMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingGermany extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for Germany. Possible values are: allAllowed, allBlocked, general, agesAbove6, agesAbove12, agesAbove16, adults.
     *
     * @param RatingGermanyMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingGermany extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for Germany. Possible values are: allAllowed, allBlocked, general, agesAbove6, agesAbove12, agesAbove16, adults.
     *
     * @return RatingGermanyTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingGermany extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for Germany. Possible values are: allAllowed, allBlocked, general, agesAbove6, agesAbove12, agesAbove16, adults.
     *
     * @param RatingGermanyTelevisionType $val The value to assign to the tvRating
     *

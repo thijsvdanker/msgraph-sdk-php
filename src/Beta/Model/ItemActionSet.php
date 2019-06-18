@@ -28,6 +28,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the comment
+    * A comment was added to the item.
     *
     * @return CommentAction The comment
     */
@@ -46,6 +47,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the comment
+    * A comment was added to the item.
     *
     * @param CommentAction $val The value to assign to the comment
     *
@@ -59,6 +61,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the create
+    * An item was created.
     *
     * @return CreateAction The create
     */
@@ -77,6 +80,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the create
+    * An item was created.
     *
     * @param CreateAction $val The value to assign to the create
     *
@@ -90,6 +94,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the delete
+    * An item was deleted.
     *
     * @return DeleteAction The delete
     */
@@ -108,6 +113,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the delete
+    * An item was deleted.
     *
     * @param DeleteAction $val The value to assign to the delete
     *
@@ -121,6 +127,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the edit
+    * An item was edited.
     *
     * @return EditAction The edit
     */
@@ -139,6 +146,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the edit
+    * An item was edited.
     *
     * @param EditAction $val The value to assign to the edit
     *
@@ -152,6 +160,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the mention
+    * A user was mentioned in the item.
     *
     * @return MentionAction The mention
     */
@@ -170,6 +179,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the mention
+    * A user was mentioned in the item.
     *
     * @param MentionAction $val The value to assign to the mention
     *
@@ -183,6 +193,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the move
+    * An item was moved.
     *
     * @return MoveAction The move
     */
@@ -201,6 +212,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the move
+    * An item was moved.
     *
     * @param MoveAction $val The value to assign to the move
     *
@@ -214,6 +226,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the rename
+    * An item was renamed.
     *
     * @return RenameAction The rename
     */
@@ -232,6 +245,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the rename
+    * An item was renamed.
     *
     * @param RenameAction $val The value to assign to the rename
     *
@@ -245,6 +259,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the restore
+    * An item was restored.
     *
     * @return RestoreAction The restore
     */
@@ -263,6 +278,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the restore
+    * An item was restored.
     *
     * @param RestoreAction $val The value to assign to the restore
     *
@@ -276,6 +292,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the share
+    * An item was shared.
     *
     * @return ShareAction The share
     */
@@ -294,6 +311,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the share
+    * An item was shared.
     *
     * @param ShareAction $val The value to assign to the share
     *
@@ -307,6 +325,7 @@ class ItemActionSet extends Entity
 
     /**
     * Gets the version
+    * An item was versioned.
     *
     * @return VersionAction The version
     */
@@ -325,6 +344,7 @@ class ItemActionSet extends Entity
 
     /**
     * Sets the version
+    * An item was versioned.
     *
     * @param VersionAction $val The value to assign to the version
     *

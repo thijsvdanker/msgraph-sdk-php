@@ -28,6 +28,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
 {
     /**
     * Gets the userDisplayName
+    * User name of the DevicePolicyStatus.
     *
     * @return string The userDisplayName
     */
@@ -42,6 +43,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Sets the userDisplayName
+    * User name of the DevicePolicyStatus.
     *
     * @param string $val The userDisplayName
     *
@@ -55,6 +57,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Gets the devicesCount
+    * Devices count for that user.
     *
     * @return int The devicesCount
     */
@@ -69,6 +72,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Sets the devicesCount
+    * Devices count for that user.
     *
     * @param int $val The devicesCount
     *
@@ -82,6 +86,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Gets the status
+    * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned.
     *
     * @return ComplianceStatus The status
     */
@@ -100,6 +105,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Sets the status
+    * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict, notAssigned.
     *
     * @param ComplianceStatus $val The status
     *
@@ -113,6 +119,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Gets the lastReportedDateTime
+    * Last modified date time of the policy report.
     *
     * @return \DateTime The lastReportedDateTime
     */
@@ -131,6 +138,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Sets the lastReportedDateTime
+    * Last modified date time of the policy report.
     *
     * @param \DateTime $val The lastReportedDateTime
     *
@@ -144,6 +152,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Gets the userPrincipalName
+    * UserPrincipalName.
     *
     * @return string The userPrincipalName
     */
@@ -158,6 +167,7 @@ class ManagedDeviceMobileAppConfigurationUserStatus extends Entity
     
     /**
     * Sets the userPrincipalName
+    * UserPrincipalName.
     *
     * @param string $val The userPrincipalName
     *

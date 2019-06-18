@@ -28,6 +28,7 @@ class MediaContentRatingCanada extends Entity
 
     /**
     * Gets the movieRating
+    * Movies rating selected for Canada. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove14, agesAbove18, restricted.
     *
     * @return RatingCanadaMoviesType The movieRating
     */
@@ -46,6 +47,7 @@ class MediaContentRatingCanada extends Entity
 
     /**
     * Sets the movieRating
+    * Movies rating selected for Canada. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove14, agesAbove18, restricted.
     *
     * @param RatingCanadaMoviesType $val The value to assign to the movieRating
     *
@@ -59,6 +61,7 @@ class MediaContentRatingCanada extends Entity
 
     /**
     * Gets the tvRating
+    * TV rating selected for Canada. Possible values are: allAllowed, allBlocked, children, childrenAbove8, general, parentalGuidance, agesAbove14, agesAbove18.
     *
     * @return RatingCanadaTelevisionType The tvRating
     */
@@ -77,6 +80,7 @@ class MediaContentRatingCanada extends Entity
 
     /**
     * Sets the tvRating
+    * TV rating selected for Canada. Possible values are: allAllowed, allBlocked, children, childrenAbove8, general, parentalGuidance, agesAbove14, agesAbove18.
     *
     * @param RatingCanadaTelevisionType $val The value to assign to the tvRating
     *

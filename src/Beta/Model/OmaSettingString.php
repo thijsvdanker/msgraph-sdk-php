@@ -26,7 +26,17 @@ namespace Microsoft\Graph\Beta\Model;
 class OmaSettingString extends OmaSetting
 {
     /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.omaSettingString");
+    }
+
+    /**
     * Gets the value
+    * Value.
     *
     * @return string The value
     */
@@ -41,6 +51,7 @@ class OmaSettingString extends OmaSetting
 
     /**
     * Sets the value
+    * Value.
     *
     * @param string $val The value of the value
     *

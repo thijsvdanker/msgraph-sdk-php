@@ -28,6 +28,7 @@ class GraphList extends BaseItem
 {
     /**
     * Gets the displayName
+    * The displayable title of the list.
     *
     * @return string The displayName
     */
@@ -42,6 +43,7 @@ class GraphList extends BaseItem
     
     /**
     * Sets the displayName
+    * The displayable title of the list.
     *
     * @param string $val The displayName
     *
@@ -55,6 +57,7 @@ class GraphList extends BaseItem
     
     /**
     * Gets the list
+    * Provides additional details about the list.
     *
     * @return ListInfo The list
     */
@@ -73,6 +76,7 @@ class GraphList extends BaseItem
     
     /**
     * Sets the list
+    * Provides additional details about the list.
     *
     * @param ListInfo $val The list
     *
@@ -86,6 +90,7 @@ class GraphList extends BaseItem
     
     /**
     * Gets the sharepointIds
+    * Returns identifiers useful for SharePoint REST compatibility. Read-only.
     *
     * @return SharepointIds The sharepointIds
     */
@@ -104,6 +109,7 @@ class GraphList extends BaseItem
     
     /**
     * Sets the sharepointIds
+    * Returns identifiers useful for SharePoint REST compatibility. Read-only.
     *
     * @param SharepointIds $val The sharepointIds
     *
@@ -117,6 +123,7 @@ class GraphList extends BaseItem
     
     /**
     * Gets the system
+    * If present, indicates that this is a system-managed list. Read-only.
     *
     * @return SystemFacet The system
     */
@@ -135,6 +142,7 @@ class GraphList extends BaseItem
     
     /**
     * Sets the system
+    * If present, indicates that this is a system-managed list. Read-only.
     *
     * @param SystemFacet $val The system
     *
@@ -164,7 +172,7 @@ class GraphList extends BaseItem
     /** 
     * Sets the activities
     *
-    * @param ItemActivity $val The activities
+    * @param ItemActivityOLD $val The activities
     *
     * @return List
     */
@@ -177,6 +185,7 @@ class GraphList extends BaseItem
 
      /** 
      * Gets the columns
+    * The collection of field definitions for this list.
      *
      * @return array The columns
      */
@@ -191,6 +200,7 @@ class GraphList extends BaseItem
     
     /** 
     * Sets the columns
+    * The collection of field definitions for this list.
     *
     * @param ColumnDefinition $val The columns
     *
@@ -205,6 +215,7 @@ class GraphList extends BaseItem
 
      /** 
      * Gets the contentTypes
+    * The collection of content types present in this list.
      *
      * @return array The contentTypes
      */
@@ -219,6 +230,7 @@ class GraphList extends BaseItem
     
     /** 
     * Sets the contentTypes
+    * The collection of content types present in this list.
     *
     * @param ContentType $val The contentTypes
     *
@@ -232,6 +244,7 @@ class GraphList extends BaseItem
     
     /**
     * Gets the drive
+    * Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
     *
     * @return Drive The drive
     */
@@ -250,6 +263,7 @@ class GraphList extends BaseItem
     
     /**
     * Sets the drive
+    * Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
     *
     * @param Drive $val The drive
     *
@@ -264,6 +278,7 @@ class GraphList extends BaseItem
 
      /** 
      * Gets the items
+    * All items contained in the list.
      *
      * @return array The items
      */
@@ -278,6 +293,7 @@ class GraphList extends BaseItem
     
     /** 
     * Sets the items
+    * All items contained in the list.
     *
     * @param ListItem $val The items
     *
@@ -286,6 +302,34 @@ class GraphList extends BaseItem
     public function setItems($val)
     {
 		$this->_propDict["items"] = $val;
+        return $this;
+    }
+    
+
+     /** 
+     * Gets the subscriptions
+     *
+     * @return array The subscriptions
+     */
+    public function getSubscriptions()
+    {
+        if (array_key_exists("subscriptions", $this->_propDict)) {
+           return $this->_propDict["subscriptions"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the subscriptions
+    *
+    * @param Subscription $val The subscriptions
+    *
+    * @return List
+    */
+    public function setSubscriptions($val)
+    {
+		$this->_propDict["subscriptions"] = $val;
         return $this;
     }
     

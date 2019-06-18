@@ -28,6 +28,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
 {
     /**
     * Gets the accountName
+    * Account name.
     *
     * @return string The accountName
     */
@@ -42,6 +43,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the accountName
+    * Account name.
     *
     * @param string $val The accountName
     *
@@ -55,6 +57,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the applyOnlyToWindowsPhone81
+    * Value indicating whether this policy only applies to Windows 8.1. This property is read-only.
     *
     * @return bool The applyOnlyToWindowsPhone81
     */
@@ -69,6 +72,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the applyOnlyToWindowsPhone81
+    * Value indicating whether this policy only applies to Windows 8.1. This property is read-only.
     *
     * @param bool $val The applyOnlyToWindowsPhone81
     *
@@ -82,6 +86,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the syncCalendar
+    * Whether or not to sync the calendar.
     *
     * @return bool The syncCalendar
     */
@@ -96,6 +101,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the syncCalendar
+    * Whether or not to sync the calendar.
     *
     * @param bool $val The syncCalendar
     *
@@ -109,6 +115,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the syncContacts
+    * Whether or not to sync contacts.
     *
     * @return bool The syncContacts
     */
@@ -123,6 +130,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the syncContacts
+    * Whether or not to sync contacts.
     *
     * @param bool $val The syncContacts
     *
@@ -136,6 +144,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the syncTasks
+    * Whether or not to sync tasks.
     *
     * @return bool The syncTasks
     */
@@ -150,6 +159,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the syncTasks
+    * Whether or not to sync tasks.
     *
     * @param bool $val The syncTasks
     *
@@ -163,6 +173,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the durationOfEmailToSync
+    * Duration of email to sync.
     *
     * @return EmailSyncDuration The durationOfEmailToSync
     */
@@ -181,6 +192,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the durationOfEmailToSync
+    * Duration of email to sync.
     *
     * @param EmailSyncDuration $val The durationOfEmailToSync
     *
@@ -194,6 +206,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return UserEmailSource The emailAddressSource
     */
@@ -212,6 +225,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param UserEmailSource $val The emailAddressSource
     *
@@ -225,6 +239,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the emailSyncSchedule
+    * Email sync schedule.
     *
     * @return EmailSyncSchedule The emailSyncSchedule
     */
@@ -243,6 +258,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the emailSyncSchedule
+    * Email sync schedule.
     *
     * @param EmailSyncSchedule $val The emailSyncSchedule
     *
@@ -256,6 +272,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the hostName
+    * Exchange location that (URL) that the native mail app connects to.
     *
     * @return string The hostName
     */
@@ -270,6 +287,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the hostName
+    * Exchange location that (URL) that the native mail app connects to.
     *
     * @param string $val The hostName
     *
@@ -283,6 +301,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Gets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @return bool The requireSsl
     */
@@ -297,6 +316,7 @@ class WindowsPhoneEASEmailProfileConfiguration extends EasEmailProfileConfigurat
     
     /**
     * Sets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @param bool $val The requireSsl
     *

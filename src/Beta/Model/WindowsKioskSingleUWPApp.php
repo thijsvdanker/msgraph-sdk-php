@@ -28,6 +28,7 @@ class WindowsKioskSingleUWPApp extends WindowsKioskAppConfiguration
 
     /**
     * Gets the uwpApp
+    * This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode
     *
     * @return WindowsKioskUWPApp The uwpApp
     */
@@ -46,6 +47,7 @@ class WindowsKioskSingleUWPApp extends WindowsKioskAppConfiguration
 
     /**
     * Sets the uwpApp
+    * This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode
     *
     * @param WindowsKioskUWPApp $val The value to assign to the uwpApp
     *

@@ -34,4 +34,7 @@ class RiskLevel extends Enum
     const LOW = "low";
     const MEDIUM = "medium";
     const HIGH = "high";
+    const HIDDEN = "hidden";
+    const NONE = "none";
+    const UNKNOWN_FUTURE_VALUE = "unknownFutureValue";
 }

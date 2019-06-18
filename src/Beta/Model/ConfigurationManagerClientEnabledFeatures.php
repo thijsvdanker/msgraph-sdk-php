@@ -27,6 +27,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 {
     /**
     * Gets the inventory
+    * Whether inventory is managed by Intune
     *
     * @return bool The inventory
     */
@@ -41,6 +42,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 
     /**
     * Sets the inventory
+    * Whether inventory is managed by Intune
     *
     * @param bool $val The value of the inventory
     *
@@ -53,6 +55,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
     }
     /**
     * Gets the modernApps
+    * Whether modern application is managed by Intune
     *
     * @return bool The modernApps
     */
@@ -67,6 +70,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 
     /**
     * Sets the modernApps
+    * Whether modern application is managed by Intune
     *
     * @param bool $val The value of the modernApps
     *
@@ -79,6 +83,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
     }
     /**
     * Gets the resourceAccess
+    * Whether resource access is managed by Intune
     *
     * @return bool The resourceAccess
     */
@@ -93,6 +98,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 
     /**
     * Sets the resourceAccess
+    * Whether resource access is managed by Intune
     *
     * @param bool $val The value of the resourceAccess
     *
@@ -105,6 +111,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
     }
     /**
     * Gets the deviceConfiguration
+    * Whether device configuration is managed by Intune
     *
     * @return bool The deviceConfiguration
     */
@@ -119,6 +126,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 
     /**
     * Sets the deviceConfiguration
+    * Whether device configuration is managed by Intune
     *
     * @param bool $val The value of the deviceConfiguration
     *
@@ -131,6 +139,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
     }
     /**
     * Gets the compliancePolicy
+    * Whether compliance policy is managed by Intune
     *
     * @return bool The compliancePolicy
     */
@@ -145,6 +154,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 
     /**
     * Sets the compliancePolicy
+    * Whether compliance policy is managed by Intune
     *
     * @param bool $val The value of the compliancePolicy
     *
@@ -157,6 +167,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
     }
     /**
     * Gets the windowsUpdateForBusiness
+    * Whether Windows Update for Business is managed by Intune
     *
     * @return bool The windowsUpdateForBusiness
     */
@@ -171,6 +182,7 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
 
     /**
     * Sets the windowsUpdateForBusiness
+    * Whether Windows Update for Business is managed by Intune
     *
     * @param bool $val The value of the windowsUpdateForBusiness
     *
@@ -179,6 +191,62 @@ class ConfigurationManagerClientEnabledFeatures extends Entity
     public function setWindowsUpdateForBusiness($val)
     {
         $this->_propDict["windowsUpdateForBusiness"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the endpointProtection
+    * Whether Endpoint Protection is managed by Intune
+    *
+    * @return bool The endpointProtection
+    */
+    public function getEndpointProtection()
+    {
+        if (array_key_exists("endpointProtection", $this->_propDict)) {
+            return $this->_propDict["endpointProtection"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the endpointProtection
+    * Whether Endpoint Protection is managed by Intune
+    *
+    * @param bool $val The value of the endpointProtection
+    *
+    * @return ConfigurationManagerClientEnabledFeatures
+    */
+    public function setEndpointProtection($val)
+    {
+        $this->_propDict["endpointProtection"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the officeApps
+    * Whether Office application is managed by Intune
+    *
+    * @return bool The officeApps
+    */
+    public function getOfficeApps()
+    {
+        if (array_key_exists("officeApps", $this->_propDict)) {
+            return $this->_propDict["officeApps"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the officeApps
+    * Whether Office application is managed by Intune
+    *
+    * @param bool $val The value of the officeApps
+    *
+    * @return ConfigurationManagerClientEnabledFeatures
+    */
+    public function setOfficeApps($val)
+    {
+        $this->_propDict["officeApps"] = $val;
         return $this;
     }
 }

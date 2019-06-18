@@ -33,4 +33,6 @@ class ManagedAppFlaggedReason extends Enum
     */
     const NONE = "none";
     const ROOTED_DEVICE = "rootedDevice";
+    const ANDROID_BOOTLOADER_UNLOCKED = "androidBootloaderUnlocked";
+    const ANDROID_FACTORY_ROM_MODIFIED = "androidFactoryRomModified";
 }

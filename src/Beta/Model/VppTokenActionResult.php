@@ -27,6 +27,7 @@ class VppTokenActionResult extends Entity
 {
     /**
     * Gets the actionName
+    * Action name
     *
     * @return string The actionName
     */
@@ -41,6 +42,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Sets the actionName
+    * Action name
     *
     * @param string $val The value of the actionName
     *
@@ -54,6 +56,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Gets the actionState
+    * State of the action
     *
     * @return ActionState The actionState
     */
@@ -72,6 +75,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Sets the actionState
+    * State of the action
     *
     * @param ActionState $val The value to assign to the actionState
     *
@@ -85,6 +89,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Gets the startDateTime
+    * Time the action was initiated
     *
     * @return \DateTime The startDateTime
     */
@@ -103,6 +108,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Sets the startDateTime
+    * Time the action was initiated
     *
     * @param \DateTime $val The value to assign to the startDateTime
     *
@@ -116,6 +122,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Gets the lastUpdatedDateTime
+    * Time the action state was last updated
     *
     * @return \DateTime The lastUpdatedDateTime
     */
@@ -134,6 +141,7 @@ class VppTokenActionResult extends Entity
 
     /**
     * Sets the lastUpdatedDateTime
+    * Time the action state was last updated
     *
     * @param \DateTime $val The value to assign to the lastUpdatedDateTime
     *

@@ -28,6 +28,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
 {
     /**
     * Gets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @return string The scepServerUrls
     */
@@ -42,6 +43,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the scepServerUrls
+    * SCEP Server Url(s).
     *
     * @param string $val The scepServerUrls
     *
@@ -55,6 +57,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Gets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @return string The subjectNameFormatString
     */
@@ -69,6 +72,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the subjectNameFormatString
+    * Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US
     *
     * @param string $val The subjectNameFormatString
     *
@@ -82,6 +86,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Gets the keyUsage
+    * SCEP Key Usage.
     *
     * @return KeyUsages The keyUsage
     */
@@ -100,6 +105,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the keyUsage
+    * SCEP Key Usage.
     *
     * @param KeyUsages $val The keyUsage
     *
@@ -113,6 +119,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Gets the keySize
+    * SCEP Key Size.
     *
     * @return KeySize The keySize
     */
@@ -131,6 +138,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the keySize
+    * SCEP Key Size.
     *
     * @param KeySize $val The keySize
     *
@@ -145,6 +153,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
 
      /** 
      * Gets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The extendedKeyUsages
      */
@@ -159,6 +168,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /** 
     * Sets the extendedKeyUsages
+    * Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.
     *
     * @param ExtendedKeyUsage $val The extendedKeyUsages
     *
@@ -172,6 +182,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Gets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @return string The subjectAlternativeNameFormatString
     */
@@ -186,6 +197,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the subjectAlternativeNameFormatString
+    * Custom String that defines the AAD Attribute.
     *
     * @param string $val The subjectAlternativeNameFormatString
     *
@@ -199,6 +211,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Gets the certificateStore
+    * Target store certificate
     *
     * @return CertificateStore The certificateStore
     */
@@ -217,6 +230,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the certificateStore
+    * Target store certificate
     *
     * @param CertificateStore $val The certificateStore
     *
@@ -231,6 +245,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
 
      /** 
      * Gets the customSubjectAlternativeNames
+    * Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.
      *
      * @return array The customSubjectAlternativeNames
      */
@@ -245,6 +260,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /** 
     * Sets the customSubjectAlternativeNames
+    * Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.
     *
     * @param CustomSubjectAlternativeName $val The customSubjectAlternativeNames
     *
@@ -258,6 +274,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Gets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @return IosTrustedRootCertificate The rootCertificate
     */
@@ -276,6 +293,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /**
     * Sets the rootCertificate
+    * Trusted Root Certificate.
     *
     * @param IosTrustedRootCertificate $val The rootCertificate
     *
@@ -290,6 +308,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
 
      /** 
      * Gets the managedDeviceCertificateStates
+    * Certificate state for devices
      *
      * @return array The managedDeviceCertificateStates
      */
@@ -304,6 +323,7 @@ class IosScepCertificateProfile extends IosCertificateProfileBase
     
     /** 
     * Sets the managedDeviceCertificateStates
+    * Certificate state for devices
     *
     * @param ManagedDeviceCertificateState $val The managedDeviceCertificateStates
     *

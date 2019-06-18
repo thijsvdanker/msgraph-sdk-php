@@ -25,4 +25,39 @@ namespace Microsoft\Graph\Beta\Model;
 */
 class EducationAssignmentIndividualRecipient extends EducationAssignmentRecipient
 {
+    /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.educationAssignmentIndividualRecipient");
+    }
+
+    /**
+    * Gets the recipients
+    *
+    * @return string The recipients
+    */
+    public function getRecipients()
+    {
+        if (array_key_exists("recipients", $this->_propDict)) {
+            return $this->_propDict["recipients"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the recipients
+    *
+    * @param string $val The value of the recipients
+    *
+    * @return EducationAssignmentIndividualRecipient
+    */
+    public function setRecipients($val)
+    {
+        $this->_propDict["recipients"] = $val;
+        return $this;
+    }
 }

@@ -28,6 +28,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
 {
     /**
     * Gets the notificationContent
+    * Notification text that will be sent to users quarantined by this policy. This is UTF8 encoded byte array HTML.
     *
     * @return \GuzzleHttp\Psr7\Stream The notificationContent
     */
@@ -46,6 +47,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /**
     * Sets the notificationContent
+    * Notification text that will be sent to users quarantined by this policy. This is UTF8 encoded byte array HTML.
     *
     * @param \GuzzleHttp\Psr7\Stream $val The notificationContent
     *
@@ -59,6 +61,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /**
     * Gets the defaultAccessLevel
+    * Default access state in Exchange. This rule applies globally to the entire Exchange organization
     *
     * @return DeviceManagementExchangeAccessLevel The defaultAccessLevel
     */
@@ -77,6 +80,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /**
     * Sets the defaultAccessLevel
+    * Default access state in Exchange. This rule applies globally to the entire Exchange organization
     *
     * @param DeviceManagementExchangeAccessLevel $val The defaultAccessLevel
     *
@@ -91,6 +95,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
 
      /** 
      * Gets the accessRules
+    * The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization
      *
      * @return array The accessRules
      */
@@ -105,6 +110,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /** 
     * Sets the accessRules
+    * The list of device access rules in Exchange. The access rules apply globally to the entire Exchange organization
     *
     * @param DeviceManagementExchangeAccessRule $val The accessRules
     *
@@ -119,6 +125,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
 
      /** 
      * Gets the knownDeviceClasses
+    * The list of device classes known to Exchange
      *
      * @return array The knownDeviceClasses
      */
@@ -133,6 +140,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /** 
     * Sets the knownDeviceClasses
+    * The list of device classes known to Exchange
     *
     * @param DeviceManagementExchangeDeviceClass $val The knownDeviceClasses
     *
@@ -146,6 +154,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /**
     * Gets the conditionalAccessSettings
+    * The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access
     *
     * @return OnPremisesConditionalAccessSettings The conditionalAccessSettings
     */
@@ -164,6 +173,7 @@ class DeviceManagementExchangeOnPremisesPolicy extends Entity
     
     /**
     * Sets the conditionalAccessSettings
+    * The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access
     *
     * @param OnPremisesConditionalAccessSettings $val The conditionalAccessSettings
     *

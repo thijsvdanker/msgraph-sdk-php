@@ -34,4 +34,5 @@ class AndroidDeviceOwnerWiFiSecurityType extends Enum
     const OPEN = "open";
     const WEP = "wep";
     const WPA_PERSONAL = "wpaPersonal";
+    const WPA_ENTERPRISE = "wpaEnterprise";
 }

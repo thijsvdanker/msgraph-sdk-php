@@ -37,4 +37,5 @@ class AutomaticUpdateMode extends Enum
     const AUTO_INSTALL_AND_REBOOT_AT_MAINTENANCE_TIME = "autoInstallAndRebootAtMaintenanceTime";
     const AUTO_INSTALL_AND_REBOOT_AT_SCHEDULED_TIME = "autoInstallAndRebootAtScheduledTime";
     const AUTO_INSTALL_AND_REBOOT_WITHOUT_END_USER_CONTROL = "autoInstallAndRebootWithoutEndUserControl";
+    const WINDOWS_DEFAULT = "windowsDefault";
 }

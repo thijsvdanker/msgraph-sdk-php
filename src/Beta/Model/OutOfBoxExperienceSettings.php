@@ -27,6 +27,7 @@ class OutOfBoxExperienceSettings extends Entity
 {
     /**
     * Gets the hidePrivacySettings
+    * Show or hide privacy settings to user
     *
     * @return bool The hidePrivacySettings
     */
@@ -41,6 +42,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Sets the hidePrivacySettings
+    * Show or hide privacy settings to user
     *
     * @param bool $val The value of the hidePrivacySettings
     *
@@ -53,6 +55,7 @@ class OutOfBoxExperienceSettings extends Entity
     }
     /**
     * Gets the hideEULA
+    * Show or hide EULA to user
     *
     * @return bool The hideEULA
     */
@@ -67,6 +70,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Sets the hideEULA
+    * Show or hide EULA to user
     *
     * @param bool $val The value of the hideEULA
     *
@@ -80,6 +84,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Gets the userType
+    * Type of user
     *
     * @return WindowsUserType The userType
     */
@@ -98,6 +103,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Sets the userType
+    * Type of user
     *
     * @param WindowsUserType $val The value to assign to the userType
     *
@@ -111,6 +117,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Gets the deviceUsageType
+    * AAD join authentication type
     *
     * @return WindowsDeviceUsageType The deviceUsageType
     */
@@ -129,6 +136,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Sets the deviceUsageType
+    * AAD join authentication type
     *
     * @param WindowsDeviceUsageType $val The value to assign to the deviceUsageType
     *
@@ -141,6 +149,7 @@ class OutOfBoxExperienceSettings extends Entity
     }
     /**
     * Gets the skipKeyboardSelectionPage
+    * If set, then skip the keyboard selection page if Language and Region are set
     *
     * @return bool The skipKeyboardSelectionPage
     */
@@ -155,6 +164,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Sets the skipKeyboardSelectionPage
+    * If set, then skip the keyboard selection page if Language and Region are set
     *
     * @param bool $val The value of the skipKeyboardSelectionPage
     *
@@ -167,6 +177,7 @@ class OutOfBoxExperienceSettings extends Entity
     }
     /**
     * Gets the hideEscapeLink
+    * If set to true, then the user can't start over with different account, on company sign-in
     *
     * @return bool The hideEscapeLink
     */
@@ -181,6 +192,7 @@ class OutOfBoxExperienceSettings extends Entity
 
     /**
     * Sets the hideEscapeLink
+    * If set to true, then the user can't start over with different account, on company sign-in
     *
     * @param bool $val The value of the hideEscapeLink
     *

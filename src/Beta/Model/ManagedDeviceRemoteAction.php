@@ -36,4 +36,5 @@ class ManagedDeviceRemoteAction extends Enum
     const FULL_SCAN = "fullScan";
     const QUICK_SCAN = "quickScan";
     const SIGNATURE_UPDATE = "signatureUpdate";
+    const WIPE = "wipe";
 }

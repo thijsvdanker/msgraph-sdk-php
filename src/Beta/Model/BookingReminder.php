@@ -28,6 +28,7 @@ class BookingReminder extends Entity
 
     /**
     * Gets the offset
+    * How much time before an appointment the reminder should be sent.
     *
     * @return Duration The offset
     */
@@ -46,6 +47,7 @@ class BookingReminder extends Entity
 
     /**
     * Sets the offset
+    * How much time before an appointment the reminder should be sent.
     *
     * @param Duration $val The value to assign to the offset
     *
@@ -59,6 +61,7 @@ class BookingReminder extends Entity
 
     /**
     * Gets the recipients
+    * Who should receive the reminder.
     *
     * @return BookingReminderRecipients The recipients
     */
@@ -77,6 +80,7 @@ class BookingReminder extends Entity
 
     /**
     * Sets the recipients
+    * Who should receive the reminder.
     *
     * @param BookingReminderRecipients $val The value to assign to the recipients
     *
@@ -89,6 +93,7 @@ class BookingReminder extends Entity
     }
     /**
     * Gets the message
+    * Message to send.
     *
     * @return string The message
     */
@@ -103,6 +108,7 @@ class BookingReminder extends Entity
 
     /**
     * Sets the message
+    * Message to send.
     *
     * @param string $val The value of the message
     *

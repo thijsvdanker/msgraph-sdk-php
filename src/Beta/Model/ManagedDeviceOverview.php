@@ -28,6 +28,7 @@ class ManagedDeviceOverview extends Entity
 {
     /**
     * Gets the enrolledDeviceCount
+    * Total enrolled device count. Does not include PC devices managed via Intune PC Agent
     *
     * @return int The enrolledDeviceCount
     */
@@ -42,6 +43,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the enrolledDeviceCount
+    * Total enrolled device count. Does not include PC devices managed via Intune PC Agent
     *
     * @param int $val The enrolledDeviceCount
     *
@@ -55,6 +57,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Gets the mdmEnrolledCount
+    * The number of devices enrolled in MDM
     *
     * @return int The mdmEnrolledCount
     */
@@ -69,6 +72,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the mdmEnrolledCount
+    * The number of devices enrolled in MDM
     *
     * @param int $val The mdmEnrolledCount
     *
@@ -82,6 +86,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Gets the dualEnrolledDeviceCount
+    * The number of devices enrolled in both MDM and EAS
     *
     * @return int The dualEnrolledDeviceCount
     */
@@ -96,6 +101,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the dualEnrolledDeviceCount
+    * The number of devices enrolled in both MDM and EAS
     *
     * @param int $val The dualEnrolledDeviceCount
     *
@@ -109,6 +115,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Gets the deviceOperatingSystemSummary
+    * Device operating system summary.
     *
     * @return DeviceOperatingSystemSummary The deviceOperatingSystemSummary
     */
@@ -127,6 +134,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the deviceOperatingSystemSummary
+    * Device operating system summary.
     *
     * @param DeviceOperatingSystemSummary $val The deviceOperatingSystemSummary
     *
@@ -140,6 +148,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Gets the deviceExchangeAccessStateSummary
+    * Distribution of Exchange Access State in Intune
     *
     * @return DeviceExchangeAccessStateSummary The deviceExchangeAccessStateSummary
     */
@@ -158,6 +167,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the deviceExchangeAccessStateSummary
+    * Distribution of Exchange Access State in Intune
     *
     * @param DeviceExchangeAccessStateSummary $val The deviceExchangeAccessStateSummary
     *
@@ -171,6 +181,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Gets the managedDeviceModelsAndManufacturers
+    * Models and Manufactures meatadata for managed devices in the account
     *
     * @return ManagedDeviceModelsAndManufacturers The managedDeviceModelsAndManufacturers
     */
@@ -189,6 +200,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the managedDeviceModelsAndManufacturers
+    * Models and Manufactures meatadata for managed devices in the account
     *
     * @param ManagedDeviceModelsAndManufacturers $val The managedDeviceModelsAndManufacturers
     *
@@ -202,6 +214,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Gets the lastModifiedDateTime
+    * Last modified date time of device overview
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -220,6 +233,7 @@ class ManagedDeviceOverview extends Entity
     
     /**
     * Sets the lastModifiedDateTime
+    * Last modified date time of device overview
     *
     * @param \DateTime $val The lastModifiedDateTime
     *

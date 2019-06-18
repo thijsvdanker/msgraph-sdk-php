@@ -29,6 +29,7 @@ class AppleDeviceFeaturesConfigurationBase extends DeviceConfiguration
 
      /** 
      * Gets the airPrintDestinations
+    * An array of AirPrint printers that should always be shown. This collection can contain a maximum of 500 elements.
      *
      * @return array The airPrintDestinations
      */
@@ -43,6 +44,7 @@ class AppleDeviceFeaturesConfigurationBase extends DeviceConfiguration
     
     /** 
     * Sets the airPrintDestinations
+    * An array of AirPrint printers that should always be shown. This collection can contain a maximum of 500 elements.
     *
     * @param AirPrintDestination $val The airPrintDestinations
     *

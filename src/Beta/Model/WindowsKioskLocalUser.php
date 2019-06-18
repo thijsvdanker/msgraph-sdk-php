@@ -27,6 +27,7 @@ class WindowsKioskLocalUser extends WindowsKioskUser
 {
     /**
     * Gets the userName
+    * The local user that will be locked to this kiosk configuration
     *
     * @return string The userName
     */
@@ -41,6 +42,7 @@ class WindowsKioskLocalUser extends WindowsKioskUser
 
     /**
     * Sets the userName
+    * The local user that will be locked to this kiosk configuration
     *
     * @param string $val The value of the userName
     *

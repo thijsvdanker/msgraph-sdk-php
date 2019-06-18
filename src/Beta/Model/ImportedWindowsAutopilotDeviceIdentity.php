@@ -28,6 +28,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
 {
     /**
     * Gets the orderIdentifier
+    * Order Id of the Windows autopilot device.
     *
     * @return string The orderIdentifier
     */
@@ -42,6 +43,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the orderIdentifier
+    * Order Id of the Windows autopilot device.
     *
     * @param string $val The orderIdentifier
     *
@@ -55,6 +57,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the serialNumber
+    * Serial number of the Windows autopilot device.
     *
     * @return string The serialNumber
     */
@@ -69,6 +72,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the serialNumber
+    * Serial number of the Windows autopilot device.
     *
     * @param string $val The serialNumber
     *
@@ -82,6 +86,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the productKey
+    * Product Key of the Windows autopilot device.
     *
     * @return string The productKey
     */
@@ -96,6 +101,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the productKey
+    * Product Key of the Windows autopilot device.
     *
     * @param string $val The productKey
     *
@@ -108,7 +114,37 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     }
     
     /**
+    * Gets the importId
+    * The Import Id of the Windows autopilot device.
+    *
+    * @return string The importId
+    */
+    public function getImportId()
+    {
+        if (array_key_exists("importId", $this->_propDict)) {
+            return $this->_propDict["importId"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the importId
+    * The Import Id of the Windows autopilot device.
+    *
+    * @param string $val The importId
+    *
+    * @return ImportedWindowsAutopilotDeviceIdentity
+    */
+    public function setImportId($val)
+    {
+        $this->_propDict["importId"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the hardwareIdentifier
+    * Hardware Blob of the Windows autopilot device.
     *
     * @return \GuzzleHttp\Psr7\Stream The hardwareIdentifier
     */
@@ -127,6 +163,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the hardwareIdentifier
+    * Hardware Blob of the Windows autopilot device.
     *
     * @param \GuzzleHttp\Psr7\Stream $val The hardwareIdentifier
     *
@@ -140,6 +177,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Gets the state
+    * Current state of the imported device.
     *
     * @return ImportedWindowsAutopilotDeviceIdentityState The state
     */
@@ -158,6 +196,7 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     
     /**
     * Sets the state
+    * Current state of the imported device.
     *
     * @param ImportedWindowsAutopilotDeviceIdentityState $val The state
     *
@@ -166,6 +205,35 @@ class ImportedWindowsAutopilotDeviceIdentity extends Entity
     public function setState($val)
     {
         $this->_propDict["state"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the assignedUserPrincipalName
+    * UPN of the user the device will be assigned
+    *
+    * @return string The assignedUserPrincipalName
+    */
+    public function getAssignedUserPrincipalName()
+    {
+        if (array_key_exists("assignedUserPrincipalName", $this->_propDict)) {
+            return $this->_propDict["assignedUserPrincipalName"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the assignedUserPrincipalName
+    * UPN of the user the device will be assigned
+    *
+    * @param string $val The assignedUserPrincipalName
+    *
+    * @return ImportedWindowsAutopilotDeviceIdentity
+    */
+    public function setAssignedUserPrincipalName($val)
+    {
+        $this->_propDict["assignedUserPrincipalName"] = $val;
         return $this;
     }
     

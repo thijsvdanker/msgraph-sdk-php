@@ -28,6 +28,7 @@ class IosEduDeviceConfiguration extends DeviceConfiguration
 {
     /**
     * Gets the teacherCertificateSettings
+    * The Trusted Root and PFX certificates for Teacher
     *
     * @return IosEduCertificateSettings The teacherCertificateSettings
     */
@@ -46,6 +47,7 @@ class IosEduDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the teacherCertificateSettings
+    * The Trusted Root and PFX certificates for Teacher
     *
     * @param IosEduCertificateSettings $val The teacherCertificateSettings
     *
@@ -59,6 +61,7 @@ class IosEduDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the studentCertificateSettings
+    * The Trusted Root and PFX certificates for Student
     *
     * @return IosEduCertificateSettings The studentCertificateSettings
     */
@@ -77,6 +80,7 @@ class IosEduDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the studentCertificateSettings
+    * The Trusted Root and PFX certificates for Student
     *
     * @param IosEduCertificateSettings $val The studentCertificateSettings
     *
@@ -90,6 +94,7 @@ class IosEduDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceCertificateSettings
+    * The Trusted Root and PFX certificates for Device
     *
     * @return IosEduCertificateSettings The deviceCertificateSettings
     */
@@ -108,6 +113,7 @@ class IosEduDeviceConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceCertificateSettings
+    * The Trusted Root and PFX certificates for Device
     *
     * @param IosEduCertificateSettings $val The deviceCertificateSettings
     *

@@ -27,6 +27,7 @@ class ProxiedDomain extends Entity
 {
     /**
     * Gets the ipAddressOrFQDN
+    * The IP address or FQDN
     *
     * @return string The ipAddressOrFQDN
     */
@@ -41,6 +42,7 @@ class ProxiedDomain extends Entity
 
     /**
     * Sets the ipAddressOrFQDN
+    * The IP address or FQDN
     *
     * @param string $val The value of the ipAddressOrFQDN
     *
@@ -53,6 +55,7 @@ class ProxiedDomain extends Entity
     }
     /**
     * Gets the proxy
+    * Proxy IP or FQDN
     *
     * @return string The proxy
     */
@@ -67,6 +70,7 @@ class ProxiedDomain extends Entity
 
     /**
     * Sets the proxy
+    * Proxy IP or FQDN
     *
     * @param string $val The value of the proxy
     *

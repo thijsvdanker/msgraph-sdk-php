@@ -25,9 +25,19 @@ namespace Microsoft\Graph\Beta\Model;
 */
 class OmaSettingDateTime extends OmaSetting
 {
+    /**
+    * Set the @odata.type since this type is immediately descended from an abstract
+    * type that is referenced as the type in an entity.
+    */
+    public function __construct()
+    {
+        $this->setODataType("#microsoft.graph.omaSettingDateTime");
+    }
+
 
     /**
     * Gets the value
+    * Value.
     *
     * @return \DateTime The value
     */
@@ -46,6 +56,7 @@ class OmaSettingDateTime extends OmaSetting
 
     /**
     * Sets the value
+    * Value.
     *
     * @param \DateTime $val The value to assign to the value
     *

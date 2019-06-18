@@ -286,6 +286,37 @@ class PrivilegedApproval extends Entity
     }
     
     /**
+    * Gets the request
+    *
+    * @return PrivilegedRoleAssignmentRequest The request
+    */
+    public function getRequest()
+    {
+        if (array_key_exists("request", $this->_propDict)) {
+            if (is_a($this->_propDict["request"], "Microsoft\Graph\Beta\Model\PrivilegedRoleAssignmentRequest")) {
+                return $this->_propDict["request"];
+            } else {
+                $this->_propDict["request"] = new PrivilegedRoleAssignmentRequest($this->_propDict["request"]);
+                return $this->_propDict["request"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the request
+    *
+    * @param PrivilegedRoleAssignmentRequest $val The request
+    *
+    * @return PrivilegedApproval
+    */
+    public function setRequest($val)
+    {
+        $this->_propDict["request"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the roleInfo
     *
     * @return PrivilegedRole The roleInfo

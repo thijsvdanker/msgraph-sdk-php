@@ -38,4 +38,5 @@ class AndroidDeviceOwnerRequiredPasswordType extends Enum
     const ALPHABETIC = "alphabetic";
     const ALPHANUMERIC = "alphanumeric";
     const ALPHANUMERIC_WITH_SYMBOLS = "alphanumericWithSymbols";
+    const LOW_SECURITY_BIOMETRIC = "lowSecurityBiometric";
 }

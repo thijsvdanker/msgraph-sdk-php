@@ -28,6 +28,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
 {
     /**
     * Gets the accountName
+    * Exchange ActiveSync account name, displayed to users as name of EAS (this) profile.
     *
     * @return string The accountName
     */
@@ -42,6 +43,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the accountName
+    * Exchange ActiveSync account name, displayed to users as name of EAS (this) profile.
     *
     * @param string $val The accountName
     *
@@ -55,6 +57,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the authenticationMethod
+    * Authentication method for Exchange ActiveSync.
     *
     * @return EasAuthenticationMethod The authenticationMethod
     */
@@ -73,6 +76,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the authenticationMethod
+    * Authentication method for Exchange ActiveSync.
     *
     * @param EasAuthenticationMethod $val The authenticationMethod
     *
@@ -86,6 +90,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the syncCalendar
+    * Toggles syncing the calendar. If set to false calendar is turned off on the device.
     *
     * @return bool The syncCalendar
     */
@@ -100,6 +105,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the syncCalendar
+    * Toggles syncing the calendar. If set to false calendar is turned off on the device.
     *
     * @param bool $val The syncCalendar
     *
@@ -113,6 +119,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the syncContacts
+    * Toggles syncing contacts. If set to false contacts are turned off on the device.
     *
     * @return bool The syncContacts
     */
@@ -127,6 +134,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the syncContacts
+    * Toggles syncing contacts. If set to false contacts are turned off on the device.
     *
     * @param bool $val The syncContacts
     *
@@ -140,6 +148,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the syncTasks
+    * Toggles syncing tasks. If set to false tasks are turned off on the device.
     *
     * @return bool The syncTasks
     */
@@ -154,6 +163,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the syncTasks
+    * Toggles syncing tasks. If set to false tasks are turned off on the device.
     *
     * @param bool $val The syncTasks
     *
@@ -167,6 +177,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the syncNotes
+    * Toggles syncing notes. If set to false notes are turned off on the device.
     *
     * @return bool The syncNotes
     */
@@ -181,6 +192,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the syncNotes
+    * Toggles syncing notes. If set to false notes are turned off on the device.
     *
     * @param bool $val The syncNotes
     *
@@ -194,6 +206,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the durationOfEmailToSync
+    * Duration of time email should be synced to.
     *
     * @return EmailSyncDuration The durationOfEmailToSync
     */
@@ -212,6 +225,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the durationOfEmailToSync
+    * Duration of time email should be synced to.
     *
     * @param EmailSyncDuration $val The durationOfEmailToSync
     *
@@ -225,6 +239,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return UserEmailSource The emailAddressSource
     */
@@ -243,6 +258,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the emailAddressSource
+    * Email attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param UserEmailSource $val The emailAddressSource
     *
@@ -256,6 +272,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the emailSyncSchedule
+    * Email sync schedule.
     *
     * @return EmailSyncSchedule The emailSyncSchedule
     */
@@ -274,6 +291,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the emailSyncSchedule
+    * Email sync schedule.
     *
     * @param EmailSyncSchedule $val The emailSyncSchedule
     *
@@ -287,6 +305,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the hostName
+    * Exchange location (URL) that the native mail app connects to.
     *
     * @return string The hostName
     */
@@ -301,6 +320,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the hostName
+    * Exchange location (URL) that the native mail app connects to.
     *
     * @param string $val The hostName
     *
@@ -314,6 +334,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the requireSmime
+    * Indicates whether or not to use S/MIME certificate.
     *
     * @return bool The requireSmime
     */
@@ -328,6 +349,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the requireSmime
+    * Indicates whether or not to use S/MIME certificate.
     *
     * @param bool $val The requireSmime
     *
@@ -341,6 +363,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @return bool The requireSsl
     */
@@ -355,6 +378,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the requireSsl
+    * Indicates whether or not to use SSL.
     *
     * @param bool $val The requireSsl
     *
@@ -368,6 +392,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the usernameSource
+    * Username attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return AndroidUsernameSource The usernameSource
     */
@@ -386,6 +411,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the usernameSource
+    * Username attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param AndroidUsernameSource $val The usernameSource
     *
@@ -399,6 +425,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the userDomainNameSource
+    * UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @return DomainNameSource The userDomainNameSource
     */
@@ -417,6 +444,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the userDomainNameSource
+    * UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device.
     *
     * @param DomainNameSource $val The userDomainNameSource
     *
@@ -430,6 +458,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the customDomainName
+    * Custom domain name value used while generating an email profile before installing on the device.
     *
     * @return string The customDomainName
     */
@@ -444,6 +473,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the customDomainName
+    * Custom domain name value used while generating an email profile before installing on the device.
     *
     * @param string $val The customDomainName
     *
@@ -457,6 +487,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the identityCertificate
+    * Identity certificate.
     *
     * @return AndroidCertificateProfileBase The identityCertificate
     */
@@ -475,6 +506,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the identityCertificate
+    * Identity certificate.
     *
     * @param AndroidCertificateProfileBase $val The identityCertificate
     *
@@ -488,6 +520,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Gets the smimeSigningCertificate
+    * S/MIME signing certificate.
     *
     * @return AndroidCertificateProfileBase The smimeSigningCertificate
     */
@@ -506,6 +539,7 @@ class AndroidEasEmailProfileConfiguration extends DeviceConfiguration
     
     /**
     * Sets the smimeSigningCertificate
+    * S/MIME signing certificate.
     *
     * @param AndroidCertificateProfileBase $val The smimeSigningCertificate
     *

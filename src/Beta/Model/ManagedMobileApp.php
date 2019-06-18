@@ -28,6 +28,7 @@ class ManagedMobileApp extends Entity
 {
     /**
     * Gets the mobileAppIdentifier
+    * The identifier for an app with it's operating system type.
     *
     * @return MobileAppIdentifier The mobileAppIdentifier
     */
@@ -46,6 +47,7 @@ class ManagedMobileApp extends Entity
     
     /**
     * Sets the mobileAppIdentifier
+    * The identifier for an app with it's operating system type.
     *
     * @param MobileAppIdentifier $val The mobileAppIdentifier
     *
@@ -59,6 +61,7 @@ class ManagedMobileApp extends Entity
     
     /**
     * Gets the version
+    * Version of the entity.
     *
     * @return string The version
     */
@@ -73,6 +76,7 @@ class ManagedMobileApp extends Entity
     
     /**
     * Sets the version
+    * Version of the entity.
     *
     * @param string $val The version
     *
