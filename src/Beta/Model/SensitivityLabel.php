@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * SensitivityLabel File
 * PHP version 7
 *
@@ -39,7 +39,7 @@ class SensitivityLabel extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the name
     *
@@ -52,7 +52,34 @@ class SensitivityLabel extends Entity
         $this->_propDict["name"] = $val;
         return $this;
     }
-    
+
+    /**
+    * Gets the displayName
+    *
+    * @return string The displayName
+    */
+    public function getDisplayName()
+    {
+        if (array_key_exists("displayName", $this->_propDict)) {
+            return $this->_propDict["displayName"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the displayName
+    *
+    * @param string $val The displayName
+    *
+    * @return SensitivityLabel
+    */
+    public function setDisplayName($val)
+    {
+        $this->_propDict["displayName"] = $val;
+        return $this;
+    }
+
     /**
     * Gets the description
     *
@@ -66,7 +93,7 @@ class SensitivityLabel extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the description
     *
@@ -79,7 +106,7 @@ class SensitivityLabel extends Entity
         $this->_propDict["description"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the toolTip
     *
@@ -93,7 +120,7 @@ class SensitivityLabel extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the toolTip
     *
@@ -106,7 +133,7 @@ class SensitivityLabel extends Entity
         $this->_propDict["toolTip"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the isEndpointProtectionEnabled
     *
@@ -120,7 +147,7 @@ class SensitivityLabel extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the isEndpointProtectionEnabled
     *
@@ -133,25 +160,56 @@ class SensitivityLabel extends Entity
         $this->_propDict["isEndpointProtectionEnabled"] = boolval($val);
         return $this;
     }
-    
+
     /**
-    * Gets the applicationMode
+    * Gets the isDefault
     *
-    * @return string The applicationMode
+    * @return bool The isDefault
     */
-    public function getApplicationMode()
+    public function getIsDefault()
     {
-        if (array_key_exists("applicationMode", $this->_propDict)) {
-            return $this->_propDict["applicationMode"];
+        if (array_key_exists("isDefault", $this->_propDict)) {
+            return $this->_propDict["isDefault"];
         } else {
             return null;
         }
     }
-    
+
+    /**
+    * Sets the isDefault
+    *
+    * @param bool $val The isDefault
+    *
+    * @return SensitivityLabel
+    */
+    public function setIsDefault($val)
+    {
+        $this->_propDict["isDefault"] = boolval($val);
+        return $this;
+    }
+
+    /**
+    * Gets the applicationMode
+    *
+    * @return ApplicationMode The applicationMode
+    */
+    public function getApplicationMode()
+    {
+        if (array_key_exists("applicationMode", $this->_propDict)) {
+            if (is_a($this->_propDict["applicationMode"], "Microsoft\Graph\Beta\Model\ApplicationMode")) {
+                return $this->_propDict["applicationMode"];
+            } else {
+                $this->_propDict["applicationMode"] = new ApplicationMode($this->_propDict["applicationMode"]);
+                return $this->_propDict["applicationMode"];
+            }
+        }
+        return null;
+    }
+
     /**
     * Sets the applicationMode
     *
-    * @param string $val The applicationMode
+    * @param ApplicationMode $val The applicationMode
     *
     * @return SensitivityLabel
     */
@@ -160,9 +218,9 @@ class SensitivityLabel extends Entity
         $this->_propDict["applicationMode"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the labelActions
      *
      * @return array The labelActions
@@ -175,8 +233,8 @@ class SensitivityLabel extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the labelActions
     *
     * @param LabelActionBase $val The labelActions
@@ -188,9 +246,9 @@ class SensitivityLabel extends Entity
 		$this->_propDict["labelActions"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the assignedPolicies
      *
      * @return array The assignedPolicies
@@ -203,8 +261,8 @@ class SensitivityLabel extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the assignedPolicies
     *
     * @param LabelPolicy $val The assignedPolicies
@@ -216,5 +274,60 @@ class SensitivityLabel extends Entity
 		$this->_propDict["assignedPolicies"] = $val;
         return $this;
     }
-    
+
+    /**
+    * Gets the priority
+    *
+    * @return int The priority
+    */
+    public function getPriority()
+    {
+        if (array_key_exists("priority", $this->_propDict)) {
+            return $this->_propDict["priority"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the priority
+    *
+    * @param int $val The priority
+    *
+    * @return SensitivityLabel
+    */
+    public function setPriority($val)
+    {
+        $this->_propDict["priority"] = intval($val);
+        return $this;
+    }
+
+
+     /**
+     * Gets the sublabels
+     *
+     * @return array The sublabels
+     */
+    public function getSublabels()
+    {
+        if (array_key_exists("sublabels", $this->_propDict)) {
+           return $this->_propDict["sublabels"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the sublabels
+    *
+    * @param SensitivityLabel $val The sublabels
+    *
+    * @return SensitivityLabel
+    */
+    public function setSublabels($val)
+    {
+		$this->_propDict["sublabels"] = $val;
+        return $this;
+    }
+
 }

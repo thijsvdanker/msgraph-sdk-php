@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * IntuneBrandingProfile File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the profileName
     * Name of the profile
@@ -54,7 +54,7 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["profileName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the profileDescription
     * Description of the profile
@@ -69,7 +69,7 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the profileDescription
     * Description of the profile
@@ -83,10 +83,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["profileDescription"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the isDefaultProfile
-    * Presents if the profile is used for default.
+    * Boolean that represents whether the profile is used as default or not
     *
     * @return bool The isDefaultProfile
     */
@@ -98,24 +98,20 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the isDefaultProfile
-    * Presents if the profile is used for default.
     *
-    * @param bool $val The isDefaultProfile
-    *
-    * @return IntuneBrandingProfile
     */
     public function setIsDefaultProfile($val)
     {
         $this->_propDict["isDefaultProfile"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the createdDateTime
-    * When the BrandingProfile was created.
+    * Time when the BrandingProfile was created
     *
     * @return \DateTime The createdDateTime
     */
@@ -131,10 +127,10 @@ class IntuneBrandingProfile extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdDateTime
-    * When the BrandingProfile was created.
+    * Time when the BrandingProfile was created
     *
     * @param \DateTime $val The createdDateTime
     *
@@ -145,10 +141,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["createdDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastModifiedDateTime
-    * When the BrandingProfile was last modified.
+    * Time when the BrandingProfile was last modified
     *
     * @return \DateTime The lastModifiedDateTime
     */
@@ -164,10 +160,10 @@ class IntuneBrandingProfile extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
-    * When the BrandingProfile was last modified.
+    * Time when the BrandingProfile was last modified
     *
     * @param \DateTime $val The lastModifiedDateTime
     *
@@ -178,10 +174,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the displayName
-    * Company/organization name that is displayed to end users.
+    * Company/organization name that is displayed to end users
     *
     * @return string The displayName
     */
@@ -193,10 +189,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
-    * Company/organization name that is displayed to end users.
+    * Company/organization name that is displayed to end users
     *
     * @param string $val The displayName
     *
@@ -207,10 +203,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contactITName
-    * Name of the person/organization responsible for IT support.
+    * Name of the person/organization responsible for IT support
     *
     * @return string The contactITName
     */
@@ -222,10 +218,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the contactITName
-    * Name of the person/organization responsible for IT support.
+    * Name of the person/organization responsible for IT support
     *
     * @param string $val The contactITName
     *
@@ -236,10 +232,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["contactITName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contactITPhoneNumber
-    * Phone number of the person/organization responsible for IT support.
+    * Phone number of the person/organization responsible for IT support
     *
     * @return string The contactITPhoneNumber
     */
@@ -251,10 +247,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the contactITPhoneNumber
-    * Phone number of the person/organization responsible for IT support.
+    * Phone number of the person/organization responsible for IT support
     *
     * @param string $val The contactITPhoneNumber
     *
@@ -265,10 +261,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["contactITPhoneNumber"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contactITEmailAddress
-    * Email address of the person/organization responsible for IT support.
+    * E-mail address of the person/organization responsible for IT support
     *
     * @return string The contactITEmailAddress
     */
@@ -280,10 +276,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the contactITEmailAddress
-    * Email address of the person/organization responsible for IT support.
+    * E-mail address of the person/organization responsible for IT support
     *
     * @param string $val The contactITEmailAddress
     *
@@ -294,10 +290,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["contactITEmailAddress"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contactITNotes
-    * Text comments regarding the person/organization responsible for IT support.
+    * Text comments regarding the person/organization responsible for IT support
     *
     * @return string The contactITNotes
     */
@@ -309,10 +305,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the contactITNotes
-    * Text comments regarding the person/organization responsible for IT support.
+    * Text comments regarding the person/organization responsible for IT support
     *
     * @param string $val The contactITNotes
     *
@@ -323,10 +319,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["contactITNotes"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the privacyUrl
-    * URL to the company/organizationâ€™s privacy policy.
+    * URL to the company/organizationâ€™s privacy policy
     *
     * @return string The privacyUrl
     */
@@ -338,10 +334,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the privacyUrl
-    * URL to the company/organizationâ€™s privacy policy.
+    * URL to the company/organizationâ€™s privacy policy
     *
     * @param string $val The privacyUrl
     *
@@ -352,10 +348,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["privacyUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the onlineSupportSiteUrl
-    * URL to the company/organizationâ€™s IT helpdesk site.
+    * URL to the company/organizationâ€™s IT helpdesk site
     *
     * @return string The onlineSupportSiteUrl
     */
@@ -367,10 +363,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the onlineSupportSiteUrl
-    * URL to the company/organizationâ€™s IT helpdesk site.
+    * URL to the company/organizationâ€™s IT helpdesk site
     *
     * @param string $val The onlineSupportSiteUrl
     *
@@ -381,10 +377,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["onlineSupportSiteUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the onlineSupportSiteName
-    * Display name of the company/organizationâ€™s IT helpdesk site.
+    * Display name of the company/organizationâ€™s IT helpdesk site
     *
     * @return string The onlineSupportSiteName
     */
@@ -396,10 +392,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the onlineSupportSiteName
-    * Display name of the company/organizationâ€™s IT helpdesk site.
+    * Display name of the company/organizationâ€™s IT helpdesk site
     *
     * @param string $val The onlineSupportSiteName
     *
@@ -410,10 +406,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["onlineSupportSiteName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the themeColor
-    * Primary theme color used in the Company Portal applications and web portal.
+    * Primary theme color used in the Company Portal applications and web portal
     *
     * @return RgbColor The themeColor
     */
@@ -429,10 +425,10 @@ class IntuneBrandingProfile extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the themeColor
-    * Primary theme color used in the Company Portal applications and web portal.
+    * Primary theme color used in the Company Portal applications and web portal
     *
     * @param RgbColor $val The themeColor
     *
@@ -443,10 +439,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["themeColor"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the showLogo
-    * Boolean that represents whether the administrator-supplied logo images are shown or not shown.
+    * Boolean that represents whether the administrator-supplied logo images are shown or not
     *
     * @return bool The showLogo
     */
@@ -458,10 +454,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the showLogo
-    * Boolean that represents whether the administrator-supplied logo images are shown or not shown.
+    * Boolean that represents whether the administrator-supplied logo images are shown or not
     *
     * @param bool $val The showLogo
     *
@@ -472,10 +468,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["showLogo"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the showDisplayNameNextToLogo
-    * Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
+    * Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
     *
     * @return bool The showDisplayNameNextToLogo
     */
@@ -487,10 +483,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the showDisplayNameNextToLogo
-    * Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
+    * Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
     *
     * @param bool $val The showDisplayNameNextToLogo
     *
@@ -501,10 +497,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["showDisplayNameNextToLogo"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the themeColorLogo
-    * Logo image displayed in Company Portal apps on theme color backgrounds.
+    * Logo image displayed in Company Portal apps which have a theme color background behind the logo
     *
     * @return MimeContent The themeColorLogo
     */
@@ -520,10 +516,10 @@ class IntuneBrandingProfile extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the themeColorLogo
-    * Logo image displayed in Company Portal apps on theme color backgrounds.
+    * Logo image displayed in Company Portal apps which have a theme color background behind the logo
     *
     * @param MimeContent $val The themeColorLogo
     *
@@ -534,10 +530,10 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["themeColorLogo"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lightBackgroundLogo
-    * Logo image displayed in Company Portal apps on light backgrounds.
+    * Logo image displayed in Company Portal apps which have a light background behind the logo
     *
     * @return MimeContent The lightBackgroundLogo
     */
@@ -553,10 +549,10 @@ class IntuneBrandingProfile extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lightBackgroundLogo
-    * Logo image displayed in Company Portal apps on light backgrounds.
+    * Logo image displayed in Company Portal apps which have a light background behind the logo
     *
     * @param MimeContent $val The lightBackgroundLogo
     *
@@ -567,7 +563,7 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["lightBackgroundLogo"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the landingPageCustomizedImage
     * Customized image displayed in Company Portal apps landing page
@@ -586,7 +582,7 @@ class IntuneBrandingProfile extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the landingPageCustomizedImage
     * Customized image displayed in Company Portal apps landing page
@@ -600,11 +596,40 @@ class IntuneBrandingProfile extends Entity
         $this->_propDict["landingPageCustomizedImage"] = $val;
         return $this;
     }
-    
 
-     /** 
+    /**
+    * Gets the customPrivacyMessage
+    * Text comments regarding what the admin has access to on the device
+    *
+    * @return string The customPrivacyMessage
+    */
+    public function getCustomPrivacyMessage()
+    {
+        if (array_key_exists("customPrivacyMessage", $this->_propDict)) {
+            return $this->_propDict["customPrivacyMessage"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the customPrivacyMessage
+    * Text comments regarding what the admin has access to on the device
+    *
+    * @param string $val The customPrivacyMessage
+    *
+    * @return IntuneBrandingProfile
+    */
+    public function setCustomPrivacyMessage($val)
+    {
+        $this->_propDict["customPrivacyMessage"] = $val;
+        return $this;
+    }
+
+
+     /**
      * Gets the assignments
-    * The list of group assignments for the branding profile.
+    * The list of group assignments for the branding profile
      *
      * @return array The assignments
      */
@@ -616,10 +641,10 @@ class IntuneBrandingProfile extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the assignments
-    * The list of group assignments for the branding profile.
+    * The list of group assignments for the branding profile
     *
     * @param IntuneBrandingProfileAssignment $val The assignments
     *
@@ -630,5 +655,5 @@ class IntuneBrandingProfile extends Entity
 		$this->_propDict["assignments"] = $val;
         return $this;
     }
-    
+
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EvaluateLabelJobResponse File
 * PHP version 7
 *
@@ -29,25 +29,25 @@ class EvaluateLabelJobResponse extends JobResponseBase
     /**
     * Gets the result
     *
-    * @return EvaluateLabelResult The result
+    * @return EvaluateLabelJobResultGroup The result
     */
     public function getResult()
     {
         if (array_key_exists("result", $this->_propDict)) {
-            if (is_a($this->_propDict["result"], "Microsoft\Graph\Beta\Model\EvaluateLabelResult")) {
+            if (is_a($this->_propDict["result"], "Microsoft\Graph\Beta\Model\EvaluateLabelJobResultGroup")) {
                 return $this->_propDict["result"];
             } else {
-                $this->_propDict["result"] = new EvaluateLabelResult($this->_propDict["result"]);
-                return $this->_propDict["result"];
+                $this->_propDict["result"] = new EvaluateLabelJobResultGroup($this->_propDict["result"]);
+
             }
         }
         return null;
     }
-    
+
     /**
     * Sets the result
     *
-    * @param EvaluateLabelResult $val The result
+    * @param EvaluateLabelJobResultGroup $val The result
     *
     * @return EvaluateLabelJobResponse
     */
@@ -56,5 +56,5 @@ class EvaluateLabelJobResponse extends JobResponseBase
         $this->_propDict["result"] = $val;
         return $this;
     }
-    
+
 }

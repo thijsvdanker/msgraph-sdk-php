@@ -849,4 +849,34 @@ class DeviceAppManagement extends Entity
         return $this;
     }
     
+
+     /** 
+     * Gets the deviceAppManagementTasks
+    * Device app management tasks.
+     *
+     * @return array The deviceAppManagementTasks
+     */
+    public function getDeviceAppManagementTasks()
+    {
+        if (array_key_exists("deviceAppManagementTasks", $this->_propDict)) {
+           return $this->_propDict["deviceAppManagementTasks"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the deviceAppManagementTasks
+    * Device app management tasks.
+    *
+    * @param DeviceAppManagementTask $val The deviceAppManagementTasks
+    *
+    * @return DeviceAppManagement
+    */
+    public function setDeviceAppManagementTasks($val)
+    {
+		$this->_propDict["deviceAppManagementTasks"] = $val;
+        return $this;
+    }
+    
 }

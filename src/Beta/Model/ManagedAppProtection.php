@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ManagedAppProtection File
 * PHP version 7
 *
@@ -44,7 +44,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the periodOfflineBeforeAccessCheck
     * The period after which access is checked when the device is not connected to the internet.
@@ -58,7 +58,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["periodOfflineBeforeAccessCheck"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the periodOnlineBeforeAccessCheck
     * The period after which access is checked when the device is connected to the internet.
@@ -77,7 +77,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the periodOnlineBeforeAccessCheck
     * The period after which access is checked when the device is connected to the internet.
@@ -91,7 +91,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["periodOnlineBeforeAccessCheck"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the allowedInboundDataTransferSources
     * Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
@@ -110,7 +110,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the allowedInboundDataTransferSources
     * Sources from which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
@@ -124,7 +124,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["allowedInboundDataTransferSources"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the allowedOutboundDataTransferDestinations
     * Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
@@ -143,7 +143,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the allowedOutboundDataTransferDestinations
     * Destinations to which data is allowed to be transferred. Possible values are: allApps, managedApps, none.
@@ -157,7 +157,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["allowedOutboundDataTransferDestinations"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the organizationalCredentialsRequired
     * Indicates whether organizational credentials are required for app use.
@@ -172,7 +172,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the organizationalCredentialsRequired
     * Indicates whether organizational credentials are required for app use.
@@ -186,7 +186,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["organizationalCredentialsRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the allowedOutboundClipboardSharingLevel
     * The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked.
@@ -205,7 +205,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the allowedOutboundClipboardSharingLevel
     * The level to which the clipboard may be shared between apps on the managed device. Possible values are: allApps, managedAppsWithPasteIn, managedApps, blocked.
@@ -219,7 +219,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["allowedOutboundClipboardSharingLevel"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the dataBackupBlocked
     * Indicates whether the backup of a managed app's data is blocked.
@@ -234,7 +234,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the dataBackupBlocked
     * Indicates whether the backup of a managed app's data is blocked.
@@ -248,7 +248,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["dataBackupBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the deviceComplianceRequired
     * Indicates whether device compliance is required.
@@ -263,7 +263,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceComplianceRequired
     * Indicates whether device compliance is required.
@@ -277,7 +277,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["deviceComplianceRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the managedBrowserToOpenLinksRequired
     * Indicates whether internet links should be opened in the managed browser app.
@@ -292,7 +292,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the managedBrowserToOpenLinksRequired
     * Indicates whether internet links should be opened in the managed browser app.
@@ -306,7 +306,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["managedBrowserToOpenLinksRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the saveAsBlocked
     * Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
@@ -321,7 +321,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the saveAsBlocked
     * Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
@@ -335,7 +335,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["saveAsBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the periodOfflineBeforeWipeIsEnforced
     * The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
@@ -354,7 +354,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the periodOfflineBeforeWipeIsEnforced
     * The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
@@ -368,7 +368,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["periodOfflineBeforeWipeIsEnforced"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the pinRequired
     * Indicates whether an app-level pin is required.
@@ -383,7 +383,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the pinRequired
     * Indicates whether an app-level pin is required.
@@ -397,7 +397,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["pinRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the maximumPinRetries
     * Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
@@ -412,7 +412,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the maximumPinRetries
     * Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
@@ -426,7 +426,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["maximumPinRetries"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the simplePinBlocked
     * Indicates whether simplePin is blocked.
@@ -441,7 +441,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the simplePinBlocked
     * Indicates whether simplePin is blocked.
@@ -455,7 +455,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["simplePinBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the minimumPinLength
     * Minimum pin length required for an app-level pin if PinRequired is set to True
@@ -470,7 +470,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumPinLength
     * Minimum pin length required for an app-level pin if PinRequired is set to True
@@ -484,7 +484,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumPinLength"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the pinCharacterSet
     * Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric, alphanumericAndSymbol.
@@ -503,7 +503,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the pinCharacterSet
     * Character set which may be used for an app-level pin if PinRequired is set to True. Possible values are: numeric, alphanumericAndSymbol.
@@ -517,7 +517,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["pinCharacterSet"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the periodBeforePinReset
     * TimePeriod before the all-level pin must be reset if PinRequired is set to True.
@@ -536,7 +536,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the periodBeforePinReset
     * TimePeriod before the all-level pin must be reset if PinRequired is set to True.
@@ -550,9 +550,9 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["periodBeforePinReset"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the allowedDataStorageLocations
     * Data storage locations where a user may store managed data.
      *
@@ -566,8 +566,8 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the allowedDataStorageLocations
     * Data storage locations where a user may store managed data.
     *
@@ -580,7 +580,7 @@ class ManagedAppProtection extends ManagedAppPolicy
 		$this->_propDict["allowedDataStorageLocations"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contactSyncBlocked
     * Indicates whether contacts can be synced to the user's device.
@@ -595,7 +595,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the contactSyncBlocked
     * Indicates whether contacts can be synced to the user's device.
@@ -609,7 +609,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["contactSyncBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the printBlocked
     * Indicates whether printing is allowed from managed apps.
@@ -624,7 +624,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the printBlocked
     * Indicates whether printing is allowed from managed apps.
@@ -638,7 +638,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["printBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the fingerprintBlocked
     * Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
@@ -653,7 +653,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the fingerprintBlocked
     * Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
@@ -667,7 +667,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["fingerprintBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the disableAppPinIfDevicePinIsSet
     * Indicates whether use of the app pin is required if the device pin is set.
@@ -682,7 +682,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the disableAppPinIfDevicePinIsSet
     * Indicates whether use of the app pin is required if the device pin is set.
@@ -696,7 +696,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["disableAppPinIfDevicePinIsSet"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the minimumRequiredOsVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -711,7 +711,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumRequiredOsVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -725,7 +725,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumRequiredOsVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumWarningOsVersion
     * Versions less than the specified version will result in warning message on the managed app from accessing company data.
@@ -740,7 +740,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumWarningOsVersion
     * Versions less than the specified version will result in warning message on the managed app from accessing company data.
@@ -754,7 +754,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumWarningOsVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumRequiredAppVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -769,7 +769,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumRequiredAppVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -783,7 +783,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumRequiredAppVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumWarningAppVersion
     * Versions less than the specified version will result in warning message on the managed app.
@@ -798,7 +798,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumWarningAppVersion
     * Versions less than the specified version will result in warning message on the managed app.
@@ -812,7 +812,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumWarningAppVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumWipeOsVersion
     * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
@@ -827,7 +827,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumWipeOsVersion
     * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
@@ -841,7 +841,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumWipeOsVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumWipeAppVersion
     * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
@@ -856,7 +856,7 @@ class ManagedAppProtection extends ManagedAppPolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumWipeAppVersion
     * Versions less than or equal to the specified version will wipe the managed app and the associated company data.
@@ -870,7 +870,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["minimumWipeAppVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the appActionIfDeviceComplianceRequired
     * Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true.
@@ -889,7 +889,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the appActionIfDeviceComplianceRequired
     * Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true.
@@ -903,7 +903,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["appActionIfDeviceComplianceRequired"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the appActionIfMaximumPinRetriesExceeded
     * Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts.
@@ -922,7 +922,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the appActionIfMaximumPinRetriesExceeded
     * Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts.
@@ -936,7 +936,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["appActionIfMaximumPinRetriesExceeded"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the pinRequiredInsteadOfBiometricTimeout
     * Timeout in minutes for an app pin instead of non biometrics passcode
@@ -955,7 +955,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the pinRequiredInsteadOfBiometricTimeout
     * Timeout in minutes for an app pin instead of non biometrics passcode
@@ -969,7 +969,7 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["pinRequiredInsteadOfBiometricTimeout"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the allowedOutboundClipboardSharingExceptionLength
     * Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.
@@ -983,8 +983,9 @@ class ManagedAppProtection extends ManagedAppPolicy
         } else {
             return null;
         }
+        return null;
     }
-    
+
     /**
     * Sets the allowedOutboundClipboardSharingExceptionLength
     * Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.
@@ -998,5 +999,37 @@ class ManagedAppProtection extends ManagedAppPolicy
         $this->_propDict["allowedOutboundClipboardSharingExceptionLength"] = intval($val);
         return $this;
     }
-    
+
+    /**
+    * Gets the notificationRestriction
+    * Specify app notification restriction
+    *
+    * @return ManagedAppNotificationRestriction The notificationRestriction
+    */
+    public function getNotificationRestriction()
+    {
+        if (array_key_exists("notificationRestriction", $this->_propDict)) {
+            if (is_a($this->_propDict["notificationRestriction"], "Microsoft\Graph\Beta\Model\ManagedAppNotificationRestriction")) {
+                return $this->_propDict["notificationRestriction"];
+            } else {
+                $this->_propDict["notificationRestriction"] = new ManagedAppNotificationRestriction($this->_propDict["notificationRestriction"]);
+                return $this->_propDict["notificationRestriction"];
+            }
+        }
+    }
+
+    /**
+    * Sets the notificationRestriction
+    * Specify app notification restriction
+    *
+    * @param ManagedAppNotificationRestriction $val The notificationRestriction
+    *
+    * @return ManagedAppProtection
+    */
+    public function setNotificationRestriction($val)
+    {
+        $this->_propDict["notificationRestriction"] = $val;
+        return $this;
+    }
+
 }

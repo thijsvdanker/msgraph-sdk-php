@@ -50,4 +50,6 @@ class RemoteAction extends Enum
     const UPDATE_DEVICE_ACCOUNT = "updateDeviceAccount";
     const AUTOMATIC_REDEPLOYMENT = "automaticRedeployment";
     const SHUT_DOWN = "shutDown";
+    const ROTATE_FILE_VAULT_KEY = "rotateFileVaultKey";
+    const GET_FILE_VAULT_KEY = "getFileVaultKey";
 }

@@ -45,4 +45,5 @@ class AppleVpnConnectionType extends Enum
     const F5_ACCESS2018 = "f5Access2018";
     const CITRIX_SSO = "citrixSso";
     const PALO_ALTO_GLOBAL_PROTECT_V2 = "paloAltoGlobalProtectV2";
+    const IK_EV2 = "ikEv2";
 }

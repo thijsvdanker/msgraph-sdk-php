@@ -394,4 +394,37 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         return $this;
     }
     
+    /**
+    * Gets the securityKeyForSignIn
+    * Security key for Sign In provides the capacity for remotely turning ON/OFF Windows Hello Sercurity Keyl Not configured will honor configurations done on the clinet.
+    *
+    * @return Enablement The securityKeyForSignIn
+    */
+    public function getSecurityKeyForSignIn()
+    {
+        if (array_key_exists("securityKeyForSignIn", $this->_propDict)) {
+            if (is_a($this->_propDict["securityKeyForSignIn"], "Microsoft\Graph\Beta\Model\Enablement")) {
+                return $this->_propDict["securityKeyForSignIn"];
+            } else {
+                $this->_propDict["securityKeyForSignIn"] = new Enablement($this->_propDict["securityKeyForSignIn"]);
+                return $this->_propDict["securityKeyForSignIn"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the securityKeyForSignIn
+    * Security key for Sign In provides the capacity for remotely turning ON/OFF Windows Hello Sercurity Keyl Not configured will honor configurations done on the clinet.
+    *
+    * @param Enablement $val The securityKeyForSignIn
+    *
+    * @return DeviceEnrollmentWindowsHelloForBusinessConfiguration
+    */
+    public function setSecurityKeyForSignIn($val)
+    {
+        $this->_propDict["securityKeyForSignIn"] = $val;
+        return $this;
+    }
+    
 }

@@ -33,4 +33,5 @@ class AndroidWiFiSecurityType extends Enum
     */
     const OPEN = "open";
     const WPA_ENTERPRISE = "wpaEnterprise";
+    const WPA2_ENTERPRISE = "wpa2Enterprise";
 }

@@ -2,7 +2,7 @@
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
 * 
-* CaasError File
+* EncryptContent File
 * PHP version 7
 *
 * @category  Library
@@ -14,7 +14,7 @@
 */
 namespace Microsoft\Graph\Beta\Model;
 /**
-* CaasError class
+* EncryptContent class
 *
 * @category  Model
 * @package   Microsoft.Graph
@@ -23,37 +23,37 @@ namespace Microsoft\Graph\Beta\Model;
 * @version   Release: 1.4.0
 * @link      https://graph.microsoft.io/
 */
-class CaasError extends CaaSErrorBase
+class EncryptContent extends LabelActionBase
 {
 
     /**
-    * Gets the details
+    * Gets the encryptWith
     *
-    * @return CaaSErrorBase The details
+    * @return EncryptWith The encryptWith
     */
-    public function getDetails()
+    public function getEncryptWith()
     {
-        if (array_key_exists("details", $this->_propDict)) {
-            if (is_a($this->_propDict["details"], "Microsoft\Graph\Beta\Model\CaaSErrorBase")) {
-                return $this->_propDict["details"];
+        if (array_key_exists("encryptWith", $this->_propDict)) {
+            if (is_a($this->_propDict["encryptWith"], "Microsoft\Graph\Beta\Model\EncryptWith")) {
+                return $this->_propDict["encryptWith"];
             } else {
-                $this->_propDict["details"] = new CaaSErrorBase($this->_propDict["details"]);
-                return $this->_propDict["details"];
+                $this->_propDict["encryptWith"] = new EncryptWith($this->_propDict["encryptWith"]);
+                return $this->_propDict["encryptWith"];
             }
         }
         return null;
     }
 
     /**
-    * Sets the details
+    * Sets the encryptWith
     *
-    * @param CaaSErrorBase $val The value to assign to the details
+    * @param EncryptWith $val The value to assign to the encryptWith
     *
-    * @return CaasError The CaasError
+    * @return EncryptContent The EncryptContent
     */
-    public function setDetails($val)
+    public function setEncryptWith($val)
     {
-        $this->_propDict["details"] = $val;
+        $this->_propDict["encryptWith"] = $val;
          return $this;
     }
 }

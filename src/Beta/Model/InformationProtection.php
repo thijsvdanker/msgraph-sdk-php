@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * InformationProtection File
 * PHP version 7
 *
@@ -27,7 +27,7 @@ namespace Microsoft\Graph\Beta\Model;
 class InformationProtection extends Entity
 {
 
-     /** 
+     /**
      * Gets the sensitivityLabels
      *
      * @return array The sensitivityLabels
@@ -40,8 +40,8 @@ class InformationProtection extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the sensitivityLabels
     *
     * @param SensitivityLabel $val The sensitivityLabels
@@ -53,5 +53,36 @@ class InformationProtection extends Entity
 		$this->_propDict["sensitivityLabels"] = $val;
         return $this;
     }
-    
+
+    /**
+    * Gets the sensitivityPolicySettings
+    *
+    * @return SensitivityPolicySettings The sensitivityPolicySettings
+    */
+    public function getSensitivityPolicySettings()
+    {
+        if (array_key_exists("sensitivityPolicySettings", $this->_propDict)) {
+            if (is_a($this->_propDict["sensitivityPolicySettings"], "Microsoft\Graph\Beta\Model\SensitivityPolicySettings")) {
+                return $this->_propDict["sensitivityPolicySettings"];
+            } else {
+                $this->_propDict["sensitivityPolicySettings"] = new SensitivityPolicySettings($this->_propDict["sensitivityPolicySettings"]);
+                return $this->_propDict["sensitivityPolicySettings"];
+            }
+        }
+        return null;
+    }
+
+    /**
+    * Sets the sensitivityPolicySettings
+    *
+    * @param SensitivityPolicySettings $val The sensitivityPolicySettings
+    *
+    * @return InformationProtection
+    */
+    public function setSensitivityPolicySettings($val)
+    {
+        $this->_propDict["sensitivityPolicySettings"] = $val;
+        return $this;
+    }
+
 }

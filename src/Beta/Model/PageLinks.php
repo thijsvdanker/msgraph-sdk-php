@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * PageLinks File
 * PHP version 7
 *
@@ -61,7 +61,7 @@ class PageLinks extends Entity
 
     /**
     * Gets the oneNoteWebUrl
-    * Opens the page in OneNote Online.
+    * Opens the page in OneNote on the web.
     *
     * @return ExternalLink The oneNoteWebUrl
     */
@@ -80,7 +80,7 @@ class PageLinks extends Entity
 
     /**
     * Sets the oneNoteWebUrl
-    * Opens the page in OneNote Online.
+    * Opens the page in OneNote on the web.
     *
     * @param ExternalLink $val The value to assign to the oneNoteWebUrl
     *

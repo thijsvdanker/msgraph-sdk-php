@@ -44,4 +44,11 @@ class Windows10EditionType extends Enum
     const WINDOWS10_PROFESSIONAL_WORKSTATION = "windows10ProfessionalWorkstation";
     const WINDOWS10_PROFESSIONAL_WORKSTATION_N = "windows10ProfessionalWorkstationN";
     const NOT_CONFIGURED = "notConfigured";
+    const WINDOWS10_HOME = "windows10Home";
+    const WINDOWS10_HOME_CHINA = "windows10HomeChina";
+    const WINDOWS10_HOME_N = "windows10HomeN";
+    const WINDOWS10_HOME_SINGLE_LANGUAGE = "windows10HomeSingleLanguage";
+    const WINDOWS10_MOBILE = "windows10Mobile";
+    const WINDOWS10_IO_T_CORE = "windows10IoTCore";
+    const WINDOWS10_IO_T_CORE_COMMERCIAL = "windows10IoTCoreCommercial";
 }

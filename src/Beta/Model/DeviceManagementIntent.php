@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceManagementIntent File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     * The user given display name
@@ -54,7 +54,7 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the description
     * The user given description
@@ -69,7 +69,7 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the description
     * The user given description
@@ -83,7 +83,7 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["description"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the isAssigned
     * Signifies whether or not the intent is assigned to users
@@ -98,7 +98,7 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the isAssigned
     * Signifies whether or not the intent is assigned to users
@@ -112,7 +112,7 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["isAssigned"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the lastModifiedDateTime
     * When the intent was last modified
@@ -131,7 +131,7 @@ class DeviceManagementIntent extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
     * When the intent was last modified
@@ -145,7 +145,7 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the templateId
     * The ID of the template this intent was created from (if any)
@@ -160,7 +160,7 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the templateId
     * The ID of the template this intent was created from (if any)
@@ -174,9 +174,38 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["templateId"] = $val;
         return $this;
     }
-    
 
-     /** 
+    /**
+    * Gets the roleScopeTagIds
+    * List of Scope Tags for this Entity instance.
+    *
+    * @return string The roleScopeTagIds
+    */
+    public function getRoleScopeTagIds()
+    {
+        if (array_key_exists("roleScopeTagIds", $this->_propDict)) {
+            return $this->_propDict["roleScopeTagIds"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the roleScopeTagIds
+    * List of Scope Tags for this Entity instance.
+    *
+    * @param string $val The roleScopeTagIds
+    *
+    * @return DeviceManagementIntent
+    */
+    public function setRoleScopeTagIds($val)
+    {
+        $this->_propDict["roleScopeTagIds"] = $val;
+        return $this;
+    }
+
+
+     /**
      * Gets the settings
     * Collection of all settings to be applied
      *
@@ -190,8 +219,8 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the settings
     * Collection of all settings to be applied
     *
@@ -204,9 +233,9 @@ class DeviceManagementIntent extends Entity
 		$this->_propDict["settings"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the categories
     * Collection of setting categories within the intent
      *
@@ -220,8 +249,8 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the categories
     * Collection of setting categories within the intent
     *
@@ -234,9 +263,9 @@ class DeviceManagementIntent extends Entity
 		$this->_propDict["categories"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the assignments
     * Collection of assignments
      *
@@ -250,8 +279,8 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the assignments
     * Collection of assignments
     *
@@ -264,9 +293,9 @@ class DeviceManagementIntent extends Entity
 		$this->_propDict["assignments"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceSettingStateSummaries
     * Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
      *
@@ -280,8 +309,8 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceSettingStateSummaries
     * Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
     *
@@ -294,9 +323,9 @@ class DeviceManagementIntent extends Entity
 		$this->_propDict["deviceSettingStateSummaries"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceStates
     * Collection of states of all devices that the intent is applied to
      *
@@ -310,8 +339,8 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceStates
     * Collection of states of all devices that the intent is applied to
     *
@@ -324,9 +353,9 @@ class DeviceManagementIntent extends Entity
 		$this->_propDict["deviceStates"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the userStates
     * Collection of states of all users that the intent is applied to
      *
@@ -340,8 +369,8 @@ class DeviceManagementIntent extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the userStates
     * Collection of states of all users that the intent is applied to
     *
@@ -354,7 +383,7 @@ class DeviceManagementIntent extends Entity
 		$this->_propDict["userStates"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceStateSummary
     * A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
@@ -373,7 +402,7 @@ class DeviceManagementIntent extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the deviceStateSummary
     * A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
@@ -387,7 +416,7 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["deviceStateSummary"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userStateSummary
     * A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
@@ -406,7 +435,7 @@ class DeviceManagementIntent extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the userStateSummary
     * A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
@@ -420,5 +449,5 @@ class DeviceManagementIntent extends Entity
         $this->_propDict["userStateSummary"] = $val;
         return $this;
     }
-    
+
 }

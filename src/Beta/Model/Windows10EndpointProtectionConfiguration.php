@@ -4728,7 +4728,11 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceGuardEnableSecureBootWithDMA
+<<<<<<< HEAD
+    * This property will be deprecated in May 2019 and will be replaced with property DeviceGuardSecureBootWithDMA. Specifies whether Platform Security Level is enabled at next reboot.
+=======
     * Specifies whether Platform Security Level is enabled at next reboot.
+>>>>>>> beta
     *
     * @return bool The deviceGuardEnableSecureBootWithDMA
     */
@@ -4743,7 +4747,11 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceGuardEnableSecureBootWithDMA
+<<<<<<< HEAD
+    * This property will be deprecated in May 2019 and will be replaced with property DeviceGuardSecureBootWithDMA. Specifies whether Platform Security Level is enabled at next reboot.
+=======
     * Specifies whether Platform Security Level is enabled at next reboot.
+>>>>>>> beta
     *
     * @param bool $val The deviceGuardEnableSecureBootWithDMA
     *
@@ -4756,6 +4764,42 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+<<<<<<< HEAD
+    * Gets the deviceGuardSecureBootWithDMA
+    * Specifies whether Platform Security Level is enabled at next reboot.
+    *
+    * @return SecureBootWithDMAType The deviceGuardSecureBootWithDMA
+    */
+    public function getDeviceGuardSecureBootWithDMA()
+    {
+        if (array_key_exists("deviceGuardSecureBootWithDMA", $this->_propDict)) {
+            if (is_a($this->_propDict["deviceGuardSecureBootWithDMA"], "Microsoft\Graph\Beta\Model\SecureBootWithDMAType")) {
+                return $this->_propDict["deviceGuardSecureBootWithDMA"];
+            } else {
+                $this->_propDict["deviceGuardSecureBootWithDMA"] = new SecureBootWithDMAType($this->_propDict["deviceGuardSecureBootWithDMA"]);
+                return $this->_propDict["deviceGuardSecureBootWithDMA"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the deviceGuardSecureBootWithDMA
+    * Specifies whether Platform Security Level is enabled at next reboot.
+    *
+    * @param SecureBootWithDMAType $val The deviceGuardSecureBootWithDMA
+    *
+    * @return Windows10EndpointProtectionConfiguration
+    */
+    public function setDeviceGuardSecureBootWithDMA($val)
+    {
+        $this->_propDict["deviceGuardSecureBootWithDMA"] = $val;
+        return $this;
+    }
+    
+    /**
+=======
+>>>>>>> beta
     * Gets the deviceGuardLaunchSystemGuard
     * Allows the IT admin to configure the launch of System Guard.
     *

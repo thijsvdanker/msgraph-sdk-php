@@ -2164,6 +2164,36 @@ class DeviceManagement extends Entity
     
 
      /** 
+     * Gets the domainJoinConnectors
+    * A list of connector objects.
+     *
+     * @return array The domainJoinConnectors
+     */
+    public function getDomainJoinConnectors()
+    {
+        if (array_key_exists("domainJoinConnectors", $this->_propDict)) {
+           return $this->_propDict["domainJoinConnectors"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the domainJoinConnectors
+    * A list of connector objects.
+    *
+    * @param DeviceManagementDomainJoinConnector $val The domainJoinConnectors
+    *
+    * @return DeviceManagement
+    */
+    public function setDomainJoinConnectors($val)
+    {
+		$this->_propDict["domainJoinConnectors"] = $val;
+        return $this;
+    }
+    
+
+     /** 
      * Gets the windowsInformationProtectionAppLearningSummaries
     * The windows information protection app learning summaries.
      *

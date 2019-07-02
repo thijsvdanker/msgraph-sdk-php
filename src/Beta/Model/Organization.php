@@ -742,4 +742,32 @@ class Organization extends DirectoryObject
         return $this;
     }
     
+
+     /** 
+     * Gets the brandings
+     *
+     * @return array The brandings
+     */
+    public function getBrandings()
+    {
+        if (array_key_exists("brandings", $this->_propDict)) {
+           return $this->_propDict["brandings"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the brandings
+    *
+    * @param OrganizationalBranding $val The brandings
+    *
+    * @return Organization
+    */
+    public function setBrandings($val)
+    {
+		$this->_propDict["brandings"] = $val;
+        return $this;
+    }
+    
 }

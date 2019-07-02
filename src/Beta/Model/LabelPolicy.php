@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * LabelPolicy File
 * PHP version 7
 *
@@ -13,7 +13,6 @@
 * @link      https://graph.microsoft.io/
 */
 namespace Microsoft\Graph\Beta\Model;
-
 /**
 * LabelPolicy class
 *
@@ -27,86 +26,31 @@ namespace Microsoft\Graph\Beta\Model;
 class LabelPolicy extends Entity
 {
     /**
-    * Gets the labelIds
+    * Gets the id
     *
-    * @return string The labelIds
+    * @return string The id
     */
-    public function getLabelIds()
+    public function getId()
     {
-        if (array_key_exists("labelIds", $this->_propDict)) {
-            return $this->_propDict["labelIds"];
+        if (array_key_exists("id", $this->_propDict)) {
+            return $this->_propDict["id"];
         } else {
             return null;
         }
     }
-    
+
     /**
-    * Sets the labelIds
+    * Sets the id
     *
-    * @param string $val The labelIds
+    * @param string $val The value of the id
     *
     * @return LabelPolicy
     */
-    public function setLabelIds($val)
+    public function setId($val)
     {
-        $this->_propDict["labelIds"] = $val;
+        $this->_propDict["id"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the isEnabled
-    *
-    * @return bool The isEnabled
-    */
-    public function getIsEnabled()
-    {
-        if (array_key_exists("isEnabled", $this->_propDict)) {
-            return $this->_propDict["isEnabled"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the isEnabled
-    *
-    * @param bool $val The isEnabled
-    *
-    * @return LabelPolicy
-    */
-    public function setIsEnabled($val)
-    {
-        $this->_propDict["isEnabled"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the priority
-    *
-    * @return int The priority
-    */
-    public function getPriority()
-    {
-        if (array_key_exists("priority", $this->_propDict)) {
-            return $this->_propDict["priority"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the priority
-    *
-    * @param int $val The priority
-    *
-    * @return LabelPolicy
-    */
-    public function setPriority($val)
-    {
-        $this->_propDict["priority"] = intval($val);
-        return $this;
-    }
-    
     /**
     * Gets the name
     *
@@ -120,11 +64,11 @@ class LabelPolicy extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the name
     *
-    * @param string $val The name
+    * @param string $val The value of the name
     *
     * @return LabelPolicy
     */
@@ -133,5 +77,4 @@ class LabelPolicy extends Entity
         $this->_propDict["name"] = $val;
         return $this;
     }
-    
 }

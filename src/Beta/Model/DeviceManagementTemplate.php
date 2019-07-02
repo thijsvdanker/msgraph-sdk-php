@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceManagementTemplate File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     * The template's display name
@@ -54,7 +54,7 @@ class DeviceManagementTemplate extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the description
     * The template's description
@@ -69,7 +69,7 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the description
     * The template's description
@@ -83,7 +83,7 @@ class DeviceManagementTemplate extends Entity
         $this->_propDict["description"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the versionInfo
     * The template's version information
@@ -98,7 +98,7 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the versionInfo
     * The template's version information
@@ -112,7 +112,7 @@ class DeviceManagementTemplate extends Entity
         $this->_propDict["versionInfo"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the isDeprecated
     * The template is deprecated or not. Intents cannot be created from a deprecated template.
@@ -127,7 +127,7 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the isDeprecated
     * The template is deprecated or not. Intents cannot be created from a deprecated template.
@@ -141,7 +141,7 @@ class DeviceManagementTemplate extends Entity
         $this->_propDict["isDeprecated"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the intentCount
     * Number of Intents created from this template.
@@ -156,7 +156,7 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the intentCount
     * Number of Intents created from this template.
@@ -170,9 +170,75 @@ class DeviceManagementTemplate extends Entity
         $this->_propDict["intentCount"] = intval($val);
         return $this;
     }
-    
 
-     /** 
+    /**
+    * Gets the templateType
+    * The template's type.
+    *
+    * @return DeviceManagementTemplateType The templateType
+    */
+    public function getTemplateType()
+    {
+        if (array_key_exists("templateType", $this->_propDict)) {
+            if (is_a($this->_propDict["templateType"], "Microsoft\Graph\Beta\Model\DeviceManagementTemplateType")) {
+                return $this->_propDict["templateType"];
+            } else {
+                $this->_propDict["templateType"] = new DeviceManagementTemplateType($this->_propDict["templateType"]);
+                return $this->_propDict["templateType"];
+            }
+        }
+        return null;
+    }
+
+    /**
+    * Sets the templateType
+    * The template's type.
+    *
+    * @param DeviceManagementTemplateType $val The templateType
+    *
+    * @return DeviceManagementTemplate
+    */
+    public function setTemplateType($val)
+    {
+        $this->_propDict["templateType"] = $val;
+        return $this;
+    }
+
+    /**
+    * Gets the publishedDateTime
+    * When the template was published
+    *
+    * @return \DateTime The publishedDateTime
+    */
+    public function getPublishedDateTime()
+    {
+        if (array_key_exists("publishedDateTime", $this->_propDict)) {
+            if (is_a($this->_propDict["publishedDateTime"], "\DateTime")) {
+                return $this->_propDict["publishedDateTime"];
+            } else {
+                $this->_propDict["publishedDateTime"] = new \DateTime($this->_propDict["publishedDateTime"]);
+                return $this->_propDict["publishedDateTime"];
+            }
+        }
+        return null;
+    }
+
+    /**
+    * Sets the publishedDateTime
+    * When the template was published
+    *
+    * @param \DateTime $val The publishedDateTime
+    *
+    * @return DeviceManagementTemplate
+    */
+    public function setPublishedDateTime($val)
+    {
+        $this->_propDict["publishedDateTime"] = $val;
+        return $this;
+    }
+
+
+     /**
      * Gets the settings
     * Collection of all settings this template has
      *
@@ -186,8 +252,8 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the settings
     * Collection of all settings this template has
     *
@@ -200,9 +266,9 @@ class DeviceManagementTemplate extends Entity
 		$this->_propDict["settings"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the categories
     * Collection of setting categories within the template
      *
@@ -216,8 +282,8 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the categories
     * Collection of setting categories within the template
     *
@@ -230,9 +296,9 @@ class DeviceManagementTemplate extends Entity
 		$this->_propDict["categories"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the migratableTo
     * Collection of templates this template can migrate to
      *
@@ -246,8 +312,8 @@ class DeviceManagementTemplate extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the migratableTo
     * Collection of templates this template can migrate to
     *
@@ -260,5 +326,5 @@ class DeviceManagementTemplate extends Entity
 		$this->_propDict["migratableTo"] = $val;
         return $this;
     }
-    
+
 }

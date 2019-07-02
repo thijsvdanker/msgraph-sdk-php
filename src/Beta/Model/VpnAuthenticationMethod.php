@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * VpnAuthenticationMethod File
 * PHP version 7
 *
@@ -33,5 +33,6 @@ class VpnAuthenticationMethod extends Enum
     */
     const CERTIFICATE = "certificate";
     const USERNAME_AND_PASSWORD = "usernameAndPassword";
+    const SHARED_SECRET = "sharedSecret";
     const DERIVED_CREDENTIAL = "derivedCredential";
 }

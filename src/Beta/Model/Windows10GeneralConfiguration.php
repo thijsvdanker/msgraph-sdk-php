@@ -566,7 +566,11 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     
     /**
     * Gets the messagingBlockMMS
+<<<<<<< HEAD
+    * Indicates whether or not to block the MMS send/receive functionality on the device.
+=======
     * Indicates whether or not to block the the MMS send/receive functionality on the device.
+>>>>>>> beta
     *
     * @return bool The messagingBlockMMS
     */
@@ -581,7 +585,11 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     
     /**
     * Sets the messagingBlockMMS
+<<<<<<< HEAD
+    * Indicates whether or not to block the MMS send/receive functionality on the device.
+=======
     * Indicates whether or not to block the the MMS send/receive functionality on the device.
+>>>>>>> beta
     *
     * @param bool $val The messagingBlockMMS
     *
@@ -595,7 +603,11 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     
     /**
     * Gets the messagingBlockRichCommunicationServices
+<<<<<<< HEAD
+    * Indicates whether or not to block the RCS send/receive functionality on the device.
+=======
     * Indicates whether or not to block the the RCS send/receive functionality on the device.
+>>>>>>> beta
     *
     * @return bool The messagingBlockRichCommunicationServices
     */
@@ -610,7 +622,11 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     
     /**
     * Sets the messagingBlockRichCommunicationServices
+<<<<<<< HEAD
+    * Indicates whether or not to block the RCS send/receive functionality on the device.
+=======
     * Indicates whether or not to block the the RCS send/receive functionality on the device.
+>>>>>>> beta
     *
     * @param bool $val The messagingBlockRichCommunicationServices
     *
@@ -1273,6 +1289,39 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     public function setSmartScreenEnableAppInstallControl($val)
     {
         $this->_propDict["smartScreenEnableAppInstallControl"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the smartScreenAppInstallControl
+    * Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+    *
+    * @return AppInstallControlType The smartScreenAppInstallControl
+    */
+    public function getSmartScreenAppInstallControl()
+    {
+        if (array_key_exists("smartScreenAppInstallControl", $this->_propDict)) {
+            if (is_a($this->_propDict["smartScreenAppInstallControl"], "Microsoft\Graph\Beta\Model\AppInstallControlType")) {
+                return $this->_propDict["smartScreenAppInstallControl"];
+            } else {
+                $this->_propDict["smartScreenAppInstallControl"] = new AppInstallControlType($this->_propDict["smartScreenAppInstallControl"]);
+                return $this->_propDict["smartScreenAppInstallControl"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the smartScreenAppInstallControl
+    * Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+    *
+    * @param AppInstallControlType $val The smartScreenAppInstallControl
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setSmartScreenAppInstallControl($val)
+    {
+        $this->_propDict["smartScreenAppInstallControl"] = $val;
         return $this;
     }
     
@@ -2174,6 +2223,532 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     }
     
     /**
+<<<<<<< HEAD
+    * Sets the edgeBlockInPrivateBrowsing
+    * Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
+=======
+    * Sets the edgeRequiredExtensionPackageFamilyNames
+    * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
+>>>>>>> beta
+    *
+    * @param string $val The edgeRequiredExtensionPackageFamilyNames
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeRequiredExtensionPackageFamilyNames($val)
+    {
+        $this->_propDict["edgeRequiredExtensionPackageFamilyNames"] = $val;
+        return $this;
+    }
+    
+    /**
+<<<<<<< HEAD
+    * Gets the edgeBlockJavaScript
+    * Indicates whether or not to Block the user from using JavaScript.
+=======
+    * Gets the edgeBlockPrinting
+    * Configure Edge to allow or block printing.
+>>>>>>> beta
+    *
+    * @return bool The edgeBlockPrinting
+    */
+    public function getEdgeBlockPrinting()
+    {
+        if (array_key_exists("edgeBlockPrinting", $this->_propDict)) {
+            return $this->_propDict["edgeBlockPrinting"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+<<<<<<< HEAD
+    * Sets the edgeBlockJavaScript
+    * Indicates whether or not to Block the user from using JavaScript.
+=======
+    * Sets the edgeBlockPrinting
+    * Configure Edge to allow or block printing.
+>>>>>>> beta
+    *
+    * @param bool $val The edgeBlockPrinting
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockPrinting($val)
+    {
+        $this->_propDict["edgeBlockPrinting"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+<<<<<<< HEAD
+    * Gets the edgeBlockPasswordManager
+    * Indicates whether or not to Block password manager.
+=======
+    * Gets the edgeFavoritesBarVisibility
+    * Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page.
+>>>>>>> beta
+    *
+    * @return VisibilitySetting The edgeFavoritesBarVisibility
+    */
+    public function getEdgeFavoritesBarVisibility()
+    {
+        if (array_key_exists("edgeFavoritesBarVisibility", $this->_propDict)) {
+            if (is_a($this->_propDict["edgeFavoritesBarVisibility"], "Microsoft\Graph\Beta\Model\VisibilitySetting")) {
+                return $this->_propDict["edgeFavoritesBarVisibility"];
+            } else {
+                $this->_propDict["edgeFavoritesBarVisibility"] = new VisibilitySetting($this->_propDict["edgeFavoritesBarVisibility"]);
+                return $this->_propDict["edgeFavoritesBarVisibility"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+<<<<<<< HEAD
+    * Sets the edgeBlockPasswordManager
+    * Indicates whether or not to Block password manager.
+    *
+    * @param bool $val The edgeBlockPasswordManager
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockPasswordManager($val)
+    {
+        $this->_propDict["edgeBlockPasswordManager"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeBlockAddressBarDropdown
+    * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
+    *
+    * @return bool The edgeBlockAddressBarDropdown
+    */
+    public function getEdgeBlockAddressBarDropdown()
+    {
+        if (array_key_exists("edgeBlockAddressBarDropdown", $this->_propDict)) {
+            return $this->_propDict["edgeBlockAddressBarDropdown"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeBlockAddressBarDropdown
+    * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
+    *
+    * @param bool $val The edgeBlockAddressBarDropdown
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockAddressBarDropdown($val)
+    {
+        $this->_propDict["edgeBlockAddressBarDropdown"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeBlockCompatibilityList
+    * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
+    *
+    * @return bool The edgeBlockCompatibilityList
+    */
+    public function getEdgeBlockCompatibilityList()
+    {
+        if (array_key_exists("edgeBlockCompatibilityList", $this->_propDict)) {
+            return $this->_propDict["edgeBlockCompatibilityList"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeBlockCompatibilityList
+    * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
+    *
+    * @param bool $val The edgeBlockCompatibilityList
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockCompatibilityList($val)
+    {
+        $this->_propDict["edgeBlockCompatibilityList"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeClearBrowsingDataOnExit
+    * Clear browsing data on exiting Microsoft Edge.
+    *
+    * @return bool The edgeClearBrowsingDataOnExit
+    */
+    public function getEdgeClearBrowsingDataOnExit()
+    {
+        if (array_key_exists("edgeClearBrowsingDataOnExit", $this->_propDict)) {
+            return $this->_propDict["edgeClearBrowsingDataOnExit"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeClearBrowsingDataOnExit
+    * Clear browsing data on exiting Microsoft Edge.
+    *
+    * @param bool $val The edgeClearBrowsingDataOnExit
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeClearBrowsingDataOnExit($val)
+    {
+        $this->_propDict["edgeClearBrowsingDataOnExit"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeAllowStartPagesModification
+    * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
+    *
+    * @return bool The edgeAllowStartPagesModification
+    */
+    public function getEdgeAllowStartPagesModification()
+    {
+        if (array_key_exists("edgeAllowStartPagesModification", $this->_propDict)) {
+            return $this->_propDict["edgeAllowStartPagesModification"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeAllowStartPagesModification
+    * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
+    *
+    * @param bool $val The edgeAllowStartPagesModification
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeAllowStartPagesModification($val)
+    {
+        $this->_propDict["edgeAllowStartPagesModification"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeDisableFirstRunPage
+    * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
+    *
+    * @return bool The edgeDisableFirstRunPage
+    */
+    public function getEdgeDisableFirstRunPage()
+    {
+        if (array_key_exists("edgeDisableFirstRunPage", $this->_propDict)) {
+            return $this->_propDict["edgeDisableFirstRunPage"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeDisableFirstRunPage
+    * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
+    *
+    * @param bool $val The edgeDisableFirstRunPage
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeDisableFirstRunPage($val)
+    {
+        $this->_propDict["edgeDisableFirstRunPage"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeBlockLiveTileDataCollection
+    * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
+    *
+    * @return bool The edgeBlockLiveTileDataCollection
+    */
+    public function getEdgeBlockLiveTileDataCollection()
+    {
+        if (array_key_exists("edgeBlockLiveTileDataCollection", $this->_propDict)) {
+            return $this->_propDict["edgeBlockLiveTileDataCollection"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeBlockLiveTileDataCollection
+    * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
+    *
+    * @param bool $val The edgeBlockLiveTileDataCollection
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockLiveTileDataCollection($val)
+    {
+        $this->_propDict["edgeBlockLiveTileDataCollection"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeSyncFavoritesWithInternetExplorer
+    * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
+    *
+    * @return bool The edgeSyncFavoritesWithInternetExplorer
+    */
+    public function getEdgeSyncFavoritesWithInternetExplorer()
+    {
+        if (array_key_exists("edgeSyncFavoritesWithInternetExplorer", $this->_propDict)) {
+            return $this->_propDict["edgeSyncFavoritesWithInternetExplorer"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeSyncFavoritesWithInternetExplorer
+    * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
+    *
+    * @param bool $val The edgeSyncFavoritesWithInternetExplorer
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeSyncFavoritesWithInternetExplorer($val)
+    {
+        $this->_propDict["edgeSyncFavoritesWithInternetExplorer"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeFavoritesListLocation
+    * The location of the favorites list to provision. Could be a local file, local network or http location.
+    *
+    * @return string The edgeFavoritesListLocation
+    */
+    public function getEdgeFavoritesListLocation()
+    {
+        if (array_key_exists("edgeFavoritesListLocation", $this->_propDict)) {
+            return $this->_propDict["edgeFavoritesListLocation"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeFavoritesListLocation
+    * The location of the favorites list to provision. Could be a local file, local network or http location.
+    *
+    * @param string $val The edgeFavoritesListLocation
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeFavoritesListLocation($val)
+    {
+        $this->_propDict["edgeFavoritesListLocation"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeBlockEditFavorites
+    * Indicates whether or not to Block the user from making changes to Favorites.
+    *
+    * @return bool The edgeBlockEditFavorites
+    */
+    public function getEdgeBlockEditFavorites()
+    {
+        if (array_key_exists("edgeBlockEditFavorites", $this->_propDict)) {
+            return $this->_propDict["edgeBlockEditFavorites"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeBlockEditFavorites
+    * Indicates whether or not to Block the user from making changes to Favorites.
+    *
+    * @param bool $val The edgeBlockEditFavorites
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockEditFavorites($val)
+    {
+        $this->_propDict["edgeBlockEditFavorites"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeNewTabPageURL
+    * Specify the page opened when new tabs are created.
+    *
+    * @return string The edgeNewTabPageURL
+    */
+    public function getEdgeNewTabPageURL()
+    {
+        if (array_key_exists("edgeNewTabPageURL", $this->_propDict)) {
+            return $this->_propDict["edgeNewTabPageURL"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeNewTabPageURL
+    * Specify the page opened when new tabs are created.
+    *
+    * @param string $val The edgeNewTabPageURL
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeNewTabPageURL($val)
+    {
+        $this->_propDict["edgeNewTabPageURL"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeHomeButtonConfiguration
+    * Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL
+    *
+    * @return EdgeHomeButtonConfiguration The edgeHomeButtonConfiguration
+    */
+    public function getEdgeHomeButtonConfiguration()
+    {
+        if (array_key_exists("edgeHomeButtonConfiguration", $this->_propDict)) {
+            if (is_a($this->_propDict["edgeHomeButtonConfiguration"], "Microsoft\Graph\Beta\Model\EdgeHomeButtonConfiguration")) {
+                return $this->_propDict["edgeHomeButtonConfiguration"];
+            } else {
+                $this->_propDict["edgeHomeButtonConfiguration"] = new EdgeHomeButtonConfiguration($this->_propDict["edgeHomeButtonConfiguration"]);
+                return $this->_propDict["edgeHomeButtonConfiguration"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the edgeHomeButtonConfiguration
+    * Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL
+    *
+    * @param EdgeHomeButtonConfiguration $val The edgeHomeButtonConfiguration
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeHomeButtonConfiguration($val)
+    {
+        $this->_propDict["edgeHomeButtonConfiguration"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeHomeButtonConfigurationEnabled
+    * Enable the Home button configuration.
+    *
+    * @return bool The edgeHomeButtonConfigurationEnabled
+    */
+    public function getEdgeHomeButtonConfigurationEnabled()
+    {
+        if (array_key_exists("edgeHomeButtonConfigurationEnabled", $this->_propDict)) {
+            return $this->_propDict["edgeHomeButtonConfigurationEnabled"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeHomeButtonConfigurationEnabled
+    * Enable the Home button configuration.
+    *
+    * @param bool $val The edgeHomeButtonConfigurationEnabled
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeHomeButtonConfigurationEnabled($val)
+    {
+        $this->_propDict["edgeHomeButtonConfigurationEnabled"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeOpensWith
+    * Specify what kind of pages are open at start.
+    *
+    * @return EdgeOpenOptions The edgeOpensWith
+    */
+    public function getEdgeOpensWith()
+    {
+        if (array_key_exists("edgeOpensWith", $this->_propDict)) {
+            if (is_a($this->_propDict["edgeOpensWith"], "Microsoft\Graph\Beta\Model\EdgeOpenOptions")) {
+                return $this->_propDict["edgeOpensWith"];
+            } else {
+                $this->_propDict["edgeOpensWith"] = new EdgeOpenOptions($this->_propDict["edgeOpensWith"]);
+                return $this->_propDict["edgeOpensWith"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the edgeOpensWith
+    * Specify what kind of pages are open at start.
+    *
+    * @param EdgeOpenOptions $val The edgeOpensWith
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeOpensWith($val)
+    {
+        $this->_propDict["edgeOpensWith"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeBlockSideloadingExtensions
+    * Indicates whether the user can sideload extensions.
+    *
+    * @return bool The edgeBlockSideloadingExtensions
+    */
+    public function getEdgeBlockSideloadingExtensions()
+    {
+        if (array_key_exists("edgeBlockSideloadingExtensions", $this->_propDict)) {
+            return $this->_propDict["edgeBlockSideloadingExtensions"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+    * Sets the edgeBlockSideloadingExtensions
+    * Indicates whether the user can sideload extensions.
+    *
+    * @param bool $val The edgeBlockSideloadingExtensions
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setEdgeBlockSideloadingExtensions($val)
+    {
+        $this->_propDict["edgeBlockSideloadingExtensions"] = boolval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the edgeRequiredExtensionPackageFamilyNames
+    * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
+    *
+    * @return string The edgeRequiredExtensionPackageFamilyNames
+    */
+    public function getEdgeRequiredExtensionPackageFamilyNames()
+    {
+        if (array_key_exists("edgeRequiredExtensionPackageFamilyNames", $this->_propDict)) {
+            return $this->_propDict["edgeRequiredExtensionPackageFamilyNames"];
+        } else {
+            return null;
+        }
+    }
+    
+    /**
     * Sets the edgeRequiredExtensionPackageFamilyNames
     * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
     *
@@ -2236,6 +2811,8 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     }
     
     /**
+=======
+>>>>>>> beta
     * Sets the edgeFavoritesBarVisibility
     * Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page.
     *
@@ -3839,6 +4416,39 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
     public function setLockScreenTimeoutInSeconds($val)
     {
         $this->_propDict["lockScreenTimeoutInSeconds"] = intval($val);
+        return $this;
+    }
+    
+    /**
+    * Gets the lockScreenActivateAppsWithVoice
+    * This policy setting specifies whether Windows apps can be activated by voice while the system is locked.
+    *
+    * @return Enablement The lockScreenActivateAppsWithVoice
+    */
+    public function getLockScreenActivateAppsWithVoice()
+    {
+        if (array_key_exists("lockScreenActivateAppsWithVoice", $this->_propDict)) {
+            if (is_a($this->_propDict["lockScreenActivateAppsWithVoice"], "Microsoft\Graph\Beta\Model\Enablement")) {
+                return $this->_propDict["lockScreenActivateAppsWithVoice"];
+            } else {
+                $this->_propDict["lockScreenActivateAppsWithVoice"] = new Enablement($this->_propDict["lockScreenActivateAppsWithVoice"]);
+                return $this->_propDict["lockScreenActivateAppsWithVoice"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the lockScreenActivateAppsWithVoice
+    * This policy setting specifies whether Windows apps can be activated by voice while the system is locked.
+    *
+    * @param Enablement $val The lockScreenActivateAppsWithVoice
+    *
+    * @return Windows10GeneralConfiguration
+    */
+    public function setLockScreenActivateAppsWithVoice($val)
+    {
+        $this->_propDict["lockScreenActivateAppsWithVoice"] = $val;
         return $this;
     }
     

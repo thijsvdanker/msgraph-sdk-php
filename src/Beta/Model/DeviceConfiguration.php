@@ -118,6 +118,105 @@ class DeviceConfiguration extends Entity
     }
     
     /**
+    * Gets the deviceManagementApplicabilityRuleOsEdition
+    * The OS edition applicability for this Policy.
+    *
+    * @return DeviceManagementApplicabilityRuleOsEdition The deviceManagementApplicabilityRuleOsEdition
+    */
+    public function getDeviceManagementApplicabilityRuleOsEdition()
+    {
+        if (array_key_exists("deviceManagementApplicabilityRuleOsEdition", $this->_propDict)) {
+            if (is_a($this->_propDict["deviceManagementApplicabilityRuleOsEdition"], "Microsoft\Graph\Beta\Model\DeviceManagementApplicabilityRuleOsEdition")) {
+                return $this->_propDict["deviceManagementApplicabilityRuleOsEdition"];
+            } else {
+                $this->_propDict["deviceManagementApplicabilityRuleOsEdition"] = new DeviceManagementApplicabilityRuleOsEdition($this->_propDict["deviceManagementApplicabilityRuleOsEdition"]);
+                return $this->_propDict["deviceManagementApplicabilityRuleOsEdition"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the deviceManagementApplicabilityRuleOsEdition
+    * The OS edition applicability for this Policy.
+    *
+    * @param DeviceManagementApplicabilityRuleOsEdition $val The deviceManagementApplicabilityRuleOsEdition
+    *
+    * @return DeviceConfiguration
+    */
+    public function setDeviceManagementApplicabilityRuleOsEdition($val)
+    {
+        $this->_propDict["deviceManagementApplicabilityRuleOsEdition"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the deviceManagementApplicabilityRuleOsVersion
+    * The OS version applicability rule for this Policy.
+    *
+    * @return DeviceManagementApplicabilityRuleOsVersion The deviceManagementApplicabilityRuleOsVersion
+    */
+    public function getDeviceManagementApplicabilityRuleOsVersion()
+    {
+        if (array_key_exists("deviceManagementApplicabilityRuleOsVersion", $this->_propDict)) {
+            if (is_a($this->_propDict["deviceManagementApplicabilityRuleOsVersion"], "Microsoft\Graph\Beta\Model\DeviceManagementApplicabilityRuleOsVersion")) {
+                return $this->_propDict["deviceManagementApplicabilityRuleOsVersion"];
+            } else {
+                $this->_propDict["deviceManagementApplicabilityRuleOsVersion"] = new DeviceManagementApplicabilityRuleOsVersion($this->_propDict["deviceManagementApplicabilityRuleOsVersion"]);
+                return $this->_propDict["deviceManagementApplicabilityRuleOsVersion"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the deviceManagementApplicabilityRuleOsVersion
+    * The OS version applicability rule for this Policy.
+    *
+    * @param DeviceManagementApplicabilityRuleOsVersion $val The deviceManagementApplicabilityRuleOsVersion
+    *
+    * @return DeviceConfiguration
+    */
+    public function setDeviceManagementApplicabilityRuleOsVersion($val)
+    {
+        $this->_propDict["deviceManagementApplicabilityRuleOsVersion"] = $val;
+        return $this;
+    }
+    
+    /**
+    * Gets the deviceManagementApplicabilityRuleDeviceMode
+    * The device mode applicability rule for this Policy.
+    *
+    * @return DeviceManagementApplicabilityRuleDeviceMode The deviceManagementApplicabilityRuleDeviceMode
+    */
+    public function getDeviceManagementApplicabilityRuleDeviceMode()
+    {
+        if (array_key_exists("deviceManagementApplicabilityRuleDeviceMode", $this->_propDict)) {
+            if (is_a($this->_propDict["deviceManagementApplicabilityRuleDeviceMode"], "Microsoft\Graph\Beta\Model\DeviceManagementApplicabilityRuleDeviceMode")) {
+                return $this->_propDict["deviceManagementApplicabilityRuleDeviceMode"];
+            } else {
+                $this->_propDict["deviceManagementApplicabilityRuleDeviceMode"] = new DeviceManagementApplicabilityRuleDeviceMode($this->_propDict["deviceManagementApplicabilityRuleDeviceMode"]);
+                return $this->_propDict["deviceManagementApplicabilityRuleDeviceMode"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the deviceManagementApplicabilityRuleDeviceMode
+    * The device mode applicability rule for this Policy.
+    *
+    * @param DeviceManagementApplicabilityRuleDeviceMode $val The deviceManagementApplicabilityRuleDeviceMode
+    *
+    * @return DeviceConfiguration
+    */
+    public function setDeviceManagementApplicabilityRuleDeviceMode($val)
+    {
+        $this->_propDict["deviceManagementApplicabilityRuleDeviceMode"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the createdDateTime
     * DateTime the object was created.
     *

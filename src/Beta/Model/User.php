@@ -583,6 +583,37 @@ class User extends DirectoryObject
     }
     
     /**
+    * Gets the lastPasswordChangeDateTime
+    *
+    * @return \DateTime The lastPasswordChangeDateTime
+    */
+    public function getLastPasswordChangeDateTime()
+    {
+        if (array_key_exists("lastPasswordChangeDateTime", $this->_propDict)) {
+            if (is_a($this->_propDict["lastPasswordChangeDateTime"], "\DateTime")) {
+                return $this->_propDict["lastPasswordChangeDateTime"];
+            } else {
+                $this->_propDict["lastPasswordChangeDateTime"] = new \DateTime($this->_propDict["lastPasswordChangeDateTime"]);
+                return $this->_propDict["lastPasswordChangeDateTime"];
+            }
+        }
+        return null;
+    }
+    
+    /**
+    * Sets the lastPasswordChangeDateTime
+    *
+    * @param \DateTime $val The lastPasswordChangeDateTime
+    *
+    * @return User
+    */
+    public function setLastPasswordChangeDateTime($val)
+    {
+        $this->_propDict["lastPasswordChangeDateTime"] = $val;
+        return $this;
+    }
+    
+    /**
     * Gets the legalAgeGroupClassification
     * Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information.)
     *

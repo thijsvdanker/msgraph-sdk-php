@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Initiator File
 * PHP version 7
 *
@@ -23,37 +23,58 @@ namespace Microsoft\Graph\Beta\Model;
 * @version   Release: 1.4.0
 * @link      https://graph.microsoft.io/
 */
-class Initiator extends Identity
+class Initiator extends Entity
 {
-
     /**
-    * Gets the initiatorType
+    * Gets the id
     *
-    * @return InitiatorType The initiatorType
+    * @return string The id
     */
-    public function getInitiatorType()
+    public function getId()
     {
-        if (array_key_exists("initiatorType", $this->_propDict)) {
-            if (is_a($this->_propDict["initiatorType"], "Microsoft\Graph\Beta\Model\InitiatorType")) {
-                return $this->_propDict["initiatorType"];
-            } else {
-                $this->_propDict["initiatorType"] = new InitiatorType($this->_propDict["initiatorType"]);
-                return $this->_propDict["initiatorType"];
-            }
+        if (array_key_exists("id", $this->_propDict)) {
+            return $this->_propDict["id"];
+        } else {
+            return null;
         }
-        return null;
     }
 
     /**
-    * Sets the initiatorType
+    * Sets the id
     *
-    * @param InitiatorType $val The value to assign to the initiatorType
+    * @param string $val The value of the id
     *
-    * @return Initiator The Initiator
+    * @return Initiator
     */
-    public function setInitiatorType($val)
+    public function setId($val)
     {
-        $this->_propDict["initiatorType"] = $val;
-         return $this;
+        $this->_propDict["id"] = $val;
+        return $this;
+    }
+    /**
+    * Gets the displayName
+    *
+    * @return string The displayName
+    */
+    public function getDisplayName()
+    {
+        if (array_key_exists("displayName", $this->_propDict)) {
+            return $this->_propDict["displayName"];
+        } else {
+            return null;
+        }
+    }
+
+    /**
+    * Sets the displayName
+    *
+    * @param string $val The value of the displayName
+    *
+    * @return Initiator
+    */
+    public function setDisplayName($val)
+    {
+        $this->_propDict["displayName"] = $val;
+        return $this;
     }
 }

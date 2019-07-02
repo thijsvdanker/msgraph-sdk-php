@@ -84,4 +84,34 @@ class RoleScopeTag extends Entity
         return $this;
     }
     
+
+     /** 
+     * Gets the assignments
+    * The list of assignments for this Role Scope Tag.
+     *
+     * @return array The assignments
+     */
+    public function getAssignments()
+    {
+        if (array_key_exists("assignments", $this->_propDict)) {
+           return $this->_propDict["assignments"];
+        } else {
+            return null;
+        }
+    }
+    
+    /** 
+    * Sets the assignments
+    * The list of assignments for this Role Scope Tag.
+    *
+    * @param RoleScopeTagAutoAssignment $val The assignments
+    *
+    * @return RoleScopeTag
+    */
+    public function setAssignments($val)
+    {
+		$this->_propDict["assignments"] = $val;
+        return $this;
+    }
+    
 }
