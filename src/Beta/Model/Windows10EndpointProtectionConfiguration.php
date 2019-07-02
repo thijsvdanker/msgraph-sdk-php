@@ -4728,7 +4728,11 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Gets the deviceGuardEnableSecureBootWithDMA
+<<<<<<< HEAD
     * This property will be deprecated in May 2019 and will be replaced with property DeviceGuardSecureBootWithDMA. Specifies whether Platform Security Level is enabled at next reboot.
+=======
+    * Specifies whether Platform Security Level is enabled at next reboot.
+>>>>>>> beta
     *
     * @return bool The deviceGuardEnableSecureBootWithDMA
     */
@@ -4743,7 +4747,11 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     
     /**
     * Sets the deviceGuardEnableSecureBootWithDMA
+<<<<<<< HEAD
     * This property will be deprecated in May 2019 and will be replaced with property DeviceGuardSecureBootWithDMA. Specifies whether Platform Security Level is enabled at next reboot.
+=======
+    * Specifies whether Platform Security Level is enabled at next reboot.
+>>>>>>> beta
     *
     * @param bool $val The deviceGuardEnableSecureBootWithDMA
     *
@@ -4756,6 +4764,7 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+<<<<<<< HEAD
     * Gets the deviceGuardSecureBootWithDMA
     * Specifies whether Platform Security Level is enabled at next reboot.
     *
@@ -4789,6 +4798,8 @@ class Windows10EndpointProtectionConfiguration extends DeviceConfiguration
     }
     
     /**
+=======
+>>>>>>> beta
     * Gets the deviceGuardLaunchSystemGuard
     * Allows the IT admin to configure the launch of System Guard.
     *

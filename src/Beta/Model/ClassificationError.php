@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ClassificationError File
 * PHP version 7
 *
@@ -23,13 +23,13 @@ namespace Microsoft\Graph\Beta\Model;
 * @version   Release: 1.4.0
 * @link      https://graph.microsoft.io/
 */
+
 class ClassificationError extends ClassifcationErrorBase
 {
 
     /**
     * Gets the details
     *
-    * @return ClassifcationErrorBase The details
     */
     public function getDetails()
     {

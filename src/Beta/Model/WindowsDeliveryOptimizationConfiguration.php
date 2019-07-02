@@ -363,7 +363,11 @@ class WindowsDeliveryOptimizationConfiguration extends DeviceConfiguration
     
     /**
     * Gets the maximumCacheAgeInDays
+<<<<<<< HEAD
     * Specifies the maximum time in days that each file is held in the Delivery Optimization cache after downloading successfully (0-3650). Valid values 0 to 3650
+=======
+    * Specifies the maximum time in days that each file is held in the Delivery Optimization cache after downloading successfully (0-49710). Valid values 0 to 49710
+>>>>>>> beta
     *
     * @return int The maximumCacheAgeInDays
     */
@@ -378,7 +382,11 @@ class WindowsDeliveryOptimizationConfiguration extends DeviceConfiguration
     
     /**
     * Sets the maximumCacheAgeInDays
+<<<<<<< HEAD
     * Specifies the maximum time in days that each file is held in the Delivery Optimization cache after downloading successfully (0-3650). Valid values 0 to 3650
+=======
+    * Specifies the maximum time in days that each file is held in the Delivery Optimization cache after downloading successfully (0-49710). Valid values 0 to 49710
+>>>>>>> beta
     *
     * @param int $val The maximumCacheAgeInDays
     *

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * InformationProtection File
 * PHP version 7
 *
@@ -27,7 +27,7 @@ namespace Microsoft\Graph\Beta\Model;
 class InformationProtection extends Entity
 {
 
-     /** 
+     /**
      * Gets the sensitivityLabels
      *
      * @return array The sensitivityLabels
@@ -40,8 +40,8 @@ class InformationProtection extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the sensitivityLabels
     *
     * @param SensitivityLabel $val The sensitivityLabels
@@ -53,7 +53,7 @@ class InformationProtection extends Entity
 		$this->_propDict["sensitivityLabels"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the sensitivityPolicySettings
     *
@@ -71,7 +71,7 @@ class InformationProtection extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the sensitivityPolicySettings
     *
@@ -84,5 +84,5 @@ class InformationProtection extends Entity
         $this->_propDict["sensitivityPolicySettings"] = $val;
         return $this;
     }
-    
+
 }

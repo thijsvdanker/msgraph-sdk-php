@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EvaluateLabelJobResponse File
 * PHP version 7
 *
@@ -38,12 +38,12 @@ class EvaluateLabelJobResponse extends JobResponseBase
                 return $this->_propDict["result"];
             } else {
                 $this->_propDict["result"] = new EvaluateLabelJobResultGroup($this->_propDict["result"]);
-                return $this->_propDict["result"];
+
             }
         }
         return null;
     }
-    
+
     /**
     * Sets the result
     *
@@ -56,5 +56,5 @@ class EvaluateLabelJobResponse extends JobResponseBase
         $this->_propDict["result"] = $val;
         return $this;
     }
-    
+
 }

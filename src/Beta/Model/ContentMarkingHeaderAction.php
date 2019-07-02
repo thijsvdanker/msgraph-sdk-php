@@ -1,8 +1,8 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-*
-* AppLogDecryptionAlgorithm File
+* 
+* ContentMarkingHeaderAction File
 * PHP version 7
 *
 * @category  Library
@@ -13,11 +13,8 @@
 * @link      https://graph.microsoft.io/
 */
 namespace Microsoft\Graph\Beta\Model;
-
-use Microsoft\Graph\Core\Enum;
-
 /**
-* AppLogDecryptionAlgorithm class
+* ContentMarkingHeaderAction class
 *
 * @category  Model
 * @package   Microsoft.Graph
@@ -26,11 +23,6 @@ use Microsoft\Graph\Core\Enum;
 * @version   Release: 1.4.0
 * @link      https://graph.microsoft.io/
 */
-
-class AppLogDecryptionAlgorithm extends Enum
+class ContentMarkingHeaderAction extends ContentMarkingAction
 {
-    /**
-    * The Enum AppLogDecryptionAlgorithm
-    */
-    const AES256 = "aes256";
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ProvisioningObjectSummary File
 * PHP version 7
 *
@@ -43,7 +43,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the activityDateTime
     *
@@ -56,7 +56,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["activityDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the tenantId
     *
@@ -70,7 +70,7 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the tenantId
     *
@@ -83,7 +83,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["tenantId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the jobId
     *
@@ -97,7 +97,7 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the jobId
     *
@@ -110,7 +110,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["jobId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the cycleId
     *
@@ -124,7 +124,7 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the cycleId
     *
@@ -137,7 +137,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["cycleId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the changeId
     *
@@ -151,7 +151,7 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the changeId
     *
@@ -164,7 +164,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["changeId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the action
     *
@@ -178,7 +178,7 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the action
     *
@@ -191,7 +191,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["action"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the durationInMilliseconds
     *
@@ -205,7 +205,7 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the durationInMilliseconds
     *
@@ -218,7 +218,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["durationInMilliseconds"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the initiatedBy
     *
@@ -236,7 +236,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the initiatedBy
     *
@@ -249,7 +249,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["initiatedBy"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the sourceSystem
     *
@@ -267,7 +267,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the sourceSystem
     *
@@ -280,7 +280,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["sourceSystem"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the targetSystem
     *
@@ -298,7 +298,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the targetSystem
     *
@@ -311,7 +311,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["targetSystem"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the sourceIdentity
     *
@@ -329,7 +329,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the sourceIdentity
     *
@@ -342,7 +342,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["sourceIdentity"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the targetIdentity
     *
@@ -360,7 +360,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the targetIdentity
     *
@@ -373,7 +373,7 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["targetIdentity"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the statusInfo
     *
@@ -391,7 +391,7 @@ class ProvisioningObjectSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the statusInfo
     *
@@ -404,9 +404,9 @@ class ProvisioningObjectSummary extends Entity
         $this->_propDict["statusInfo"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the provisioningSteps
      *
      * @return array The provisioningSteps
@@ -419,8 +419,8 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the provisioningSteps
     *
     * @param ProvisioningStep $val The provisioningSteps
@@ -432,9 +432,9 @@ class ProvisioningObjectSummary extends Entity
 		$this->_propDict["provisioningSteps"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the modifiedProperties
      *
      * @return array The modifiedProperties
@@ -447,8 +447,8 @@ class ProvisioningObjectSummary extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the modifiedProperties
     *
     * @param ModifiedProperty $val The modifiedProperties
@@ -460,5 +460,5 @@ class ProvisioningObjectSummary extends Entity
 		$this->_propDict["modifiedProperties"] = $val;
         return $this;
     }
-    
+
 }

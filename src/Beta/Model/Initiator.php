@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Initiator File
 * PHP version 7
 *
@@ -76,36 +76,5 @@ class Initiator extends Entity
     {
         $this->_propDict["displayName"] = $val;
         return $this;
-    }
-
-    /**
-    * Gets the initiatorType
-    *
-    * @return InitiatorType The initiatorType
-    */
-    public function getInitiatorType()
-    {
-        if (array_key_exists("initiatorType", $this->_propDict)) {
-            if (is_a($this->_propDict["initiatorType"], "Microsoft\Graph\Beta\Model\InitiatorType")) {
-                return $this->_propDict["initiatorType"];
-            } else {
-                $this->_propDict["initiatorType"] = new InitiatorType($this->_propDict["initiatorType"]);
-                return $this->_propDict["initiatorType"];
-            }
-        }
-        return null;
-    }
-
-    /**
-    * Sets the initiatorType
-    *
-    * @param InitiatorType $val The value to assign to the initiatorType
-    *
-    * @return Initiator The Initiator
-    */
-    public function setInitiatorType($val)
-    {
-        $this->_propDict["initiatorType"] = $val;
-         return $this;
     }
 }
