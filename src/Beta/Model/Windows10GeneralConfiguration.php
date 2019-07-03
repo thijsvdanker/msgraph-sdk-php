@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Windows10GeneralConfiguration File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the taskManagerBlockEndTask
     * Specify whether non-administrators can use Task Manager to end tasks.
@@ -54,7 +54,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["taskManagerBlockEndTask"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windows10AppsForceUpdateSchedule
     * Windows 10 force update schedule for Apps.
@@ -73,7 +73,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the windows10AppsForceUpdateSchedule
     * Windows 10 force update schedule for Apps.
@@ -87,7 +87,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windows10AppsForceUpdateSchedule"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the enableAutomaticRedeployment
     * Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.
@@ -102,7 +102,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enableAutomaticRedeployment
     * Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.
@@ -116,7 +116,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enableAutomaticRedeployment"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the microsoftAccountSignInAssistantSettings
     * Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service.
@@ -135,7 +135,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the microsoftAccountSignInAssistantSettings
     * Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service.
@@ -149,7 +149,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["microsoftAccountSignInAssistantSettings"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the authenticationAllowSecondaryDevice
     * Allows secondary authentication devices to work with Windows.
@@ -164,7 +164,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the authenticationAllowSecondaryDevice
     * Allows secondary authentication devices to work with Windows.
@@ -178,7 +178,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["authenticationAllowSecondaryDevice"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the authenticationWebSignIn
     * Indicates whether or not Web Credential Provider will be enabled.
@@ -197,7 +197,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the authenticationWebSignIn
     * Indicates whether or not Web Credential Provider will be enabled.
@@ -211,7 +211,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["authenticationWebSignIn"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the authenticationPreferredAzureADTenantDomainName
     * Specifies the preferred domain among available domains in the Azure AD tenant.
@@ -226,7 +226,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the authenticationPreferredAzureADTenantDomainName
     * Specifies the preferred domain among available domains in the Azure AD tenant.
@@ -240,7 +240,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["authenticationPreferredAzureADTenantDomainName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the cryptographyAllowFipsAlgorithmPolicy
     * Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.
@@ -255,7 +255,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the cryptographyAllowFipsAlgorithmPolicy
     * Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.
@@ -269,7 +269,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cryptographyAllowFipsAlgorithmPolicy"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the displayAppListWithGdiDPIScalingTurnedOn
     * List of legacy applications that have GDI DPI Scaling turned on.
@@ -284,7 +284,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the displayAppListWithGdiDPIScalingTurnedOn
     * List of legacy applications that have GDI DPI Scaling turned on.
@@ -298,7 +298,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["displayAppListWithGdiDPIScalingTurnedOn"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the displayAppListWithGdiDPIScalingTurnedOff
     * List of legacy applications that have GDI DPI Scaling turned off.
@@ -313,7 +313,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the displayAppListWithGdiDPIScalingTurnedOff
     * List of legacy applications that have GDI DPI Scaling turned off.
@@ -327,7 +327,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["displayAppListWithGdiDPIScalingTurnedOff"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the enterpriseCloudPrintDiscoveryEndPoint
     * Endpoint for discovering cloud printers.
@@ -342,7 +342,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enterpriseCloudPrintDiscoveryEndPoint
     * Endpoint for discovering cloud printers.
@@ -356,7 +356,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enterpriseCloudPrintDiscoveryEndPoint"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the enterpriseCloudPrintOAuthAuthority
     * Authentication endpoint for acquiring OAuth tokens.
@@ -371,7 +371,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enterpriseCloudPrintOAuthAuthority
     * Authentication endpoint for acquiring OAuth tokens.
@@ -385,7 +385,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enterpriseCloudPrintOAuthAuthority"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the enterpriseCloudPrintOAuthClientIdentifier
     * GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.
@@ -400,7 +400,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enterpriseCloudPrintOAuthClientIdentifier
     * GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.
@@ -414,7 +414,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enterpriseCloudPrintOAuthClientIdentifier"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the enterpriseCloudPrintResourceIdentifier
     * OAuth resource URI for print service as configured in the Azure portal.
@@ -429,7 +429,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enterpriseCloudPrintResourceIdentifier
     * OAuth resource URI for print service as configured in the Azure portal.
@@ -443,7 +443,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enterpriseCloudPrintResourceIdentifier"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the enterpriseCloudPrintDiscoveryMaxLimit
     * Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535
@@ -458,7 +458,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enterpriseCloudPrintDiscoveryMaxLimit
     * Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535
@@ -472,7 +472,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enterpriseCloudPrintDiscoveryMaxLimit"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the enterpriseCloudPrintMopriaDiscoveryResourceIdentifier
     * OAuth resource URI for printer discovery service as configured in Azure portal.
@@ -487,7 +487,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the enterpriseCloudPrintMopriaDiscoveryResourceIdentifier
     * OAuth resource URI for printer discovery service as configured in Azure portal.
@@ -501,7 +501,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["enterpriseCloudPrintMopriaDiscoveryResourceIdentifier"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the experienceDoNotSyncBrowserSettings
     * Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override.
@@ -520,7 +520,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the experienceDoNotSyncBrowserSettings
     * Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override.
@@ -534,7 +534,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["experienceDoNotSyncBrowserSettings"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the messagingBlockSync
     * Indicates whether or not to block text message back up and restore and Messaging Everywhere.
@@ -549,7 +549,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the messagingBlockSync
     * Indicates whether or not to block text message back up and restore and Messaging Everywhere.
@@ -563,14 +563,11 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["messagingBlockSync"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the messagingBlockMMS
-<<<<<<< HEAD
     * Indicates whether or not to block the MMS send/receive functionality on the device.
-=======
-    * Indicates whether or not to block the the MMS send/receive functionality on the device.
->>>>>>> beta
+
     *
     * @return bool The messagingBlockMMS
     */
@@ -582,14 +579,10 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the messagingBlockMMS
-<<<<<<< HEAD
     * Indicates whether or not to block the MMS send/receive functionality on the device.
-=======
-    * Indicates whether or not to block the the MMS send/receive functionality on the device.
->>>>>>> beta
     *
     * @param bool $val The messagingBlockMMS
     *
@@ -600,14 +593,10 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["messagingBlockMMS"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the messagingBlockRichCommunicationServices
-<<<<<<< HEAD
     * Indicates whether or not to block the RCS send/receive functionality on the device.
-=======
-    * Indicates whether or not to block the the RCS send/receive functionality on the device.
->>>>>>> beta
     *
     * @return bool The messagingBlockRichCommunicationServices
     */
@@ -619,14 +608,10 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the messagingBlockRichCommunicationServices
-<<<<<<< HEAD
     * Indicates whether or not to block the RCS send/receive functionality on the device.
-=======
-    * Indicates whether or not to block the the RCS send/receive functionality on the device.
->>>>>>> beta
     *
     * @param bool $val The messagingBlockRichCommunicationServices
     *
@@ -637,7 +622,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["messagingBlockRichCommunicationServices"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the printerNames
     * Automatically provision printers based on their names (network host names).
@@ -652,7 +637,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the printerNames
     * Automatically provision printers based on their names (network host names).
@@ -666,7 +651,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["printerNames"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the printerDefaultName
     * Name (network host name) of an installed printer.
@@ -681,7 +666,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the printerDefaultName
     * Name (network host name) of an installed printer.
@@ -695,7 +680,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["printerDefaultName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the printerBlockAddition
     * Prevent user installation of additional printers from printers settings.
@@ -710,7 +695,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the printerBlockAddition
     * Prevent user installation of additional printers from printers settings.
@@ -724,7 +709,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["printerBlockAddition"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchBlockDiacritics
     * Specifies if search can use diacritics.
@@ -739,7 +724,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchBlockDiacritics
     * Specifies if search can use diacritics.
@@ -753,7 +738,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchBlockDiacritics"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchDisableAutoLanguageDetection
     * Specifies whether to use automatic language detection when indexing content and properties.
@@ -768,7 +753,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchDisableAutoLanguageDetection
     * Specifies whether to use automatic language detection when indexing content and properties.
@@ -782,7 +767,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchDisableAutoLanguageDetection"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchDisableIndexingEncryptedItems
     * Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.
@@ -797,7 +782,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchDisableIndexingEncryptedItems
     * Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.
@@ -811,7 +796,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchDisableIndexingEncryptedItems"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchEnableRemoteQueries
     * Indicates whether or not to block remote queries of this computer’s index.
@@ -826,7 +811,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchEnableRemoteQueries
     * Indicates whether or not to block remote queries of this computer’s index.
@@ -840,7 +825,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchEnableRemoteQueries"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchDisableUseLocation
     * Specifies if search can use location information.
@@ -855,7 +840,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchDisableUseLocation
     * Specifies if search can use location information.
@@ -869,7 +854,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchDisableUseLocation"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchDisableLocation
     * Specifies if search can use location information.
@@ -884,7 +869,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchDisableLocation
     * Specifies if search can use location information.
@@ -898,7 +883,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchDisableLocation"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchDisableIndexerBackoff
     * Indicates whether or not to disable the search indexer backoff feature.
@@ -913,7 +898,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchDisableIndexerBackoff
     * Indicates whether or not to disable the search indexer backoff feature.
@@ -927,7 +912,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchDisableIndexerBackoff"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchDisableIndexingRemovableDrive
     * Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.
@@ -942,7 +927,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchDisableIndexingRemovableDrive
     * Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.
@@ -956,7 +941,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchDisableIndexingRemovableDrive"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchEnableAutomaticIndexSizeManangement
     * Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.
@@ -971,7 +956,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchEnableAutomaticIndexSizeManangement
     * Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.
@@ -985,7 +970,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchEnableAutomaticIndexSizeManangement"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the searchBlockWebResults
     * Indicates whether or not to block the web search.
@@ -1000,7 +985,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the searchBlockWebResults
     * Indicates whether or not to block the web search.
@@ -1014,7 +999,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["searchBlockWebResults"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityBlockAzureADJoinedDevicesAutoEncryption
     * Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).
@@ -1029,7 +1014,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the securityBlockAzureADJoinedDevicesAutoEncryption
     * Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).
@@ -1043,7 +1028,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["securityBlockAzureADJoinedDevicesAutoEncryption"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the diagnosticsDataSubmissionMode
     * Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: userDefined, none, basic, enhanced, full.
@@ -1062,7 +1047,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the diagnosticsDataSubmissionMode
     * Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: userDefined, none, basic, enhanced, full.
@@ -1076,7 +1061,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["diagnosticsDataSubmissionMode"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the oneDriveDisableFileSync
     * Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.
@@ -1091,7 +1076,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the oneDriveDisableFileSync
     * Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.
@@ -1105,7 +1090,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["oneDriveDisableFileSync"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the systemTelemetryProxyServer
     * Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.
@@ -1120,7 +1105,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the systemTelemetryProxyServer
     * Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.
@@ -1134,7 +1119,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["systemTelemetryProxyServer"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeTelemetryForMicrosoft365Analytics
     * Specifies what type of telemetry data (none, intranet, internet, both) is sent to Microsoft 365 Analytics
@@ -1153,7 +1138,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeTelemetryForMicrosoft365Analytics
     * Specifies what type of telemetry data (none, intranet, internet, both) is sent to Microsoft 365 Analytics
@@ -1167,7 +1152,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeTelemetryForMicrosoft365Analytics"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the inkWorkspaceAccess
     * Controls the user access to the ink workspace, from the desktop and from above the lock screen.
@@ -1186,7 +1171,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the inkWorkspaceAccess
     * Controls the user access to the ink workspace, from the desktop and from above the lock screen.
@@ -1200,7 +1185,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["inkWorkspaceAccess"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the inkWorkspaceAccessState
     * Controls the user access to the ink workspace, from the desktop and from above the lock screen.
@@ -1219,7 +1204,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the inkWorkspaceAccessState
     * Controls the user access to the ink workspace, from the desktop and from above the lock screen.
@@ -1233,7 +1218,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["inkWorkspaceAccessState"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the inkWorkspaceBlockSuggestedApps
     * Specify whether to show recommended app suggestions in the ink workspace.
@@ -1248,7 +1233,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the inkWorkspaceBlockSuggestedApps
     * Specify whether to show recommended app suggestions in the ink workspace.
@@ -1262,7 +1247,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["inkWorkspaceBlockSuggestedApps"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the smartScreenEnableAppInstallControl
     * Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
@@ -1277,7 +1262,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the smartScreenEnableAppInstallControl
     * Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
@@ -1291,7 +1276,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["smartScreenEnableAppInstallControl"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the smartScreenAppInstallControl
     * Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
@@ -1310,7 +1295,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the smartScreenAppInstallControl
     * Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
@@ -1324,7 +1309,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["smartScreenAppInstallControl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the personalizationDesktopImageUrl
     * A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.
@@ -1339,7 +1324,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the personalizationDesktopImageUrl
     * A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.
@@ -1353,7 +1338,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["personalizationDesktopImageUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the personalizationLockScreenImageUrl
     * A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
@@ -1368,7 +1353,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the personalizationLockScreenImageUrl
     * A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.
@@ -1382,7 +1367,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["personalizationLockScreenImageUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the bluetoothAllowedServices
     * Specify a list of allowed Bluetooth services and profiles in hex formatted strings.
@@ -1397,7 +1382,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the bluetoothAllowedServices
     * Specify a list of allowed Bluetooth services and profiles in hex formatted strings.
@@ -1411,7 +1396,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["bluetoothAllowedServices"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the bluetoothBlockAdvertising
     * Whether or not to Block the user from using bluetooth advertising.
@@ -1426,7 +1411,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the bluetoothBlockAdvertising
     * Whether or not to Block the user from using bluetooth advertising.
@@ -1440,7 +1425,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["bluetoothBlockAdvertising"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the bluetoothBlockPromptedProximalConnections
     * Whether or not to block the users from using Swift Pair and other proximity based scenarios.
@@ -1455,7 +1440,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the bluetoothBlockPromptedProximalConnections
     * Whether or not to block the users from using Swift Pair and other proximity based scenarios.
@@ -1469,7 +1454,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["bluetoothBlockPromptedProximalConnections"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the bluetoothBlockDiscoverableMode
     * Whether or not to Block the user from using bluetooth discoverable mode.
@@ -1484,7 +1469,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the bluetoothBlockDiscoverableMode
     * Whether or not to Block the user from using bluetooth discoverable mode.
@@ -1498,7 +1483,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["bluetoothBlockDiscoverableMode"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the bluetoothBlockPrePairing
     * Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.
@@ -1513,7 +1498,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the bluetoothBlockPrePairing
     * Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.
@@ -1527,7 +1512,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["bluetoothBlockPrePairing"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockAutofill
     * Indicates whether or not to block auto fill.
@@ -1542,7 +1527,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockAutofill
     * Indicates whether or not to block auto fill.
@@ -1556,7 +1541,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockAutofill"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlocked
     * Indicates whether or not to Block the user from using the Edge browser.
@@ -1571,7 +1556,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlocked
     * Indicates whether or not to Block the user from using the Edge browser.
@@ -1585,7 +1570,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeCookiePolicy
     * Indicates which cookies to block in the Edge browser. Possible values are: userDefined, allow, blockThirdParty, blockAll.
@@ -1604,7 +1589,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeCookiePolicy
     * Indicates which cookies to block in the Edge browser. Possible values are: userDefined, allow, blockThirdParty, blockAll.
@@ -1618,7 +1603,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeCookiePolicy"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockDeveloperTools
     * Indicates whether or not to block developer tools in the Edge browser.
@@ -1633,7 +1618,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockDeveloperTools
     * Indicates whether or not to block developer tools in the Edge browser.
@@ -1647,7 +1632,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockDeveloperTools"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockSendingDoNotTrackHeader
     * Indicates whether or not to Block the user from sending the do not track header.
@@ -1662,7 +1647,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockSendingDoNotTrackHeader
     * Indicates whether or not to Block the user from sending the do not track header.
@@ -1676,7 +1661,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockSendingDoNotTrackHeader"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockExtensions
     * Indicates whether or not to block extensions in the Edge browser.
@@ -1691,7 +1676,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockExtensions
     * Indicates whether or not to block extensions in the Edge browser.
@@ -1705,7 +1690,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockExtensions"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockInPrivateBrowsing
     * Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
@@ -1720,7 +1705,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockInPrivateBrowsing
     * Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
@@ -1734,7 +1719,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockInPrivateBrowsing"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockJavaScript
     * Indicates whether or not to Block the user from using JavaScript.
@@ -1749,7 +1734,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockJavaScript
     * Indicates whether or not to Block the user from using JavaScript.
@@ -1763,7 +1748,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockJavaScript"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockPasswordManager
     * Indicates whether or not to Block password manager.
@@ -1778,7 +1763,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockPasswordManager
     * Indicates whether or not to Block password manager.
@@ -1792,7 +1777,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockPasswordManager"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockAddressBarDropdown
     * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
@@ -1807,7 +1792,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockAddressBarDropdown
     * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
@@ -1821,7 +1806,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockAddressBarDropdown"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockCompatibilityList
     * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
@@ -1836,7 +1821,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockCompatibilityList
     * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
@@ -1850,7 +1835,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockCompatibilityList"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeClearBrowsingDataOnExit
     * Clear browsing data on exiting Microsoft Edge.
@@ -1865,7 +1850,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeClearBrowsingDataOnExit
     * Clear browsing data on exiting Microsoft Edge.
@@ -1879,7 +1864,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeClearBrowsingDataOnExit"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeAllowStartPagesModification
     * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
@@ -1894,7 +1879,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeAllowStartPagesModification
     * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
@@ -1908,7 +1893,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeAllowStartPagesModification"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeDisableFirstRunPage
     * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
@@ -1923,7 +1908,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeDisableFirstRunPage
     * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
@@ -1937,7 +1922,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeDisableFirstRunPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockLiveTileDataCollection
     * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
@@ -1952,7 +1937,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockLiveTileDataCollection
     * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
@@ -1966,7 +1951,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockLiveTileDataCollection"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeSyncFavoritesWithInternetExplorer
     * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
@@ -1981,7 +1966,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeSyncFavoritesWithInternetExplorer
     * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
@@ -1995,7 +1980,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeSyncFavoritesWithInternetExplorer"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeFavoritesListLocation
     * The location of the favorites list to provision. Could be a local file, local network or http location.
@@ -2010,7 +1995,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeFavoritesListLocation
     * The location of the favorites list to provision. Could be a local file, local network or http location.
@@ -2024,7 +2009,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeFavoritesListLocation"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockEditFavorites
     * Indicates whether or not to Block the user from making changes to Favorites.
@@ -2039,7 +2024,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockEditFavorites
     * Indicates whether or not to Block the user from making changes to Favorites.
@@ -2053,7 +2038,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockEditFavorites"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeNewTabPageURL
     * Specify the page opened when new tabs are created.
@@ -2068,7 +2053,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeNewTabPageURL
     * Specify the page opened when new tabs are created.
@@ -2082,7 +2067,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeNewTabPageURL"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeHomeButtonConfiguration
     * Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL
@@ -2101,7 +2086,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeHomeButtonConfiguration
     * Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL
@@ -2115,7 +2100,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeHomeButtonConfiguration"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeHomeButtonConfigurationEnabled
     * Enable the Home button configuration.
@@ -2130,7 +2115,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeHomeButtonConfigurationEnabled
     * Enable the Home button configuration.
@@ -2144,7 +2129,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeHomeButtonConfigurationEnabled"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeOpensWith
     * Specify what kind of pages are open at start.
@@ -2163,7 +2148,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeOpensWith
     * Specify what kind of pages are open at start.
@@ -2177,7 +2162,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeOpensWith"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockSideloadingExtensions
     * Indicates whether the user can sideload extensions.
@@ -2192,7 +2177,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockSideloadingExtensions
     * Indicates whether the user can sideload extensions.
@@ -2206,7 +2191,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockSideloadingExtensions"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeRequiredExtensionPackageFamilyNames
     * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
@@ -2221,15 +2206,10 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
-<<<<<<< HEAD
     * Sets the edgeBlockInPrivateBrowsing
     * Indicates whether or not to block InPrivate browsing on corporate networks, in the Edge browser.
-=======
-    * Sets the edgeRequiredExtensionPackageFamilyNames
-    * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
->>>>>>> beta
     *
     * @param string $val The edgeRequiredExtensionPackageFamilyNames
     *
@@ -2240,15 +2220,10 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeRequiredExtensionPackageFamilyNames"] = $val;
         return $this;
     }
-    
+
     /**
-<<<<<<< HEAD
     * Gets the edgeBlockJavaScript
     * Indicates whether or not to Block the user from using JavaScript.
-=======
-    * Gets the edgeBlockPrinting
-    * Configure Edge to allow or block printing.
->>>>>>> beta
     *
     * @return bool The edgeBlockPrinting
     */
@@ -2260,537 +2235,18 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
-<<<<<<< HEAD
     * Sets the edgeBlockJavaScript
     * Indicates whether or not to Block the user from using JavaScript.
-=======
-    * Sets the edgeBlockPrinting
-    * Configure Edge to allow or block printing.
->>>>>>> beta
     *
-    * @param bool $val The edgeBlockPrinting
-    *
-    * @return Windows10GeneralConfiguration
     */
     public function setEdgeBlockPrinting($val)
     {
         $this->_propDict["edgeBlockPrinting"] = boolval($val);
         return $this;
     }
-    
-    /**
-<<<<<<< HEAD
-    * Gets the edgeBlockPasswordManager
-    * Indicates whether or not to Block password manager.
-=======
-    * Gets the edgeFavoritesBarVisibility
-    * Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page.
->>>>>>> beta
-    *
-    * @return VisibilitySetting The edgeFavoritesBarVisibility
-    */
-    public function getEdgeFavoritesBarVisibility()
-    {
-        if (array_key_exists("edgeFavoritesBarVisibility", $this->_propDict)) {
-            if (is_a($this->_propDict["edgeFavoritesBarVisibility"], "Microsoft\Graph\Beta\Model\VisibilitySetting")) {
-                return $this->_propDict["edgeFavoritesBarVisibility"];
-            } else {
-                $this->_propDict["edgeFavoritesBarVisibility"] = new VisibilitySetting($this->_propDict["edgeFavoritesBarVisibility"]);
-                return $this->_propDict["edgeFavoritesBarVisibility"];
-            }
-        }
-        return null;
-    }
-    
-    /**
-<<<<<<< HEAD
-    * Sets the edgeBlockPasswordManager
-    * Indicates whether or not to Block password manager.
-    *
-    * @param bool $val The edgeBlockPasswordManager
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockPasswordManager($val)
-    {
-        $this->_propDict["edgeBlockPasswordManager"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeBlockAddressBarDropdown
-    * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
-    *
-    * @return bool The edgeBlockAddressBarDropdown
-    */
-    public function getEdgeBlockAddressBarDropdown()
-    {
-        if (array_key_exists("edgeBlockAddressBarDropdown", $this->_propDict)) {
-            return $this->_propDict["edgeBlockAddressBarDropdown"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeBlockAddressBarDropdown
-    * Block the address bar dropdown functionality in Microsoft Edge. Disable this settings to minimize network connections from Microsoft Edge to Microsoft services.
-    *
-    * @param bool $val The edgeBlockAddressBarDropdown
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockAddressBarDropdown($val)
-    {
-        $this->_propDict["edgeBlockAddressBarDropdown"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeBlockCompatibilityList
-    * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
-    *
-    * @return bool The edgeBlockCompatibilityList
-    */
-    public function getEdgeBlockCompatibilityList()
-    {
-        if (array_key_exists("edgeBlockCompatibilityList", $this->_propDict)) {
-            return $this->_propDict["edgeBlockCompatibilityList"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeBlockCompatibilityList
-    * Block Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues.
-    *
-    * @param bool $val The edgeBlockCompatibilityList
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockCompatibilityList($val)
-    {
-        $this->_propDict["edgeBlockCompatibilityList"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeClearBrowsingDataOnExit
-    * Clear browsing data on exiting Microsoft Edge.
-    *
-    * @return bool The edgeClearBrowsingDataOnExit
-    */
-    public function getEdgeClearBrowsingDataOnExit()
-    {
-        if (array_key_exists("edgeClearBrowsingDataOnExit", $this->_propDict)) {
-            return $this->_propDict["edgeClearBrowsingDataOnExit"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeClearBrowsingDataOnExit
-    * Clear browsing data on exiting Microsoft Edge.
-    *
-    * @param bool $val The edgeClearBrowsingDataOnExit
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeClearBrowsingDataOnExit($val)
-    {
-        $this->_propDict["edgeClearBrowsingDataOnExit"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeAllowStartPagesModification
-    * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
-    *
-    * @return bool The edgeAllowStartPagesModification
-    */
-    public function getEdgeAllowStartPagesModification()
-    {
-        if (array_key_exists("edgeAllowStartPagesModification", $this->_propDict)) {
-            return $this->_propDict["edgeAllowStartPagesModification"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeAllowStartPagesModification
-    * Allow users to change Start pages on Edge. Use the EdgeHomepageUrls to specify the Start pages that the user would see by default when they open Edge.
-    *
-    * @param bool $val The edgeAllowStartPagesModification
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeAllowStartPagesModification($val)
-    {
-        $this->_propDict["edgeAllowStartPagesModification"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeDisableFirstRunPage
-    * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
-    *
-    * @return bool The edgeDisableFirstRunPage
-    */
-    public function getEdgeDisableFirstRunPage()
-    {
-        if (array_key_exists("edgeDisableFirstRunPage", $this->_propDict)) {
-            return $this->_propDict["edgeDisableFirstRunPage"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeDisableFirstRunPage
-    * Block the Microsoft web page that opens on the first use of Microsoft Edge. This policy allows enterprises, like those enrolled in zero emissions configurations, to block this page.
-    *
-    * @param bool $val The edgeDisableFirstRunPage
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeDisableFirstRunPage($val)
-    {
-        $this->_propDict["edgeDisableFirstRunPage"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeBlockLiveTileDataCollection
-    * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
-    *
-    * @return bool The edgeBlockLiveTileDataCollection
-    */
-    public function getEdgeBlockLiveTileDataCollection()
-    {
-        if (array_key_exists("edgeBlockLiveTileDataCollection", $this->_propDict)) {
-            return $this->_propDict["edgeBlockLiveTileDataCollection"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeBlockLiveTileDataCollection
-    * Block the collection of information by Microsoft for live tile creation when users pin a site to Start from Microsoft Edge.
-    *
-    * @param bool $val The edgeBlockLiveTileDataCollection
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockLiveTileDataCollection($val)
-    {
-        $this->_propDict["edgeBlockLiveTileDataCollection"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeSyncFavoritesWithInternetExplorer
-    * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
-    *
-    * @return bool The edgeSyncFavoritesWithInternetExplorer
-    */
-    public function getEdgeSyncFavoritesWithInternetExplorer()
-    {
-        if (array_key_exists("edgeSyncFavoritesWithInternetExplorer", $this->_propDict)) {
-            return $this->_propDict["edgeSyncFavoritesWithInternetExplorer"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeSyncFavoritesWithInternetExplorer
-    * Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.
-    *
-    * @param bool $val The edgeSyncFavoritesWithInternetExplorer
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeSyncFavoritesWithInternetExplorer($val)
-    {
-        $this->_propDict["edgeSyncFavoritesWithInternetExplorer"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeFavoritesListLocation
-    * The location of the favorites list to provision. Could be a local file, local network or http location.
-    *
-    * @return string The edgeFavoritesListLocation
-    */
-    public function getEdgeFavoritesListLocation()
-    {
-        if (array_key_exists("edgeFavoritesListLocation", $this->_propDict)) {
-            return $this->_propDict["edgeFavoritesListLocation"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeFavoritesListLocation
-    * The location of the favorites list to provision. Could be a local file, local network or http location.
-    *
-    * @param string $val The edgeFavoritesListLocation
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeFavoritesListLocation($val)
-    {
-        $this->_propDict["edgeFavoritesListLocation"] = $val;
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeBlockEditFavorites
-    * Indicates whether or not to Block the user from making changes to Favorites.
-    *
-    * @return bool The edgeBlockEditFavorites
-    */
-    public function getEdgeBlockEditFavorites()
-    {
-        if (array_key_exists("edgeBlockEditFavorites", $this->_propDict)) {
-            return $this->_propDict["edgeBlockEditFavorites"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeBlockEditFavorites
-    * Indicates whether or not to Block the user from making changes to Favorites.
-    *
-    * @param bool $val The edgeBlockEditFavorites
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockEditFavorites($val)
-    {
-        $this->_propDict["edgeBlockEditFavorites"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeNewTabPageURL
-    * Specify the page opened when new tabs are created.
-    *
-    * @return string The edgeNewTabPageURL
-    */
-    public function getEdgeNewTabPageURL()
-    {
-        if (array_key_exists("edgeNewTabPageURL", $this->_propDict)) {
-            return $this->_propDict["edgeNewTabPageURL"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeNewTabPageURL
-    * Specify the page opened when new tabs are created.
-    *
-    * @param string $val The edgeNewTabPageURL
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeNewTabPageURL($val)
-    {
-        $this->_propDict["edgeNewTabPageURL"] = $val;
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeHomeButtonConfiguration
-    * Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL
-    *
-    * @return EdgeHomeButtonConfiguration The edgeHomeButtonConfiguration
-    */
-    public function getEdgeHomeButtonConfiguration()
-    {
-        if (array_key_exists("edgeHomeButtonConfiguration", $this->_propDict)) {
-            if (is_a($this->_propDict["edgeHomeButtonConfiguration"], "Microsoft\Graph\Beta\Model\EdgeHomeButtonConfiguration")) {
-                return $this->_propDict["edgeHomeButtonConfiguration"];
-            } else {
-                $this->_propDict["edgeHomeButtonConfiguration"] = new EdgeHomeButtonConfiguration($this->_propDict["edgeHomeButtonConfiguration"]);
-                return $this->_propDict["edgeHomeButtonConfiguration"];
-            }
-        }
-        return null;
-    }
-    
-    /**
-    * Sets the edgeHomeButtonConfiguration
-    * Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL
-    *
-    * @param EdgeHomeButtonConfiguration $val The edgeHomeButtonConfiguration
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeHomeButtonConfiguration($val)
-    {
-        $this->_propDict["edgeHomeButtonConfiguration"] = $val;
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeHomeButtonConfigurationEnabled
-    * Enable the Home button configuration.
-    *
-    * @return bool The edgeHomeButtonConfigurationEnabled
-    */
-    public function getEdgeHomeButtonConfigurationEnabled()
-    {
-        if (array_key_exists("edgeHomeButtonConfigurationEnabled", $this->_propDict)) {
-            return $this->_propDict["edgeHomeButtonConfigurationEnabled"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeHomeButtonConfigurationEnabled
-    * Enable the Home button configuration.
-    *
-    * @param bool $val The edgeHomeButtonConfigurationEnabled
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeHomeButtonConfigurationEnabled($val)
-    {
-        $this->_propDict["edgeHomeButtonConfigurationEnabled"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeOpensWith
-    * Specify what kind of pages are open at start.
-    *
-    * @return EdgeOpenOptions The edgeOpensWith
-    */
-    public function getEdgeOpensWith()
-    {
-        if (array_key_exists("edgeOpensWith", $this->_propDict)) {
-            if (is_a($this->_propDict["edgeOpensWith"], "Microsoft\Graph\Beta\Model\EdgeOpenOptions")) {
-                return $this->_propDict["edgeOpensWith"];
-            } else {
-                $this->_propDict["edgeOpensWith"] = new EdgeOpenOptions($this->_propDict["edgeOpensWith"]);
-                return $this->_propDict["edgeOpensWith"];
-            }
-        }
-        return null;
-    }
-    
-    /**
-    * Sets the edgeOpensWith
-    * Specify what kind of pages are open at start.
-    *
-    * @param EdgeOpenOptions $val The edgeOpensWith
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeOpensWith($val)
-    {
-        $this->_propDict["edgeOpensWith"] = $val;
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeBlockSideloadingExtensions
-    * Indicates whether the user can sideload extensions.
-    *
-    * @return bool The edgeBlockSideloadingExtensions
-    */
-    public function getEdgeBlockSideloadingExtensions()
-    {
-        if (array_key_exists("edgeBlockSideloadingExtensions", $this->_propDict)) {
-            return $this->_propDict["edgeBlockSideloadingExtensions"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeBlockSideloadingExtensions
-    * Indicates whether the user can sideload extensions.
-    *
-    * @param bool $val The edgeBlockSideloadingExtensions
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockSideloadingExtensions($val)
-    {
-        $this->_propDict["edgeBlockSideloadingExtensions"] = boolval($val);
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeRequiredExtensionPackageFamilyNames
-    * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
-    *
-    * @return string The edgeRequiredExtensionPackageFamilyNames
-    */
-    public function getEdgeRequiredExtensionPackageFamilyNames()
-    {
-        if (array_key_exists("edgeRequiredExtensionPackageFamilyNames", $this->_propDict)) {
-            return $this->_propDict["edgeRequiredExtensionPackageFamilyNames"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeRequiredExtensionPackageFamilyNames
-    * Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.
-    *
-    * @param string $val The edgeRequiredExtensionPackageFamilyNames
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeRequiredExtensionPackageFamilyNames($val)
-    {
-        $this->_propDict["edgeRequiredExtensionPackageFamilyNames"] = $val;
-        return $this;
-    }
-    
-    /**
-    * Gets the edgeBlockPrinting
-    * Configure Edge to allow or block printing.
-    *
-    * @return bool The edgeBlockPrinting
-    */
-    public function getEdgeBlockPrinting()
-    {
-        if (array_key_exists("edgeBlockPrinting", $this->_propDict)) {
-            return $this->_propDict["edgeBlockPrinting"];
-        } else {
-            return null;
-        }
-    }
-    
-    /**
-    * Sets the edgeBlockPrinting
-    * Configure Edge to allow or block printing.
-    *
-    * @param bool $val The edgeBlockPrinting
-    *
-    * @return Windows10GeneralConfiguration
-    */
-    public function setEdgeBlockPrinting($val)
-    {
-        $this->_propDict["edgeBlockPrinting"] = boolval($val);
-        return $this;
-    }
-    
+
     /**
     * Gets the edgeFavoritesBarVisibility
     * Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page.
@@ -2809,10 +2265,8 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
-=======
->>>>>>> beta
     * Sets the edgeFavoritesBarVisibility
     * Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page.
     *
@@ -2825,7 +2279,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeFavoritesBarVisibility"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockSavingHistory
     * Configure Edge to allow browsing history to be saved or to never save browsing history.
@@ -2840,7 +2294,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockSavingHistory
     * Configure Edge to allow browsing history to be saved or to never save browsing history.
@@ -2854,7 +2308,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockSavingHistory"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockFullScreenMode
     * Allow or prevent Edge from entering the full screen mode.
@@ -2869,7 +2323,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockFullScreenMode
     * Allow or prevent Edge from entering the full screen mode.
@@ -2883,7 +2337,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockFullScreenMode"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockWebContentOnNewTabPage
     * Configure to load a blank page in Edge instead of the default New tab page and prevent users from changing it.
@@ -2898,7 +2352,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockWebContentOnNewTabPage
     * Configure to load a blank page in Edge instead of the default New tab page and prevent users from changing it.
@@ -2912,7 +2366,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockWebContentOnNewTabPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockTabPreloading
     * Configure whether Edge preloads the new tab page at Windows startup.
@@ -2927,7 +2381,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockTabPreloading
     * Configure whether Edge preloads the new tab page at Windows startup.
@@ -2941,7 +2395,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockTabPreloading"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockPrelaunch
     * Decide whether Microsoft Edge is prelaunched at Windows startup.
@@ -2956,7 +2410,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockPrelaunch
     * Decide whether Microsoft Edge is prelaunched at Windows startup.
@@ -2970,7 +2424,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockPrelaunch"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeShowMessageWhenOpeningInternetExplorerSites
     * Controls the message displayed by Edge before switching to Internet Explorer.
@@ -2989,7 +2443,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeShowMessageWhenOpeningInternetExplorerSites
     * Controls the message displayed by Edge before switching to Internet Explorer.
@@ -3003,7 +2457,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeShowMessageWhenOpeningInternetExplorerSites"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgePreventCertificateErrorOverride
     * Allow or prevent users from overriding certificate errors.
@@ -3018,7 +2472,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgePreventCertificateErrorOverride
     * Allow or prevent users from overriding certificate errors.
@@ -3032,7 +2486,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgePreventCertificateErrorOverride"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeKioskModeRestriction
     * Controls how the Microsoft Edge settings are restricted based on the configure kiosk mode.
@@ -3051,7 +2505,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeKioskModeRestriction
     * Controls how the Microsoft Edge settings are restricted based on the configure kiosk mode.
@@ -3065,7 +2519,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeKioskModeRestriction"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeKioskResetAfterIdleTimeInMinutes
     * Specifies the time in minutes from the last user activity before Microsoft Edge kiosk resets.  Valid values are 0-1440. The default is 5. 0 indicates no reset. Valid values 0 to 1440
@@ -3080,7 +2534,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeKioskResetAfterIdleTimeInMinutes
     * Specifies the time in minutes from the last user activity before Microsoft Edge kiosk resets.  Valid values are 0-1440. The default is 5. 0 indicates no reset. Valid values 0 to 1440
@@ -3094,7 +2548,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeKioskResetAfterIdleTimeInMinutes"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the cellularBlockDataWhenRoaming
     * Whether or not to Block the user from using data over cellular while roaming.
@@ -3109,7 +2563,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the cellularBlockDataWhenRoaming
     * Whether or not to Block the user from using data over cellular while roaming.
@@ -3123,7 +2577,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cellularBlockDataWhenRoaming"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the cellularBlockVpn
     * Whether or not to Block the user from using VPN over cellular.
@@ -3138,7 +2592,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the cellularBlockVpn
     * Whether or not to Block the user from using VPN over cellular.
@@ -3152,7 +2606,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cellularBlockVpn"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the cellularBlockVpnWhenRoaming
     * Whether or not to Block the user from using VPN when roaming over cellular.
@@ -3167,7 +2621,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the cellularBlockVpnWhenRoaming
     * Whether or not to Block the user from using VPN when roaming over cellular.
@@ -3181,7 +2635,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cellularBlockVpnWhenRoaming"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the cellularData
     * Whether or not to allow the cellular data channel on the device. If not configured, the cellular data channel is allowed and the user can turn it off.
@@ -3200,7 +2654,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the cellularData
     * Whether or not to allow the cellular data channel on the device. If not configured, the cellular data channel is allowed and the user can turn it off.
@@ -3214,7 +2668,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cellularData"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderBlockEndUserAccess
     * Whether or not to block end user access to Defender.
@@ -3229,7 +2683,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderBlockEndUserAccess
     * Whether or not to block end user access to Defender.
@@ -3243,7 +2697,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderBlockEndUserAccess"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderDaysBeforeDeletingQuarantinedMalware
     * Number of days before deleting quarantined malware. Valid values 0 to 90
@@ -3258,7 +2712,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderDaysBeforeDeletingQuarantinedMalware
     * Number of days before deleting quarantined malware. Valid values 0 to 90
@@ -3272,7 +2726,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderDaysBeforeDeletingQuarantinedMalware"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderDetectedMalwareActions
     * Gets or sets Defender’s actions to take on detected Malware per threat level.
@@ -3291,7 +2745,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderDetectedMalwareActions
     * Gets or sets Defender’s actions to take on detected Malware per threat level.
@@ -3305,7 +2759,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderDetectedMalwareActions"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderSystemScanSchedule
     * Defender day of the week for the system scan. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
@@ -3324,7 +2778,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderSystemScanSchedule
     * Defender day of the week for the system scan. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
@@ -3338,7 +2792,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderSystemScanSchedule"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderFilesAndFoldersToExclude
     * Files and folder to exclude from scans and real time protection.
@@ -3353,7 +2807,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderFilesAndFoldersToExclude
     * Files and folder to exclude from scans and real time protection.
@@ -3367,7 +2821,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderFilesAndFoldersToExclude"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderFileExtensionsToExclude
     * File extensions to exclude from scans and real time protection.
@@ -3382,7 +2836,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderFileExtensionsToExclude
     * File extensions to exclude from scans and real time protection.
@@ -3396,7 +2850,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderFileExtensionsToExclude"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanMaxCpu
     * Max CPU usage percentage during scan. Valid values 0 to 100
@@ -3411,7 +2865,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanMaxCpu
     * Max CPU usage percentage during scan. Valid values 0 to 100
@@ -3425,7 +2879,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanMaxCpu"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderMonitorFileActivity
     * Value for monitoring file activity. Possible values are: userDefined, disable, monitorAllFiles, monitorIncomingFilesOnly, monitorOutgoingFilesOnly.
@@ -3444,7 +2898,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderMonitorFileActivity
     * Value for monitoring file activity. Possible values are: userDefined, disable, monitorAllFiles, monitorIncomingFilesOnly, monitorOutgoingFilesOnly.
@@ -3458,7 +2912,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderMonitorFileActivity"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderPotentiallyUnwantedAppAction
     * Gets or sets Defenderâ€™s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop.
@@ -3477,7 +2931,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderPotentiallyUnwantedAppAction
     * Gets or sets Defenderâ€™s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop.
@@ -3491,7 +2945,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderPotentiallyUnwantedAppAction"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderPotentiallyUnwantedAppActionSetting
     * Gets or sets Defenderâ€™s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop.
@@ -3510,7 +2964,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderPotentiallyUnwantedAppActionSetting
     * Gets or sets Defenderâ€™s action to take on Potentially Unwanted Application (PUA), which includes software with behaviors of ad-injection, software bundling, persistent solicitation for payment or subscription, etc. Defender alerts user when PUA is being downloaded or attempts to install itself. Added in Windows 10 for desktop.
@@ -3524,7 +2978,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderPotentiallyUnwantedAppActionSetting"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderProcessesToExclude
     * Processes to exclude from scans and real time protection.
@@ -3539,7 +2993,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderProcessesToExclude
     * Processes to exclude from scans and real time protection.
@@ -3553,7 +3007,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderProcessesToExclude"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderPromptForSampleSubmission
     * The configuration for how to prompt user for sample submission. Possible values are: userDefined, alwaysPrompt, promptBeforeSendingPersonalData, neverSendData, sendAllDataWithoutPrompting.
@@ -3572,7 +3026,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderPromptForSampleSubmission
     * The configuration for how to prompt user for sample submission. Possible values are: userDefined, alwaysPrompt, promptBeforeSendingPersonalData, neverSendData, sendAllDataWithoutPrompting.
@@ -3586,7 +3040,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderPromptForSampleSubmission"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderRequireBehaviorMonitoring
     * Indicates whether or not to require behavior monitoring.
@@ -3601,7 +3055,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderRequireBehaviorMonitoring
     * Indicates whether or not to require behavior monitoring.
@@ -3615,7 +3069,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderRequireBehaviorMonitoring"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderRequireCloudProtection
     * Indicates whether or not to require cloud protection.
@@ -3630,7 +3084,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderRequireCloudProtection
     * Indicates whether or not to require cloud protection.
@@ -3644,7 +3098,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderRequireCloudProtection"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderRequireNetworkInspectionSystem
     * Indicates whether or not to require network inspection system.
@@ -3659,7 +3113,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderRequireNetworkInspectionSystem
     * Indicates whether or not to require network inspection system.
@@ -3673,7 +3127,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderRequireNetworkInspectionSystem"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderRequireRealTimeMonitoring
     * Indicates whether or not to require real time monitoring.
@@ -3688,7 +3142,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderRequireRealTimeMonitoring
     * Indicates whether or not to require real time monitoring.
@@ -3702,7 +3156,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderRequireRealTimeMonitoring"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanArchiveFiles
     * Indicates whether or not to scan archive files.
@@ -3717,7 +3171,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanArchiveFiles
     * Indicates whether or not to scan archive files.
@@ -3731,7 +3185,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanArchiveFiles"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanDownloads
     * Indicates whether or not to scan downloads.
@@ -3746,7 +3200,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanDownloads
     * Indicates whether or not to scan downloads.
@@ -3760,7 +3214,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanDownloads"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScheduleScanEnableLowCpuPriority
     * When enabled, low CPU priority will be used during scheduled scans.
@@ -3775,7 +3229,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScheduleScanEnableLowCpuPriority
     * When enabled, low CPU priority will be used during scheduled scans.
@@ -3789,7 +3243,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScheduleScanEnableLowCpuPriority"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderDisableCatchupQuickScan
     * When blocked, catch-up scans for scheduled quick scans will be turned off.
@@ -3804,7 +3258,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderDisableCatchupQuickScan
     * When blocked, catch-up scans for scheduled quick scans will be turned off.
@@ -3818,7 +3272,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderDisableCatchupQuickScan"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderDisableCatchupFullScan
     * When blocked, catch-up scans for scheduled full scans will be turned off.
@@ -3833,7 +3287,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderDisableCatchupFullScan
     * When blocked, catch-up scans for scheduled full scans will be turned off.
@@ -3847,7 +3301,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderDisableCatchupFullScan"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanNetworkFiles
     * Indicates whether or not to scan files opened from a network folder.
@@ -3862,7 +3316,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanNetworkFiles
     * Indicates whether or not to scan files opened from a network folder.
@@ -3876,7 +3330,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanNetworkFiles"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanIncomingMail
     * Indicates whether or not to scan incoming mail messages.
@@ -3891,7 +3345,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanIncomingMail
     * Indicates whether or not to scan incoming mail messages.
@@ -3905,7 +3359,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanIncomingMail"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanMappedNetworkDrivesDuringFullScan
     * Indicates whether or not to scan mapped network drives during full scan.
@@ -3920,7 +3374,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanMappedNetworkDrivesDuringFullScan
     * Indicates whether or not to scan mapped network drives during full scan.
@@ -3934,7 +3388,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanMappedNetworkDrivesDuringFullScan"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanRemovableDrivesDuringFullScan
     * Indicates whether or not to scan removable drives during full scan.
@@ -3949,7 +3403,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanRemovableDrivesDuringFullScan
     * Indicates whether or not to scan removable drives during full scan.
@@ -3963,7 +3417,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanRemovableDrivesDuringFullScan"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanScriptsLoadedInInternetExplorer
     * Indicates whether or not to scan scripts loaded in Internet Explorer browser.
@@ -3978,7 +3432,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderScanScriptsLoadedInInternetExplorer
     * Indicates whether or not to scan scripts loaded in Internet Explorer browser.
@@ -3992,7 +3446,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanScriptsLoadedInInternetExplorer"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderSignatureUpdateIntervalInHours
     * The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24
@@ -4007,7 +3461,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderSignatureUpdateIntervalInHours
     * The signature update interval in hours. Specify 0 not to check. Valid values 0 to 24
@@ -4021,7 +3475,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderSignatureUpdateIntervalInHours"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderScanType
     * The defender system scan type. Possible values are: userDefined, disabled, quick, full.
@@ -4040,7 +3494,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderScanType
     * The defender system scan type. Possible values are: userDefined, disabled, quick, full.
@@ -4054,7 +3508,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScanType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderScheduledScanTime
     * The defender time for the system scan.
@@ -4073,7 +3527,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderScheduledScanTime
     * The defender time for the system scan.
@@ -4087,7 +3541,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScheduledScanTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderScheduledQuickScanTime
     * The time to perform a daily quick scan.
@@ -4106,7 +3560,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderScheduledQuickScanTime
     * The time to perform a daily quick scan.
@@ -4120,7 +3574,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderScheduledQuickScanTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderCloudBlockLevel
     * Specifies the level of cloud-delivered protection. Possible values are: notConfigured, high, highPlus, zeroTolerance.
@@ -4139,7 +3593,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderCloudBlockLevel
     * Specifies the level of cloud-delivered protection. Possible values are: notConfigured, high, highPlus, zeroTolerance.
@@ -4153,7 +3607,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderCloudBlockLevel"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defenderCloudExtendedTimeout
     * Timeout extension for file scanning by the cloud. Valid values 0 to 50
@@ -4168,7 +3622,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderCloudExtendedTimeout
     * Timeout extension for file scanning by the cloud. Valid values 0 to 50
@@ -4182,7 +3636,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderCloudExtendedTimeout"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderCloudExtendedTimeoutInSeconds
     * Timeout extension for file scanning by the cloud. Valid values 0 to 50
@@ -4197,7 +3651,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderCloudExtendedTimeoutInSeconds
     * Timeout extension for file scanning by the cloud. Valid values 0 to 50
@@ -4211,7 +3665,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderCloudExtendedTimeoutInSeconds"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderBlockOnAccessProtection
     * Allows or disallows Windows Defender On Access Protection functionality.
@@ -4226,7 +3680,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the defenderBlockOnAccessProtection
     * Allows or disallows Windows Defender On Access Protection functionality.
@@ -4240,7 +3694,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderBlockOnAccessProtection"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the defenderSubmitSamplesConsentType
     * Checks for the user consent level in Windows Defender to send data.
@@ -4259,7 +3713,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the defenderSubmitSamplesConsentType
     * Checks for the user consent level in Windows Defender to send data.
@@ -4273,7 +3727,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["defenderSubmitSamplesConsentType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lockScreenAllowTimeoutConfiguration
     * Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.
@@ -4288,7 +3742,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the lockScreenAllowTimeoutConfiguration
     * Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.
@@ -4302,7 +3756,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["lockScreenAllowTimeoutConfiguration"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the lockScreenBlockActionCenterNotifications
     * Indicates whether or not to block action center notifications over lock screen.
@@ -4317,7 +3771,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the lockScreenBlockActionCenterNotifications
     * Indicates whether or not to block action center notifications over lock screen.
@@ -4331,7 +3785,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["lockScreenBlockActionCenterNotifications"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the lockScreenBlockCortana
     * Indicates whether or not the user can interact with Cortana using speech while the system is locked.
@@ -4346,7 +3800,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the lockScreenBlockCortana
     * Indicates whether or not the user can interact with Cortana using speech while the system is locked.
@@ -4360,7 +3814,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["lockScreenBlockCortana"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the lockScreenBlockToastNotifications
     * Indicates whether to allow toast notifications above the device lock screen.
@@ -4375,7 +3829,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the lockScreenBlockToastNotifications
     * Indicates whether to allow toast notifications above the device lock screen.
@@ -4389,7 +3843,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["lockScreenBlockToastNotifications"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the lockScreenTimeoutInSeconds
     * Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800
@@ -4404,7 +3858,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the lockScreenTimeoutInSeconds
     * Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800
@@ -4418,7 +3872,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["lockScreenTimeoutInSeconds"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the lockScreenActivateAppsWithVoice
     * This policy setting specifies whether Windows apps can be activated by voice while the system is locked.
@@ -4437,7 +3891,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the lockScreenActivateAppsWithVoice
     * This policy setting specifies whether Windows apps can be activated by voice while the system is locked.
@@ -4451,7 +3905,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["lockScreenActivateAppsWithVoice"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the passwordBlockSimple
     * Specify whether PINs or passwords such as '1111' or '1234' are allowed. For Windows 10 desktops, it also controls the use of picture passwords.
@@ -4466,7 +3920,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordBlockSimple
     * Specify whether PINs or passwords such as '1111' or '1234' are allowed. For Windows 10 desktops, it also controls the use of picture passwords.
@@ -4480,7 +3934,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordBlockSimple"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordExpirationDays
     * The password expiration in days. Valid values 0 to 730
@@ -4495,7 +3949,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordExpirationDays
     * The password expiration in days. Valid values 0 to 730
@@ -4509,7 +3963,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordExpirationDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumLength
     * The minimum password length. Valid values 4 to 16
@@ -4524,7 +3978,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumLength
     * The minimum password length. Valid values 4 to 16
@@ -4538,7 +3992,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinimumLength"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinutesOfInactivityBeforeScreenTimeout
     * The minutes of inactivity before the screen times out.
@@ -4553,7 +4007,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinutesOfInactivityBeforeScreenTimeout
     * The minutes of inactivity before the screen times out.
@@ -4567,7 +4021,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinutesOfInactivityBeforeScreenTimeout"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumCharacterSetCount
     * The number of character sets required in the password.
@@ -4582,7 +4036,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumCharacterSetCount
     * The number of character sets required in the password.
@@ -4596,7 +4050,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinimumCharacterSetCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordPreviousPasswordBlockCount
     * The number of previous passwords to prevent reuse of. Valid values 0 to 50
@@ -4611,7 +4065,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordPreviousPasswordBlockCount
     * The number of previous passwords to prevent reuse of. Valid values 0 to 50
@@ -4625,7 +4079,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordPreviousPasswordBlockCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordRequired
     * Indicates whether or not to require the user to have a password.
@@ -4640,7 +4094,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordRequired
     * Indicates whether or not to require the user to have a password.
@@ -4654,7 +4108,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordRequireWhenResumeFromIdleState
     * Indicates whether or not to require a password upon resuming from an idle state.
@@ -4669,7 +4123,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordRequireWhenResumeFromIdleState
     * Indicates whether or not to require a password upon resuming from an idle state.
@@ -4683,7 +4137,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordRequireWhenResumeFromIdleState"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordRequiredType
     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
@@ -4702,7 +4156,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the passwordRequiredType
     * The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
@@ -4716,7 +4170,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordRequiredType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the passwordSignInFailureCountBeforeFactoryReset
     * The number of sign in failures before factory reset. Valid values 0 to 999
@@ -4731,7 +4185,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordSignInFailureCountBeforeFactoryReset
     * The number of sign in failures before factory reset. Valid values 0 to 999
@@ -4745,7 +4199,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordSignInFailureCountBeforeFactoryReset"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumAgeInDays
     * This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998
@@ -4760,7 +4214,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumAgeInDays
     * This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998
@@ -4774,7 +4228,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinimumAgeInDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the privacyAdvertisingId
     * Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: notConfigured, blocked, allowed.
@@ -4793,7 +4247,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the privacyAdvertisingId
     * Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: notConfigured, blocked, allowed.
@@ -4807,7 +4261,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["privacyAdvertisingId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the privacyAutoAcceptPairingAndConsentPrompts
     * Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
@@ -4822,7 +4276,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the privacyAutoAcceptPairingAndConsentPrompts
     * Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
@@ -4836,7 +4290,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["privacyAutoAcceptPairingAndConsentPrompts"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the privacyDisableLaunchExperience
     * This policy prevents the privacy experience from launching during user logon for new and upgraded users.â€‹
@@ -4851,7 +4305,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the privacyDisableLaunchExperience
     * This policy prevents the privacy experience from launching during user logon for new and upgraded users.â€‹
@@ -4865,7 +4319,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["privacyDisableLaunchExperience"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the privacyBlockInputPersonalization
     * Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.
@@ -4880,7 +4334,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the privacyBlockInputPersonalization
     * Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.
@@ -4894,7 +4348,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["privacyBlockInputPersonalization"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the privacyBlockPublishUserActivities
     * Blocks the shared experiences/discovery of recently used resources in task switcher etc.
@@ -4909,7 +4363,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the privacyBlockPublishUserActivities
     * Blocks the shared experiences/discovery of recently used resources in task switcher etc.
@@ -4923,7 +4377,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["privacyBlockPublishUserActivities"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the privacyBlockActivityFeed
     * Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.
@@ -4938,7 +4392,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the privacyBlockActivityFeed
     * Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.
@@ -4952,7 +4406,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["privacyBlockActivityFeed"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startBlockUnpinningAppsFromTaskbar
     * Indicates whether or not to block the user from unpinning apps from taskbar.
@@ -4967,7 +4421,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startBlockUnpinningAppsFromTaskbar
     * Indicates whether or not to block the user from unpinning apps from taskbar.
@@ -4981,7 +4435,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startBlockUnpinningAppsFromTaskbar"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuAppListVisibility
     * Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: userDefined, collapse, remove, disableSettingsApp.
@@ -5000,7 +4454,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuAppListVisibility
     * Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: userDefined, collapse, remove, disableSettingsApp.
@@ -5014,7 +4468,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuAppListVisibility"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideChangeAccountSettings
     * Enabling this policy hides the change account setting from appearing in the user tile in the start menu.
@@ -5029,7 +4483,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideChangeAccountSettings
     * Enabling this policy hides the change account setting from appearing in the user tile in the start menu.
@@ -5043,7 +4497,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideChangeAccountSettings"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideFrequentlyUsedApps
     * Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
@@ -5058,7 +4512,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideFrequentlyUsedApps
     * Enabling this policy hides the most used apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
@@ -5072,7 +4526,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideFrequentlyUsedApps"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideHibernate
     * Enabling this policy hides hibernate from appearing in the power button in the start menu.
@@ -5087,7 +4541,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideHibernate
     * Enabling this policy hides hibernate from appearing in the power button in the start menu.
@@ -5101,7 +4555,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideHibernate"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideLock
     * Enabling this policy hides lock from appearing in the user tile in the start menu.
@@ -5116,7 +4570,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideLock
     * Enabling this policy hides lock from appearing in the user tile in the start menu.
@@ -5130,7 +4584,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideLock"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHidePowerButton
     * Enabling this policy hides the power button from appearing in the start menu.
@@ -5145,7 +4599,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHidePowerButton
     * Enabling this policy hides the power button from appearing in the start menu.
@@ -5159,7 +4613,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHidePowerButton"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideRecentJumpLists
     * Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.
@@ -5174,7 +4628,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideRecentJumpLists
     * Enabling this policy hides recent jump lists from appearing on the start menu/taskbar and disables the corresponding toggle in the Settings app.
@@ -5188,7 +4642,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideRecentJumpLists"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideRecentlyAddedApps
     * Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
@@ -5203,7 +4657,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideRecentlyAddedApps
     * Enabling this policy hides recently added apps from appearing on the start menu and disables the corresponding toggle in the Settings app.
@@ -5217,7 +4671,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideRecentlyAddedApps"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideRestartOptions
     * Enabling this policy hides 'Restart/Update and Restart' from appearing in the power button in the start menu.
@@ -5232,7 +4686,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideRestartOptions
     * Enabling this policy hides 'Restart/Update and Restart' from appearing in the power button in the start menu.
@@ -5246,7 +4700,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideRestartOptions"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideShutDown
     * Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.
@@ -5261,7 +4715,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideShutDown
     * Enabling this policy hides shut down/update and shut down from appearing in the power button in the start menu.
@@ -5275,7 +4729,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideShutDown"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideSignOut
     * Enabling this policy hides sign out from appearing in the user tile in the start menu.
@@ -5290,7 +4744,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideSignOut
     * Enabling this policy hides sign out from appearing in the user tile in the start menu.
@@ -5304,7 +4758,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideSignOut"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideSleep
     * Enabling this policy hides sleep from appearing in the power button in the start menu.
@@ -5319,7 +4773,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideSleep
     * Enabling this policy hides sleep from appearing in the power button in the start menu.
@@ -5333,7 +4787,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideSleep"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideSwitchAccount
     * Enabling this policy hides switch account from appearing in the user tile in the start menu.
@@ -5348,7 +4802,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideSwitchAccount
     * Enabling this policy hides switch account from appearing in the user tile in the start menu.
@@ -5362,7 +4816,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideSwitchAccount"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuHideUserTile
     * Enabling this policy hides the user tile from appearing in the start menu.
@@ -5377,7 +4831,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the startMenuHideUserTile
     * Enabling this policy hides the user tile from appearing in the start menu.
@@ -5391,7 +4845,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuHideUserTile"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startMenuLayoutEdgeAssetsXml
     * This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.
@@ -5410,7 +4864,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuLayoutEdgeAssetsXml
     * This policy setting allows you to import Edge assets to be used with startMenuLayoutXml policy. Start layout can contain secondary tile from Edge app which looks for Edge local asset file. Edge local asset would not exist and cause Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is modified. The value should be a UTF-8 Base64 encoded byte array.
@@ -5424,7 +4878,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuLayoutEdgeAssetsXml"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuLayoutXml
     * Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.
@@ -5443,7 +4897,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuLayoutXml
     * Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.
@@ -5457,7 +4911,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuLayoutXml"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuMode
     * Allows admins to decide how the Start menu is displayed. Possible values are: userDefined, fullScreen, nonFullScreen.
@@ -5476,7 +4930,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuMode
     * Allows admins to decide how the Start menu is displayed. Possible values are: userDefined, fullScreen, nonFullScreen.
@@ -5490,7 +4944,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuMode"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderDocuments
     * Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5509,7 +4963,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderDocuments
     * Enforces the visibility (Show/Hide) of the Documents folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5523,7 +4977,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderDocuments"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderDownloads
     * Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5542,7 +4996,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderDownloads
     * Enforces the visibility (Show/Hide) of the Downloads folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5556,7 +5010,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderDownloads"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderFileExplorer
     * Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5575,7 +5029,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderFileExplorer
     * Enforces the visibility (Show/Hide) of the FileExplorer shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5589,7 +5043,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderFileExplorer"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderHomeGroup
     * Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5608,7 +5062,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderHomeGroup
     * Enforces the visibility (Show/Hide) of the HomeGroup folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5622,7 +5076,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderHomeGroup"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderMusic
     * Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5641,7 +5095,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderMusic
     * Enforces the visibility (Show/Hide) of the Music folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5655,7 +5109,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderMusic"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderNetwork
     * Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5674,7 +5128,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderNetwork
     * Enforces the visibility (Show/Hide) of the Network folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5688,7 +5142,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderNetwork"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderPersonalFolder
     * Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5707,7 +5161,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderPersonalFolder
     * Enforces the visibility (Show/Hide) of the PersonalFolder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5721,7 +5175,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderPersonalFolder"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderPictures
     * Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5740,7 +5194,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderPictures
     * Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5754,7 +5208,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderPictures"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderSettings
     * Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5773,7 +5227,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderSettings
     * Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5787,7 +5241,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderSettings"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startMenuPinnedFolderVideos
     * Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5806,7 +5260,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the startMenuPinnedFolderVideos
     * Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: notConfigured, hide, show.
@@ -5820,7 +5274,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["startMenuPinnedFolderVideos"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockSettingsApp
     * Indicates whether or not to block access to Settings app.
@@ -5835,7 +5289,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockSettingsApp
     * Indicates whether or not to block access to Settings app.
@@ -5849,7 +5303,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockSettingsApp"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockSystemPage
     * Indicates whether or not to block access to System in Settings app.
@@ -5864,7 +5318,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockSystemPage
     * Indicates whether or not to block access to System in Settings app.
@@ -5878,7 +5332,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockSystemPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockDevicesPage
     * Indicates whether or not to block access to Devices in Settings app.
@@ -5893,7 +5347,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockDevicesPage
     * Indicates whether or not to block access to Devices in Settings app.
@@ -5907,7 +5361,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockDevicesPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockNetworkInternetPage
     * Indicates whether or not to block access to Network &amp; Internet in Settings app.
@@ -5922,7 +5376,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockNetworkInternetPage
     * Indicates whether or not to block access to Network &amp; Internet in Settings app.
@@ -5936,7 +5390,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockNetworkInternetPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockPersonalizationPage
     * Indicates whether or not to block access to Personalization in Settings app.
@@ -5951,7 +5405,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockPersonalizationPage
     * Indicates whether or not to block access to Personalization in Settings app.
@@ -5965,7 +5419,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockPersonalizationPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockAccountsPage
     * Indicates whether or not to block access to Accounts in Settings app.
@@ -5980,7 +5434,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockAccountsPage
     * Indicates whether or not to block access to Accounts in Settings app.
@@ -5994,7 +5448,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockAccountsPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockTimeLanguagePage
     * Indicates whether or not to block access to Time &amp; Language in Settings app.
@@ -6009,7 +5463,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockTimeLanguagePage
     * Indicates whether or not to block access to Time &amp; Language in Settings app.
@@ -6023,7 +5477,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockTimeLanguagePage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockEaseOfAccessPage
     * Indicates whether or not to block access to Ease of Access in Settings app.
@@ -6038,7 +5492,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockEaseOfAccessPage
     * Indicates whether or not to block access to Ease of Access in Settings app.
@@ -6052,7 +5506,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockEaseOfAccessPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockPrivacyPage
     * Indicates whether or not to block access to Privacy in Settings app.
@@ -6067,7 +5521,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockPrivacyPage
     * Indicates whether or not to block access to Privacy in Settings app.
@@ -6081,7 +5535,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockPrivacyPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockUpdateSecurityPage
     * Indicates whether or not to block access to Update &amp; Security in Settings app.
@@ -6096,7 +5550,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockUpdateSecurityPage
     * Indicates whether or not to block access to Update &amp; Security in Settings app.
@@ -6110,7 +5564,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockUpdateSecurityPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockAppsPage
     * Indicates whether or not to block access to Apps in Settings app.
@@ -6125,7 +5579,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockAppsPage
     * Indicates whether or not to block access to Apps in Settings app.
@@ -6139,7 +5593,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockAppsPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockGamingPage
     * Indicates whether or not to block access to Gaming in Settings app.
@@ -6154,7 +5608,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockGamingPage
     * Indicates whether or not to block access to Gaming in Settings app.
@@ -6168,7 +5622,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockGamingPage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlockConsumerSpecificFeatures
     * Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
@@ -6183,7 +5637,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlockConsumerSpecificFeatures
     * Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
@@ -6197,7 +5651,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlockConsumerSpecificFeatures"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlocked
     * Allows IT admins to turn off all Windows Spotlight features
@@ -6212,7 +5666,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlocked
     * Allows IT admins to turn off all Windows Spotlight features
@@ -6226,7 +5680,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlockOnActionCenter
     * Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed
@@ -6241,7 +5695,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlockOnActionCenter
     * Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed
@@ -6255,7 +5709,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlockOnActionCenter"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlockTailoredExperiences
     * Block personalized content in Windows spotlight based on user’s device usage.
@@ -6270,7 +5724,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlockTailoredExperiences
     * Block personalized content in Windows spotlight based on user’s device usage.
@@ -6284,7 +5738,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlockTailoredExperiences"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlockThirdPartyNotifications
     * Block third party content delivered via Windows Spotlight
@@ -6299,7 +5753,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlockThirdPartyNotifications
     * Block third party content delivered via Windows Spotlight
@@ -6313,7 +5767,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlockThirdPartyNotifications"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlockWelcomeExperience
     * Block Windows Spotlight Windows welcome experience
@@ -6328,7 +5782,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlockWelcomeExperience
     * Block Windows Spotlight Windows welcome experience
@@ -6342,7 +5796,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlockWelcomeExperience"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightBlockWindowsTips
     * Allows IT admins to turn off the popup of Windows Tips.
@@ -6357,7 +5811,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsSpotlightBlockWindowsTips
     * Allows IT admins to turn off the popup of Windows Tips.
@@ -6371,7 +5825,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightBlockWindowsTips"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsSpotlightConfigureOnLockScreen
     * Specifies the type of Spotlight. Possible values are: notConfigured, disabled, enabled.
@@ -6390,7 +5844,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the windowsSpotlightConfigureOnLockScreen
     * Specifies the type of Spotlight. Possible values are: notConfigured, disabled, enabled.
@@ -6404,7 +5858,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsSpotlightConfigureOnLockScreen"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the networkProxyApplySettingsDeviceWide
     * If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.
@@ -6419,7 +5873,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the networkProxyApplySettingsDeviceWide
     * If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.
@@ -6433,7 +5887,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["networkProxyApplySettingsDeviceWide"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the networkProxyDisableAutoDetect
     * Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.
@@ -6448,7 +5902,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the networkProxyDisableAutoDetect
     * Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.
@@ -6462,7 +5916,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["networkProxyDisableAutoDetect"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the networkProxyAutomaticConfigurationUrl
     * Address to the proxy auto-config (PAC) script you want to use.
@@ -6477,7 +5931,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the networkProxyAutomaticConfigurationUrl
     * Address to the proxy auto-config (PAC) script you want to use.
@@ -6491,7 +5945,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["networkProxyAutomaticConfigurationUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the networkProxyServer
     * Specifies manual proxy server settings.
@@ -6510,7 +5964,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the networkProxyServer
     * Specifies manual proxy server settings.
@@ -6524,7 +5978,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["networkProxyServer"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the accountsBlockAddingNonMicrosoftAccountEmail
     * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.
@@ -6539,7 +5993,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the accountsBlockAddingNonMicrosoftAccountEmail
     * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.
@@ -6553,7 +6007,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["accountsBlockAddingNonMicrosoftAccountEmail"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the antiTheftModeBlocked
     * Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).
@@ -6568,7 +6022,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the antiTheftModeBlocked
     * Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).
@@ -6582,7 +6036,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["antiTheftModeBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the bluetoothBlocked
     * Whether or not to Block the user from using bluetooth.
@@ -6597,7 +6051,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the bluetoothBlocked
     * Whether or not to Block the user from using bluetooth.
@@ -6611,7 +6065,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["bluetoothBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the cameraBlocked
     * Whether or not to Block the user from accessing the camera of the device.
@@ -6626,7 +6080,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the cameraBlocked
     * Whether or not to Block the user from accessing the camera of the device.
@@ -6640,7 +6094,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cameraBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the connectedDevicesServiceBlocked
     * Whether or not to block Connected Devices Service which enables discovery and connection to other devices, remote messaging, remote app sessions and other cross-device experiences.
@@ -6655,7 +6109,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the connectedDevicesServiceBlocked
     * Whether or not to block Connected Devices Service which enables discovery and connection to other devices, remote messaging, remote app sessions and other cross-device experiences.
@@ -6669,7 +6123,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["connectedDevicesServiceBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the certificatesBlockManualRootCertificateInstallation
     * Whether or not to Block the user from doing manual root certificate installation.
@@ -6684,7 +6138,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the certificatesBlockManualRootCertificateInstallation
     * Whether or not to Block the user from doing manual root certificate installation.
@@ -6698,7 +6152,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["certificatesBlockManualRootCertificateInstallation"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the copyPasteBlocked
     * Whether or not to Block the user from using copy paste.
@@ -6713,7 +6167,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the copyPasteBlocked
     * Whether or not to Block the user from using copy paste.
@@ -6727,7 +6181,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["copyPasteBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the cortanaBlocked
     * Whether or not to Block the user from using Cortana.
@@ -6742,7 +6196,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the cortanaBlocked
     * Whether or not to Block the user from using Cortana.
@@ -6756,7 +6210,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["cortanaBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the deviceManagementBlockFactoryResetOnMobile
     * Indicates whether or not to Block the user from resetting their phone.
@@ -6771,7 +6225,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceManagementBlockFactoryResetOnMobile
     * Indicates whether or not to Block the user from resetting their phone.
@@ -6785,7 +6239,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["deviceManagementBlockFactoryResetOnMobile"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the deviceManagementBlockManualUnenroll
     * Indicates whether or not to Block the user from doing manual un-enrollment from device management.
@@ -6800,7 +6254,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceManagementBlockManualUnenroll
     * Indicates whether or not to Block the user from doing manual un-enrollment from device management.
@@ -6814,7 +6268,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["deviceManagementBlockManualUnenroll"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the safeSearchFilter
     * Specifies what filter level of safe search is required. Possible values are: userDefined, strict, moderate.
@@ -6833,7 +6287,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the safeSearchFilter
     * Specifies what filter level of safe search is required. Possible values are: userDefined, strict, moderate.
@@ -6847,7 +6301,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["safeSearchFilter"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockPopups
     * Indicates whether or not to block popups.
@@ -6862,7 +6316,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockPopups
     * Indicates whether or not to block popups.
@@ -6876,7 +6330,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockPopups"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockSearchSuggestions
     * Indicates whether or not to block the user from using the search suggestions in the address bar.
@@ -6891,7 +6345,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockSearchSuggestions
     * Indicates whether or not to block the user from using the search suggestions in the address bar.
@@ -6905,7 +6359,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockSearchSuggestions"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockSearchEngineCustomization
     * Indicates whether or not to block the user from adding new search engine or changing the default search engine.
@@ -6920,7 +6374,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockSearchEngineCustomization
     * Indicates whether or not to block the user from adding new search engine or changing the default search engine.
@@ -6934,7 +6388,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockSearchEngineCustomization"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockSendingIntranetTrafficToInternetExplorer
     * Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.
@@ -6949,7 +6403,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockSendingIntranetTrafficToInternetExplorer
     * Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.
@@ -6963,7 +6417,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockSendingIntranetTrafficToInternetExplorer"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeSendIntranetTrafficToInternetExplorer
     * Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.
@@ -6978,7 +6432,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeSendIntranetTrafficToInternetExplorer
     * Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.
@@ -6992,7 +6446,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeSendIntranetTrafficToInternetExplorer"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeRequireSmartScreen
     * Indicates whether or not to Require the user to use the smart screen filter.
@@ -7007,7 +6461,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeRequireSmartScreen
     * Indicates whether or not to Require the user to use the smart screen filter.
@@ -7021,7 +6475,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeRequireSmartScreen"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the edgeEnterpriseModeSiteListLocation
     * Indicates the enterprise mode site list location. Could be a local file, local network or http location.
@@ -7036,7 +6490,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeEnterpriseModeSiteListLocation
     * Indicates the enterprise mode site list location. Could be a local file, local network or http location.
@@ -7050,7 +6504,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeEnterpriseModeSiteListLocation"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeFirstRunUrl
     * The first run URL for when Edge browser is opened for the first time.
@@ -7065,7 +6519,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeFirstRunUrl
     * The first run URL for when Edge browser is opened for the first time.
@@ -7079,7 +6533,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeFirstRunUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeSearchEngine
     * Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.
@@ -7098,7 +6552,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the edgeSearchEngine
     * Allows IT admins to set a default search engine for MDM-Controlled devices. Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.
@@ -7112,7 +6566,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeSearchEngine"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeHomepageUrls
     * The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.
@@ -7127,7 +6581,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeHomepageUrls
     * The list of URLs for homepages shodwn on MDM-enrolled devices on Edge browser.
@@ -7141,7 +6595,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeHomepageUrls"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the edgeBlockAccessToAboutFlags
     * Indicates whether or not to prevent access to about flags on Edge browser.
@@ -7156,7 +6610,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the edgeBlockAccessToAboutFlags
     * Indicates whether or not to prevent access to about flags on Edge browser.
@@ -7170,7 +6624,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["edgeBlockAccessToAboutFlags"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the smartScreenBlockPromptOverride
     * Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.
@@ -7185,7 +6639,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the smartScreenBlockPromptOverride
     * Indicates whether or not users can override SmartScreen Filter warnings about potentially malicious websites.
@@ -7199,7 +6653,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["smartScreenBlockPromptOverride"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the smartScreenBlockPromptOverrideForFiles
     * Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files
@@ -7214,7 +6668,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the smartScreenBlockPromptOverrideForFiles
     * Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files
@@ -7228,7 +6682,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["smartScreenBlockPromptOverrideForFiles"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the webRtcBlockLocalhostIpAddress
     * Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC
@@ -7243,7 +6697,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the webRtcBlockLocalhostIpAddress
     * Indicates whether or not user's localhost IP address is displayed while making phone calls using the WebRTC
@@ -7257,7 +6711,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["webRtcBlockLocalhostIpAddress"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the internetSharingBlocked
     * Indicates whether or not to Block the user from using internet sharing.
@@ -7272,7 +6726,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the internetSharingBlocked
     * Indicates whether or not to Block the user from using internet sharing.
@@ -7286,7 +6740,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["internetSharingBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockAddProvisioningPackage
     * Indicates whether or not to block the user from installing provisioning packages.
@@ -7301,7 +6755,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockAddProvisioningPackage
     * Indicates whether or not to block the user from installing provisioning packages.
@@ -7315,7 +6769,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockAddProvisioningPackage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockRemoveProvisioningPackage
     * Indicates whether or not to block the runtime configuration agent from removing provisioning packages.
@@ -7330,7 +6784,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockRemoveProvisioningPackage
     * Indicates whether or not to block the runtime configuration agent from removing provisioning packages.
@@ -7344,7 +6798,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockRemoveProvisioningPackage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockChangeSystemTime
     * Indicates whether or not to block the user from changing date and time settings.
@@ -7359,7 +6813,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockChangeSystemTime
     * Indicates whether or not to block the user from changing date and time settings.
@@ -7373,7 +6827,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockChangeSystemTime"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockEditDeviceName
     * Indicates whether or not to block the user from editing the device name.
@@ -7388,7 +6842,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockEditDeviceName
     * Indicates whether or not to block the user from editing the device name.
@@ -7402,7 +6856,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockEditDeviceName"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockChangeRegion
     * Indicates whether or not to block the user from changing the region settings.
@@ -7417,7 +6871,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockChangeRegion
     * Indicates whether or not to block the user from changing the region settings.
@@ -7431,7 +6885,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockChangeRegion"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockChangeLanguage
     * Indicates whether or not to block the user from changing the language settings.
@@ -7446,7 +6900,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockChangeLanguage
     * Indicates whether or not to block the user from changing the language settings.
@@ -7460,7 +6914,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockChangeLanguage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the settingsBlockChangePowerSleep
     * Indicates whether or not to block the user from changing power and sleep settings.
@@ -7475,7 +6929,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the settingsBlockChangePowerSleep
     * Indicates whether or not to block the user from changing power and sleep settings.
@@ -7489,7 +6943,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["settingsBlockChangePowerSleep"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the locationServicesBlocked
     * Indicates whether or not to Block the user from location services.
@@ -7504,7 +6958,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the locationServicesBlocked
     * Indicates whether or not to Block the user from location services.
@@ -7518,7 +6972,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["locationServicesBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the microsoftAccountBlocked
     * Indicates whether or not to Block a Microsoft account.
@@ -7533,7 +6987,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the microsoftAccountBlocked
     * Indicates whether or not to Block a Microsoft account.
@@ -7547,7 +7001,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["microsoftAccountBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the microsoftAccountBlockSettingsSync
     * Indicates whether or not to Block Microsoft account settings sync.
@@ -7562,7 +7016,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the microsoftAccountBlockSettingsSync
     * Indicates whether or not to Block Microsoft account settings sync.
@@ -7576,7 +7030,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["microsoftAccountBlockSettingsSync"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the nfcBlocked
     * Indicates whether or not to Block the user from using near field communication.
@@ -7591,7 +7045,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the nfcBlocked
     * Indicates whether or not to Block the user from using near field communication.
@@ -7605,7 +7059,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["nfcBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the resetProtectionModeBlocked
     * Indicates whether or not to Block the user from reset protection mode.
@@ -7620,7 +7074,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the resetProtectionModeBlocked
     * Indicates whether or not to Block the user from reset protection mode.
@@ -7634,7 +7088,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["resetProtectionModeBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the screenCaptureBlocked
     * Indicates whether or not to Block the user from taking Screenshots.
@@ -7649,7 +7103,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the screenCaptureBlocked
     * Indicates whether or not to Block the user from taking Screenshots.
@@ -7663,7 +7117,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["screenCaptureBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the storageBlockRemovableStorage
     * Indicates whether or not to Block the user from using removable storage.
@@ -7678,7 +7132,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the storageBlockRemovableStorage
     * Indicates whether or not to Block the user from using removable storage.
@@ -7692,7 +7146,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["storageBlockRemovableStorage"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the storageRequireMobileDeviceEncryption
     * Indicating whether or not to require encryption on a mobile device.
@@ -7707,7 +7161,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the storageRequireMobileDeviceEncryption
     * Indicating whether or not to require encryption on a mobile device.
@@ -7721,7 +7175,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["storageRequireMobileDeviceEncryption"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the usbBlocked
     * Indicates whether or not to Block the user from USB connection.
@@ -7736,7 +7190,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the usbBlocked
     * Indicates whether or not to Block the user from USB connection.
@@ -7750,7 +7204,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["usbBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the voiceRecordingBlocked
     * Indicates whether or not to Block the user from voice recording.
@@ -7765,7 +7219,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the voiceRecordingBlocked
     * Indicates whether or not to Block the user from voice recording.
@@ -7779,7 +7233,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["voiceRecordingBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wiFiBlockAutomaticConnectHotspots
     * Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
@@ -7794,7 +7248,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wiFiBlockAutomaticConnectHotspots
     * Indicating whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
@@ -7808,7 +7262,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wiFiBlockAutomaticConnectHotspots"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wiFiBlocked
     * Indicates whether or not to Block the user from using Wi-Fi.
@@ -7823,7 +7277,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wiFiBlocked
     * Indicates whether or not to Block the user from using Wi-Fi.
@@ -7837,7 +7291,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wiFiBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wiFiBlockManualConfiguration
     * Indicates whether or not to Block the user from using Wi-Fi manual configuration.
@@ -7852,7 +7306,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wiFiBlockManualConfiguration
     * Indicates whether or not to Block the user from using Wi-Fi manual configuration.
@@ -7866,7 +7320,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wiFiBlockManualConfiguration"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wiFiScanInterval
     * Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency. Valid values 1 to 500
@@ -7881,7 +7335,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wiFiScanInterval
     * Specify how often devices scan for Wi-Fi networks. Supported values are 1-500, where 100 = default, and 500 = low frequency. Valid values 1 to 500
@@ -7895,7 +7349,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wiFiScanInterval"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wirelessDisplayBlockProjectionToThisDevice
     * Indicates whether or not to allow other devices from discovering this PC for projection.
@@ -7910,7 +7364,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wirelessDisplayBlockProjectionToThisDevice
     * Indicates whether or not to allow other devices from discovering this PC for projection.
@@ -7924,7 +7378,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wirelessDisplayBlockProjectionToThisDevice"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wirelessDisplayBlockUserInputFromReceiver
     * Indicates whether or not to allow user input from wireless display receiver.
@@ -7939,7 +7393,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wirelessDisplayBlockUserInputFromReceiver
     * Indicates whether or not to allow user input from wireless display receiver.
@@ -7953,7 +7407,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wirelessDisplayBlockUserInputFromReceiver"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the wirelessDisplayRequirePinForPairing
     * Indicates whether or not to require a PIN for new devices to initiate pairing.
@@ -7968,7 +7422,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the wirelessDisplayRequirePinForPairing
     * Indicates whether or not to require a PIN for new devices to initiate pairing.
@@ -7982,7 +7436,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["wirelessDisplayRequirePinForPairing"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsStoreBlocked
     * Indicates whether or not to Block the user from using the Windows store.
@@ -7997,7 +7451,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsStoreBlocked
     * Indicates whether or not to Block the user from using the Windows store.
@@ -8011,7 +7465,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsStoreBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the appsAllowTrustedAppsSideloading
     * Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are: notConfigured, blocked, allowed.
@@ -8030,7 +7484,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the appsAllowTrustedAppsSideloading
     * Indicates whether apps from AppX packages signed with a trusted certificate can be side loaded. Possible values are: notConfigured, blocked, allowed.
@@ -8044,7 +7498,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["appsAllowTrustedAppsSideloading"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the windowsStoreBlockAutoUpdate
     * Indicates whether or not to block automatic update of apps from Windows Store.
@@ -8059,7 +7513,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsStoreBlockAutoUpdate
     * Indicates whether or not to block automatic update of apps from Windows Store.
@@ -8073,7 +7527,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsStoreBlockAutoUpdate"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the developerUnlockSetting
     * Indicates whether or not to allow developer unlock. Possible values are: notConfigured, blocked, allowed.
@@ -8092,7 +7546,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the developerUnlockSetting
     * Indicates whether or not to allow developer unlock. Possible values are: notConfigured, blocked, allowed.
@@ -8106,7 +7560,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["developerUnlockSetting"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the sharedUserAppDataAllowed
     * Indicates whether or not to block multiple users of the same app to share data.
@@ -8121,7 +7575,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the sharedUserAppDataAllowed
     * Indicates whether or not to block multiple users of the same app to share data.
@@ -8135,7 +7589,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["sharedUserAppDataAllowed"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the appsBlockWindowsStoreOriginatedApps
     * Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were downloaded.
@@ -8150,7 +7604,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the appsBlockWindowsStoreOriginatedApps
     * Indicates whether or not to disable the launch of all apps from Windows Store that came pre-installed or were downloaded.
@@ -8164,7 +7618,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["appsBlockWindowsStoreOriginatedApps"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the windowsStoreEnablePrivateStoreOnly
     * Indicates whether or not to enable Private Store Only.
@@ -8179,7 +7633,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the windowsStoreEnablePrivateStoreOnly
     * Indicates whether or not to enable Private Store Only.
@@ -8193,7 +7647,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["windowsStoreEnablePrivateStoreOnly"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the storageRestrictAppDataToSystemVolume
     * Indicates whether application data is restricted to the system drive.
@@ -8208,7 +7662,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the storageRestrictAppDataToSystemVolume
     * Indicates whether application data is restricted to the system drive.
@@ -8222,7 +7676,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["storageRestrictAppDataToSystemVolume"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the storageRestrictAppInstallToSystemVolume
     * Indicates whether the installation of applications is restricted to the system drive.
@@ -8237,7 +7691,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the storageRestrictAppInstallToSystemVolume
     * Indicates whether the installation of applications is restricted to the system drive.
@@ -8251,7 +7705,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["storageRestrictAppInstallToSystemVolume"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the gameDvrBlocked
     * Indicates whether or not to block DVR and broadcasting.
@@ -8266,7 +7720,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the gameDvrBlocked
     * Indicates whether or not to block DVR and broadcasting.
@@ -8280,7 +7734,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["gameDvrBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the experienceBlockDeviceDiscovery
     * Indicates whether or not to enable device discovery UX.
@@ -8295,7 +7749,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the experienceBlockDeviceDiscovery
     * Indicates whether or not to enable device discovery UX.
@@ -8309,7 +7763,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["experienceBlockDeviceDiscovery"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the experienceBlockErrorDialogWhenNoSIM
     * Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.
@@ -8324,7 +7778,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the experienceBlockErrorDialogWhenNoSIM
     * Indicates whether or not to allow the error dialog from displaying if no SIM card is detected.
@@ -8338,7 +7792,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["experienceBlockErrorDialogWhenNoSIM"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the experienceBlockTaskSwitcher
     * Indicates whether or not to enable task switching on the device.
@@ -8353,7 +7807,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the experienceBlockTaskSwitcher
     * Indicates whether or not to enable task switching on the device.
@@ -8367,7 +7821,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["experienceBlockTaskSwitcher"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the logonBlockFastUserSwitching
     * Disables the ability to quickly switch between users that are logged on simultaneously without logging off.
@@ -8382,7 +7836,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the logonBlockFastUserSwitching
     * Disables the ability to quickly switch between users that are logged on simultaneously without logging off.
@@ -8396,7 +7850,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["logonBlockFastUserSwitching"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the tenantLockdownRequireNetworkDuringOutOfBoxExperience
     * Whether the device is required to connect to the network.
@@ -8411,7 +7865,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the tenantLockdownRequireNetworkDuringOutOfBoxExperience
     * Whether the device is required to connect to the network.
@@ -8425,7 +7879,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["tenantLockdownRequireNetworkDuringOutOfBoxExperience"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the appManagementMSIAllowUserControlOverInstall
     * This policy setting permits users to change installation options that typically are available only to system administrators.
@@ -8440,7 +7894,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the appManagementMSIAllowUserControlOverInstall
     * This policy setting permits users to change installation options that typically are available only to system administrators.
@@ -8454,7 +7908,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["appManagementMSIAllowUserControlOverInstall"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the appManagementMSIAlwaysInstallWithElevatedPrivileges
     * This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.
@@ -8469,7 +7923,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the appManagementMSIAlwaysInstallWithElevatedPrivileges
     * This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.
@@ -8483,7 +7937,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["appManagementMSIAlwaysInstallWithElevatedPrivileges"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the dataProtectionBlockDirectMemoryAccess
     * This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.
@@ -8498,7 +7952,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the dataProtectionBlockDirectMemoryAccess
     * This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.
@@ -8512,7 +7966,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["dataProtectionBlockDirectMemoryAccess"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the appManagementPackageFamilyNamesToLaunchAfterLogOn
     * List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.â€‹
@@ -8527,7 +7981,7 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the appManagementPackageFamilyNamesToLaunchAfterLogOn
     * List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.â€‹
@@ -8541,9 +7995,9 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
         $this->_propDict["appManagementPackageFamilyNamesToLaunchAfterLogOn"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the privacyAccessControls
     * Indicates a list of applications with their access control levels over privacy data categories, and/or the default access levels per category.
      *
@@ -8557,8 +8011,8 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the privacyAccessControls
     * Indicates a list of applications with their access control levels over privacy data categories, and/or the default access levels per category.
     *
@@ -8571,5 +8025,5 @@ class Windows10GeneralConfiguration extends DeviceConfiguration
 		$this->_propDict["privacyAccessControls"] = $val;
         return $this;
     }
-    
+
 }
