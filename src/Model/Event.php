@@ -916,9 +916,41 @@ class Event extends OutlookItem
         $this->_propDict["onlineMeetingUrl"] = $val;
         return $this;
     }
-    
 
-     /** 
+    /**
+     * Gets the onlineMeeting
+     * The online meeting details of the event.
+     *
+     * @return OnlineMeeting The onlineMeeting
+     */
+    public function getOnlineMeeting()
+    {
+        if (array_key_exists("onlineMeeting", $this->_propDict)) {
+            if (is_a($this->_propDict["onlineMeeting"], "Microsoft\Graph\Model\OnlineMeeting")) {
+                return $this->_propDict["onlineMeeting"];
+            } else {
+                $this->_propDict["onlineMeeting"] = new OnlineMeeting($this->_propDict["onlineMeeting"]);
+                return $this->_propDict["onlineMeeting"];
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Sets the onlineMeeting
+     * The online meeting details of the event.
+     *
+     * @param OnlineMeeting $val The onlineMeeting
+     *
+     * @return Event
+     */
+    public function setOnlineMeeting($val)
+    {
+        $this->_propDict["onlineMeeting"] = $val;
+        return $this;
+    }
+
+     /**
      * Gets the attachments
     * The collection of fileAttachment and itemAttachment attachments for the event. Navigation property. Read-only. Nullable.
      *
